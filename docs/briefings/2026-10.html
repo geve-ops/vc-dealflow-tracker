@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Greek Deep Tech Briefing</title>
+<style>
+:root {
+  --bg: #f7f7f5; --panel: #ffffff; --ink: #1c1d1f; --muted: #62656b; --line: #e3e3df; --chip: #eef0f2;
+  --accent: #1f5f8b; --tint: rgba(42,120,214,.07); --warn: #8a5a00; --warnbg: #fbf3e2;
+  --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100; --s5: #b4b2a9; --grid: #e1e0d9;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141517; --panel: #1c1d20; --ink: #ececec; --muted: #9a9ca1; --line: #2c2e32; --chip: #26282c;
+    --accent: #7db7e0; --tint: rgba(57,135,229,.12); --warn: #e3b25a; --warnbg: #2a2316;
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #6f6e69; --grid: #2c2c2a;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #141517; --panel: #1c1d20; --ink: #ececec; --muted: #9a9ca1; --line: #2c2e32; --chip: #26282c;
+  --accent: #7db7e0; --tint: rgba(57,135,229,.12); --warn: #e3b25a; --warnbg: #2a2316;
+  --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #6f6e69; --grid: #2c2c2a;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 28px 16px 64px; }
+nav { display: flex; gap: 14px; flex-wrap: wrap; font-size: 14px; margin-bottom: 18px; }
+h1 { font-size: 26px; margin: 0 0 4px; letter-spacing: -0.01em; }
+h2 { font-size: 18px; margin: 40px 0 6px; }
+h3 { font-size: 15px; margin: 0 0 6px; }
+.sub, .lede { color: var(--muted); margin: 0 0 14px; }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+.kpi .l { color: var(--muted); font-size: 13px; }
+.kpi .n { font-size: 30px; font-weight: 650; font-variant-numeric: tabular-nums; margin: 2px 0; }
+.kpi .d { color: var(--muted); font-size: 12.5px; }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; }
+.card h3 { display: flex; justify-content: space-between; gap: 8px; }
+.card .meta { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
+.card ul { margin: 6px 0 0; padding-left: 18px; font-size: 14px; }
+.flag { background: var(--warnbg); border-radius: 8px; padding: 8px 12px; margin: 6px 0; font-size: 14px; }
+.flag b { color: var(--warn); }
+.funnel .row { display: grid; grid-template-columns: 170px 1fr; gap: 12px; align-items: center; margin: 7px 0; font-size: 14px; }
+.funnel .bar { height: 30px; border-radius: 5px; background: var(--s1); min-width: 4px; display: flex; align-items: center; padding: 0 10px; color: #fff; font-weight: 600; font-variant-numeric: tabular-nums; }
+.funnel .bar.zero { background: transparent; border: 1px dashed var(--muted); color: var(--muted); }
+.funnel .why { color: var(--muted); font-size: 12.5px; }
+.chart { position: relative; width: 100%; }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12.5px; color: var(--muted); margin: 0 0 8px; }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+.tablewrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; white-space: nowrap; cursor: pointer; user-select: none; }
+.pill { display: inline-block; font-size: 12px; padding: 1px 8px; border-radius: 10px; background: var(--chip); white-space: nowrap; }
+.pill.sug { background: var(--tint); color: var(--accent); }
+.dim { color: var(--muted); }
+.memo dl { display: grid; grid-template-columns: 150px 1fr; gap: 6px 14px; margin: 8px 0 0; font-size: 14px; }
+.memo dt { color: var(--muted); }
+.memo dd { margin: 0; }
+footer { margin-top: 44px; color: var(--muted); font-size: 13px; }
+@media (max-width: 640px) {
+  .funnel .row { grid-template-columns: 1fr; gap: 3px; }
+  .memo dl { grid-template-columns: 1fr; gap: 2px; }
+  .memo dd { margin-bottom: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><a id="nav-dash" href="index.html">Weekly dashboard</a><span class="dim">·</span><span id="nav-archive"></span></nav>
+  <h1 id="title">Greek Deep Tech Briefing</h1>
+  <p class="sub" id="sub"></p>
+
+  <h2>1. Key numbers</h2>
+  <div class="kpis" id="kpis"></div>
+
+  <h2>2. Analyst commentary</h2>
+  <p class="lede">Built from the data on this page. The companies named are reasons to start a conversation, not conclusions: conviction needs diligence first.</p>
+  <h3>Top 3 to engage</h3>
+  <div class="grid2" id="top3"></div>
+  <h3 style="margin-top:18px">Red flags in the data</h3>
+  <div id="flags"></div>
+  <h3 style="margin-top:18px">Pipeline gaps</h3>
+  <div class="panel" id="gaps"></div>
+
+  <h2>3. Charts</h2>
+  <h3>Stage funnel</h3>
+  <div class="panel funnel" id="funnel"></div>
+  <h3 style="margin-top:22px">Raising window vs hiring</h3>
+  <p class="lede" id="mxnote"></p>
+  <div class="panel">
+    <div class="legend"><span><i style="background:var(--s1);border-radius:50%"></i>Hiring data available</span><span><i style="border:1.5px solid var(--muted);border-radius:50%"></i>No hiring data, plotted at 0</span><span>Bubble size = last round, USD M</span></div>
+    <div class="chart" style="height:460px"><canvas id="mx" role="img" aria-label="Bubble chart of months since last round against open roles"></canvas></div>
+  </div>
+  <h3 style="margin-top:22px">Sector by stage</h3>
+  <div class="panel">
+    <div class="legend" id="sslegend"></div>
+    <div class="chart" style="height:400px"><canvas id="ss" role="img" aria-label="Stacked bar chart of companies per sector by stage"></canvas></div>
+  </div>
+
+  <h2>4. Pipeline</h2>
+  <p class="lede">Rows come from <code>data/pipeline.csv</code>, kept by hand. Rows marked "suggested" come from the data and are not yet in that file. No company has a public valuation, so that column is left out.</p>
+  <div class="tablewrap"><table id="pipe"><thead></thead><tbody></tbody></table></div>
+
+  <h2>5. Memos</h2>
+  <div id="memos"></div>
+
+  <footer id="foot"></footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const DATA = {"generated_at": "2026-10-26T13:48:04Z", "month": "2026-10", "kpis": {"tracked": 69, "include": 36, "borderline": 33, "recent_usd": 36.3, "recent_rounds": [{"company": "Anodyne Nanotech", "usd": 12.6, "date": "2026-06"}, {"company": "Acumino", "usd": 11.7, "date": "2026-06"}, {"company": "Proxy Foods AI", "usd": 6.0, "date": "2026-08"}, {"company": "Perceptual Robotics", "usd": 5.3, "date": "2026-07"}, {"company": "ClearDrop", "usd": 0.7, "date": "2026-06"}], "recent_other": [{"company": "Anacalypsis Therapeutics", "amount": "EUR 300K (Athens LifeTech Park post, Brain Gain Fund); aggregators list USD 340-344K"}, {"company": "Circuits Integrated Hellas", "amount": "Not disclosed"}], "target_backed": 27, "target_backed_current": 23, "fund_counts": {"Big Pi Ventures": 7, "Marathon VC": 10, "Metavallon VC": 9, "Velocity Partners": 2, "egg / Eurobank": 0}, "top_sector": {"name": "Robotics & Drones", "usd": 17.0, "companies": ["Perceptual Robotics", "Acumino"]}}, "funnel": [["Watch", 69, "companies on the watchlist"], ["Moving", 9, "scored by the weekly signals"], ["Engage candidates", 3, "raising window + hiring, Greek-fund ticket size"], ["Engaged", 0, "founders contacted"], ["Diligence / term sheet", 0, ""], ["Memo", 1, "memos written"]], "sector_stage": {"categories": ["Robotics & Drones", "Health & Biotech", "AI & Machine Learning", "Space & Defense", "Energy & Climate Tech", "Semiconductors & Hardware", "Industrial & Manufacturing Tech", "Quantum & Advanced Computing"], "buckets": ["Pre-seed / seed", "Series A / B", "Late stage", "Exited", "Non-venture"], "counts": [[6, 7, 7, 3, 5, 2, 0, 0], [1, 3, 1, 3, 2, 1, 2, 0], [0, 1, 0, 1, 0, 1, 0, 0], [1, 0, 1, 0, 0, 1, 2, 0], [5, 2, 2, 4, 1, 2, 1, 1]]}, "matrix": [{"n": "Perceptual Robotics", "x": 3, "roles": 0, "usd": 5.3, "prime": false}, {"n": "Acumino", "x": 4, "roles": null, "usd": 11.7, "prime": false}, {"n": "Velos Rotors", "x": 42, "roles": null, "usd": 2.0, "prime": false}, {"n": "Moveo.AI", "x": 26, "roles": null, "usd": 2.6, "prime": false}, {"n": "Bitloops", "x": 16, "roles": null, "usd": 1.2, "prime": false}, {"n": "Keragon", "x": 20, "roles": 0, "usd": 7.5, "prime": false}, {"n": "TileDB (rebranded Tile.ai)", "x": 36, "roles": null, "usd": 34.0, "prime": false}, {"n": "Proxy Foods AI", "x": 2, "roles": null, "usd": 6.0, "prime": false}, {"n": "Intryc", "x": 21, "roles": 6, "usd": 3.1, "prime": true}, {"n": "SolidWatts", "x": 7, "roles": null, "usd": 1.8, "prime": false}, {"n": "WeatherXM", "x": 29, "roles": null, "usd": 7.7, "prime": false}, {"n": "Intelligencia", "x": 62, "roles": null, "usd": 12.0, "prime": false}, {"n": "ORamaVR", "x": 9, "roles": null, "usd": 4.5, "prime": false}, {"n": "Anodyne Nanotech", "x": 4, "roles": null, "usd": 12.6, "prime": false}, {"n": "Delian Alliance Industries", "x": 15, "roles": 3, "usd": 14.0, "prime": true}, {"n": "Hack The Box", "x": 45, "roles": 48, "usd": 55.0, "prime": true}, {"n": "Sotiria Technology", "x": 35, "roles": null, "usd": 0.1, "prime": false}, {"n": "Corsmed", "x": 22, "roles": 3, "usd": 3.5, "prime": true}, {"n": "Better Origin", "x": 54, "roles": 0, "usd": 16.0, "prime": false}, {"n": "Feel Therapeutics", "x": 53, "roles": null, "usd": 4.0, "prime": false}, {"n": "Achira AI", "x": 20, "roles": 7, "usd": 33.0, "prime": true}, {"n": "Causaly", "x": 27, "roles": 6, "usd": 60.0, "prime": true}, {"n": "Bota Systems", "x": 36, "roles": 2, "usd": 2.5, "prime": false}, {"n": "iCOMAT", "x": 28, "roles": null, "usd": 22.5, "prime": false}, {"n": "Pallma AI", "x": 8, "roles": null, "usd": 1.6, "prime": false}, {"n": "ClearDrop", "x": 4, "roles": null, "usd": 0.7, "prime": false}, {"n": "Terra Robotics", "x": 13, "roles": null, "usd": 2.1, "prime": false}, {"n": "PlugSecure", "x": 19, "roles": null, "usd": 0.78, "prime": false}, {"n": "Hoplon AI", "x": 9, "roles": null, "usd": 1.0, "prime": false}], "matrix_rules": {"window": 15, "roles": 3, "ticket": 20, "max_months": 72, "left_out": ["Progressive Robotics", "Robenso", "Anacalypsis Therapeutics", "Koios Care", "DeepSea Technologies", "Bioemtech", "Circuits Integrated Hellas", "Centaur Analytics", "Navenio", "Neurohive", "Pinepeak", "Mind The Hack", "Intelistyle", "OQ Technology"]}, "candidates": ["Intryc", "Delian Alliance Industries", "Corsmed"], "pipeline": [{"id": "GRDT-038", "company": "Corsmed", "category": "Health & Biotech", "sub_sector": "MRI simulation", "what": "MRI simulation software and training tools", "amount": "~USD 3.5M (EUR 3.3M)", "round_date": "2024-12", "stage": "Seed", "months": 22, "roles": 3, "momentum": 0.0, "funds": ["Big Pi Ventures"], "investors": "Luminar Ventures and Big Pi Ventures (co-leads)", "verification": "Round verified; Greek founders UNVERIFIED", "greek_link": "Stockholm; Greek link via Big Pi Ventures and Endeavor Greece Scale Up listing", "pipeline_stage": "Track", "recommendation": "Confirm Greek link, then engage", "next_action": "Source the Greek team link; check Series A plans", "owner": "Gerald", "risk_notes": "Greek link unconfirmed; founding year conflicts", "memo_market": "MRI technologist training and clinical education software.", "memo_edge": "Physics-based MRI simulator, which is hard to replicate.", "memo_risks": "Greek link unconfirmed; small education budgets. Mitigate by confirming team presence and checking revenue retention.", "memo_terms": "Not available. Ask Big Pi about its follow-on plans.", "updated": "2026-10-26", "suggested": false}, {"id": "GRDT-030", "company": "Delian Alliance Industries", "category": "Space & Defense", "sub_sector": "Autonomous defense systems", "what": "AI-enabled autonomous drones and surveillance towers for border and coastal defense", "amount": "USD 14M", "round_date": "2025-07", "stage": "Series A", "months": 15, "roles": 3, "momentum": 0.0, "funds": ["Marathon VC"], "investors": "Air Street Capital and Marathon Venture Capital (co-leads); 201 Ventures; HCVC; Entropy Industrial Capital; Nebular", "verification": "Verified", "greek_link": "Athens, Greece (formerly Lambda Automata)", "pipeline_stage": "Track", "recommendation": "Engage", "next_action": "Reach out via Marathon contacts; ask about Series B timing", "owner": "Gerald", "risk_notes": "Export controls; long defence procurement cycles", "memo_market": "Rising European defence budgets; Greek border and coastal surveillance gives a home-market first customer. No sourced TAM figure.", "memo_edge": "Builds both the autonomy software and the hardware (drones, surveillance towers); founder is a former Apple roboticist per tech.eu.", "memo_risks": "Lumpy government buying and export licensing. Mitigate by checking signed pilots and NATO or EU programme selections.", "memo_terms": "No valuation data. Diligence question: Series B size and whether Marathon reserves for a follow-on.", "updated": "2026-10-26", "suggested": false}, {"id": "GRDT-018", "company": "Intryc", "category": "AI & Machine Learning", "sub_sector": "Customer support AI", "what": "AI customer support quality and automation tool (YC S24)", "amount": "USD 3.1M", "round_date": "2025-01", "stage": "Seed", "months": 21, "roles": 6, "momentum": 0.0, "funds": [], "investors": "General Catalyst (lead); Sequoia scouts; Episode 1; 500 Emerging Europe", "verification": "Round verified; Greek link from profile pages only", "greek_link": "San Francisco-based; Greek co-founders Alex Marantelos (CEO) and Dimitrios Ilias (CTO) per profile pages", "pipeline_stage": "Track", "recommendation": "Engage", "next_action": "Confirm Greek team presence; track YC follow-on", "owner": "Gerald", "risk_notes": "Crowded category; US-based", "memo_market": "Quality assurance for customer-support teams that use AI.", "memo_edge": "Early; the edge is mostly speed of execution, the team and General Catalyst's backing.", "memo_risks": "Many competitors; based in San Francisco. Mitigate by confirming that Greek engineering is part of the team.", "memo_terms": "Not available. Watch whether the next round is US-led.", "updated": "2026-10-26", "suggested": false}, {"id": "GRDT-001", "company": "Perceptual Robotics", "category": "Robotics & Drones", "sub_sector": "Inspection drones", "what": "Autonomous drone inspection and analytics for wind turbines", "amount": "~GBP 4M (~USD 5.3M)", "round_date": "2026-07", "stage": "Growth round (label disputed)", "months": 3, "roles": 0, "momentum": 0.0, "funds": ["Metavallon VC"], "investors": "Investing for Purpose; Loggerhead Ventures; One Planet Capital (+Innovate UK support). Earlier: TSP Ventures, Brookstreet Equity, Deeptech Labs, Metavallon VC", "verification": "Verified (round label conflict)", "greek_link": "HQ Bristol UK; European base in Athens", "pipeline_stage": "Memo", "recommendation": "Update memo", "next_action": "Add the July 2026 round to the project 1 memo", "owner": "Gerald", "risk_notes": "Round label disputed", "memo_market": "", "memo_edge": "", "memo_risks": "", "memo_terms": "", "updated": "2026-10-26", "suggested": false}, {"id": "GRDT-043", "company": "Achira AI", "category": "Health & Biotech", "sub_sector": "AI drug development", "what": "AI plus physics-based simulation (geometric deep learning, quantum chemistry) for drug discovery", "amount": "USD 33M", "round_date": "2025-02 to 2025-04 (sources differ)", "stage": "Seed", "months": 20, "roles": 7, "momentum": 0.0, "funds": [], "investors": "Dimension (lead); Amplify Partners; Compound; NVentures (Nvidia)", "verification": "Round verified; HQ and Greek presence UNVERIFIED", "greek_link": "San Francisco per Built In (hybrid SF/New York); Greek co-founder Theofanis Karaletsos; described as having Greek roots by FastForward", "pipeline_stage": "Track", "recommendation": "Track only", "next_action": "Watch for a Greek R&D office", "owner": "Gerald", "risk_notes": "Round too large for Greek seed funds", "memo_market": "", "memo_edge": "", "memo_risks": "", "memo_terms": "", "updated": "2026-10-26", "suggested": false}, {"id": "GRDT-026", "company": "Anodyne Nanotech", "category": "Health & Biotech", "sub_sector": "Drug delivery", "what": "Microneedle patch for transdermal delivery of biologics", "amount": "USD 12.6M", "round_date": "2026-06-24", "stage": "Series A", "months": 4, "roles": null, "momentum": 0.0, "funds": ["Big Pi Ventures", "Velocity Partners", "Evercurious VC"], "investors": "Velocity Partners VC (lead); Evercurious VC; Relativity Healthcare Partners. Seed investors incl. Big Pi Ventures", "verification": "Round verified; Greek presence UNVERIFIED", "greek_link": "Boston; listed by Endeavor Greece, which profiles co-founder and chief business officer Konstantinos Tzortzakis; Greek VCs invested", "pipeline_stage": "Track", "recommendation": "Track", "next_action": "Watch for Phase I readout news", "owner": "Gerald", "risk_notes": "Clinical risk; Phase I just started", "memo_market": "", "memo_edge": "", "memo_risks": "", "memo_terms": "", "updated": "2026-10-26", "suggested": false}, {"id": "GRDT-017", "company": "Proxy Foods AI", "category": "AI & Machine Learning", "sub_sector": "AI for food R&D", "what": "AI platform for food and beverage recipe formulation and R&D", "amount": "USD 6M", "round_date": "2026-08", "stage": "Seed", "months": 2, "roles": null, "momentum": 0.0, "funds": [], "investors": "Ted Leonsis (lead); Robert G. Hisaoka; SWaN & Legend Venture Partners", "verification": "Round verified; Greek presence partly verified", "greek_link": "HQ Washington DC; labs/offices in Greece; Greek-educated CEO Panos Kostopoulos", "pipeline_stage": "Track", "recommendation": "Track", "next_action": "Confirm the Greek link", "owner": "Gerald", "risk_notes": "Borderline Greek link", "memo_market": "", "memo_edge": "", "memo_risks": "", "memo_terms": "", "updated": "2026-10-26", "suggested": false}, {"id": "GRDT-014", "company": "Satori Analytics", "category": "AI & Machine Learning", "sub_sector": "Data and AI services", "what": "Data and AI engineering firm (~125 engineers per Motor Oil announcement)", "amount": "UNVERIFIED (Marathon VC data cites USD 5.9M Series A)", "round_date": "2026", "stage": "Strategic minority investment", "months": null, "roles": 10, "momentum": 1.0, "funds": [], "investors": "Motor Oil Group (strategic minority stake)", "verification": "Existence verified; amount and round label UNVERIFIED", "greek_link": "Athens (London office)", "pipeline_stage": "Track", "recommendation": "Track", "next_action": "Find the Motor Oil investment amount", "owner": "Gerald", "risk_notes": "Services business, so the deep tech fit is weak", "memo_market": "", "memo_edge": "", "memo_risks": "", "memo_terms": "", "updated": "2026-10-26", "suggested": false}], "flags": [{"company": "Corsmed", "flag": "Round verified; Greek founders UNVERIFIED"}, {"company": "Intryc", "flag": "Round verified; Greek link from profile pages only"}, {"company": "Perceptual Robotics", "flag": "Verified (round label conflict)"}, {"company": "Achira AI", "flag": "Round verified; HQ and Greek presence UNVERIFIED"}, {"company": "Anodyne Nanotech", "flag": "Round verified; Greek presence UNVERIFIED"}, {"company": "Satori Analytics", "flag": "Existence verified; amount and round label UNVERIFIED"}], "gaps": {"thin_categories": [["Quantum & Advanced Computing", 1]], "funds_without_companies": ["egg / Eurobank"], "invisible": ["Progressive Robotics", "Robenso", "Altus LSA", "Aether Aeronautics", "Ucandrone", "SolidWatts", "Anodyne Nanotech", "Koios Care", "Sotiria Technology", "Pallma AI", "ClearDrop", "Purposeful", "Terra Robotics", "Pinepeak", "Hoplon AI", "Attisat", "Intelistyle", "Pleioflow", "QRBIT", "Trimsignal", "Solmeyea"], "large_rounds": ["Hack The Box", "Achira AI", "Causaly"]}, "archive": ["2026-10"]};
+const BASE = "../";
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const K = DATA.kpis, R = DATA.matrix_rules;
+const monthName = m => new Date(m + "-01T00:00:00Z").toLocaleString("en-GB", { month: "long", year: "numeric", timeZone: "UTC" });
+
+document.getElementById("nav-dash").href = BASE + "index.html";
+document.getElementById("nav-archive").innerHTML = "Monthly briefings: " +
+  DATA.archive.map(m => `<a href="${BASE}briefings/${esc(m)}.html">${esc(m)}</a>`).join(", ");
+document.getElementById("title").textContent = `Greek Deep Tech Briefing, ${monthName(DATA.month)}`;
+document.getElementById("sub").textContent =
+  `${K.tracked} companies from the Greek Deep Tech Market Map. Data as of ${DATA.generated_at.slice(0, 10)}. Round figures come from the market map dataset and its sources; weekly signals come from the deal-flow tracker.`;
+
+// 1. KPIs
+const fundLine = Object.entries(K.fund_counts).filter(([, n]) => n).map(([f, n]) => `${f.replace(" Ventures", "").replace(" Partners", "")} ${n}`).join(" · ");
+const kpi = (l, n, d) => `<div class="panel kpi"><div class="l">${l}</div><div class="n"${String(n).length > 12 ? ' style="font-size:21px;line-height:1.35"' : ""}>${n}</div><div class="d">${d}</div></div>`;
+document.getElementById("kpis").innerHTML =
+  kpi("Companies tracked", K.tracked, `${K.include} include · ${K.borderline} borderline`) +
+  kpi("Early-stage capital, last 6 months", `$${K.recent_usd}M`,
+      K.recent_rounds.map(r => `${esc(r.company)} ${r.usd}`).join(", ") +
+      (K.recent_other.length ? `; plus ${K.recent_other.map(r => `${esc(r.company)} (${esc(r.amount.split(" (")[0])})`).join(", ")}` : "")) +
+  kpi("Backed by a target fund", `${K.target_backed} of ${K.tracked}`, `${K.target_backed_current} still invested · ${fundLine}`) +
+  kpi("Top sector, recent capital", K.top_sector ? esc(K.top_sector.name) : "–",
+      K.top_sector ? `$${K.top_sector.usd}M: ${K.top_sector.companies.map(esc).join(", ")}` : "No dated USD rounds in the window") +
+  kpi("Conversion rate", "n/a", "No company has reached diligence yet; see the funnel");
+
+// 2. Commentary
+const fmtRound = p => `${esc(p.amount.split(" (")[0])}${p.round_date ? ", " + esc(p.round_date.slice(0, 7)) : ""}`;
+const top3 = DATA.pipeline.filter(p => DATA.candidates.includes(p.company)).slice(0, 3);
+document.getElementById("top3").innerHTML = top3.map((p, i) => `<div class="panel card">
+  <h3><span>${i + 1}. ${esc(p.company)}</span><span class="pill">${esc(p.pipeline_stage)}</span></h3>
+  <div class="meta">${esc(p.category)} · ${esc(p.sub_sector)}</div>
+  <div style="font-size:14px">${esc(p.what)}</div>
+  <ul><li>Last round: ${fmtRound(p)}${p.funds.length ? ` (Greek funds: ${p.funds.map(esc).join(", ")})` : ""}</li>
+  <li>${p.months} months since that round, ${p.roles} open roles</li>
+  ${p.next_action ? `<li>Next: ${esc(p.next_action)}</li>` : ""}</ul></div>`).join("") ||
+  `<div class="panel dim">No company is in the raising window with visible hiring this month.</div>`;
+document.getElementById("flags").innerHTML = DATA.flags.map(f => `<div class="flag"><b>${esc(f.company)}:</b> ${esc(f.flag)}</div>`).join("") +
+  (DATA.gaps.invisible.length ? `<div class="flag"><b>No visible signals:</b> ${DATA.gaps.invisible.map(esc).join(", ")}. No GitHub, job feed or recent funding news, so the tracker cannot see activity here.</div>` : "");
+const G = DATA.gaps;
+document.getElementById("gaps").innerHTML = `<ul style="margin:0;padding-left:18px">
+  ${G.thin_categories.length ? `<li>Thin categories: ${G.thin_categories.map(([k, n]) => `${esc(k)} (${n})`).join(", ")}.</li>` : ""}
+  ${G.funds_without_companies.length ? `<li>No watchlist company backed by ${G.funds_without_companies.map(esc).join(", ")}.</li>` : ""}
+  ${G.large_rounds.length ? `<li>In the raising window and hiring, but with rounds above $${R.ticket}M (sized for larger, mostly non-Greek leads): ${G.large_rounds.map(esc).join(", ")}.</li>` : ""}
+  <li>Pre-seed companies and SMEs are mostly invisible to the weekly signals. EU grant databases and GEMI filings would cover them.</li></ul>`;
+
+// 3a. Funnel
+const fmax = Math.max(...DATA.funnel.map(f => f[1]));
+document.getElementById("funnel").innerHTML = DATA.funnel.map(([l, n, why]) => `<div class="row"><div><b>${esc(l)}</b>${why ? `<div class="why">${esc(why)}</div>` : ""}</div>
+  <div class="bar${n ? "" : " zero"}" style="width:${n ? Math.max(6, n / fmax * 100) : 12}%">${n}</div></div>`).join("");
+
+// 3b. Matrix
+document.getElementById("mxnote").textContent =
+  `TAM and burn rate are not in the data, so the matrix uses two measured proxies: months since the last disclosed round (most seed and Series A companies raise again 15 to 24 months later) and open roles. Top right = likely raising and hiring now. Shown: venture-stage companies with a dated USD round in the last ${R.max_months} months.` +
+  (R.left_out.length ? ` Not shown (no USD amount or date): ${R.left_out.join(", ")}.` : "");
+const muted = css("--muted"), grid = css("--grid"), s1 = css("--s1"), ink = css("--ink");
+const pts = DATA.matrix.map(d => ({ x: d.x, y: (d.roles ?? 0) + 1, r: Math.max(4, Math.min(26, Math.sqrt(d.usd) * 3.4)), d }));
+const quad = { id: "quad", beforeDatasetsDraw(c) {
+  const { ctx, chartArea: a, scales: { x, y } } = c, x0 = x.getPixelForValue(R.window), y0 = y.getPixelForValue(R.roles + 1);
+  ctx.save(); ctx.fillStyle = css("--tint"); ctx.fillRect(x0, a.top, a.right - x0, y0 - a.top);
+  ctx.strokeStyle = muted; ctx.setLineDash([4, 4]); ctx.beginPath(); ctx.moveTo(x0, a.top); ctx.lineTo(x0, a.bottom); ctx.moveTo(a.left, y0); ctx.lineTo(a.right, y0); ctx.stroke();
+  ctx.setLineDash([]); ctx.fillStyle = css("--accent"); ctx.font = "600 12px system-ui"; ctx.fillText("Prime targets: raising window + hiring", x0 + 8, a.top + 16); ctx.restore(); } };
+const names = { id: "names", afterDatasetsDraw(c) {
+  // Label prime targets and companies with hiring data; nudge a label up or down if it would overlap one already placed.
+  const { ctx } = c; ctx.save(); ctx.font = "12px system-ui"; ctx.fillStyle = ink; const placed = [];
+  c.data.datasets.forEach((ds, i) => c.getDatasetMeta(i).data.forEach((el, j) => {
+    const p = ds.data[j]; if (!(p.d.prime || p.d.roles)) return;
+    const w = ctx.measureText(p.d.n).width, x = el.x + p.r + 4;
+    for (const dy of [0, -15, 15, -30, 30]) {
+      const y = el.y + 4 + dy, box = [x, y - 11, x + w, y + 3];
+      if (!placed.some(b => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1])) { placed.push(box); ctx.fillText(p.d.n, x, y); break; }
+    }
+  }));
+  ctx.restore(); } };
+new Chart(document.getElementById("mx"), { type: "bubble", plugins: [quad, names],
+  data: { datasets: [
+    { data: pts.filter(p => p.d.roles !== null), backgroundColor: s1 + "88", borderColor: s1, borderWidth: 1.5 },
+    { data: pts.filter(p => p.d.roles === null), backgroundColor: "transparent", borderColor: muted, borderWidth: 1.5 }] },
+  options: { responsive: true, maintainAspectRatio: false, layout: { padding: { right: 40, top: 8 } },
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => { const d = c.raw.d; return `${d.n}: ${d.x} months since round, ${d.roles === null ? "no hiring data" : d.roles + " open roles"}, last round $${d.usd}M`; } } } },
+    scales: { x: { min: 0, max: R.max_months, afterBuildTicks: a => { a.ticks = [0, 12, 24, 36, 48, 60, 72].filter(v => v <= R.max_months).map(v => ({ value: v })); }, title: { display: true, text: "Months since last disclosed round", color: muted }, ticks: { color: muted }, grid: { color: grid } },
+      y: { type: "logarithmic", min: 0.8, max: 80, title: { display: true, text: "Open roles listed (log scale)", color: muted }, grid: { color: grid },
+        ticks: { color: muted, callback: v => [1, 2, 3, 4, 6, 11, 21, 51].includes(v) ? String(v - 1) : "" } } } } });
+
+// 3c. Sector by stage
+const SS = DATA.sector_stage, cols = ["--s1", "--s2", "--s3", "--s4", "--s5"].map(css);
+document.getElementById("sslegend").innerHTML = SS.buckets.map((b, i) => `<span><i style="background:${cols[i]}"></i>${esc(b)} ${SS.counts[i].reduce((a, v) => a + v, 0)}</span>`).join("");
+new Chart(document.getElementById("ss"), { type: "bar",
+  data: { labels: SS.categories, datasets: SS.buckets.map((b, i) => ({ label: b, data: SS.counts[i], backgroundColor: cols[i], borderColor: css("--panel"), borderWidth: { right: 2 }, borderSkipped: false, barThickness: 22 })) },
+  options: { indexAxis: "y", responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } },
+    scales: { x: { stacked: true, title: { display: true, text: "Companies", color: muted }, ticks: { color: muted, precision: 0 }, grid: { color: grid } },
+      y: { stacked: true, ticks: { color: muted, autoSkip: false }, grid: { display: false } } } } });
+
+// 4. Pipeline table
+const COLS = [["company", "Company"], ["category", "Vertical"], ["amount", "Last round (sourced)"], ["pipeline_stage", "Stage"],
+  ["momentum", "Momentum"], ["risk_notes", "Risk flags"], ["recommendation", "Recommendation"], ["next_action", "Next action"], ["owner", "Owner"]];
+let sk = null, sd = 1;
+function renderPipe() {
+  const t = document.getElementById("pipe");
+  t.tHead.innerHTML = "<tr>" + COLS.map(([k, l]) => `<th data-k="${k}">${l}${sk === k ? (sd > 0 ? " ▲" : " ▼") : ""}</th>`).join("") + "</tr>";
+  t.tHead.querySelectorAll("th").forEach(th => th.onclick = () => { sd = sk === th.dataset.k ? -sd : 1; sk = th.dataset.k; renderPipe(); });
+  const rows = sk ? [...DATA.pipeline].sort((a, b) => (a[sk] > b[sk] ? 1 : a[sk] < b[sk] ? -1 : 0) * sd) : DATA.pipeline;
+  t.tBodies[0].innerHTML = rows.map(p => `<tr><td><b>${esc(p.company)}</b>${p.suggested ? ' <span class="pill sug">suggested</span>' : ""}</td>
+    <td class="dim">${esc(p.category)}</td><td>${fmtRound(p)}</td><td><span class="pill">${esc(p.pipeline_stage)}</span></td>
+    <td>${p.momentum ? +p.momentum.toFixed(2) : '<span class="dim">0</span>'}</td><td>${esc(p.risk_notes) || '<span class="dim">–</span>'}</td>
+    <td>${esc(p.recommendation)}</td><td>${esc(p.next_action)}</td><td>${esc(p.owner) || '<span class="dim">–</span>'}</td></tr>`).join("");
+}
+renderPipe();
+
+// 5. Memos
+const memoRows = DATA.pipeline.filter(p => p.memo_market || p.memo_edge || p.memo_risks || p.memo_terms);
+document.getElementById("memos").innerHTML = memoRows.map(p => `<div class="panel memo" style="margin-bottom:12px">
+  <h3>${esc(p.company)} <span class="dim" style="font-weight:400">· ${esc(p.sub_sector)}</span></h3>
+  <div class="dim" style="font-size:13px">Last round ${fmtRound(p)} · Investors: ${esc(p.investors)}</div>
+  <dl><dt>Market</dt><dd>${esc(p.memo_market) || "–"}</dd><dt>Moat / technical edge</dt><dd>${esc(p.memo_edge) || "–"}</dd>
+  <dt>Key risks and mitigations</dt><dd>${esc(p.memo_risks) || "–"}</dd><dt>Valuation and terms</dt><dd>${esc(p.memo_terms) || "–"}</dd>
+  <dt>Greek link</dt><dd>${esc(p.greek_link)}</dd><dt>Verification</dt><dd>${esc(p.verification)}</dd></dl>
+  <div class="dim" style="font-size:12.5px;margin-top:8px">Notes updated ${esc(p.updated)}</div></div>`).join("") ||
+  `<div class="panel dim">No memo notes yet. Add them in data/pipeline.csv.</div>`;
+
+document.getElementById("foot").innerHTML = `Generated ${esc(DATA.generated_at)} by the weekly run; this month's copy is replaced until the month ends. ` +
+  `Round amounts, dates and investors come from the market map dataset; check its source_link column before quoting a figure. Method and limits are in the README.`;
+</script>
+</body>
+</html>

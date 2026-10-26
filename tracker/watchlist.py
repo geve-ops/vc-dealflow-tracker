@@ -91,6 +91,9 @@ def build(source_csv):
             "map_status": r["map_status"],
             "website": clean_url(r["website"]),
         })
+        for col in ("sub_sector", "what_they_do", "hq_greek_link", "stage", "last_round_amount",
+                    "last_round_date", "investors", "verification_status"):
+            row[col] = r.get(col, "")
         # Values typed into the market map win over empty enrichment.
         for col in ("github_org", "linkedin_url"):
             if r.get(col) and not row[col]:

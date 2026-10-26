@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Greek Deep Tech Briefing</title>
+<style>
+:root {
+  --bg: #f7f7f5; --panel: #ffffff; --ink: #1c1d1f; --muted: #62656b; --line: #e3e3df; --chip: #eef0f2;
+  --accent: #1f5f8b; --tint: rgba(42,120,214,.07); --warn: #8a5a00; --warnbg: #fbf3e2;
+  --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100; --s5: #b4b2a9; --grid: #e1e0d9;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141517; --panel: #1c1d20; --ink: #ececec; --muted: #9a9ca1; --line: #2c2e32; --chip: #26282c;
+    --accent: #7db7e0; --tint: rgba(57,135,229,.12); --warn: #e3b25a; --warnbg: #2a2316;
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #6f6e69; --grid: #2c2c2a;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #141517; --panel: #1c1d20; --ink: #ececec; --muted: #9a9ca1; --line: #2c2e32; --chip: #26282c;
+  --accent: #7db7e0; --tint: rgba(57,135,229,.12); --warn: #e3b25a; --warnbg: #2a2316;
+  --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #6f6e69; --grid: #2c2c2a;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 28px 16px 64px; }
+nav { display: flex; gap: 14px; flex-wrap: wrap; font-size: 14px; margin-bottom: 18px; }
+h1 { font-size: 26px; margin: 0 0 4px; letter-spacing: -0.01em; }
+h2 { font-size: 18px; margin: 40px 0 6px; }
+h3 { font-size: 15px; margin: 0 0 6px; }
+.sub, .lede { color: var(--muted); margin: 0 0 14px; }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+.kpi .l { color: var(--muted); font-size: 13px; }
+.kpi .n { font-size: 30px; font-weight: 650; font-variant-numeric: tabular-nums; margin: 2px 0; }
+.kpi .d { color: var(--muted); font-size: 12.5px; }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; }
+.card h3 { display: flex; justify-content: space-between; gap: 8px; }
+.card .meta { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
+.card ul { margin: 6px 0 0; padding-left: 18px; font-size: 14px; }
+.flag { background: var(--warnbg); border-radius: 8px; padding: 8px 12px; margin: 6px 0; font-size: 14px; }
+.flag b { color: var(--warn); }
+.funnel .row { display: grid; grid-template-columns: 170px 1fr; gap: 12px; align-items: center; margin: 7px 0; font-size: 14px; }
+.funnel .bar { height: 30px; border-radius: 5px; background: var(--s1); min-width: 4px; display: flex; align-items: center; padding: 0 10px; color: #fff; font-weight: 600; font-variant-numeric: tabular-nums; }
+.funnel .bar.zero { background: transparent; border: 1px dashed var(--muted); color: var(--muted); }
+.funnel .why { color: var(--muted); font-size: 12.5px; }
+.chart { position: relative; width: 100%; }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12.5px; color: var(--muted); margin: 0 0 8px; }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+.tablewrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; white-space: nowrap; cursor: pointer; user-select: none; }
+.pill { display: inline-block; font-size: 12px; padding: 1px 8px; border-radius: 10px; background: var(--chip); white-space: nowrap; }
+.pill.sug { background: var(--tint); color: var(--accent); }
+.dim { color: var(--muted); }
+.memo dl { display: grid; grid-template-columns: 150px 1fr; gap: 6px 14px; margin: 8px 0 0; font-size: 14px; }
+.memo dt { color: var(--muted); }
+.memo dd { margin: 0; }
+footer { margin-top: 44px; color: var(--muted); font-size: 13px; }
+@media (max-width: 640px) {
+  .funnel .row { grid-template-columns: 1fr; gap: 3px; }
+  .memo dl { grid-template-columns: 1fr; gap: 2px; }
+  .memo dd { margin-bottom: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><a id="nav-dash" href="index.html">Weekly dashboard</a><span class="dim">·</span><span id="nav-archive"></span></nav>
+  <h1 id="title">Greek Deep Tech Briefing</h1>
+  <p class="sub" id="sub"></p>
+
+  <h2>1. Key numbers</h2>
+  <div class="kpis" id="kpis"></div>
+
+  <h2>2. Analyst commentary</h2>
+  <p class="lede">Built from the data on this page. The companies named are reasons to start a conversation, not conclusions: conviction needs diligence first.</p>
+  <h3>Top 3 to engage</h3>
+  <div class="grid2" id="top3"></div>
+  <h3 style="margin-top:18px">Red flags in the data</h3>
+  <div id="flags"></div>
+  <h3 style="margin-top:18px">Pipeline gaps</h3>
+  <div class="panel" id="gaps"></div>
+
+  <h2>3. Charts</h2>
+  <h3>Stage funnel</h3>
+  <div class="panel funnel" id="funnel"></div>
+  <h3 style="margin-top:22px">Raising window vs hiring</h3>
+  <p class="lede" id="mxnote"></p>
+  <div class="panel">
+    <div class="legend"><span><i style="background:var(--s1);border-radius:50%"></i>Hiring data available</span><span><i style="border:1.5px solid var(--muted);border-radius:50%"></i>No hiring data, plotted at 0</span><span>Bubble size = last round, USD M</span></div>
+    <div class="chart" style="height:460px"><canvas id="mx" role="img" aria-label="Bubble chart of months since last round against open roles"></canvas></div>
+  </div>
+  <h3 style="margin-top:22px">Sector by stage</h3>
+  <div class="panel">
+    <div class="legend" id="sslegend"></div>
+    <div class="chart" style="height:400px"><canvas id="ss" role="img" aria-label="Stacked bar chart of companies per sector by stage"></canvas></div>
+  </div>
+
+  <h2>4. Pipeline</h2>
+  <p class="lede">Rows come from <code>data/pipeline.csv</code>, kept by hand. Rows marked "suggested" come from the data and are not yet in that file. No company has a public valuation, so that column is left out.</p>
+  <div class="tablewrap"><table id="pipe"><thead></thead><tbody></tbody></table></div>
+
+  <h2>5. Memos</h2>
+  <div id="memos"></div>
+
+  <footer id="foot"></footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const DATA = /*__DATA__*/null;
+const BASE = "";
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const K = DATA.kpis, R = DATA.matrix_rules;
+const monthName = m => new Date(m + "-01T00:00:00Z").toLocaleString("en-GB", { month: "long", year: "numeric", timeZone: "UTC" });
+
+document.getElementById("nav-dash").href = BASE + "index.html";
+document.getElementById("nav-archive").innerHTML = "Monthly briefings: " +
+  DATA.archive.map(m => `<a href="${BASE}briefings/${esc(m)}.html">${esc(m)}</a>`).join(", ");
+document.getElementById("title").textContent = `Greek Deep Tech Briefing, ${monthName(DATA.month)}`;
+document.getElementById("sub").textContent =
+  `${K.tracked} companies from the Greek Deep Tech Market Map. Data as of ${DATA.generated_at.slice(0, 10)}. Round figures come from the market map dataset and its sources; weekly signals come from the deal-flow tracker.`;
+
+// 1. KPIs
+const fundLine = Object.entries(K.fund_counts).filter(([, n]) => n).map(([f, n]) => `${f.replace(" Ventures", "").replace(" Partners", "")} ${n}`).join(" · ");
+const kpi = (l, n, d) => `<div class="panel kpi"><div class="l">${l}</div><div class="n"${String(n).length > 12 ? ' style="font-size:21px;line-height:1.35"' : ""}>${n}</div><div class="d">${d}</div></div>`;
+document.getElementById("kpis").innerHTML =
+  kpi("Companies tracked", K.tracked, `${K.include} include · ${K.borderline} borderline`) +
+  kpi("Early-stage capital, last 6 months", `$${K.recent_usd}M`,
+      K.recent_rounds.map(r => `${esc(r.company)} ${r.usd}`).join(", ") +
+      (K.recent_other.length ? `; plus ${K.recent_other.map(r => `${esc(r.company)} (${esc(r.amount.split(" (")[0])})`).join(", ")}` : "")) +
+  kpi("Backed by a target fund", `${K.target_backed} of ${K.tracked}`, `${K.target_backed_current} still invested · ${fundLine}`) +
+  kpi("Top sector, recent capital", K.top_sector ? esc(K.top_sector.name) : "–",
+      K.top_sector ? `$${K.top_sector.usd}M: ${K.top_sector.companies.map(esc).join(", ")}` : "No dated USD rounds in the window") +
+  kpi("Conversion rate", "n/a", "No company has reached diligence yet; see the funnel");
+
+// 2. Commentary
+const fmtRound = p => `${esc(p.amount.split(" (")[0])}${p.round_date ? ", " + esc(p.round_date.slice(0, 7)) : ""}`;
+const top3 = DATA.pipeline.filter(p => DATA.candidates.includes(p.company)).slice(0, 3);
+document.getElementById("top3").innerHTML = top3.map((p, i) => `<div class="panel card">
+  <h3><span>${i + 1}. ${esc(p.company)}</span><span class="pill">${esc(p.pipeline_stage)}</span></h3>
+  <div class="meta">${esc(p.category)} · ${esc(p.sub_sector)}</div>
+  <div style="font-size:14px">${esc(p.what)}</div>
+  <ul><li>Last round: ${fmtRound(p)}${p.funds.length ? ` (Greek funds: ${p.funds.map(esc).join(", ")})` : ""}</li>
+  <li>${p.months} months since that round, ${p.roles} open roles</li>
+  ${p.next_action ? `<li>Next: ${esc(p.next_action)}</li>` : ""}</ul></div>`).join("") ||
+  `<div class="panel dim">No company is in the raising window with visible hiring this month.</div>`;
+document.getElementById("flags").innerHTML = DATA.flags.map(f => `<div class="flag"><b>${esc(f.company)}:</b> ${esc(f.flag)}</div>`).join("") +
+  (DATA.gaps.invisible.length ? `<div class="flag"><b>No visible signals:</b> ${DATA.gaps.invisible.map(esc).join(", ")}. No GitHub, job feed or recent funding news, so the tracker cannot see activity here.</div>` : "");
+const G = DATA.gaps;
+document.getElementById("gaps").innerHTML = `<ul style="margin:0;padding-left:18px">
+  ${G.thin_categories.length ? `<li>Thin categories: ${G.thin_categories.map(([k, n]) => `${esc(k)} (${n})`).join(", ")}.</li>` : ""}
+  ${G.funds_without_companies.length ? `<li>No watchlist company backed by ${G.funds_without_companies.map(esc).join(", ")}.</li>` : ""}
+  ${G.large_rounds.length ? `<li>In the raising window and hiring, but with rounds above $${R.ticket}M (sized for larger, mostly non-Greek leads): ${G.large_rounds.map(esc).join(", ")}.</li>` : ""}
+  <li>Pre-seed companies and SMEs are mostly invisible to the weekly signals. EU grant databases and GEMI filings would cover them.</li></ul>`;
+
+// 3a. Funnel
+const fmax = Math.max(...DATA.funnel.map(f => f[1]));
+document.getElementById("funnel").innerHTML = DATA.funnel.map(([l, n, why]) => `<div class="row"><div><b>${esc(l)}</b>${why ? `<div class="why">${esc(why)}</div>` : ""}</div>
+  <div class="bar${n ? "" : " zero"}" style="width:${n ? Math.max(6, n / fmax * 100) : 12}%">${n}</div></div>`).join("");
+
+// 3b. Matrix
+document.getElementById("mxnote").textContent =
+  `TAM and burn rate are not in the data, so the matrix uses two measured proxies: months since the last disclosed round (most seed and Series A companies raise again 15 to 24 months later) and open roles. Top right = likely raising and hiring now. Shown: venture-stage companies with a dated USD round in the last ${R.max_months} months.` +
+  (R.left_out.length ? ` Not shown (no USD amount or date): ${R.left_out.join(", ")}.` : "");
+const muted = css("--muted"), grid = css("--grid"), s1 = css("--s1"), ink = css("--ink");
+const pts = DATA.matrix.map(d => ({ x: d.x, y: (d.roles ?? 0) + 1, r: Math.max(4, Math.min(26, Math.sqrt(d.usd) * 3.4)), d }));
+const quad = { id: "quad", beforeDatasetsDraw(c) {
+  const { ctx, chartArea: a, scales: { x, y } } = c, x0 = x.getPixelForValue(R.window), y0 = y.getPixelForValue(R.roles + 1);
+  ctx.save(); ctx.fillStyle = css("--tint"); ctx.fillRect(x0, a.top, a.right - x0, y0 - a.top);
+  ctx.strokeStyle = muted; ctx.setLineDash([4, 4]); ctx.beginPath(); ctx.moveTo(x0, a.top); ctx.lineTo(x0, a.bottom); ctx.moveTo(a.left, y0); ctx.lineTo(a.right, y0); ctx.stroke();
+  ctx.setLineDash([]); ctx.fillStyle = css("--accent"); ctx.font = "600 12px system-ui"; ctx.fillText("Prime targets: raising window + hiring", x0 + 8, a.top + 16); ctx.restore(); } };
+const names = { id: "names", afterDatasetsDraw(c) {
+  // Label prime targets and companies with hiring data; nudge a label up or down if it would overlap one already placed.
+  const { ctx } = c; ctx.save(); ctx.font = "12px system-ui"; ctx.fillStyle = ink; const placed = [];
+  c.data.datasets.forEach((ds, i) => c.getDatasetMeta(i).data.forEach((el, j) => {
+    const p = ds.data[j]; if (!(p.d.prime || p.d.roles)) return;
+    const w = ctx.measureText(p.d.n).width, x = el.x + p.r + 4;
+    for (const dy of [0, -15, 15, -30, 30]) {
+      const y = el.y + 4 + dy, box = [x, y - 11, x + w, y + 3];
+      if (!placed.some(b => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1])) { placed.push(box); ctx.fillText(p.d.n, x, y); break; }
+    }
+  }));
+  ctx.restore(); } };
+new Chart(document.getElementById("mx"), { type: "bubble", plugins: [quad, names],
+  data: { datasets: [
+    { data: pts.filter(p => p.d.roles !== null), backgroundColor: s1 + "88", borderColor: s1, borderWidth: 1.5 },
+    { data: pts.filter(p => p.d.roles === null), backgroundColor: "transparent", borderColor: muted, borderWidth: 1.5 }] },
+  options: { responsive: true, maintainAspectRatio: false, layout: { padding: { right: 40, top: 8 } },
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => { const d = c.raw.d; return `${d.n}: ${d.x} months since round, ${d.roles === null ? "no hiring data" : d.roles + " open roles"}, last round $${d.usd}M`; } } } },
+    scales: { x: { min: 0, max: R.max_months, afterBuildTicks: a => { a.ticks = [0, 12, 24, 36, 48, 60, 72].filter(v => v <= R.max_months).map(v => ({ value: v })); }, title: { display: true, text: "Months since last disclosed round", color: muted }, ticks: { color: muted }, grid: { color: grid } },
+      y: { type: "logarithmic", min: 0.8, max: 80, title: { display: true, text: "Open roles listed (log scale)", color: muted }, grid: { color: grid },
+        ticks: { color: muted, callback: v => [1, 2, 3, 4, 6, 11, 21, 51].includes(v) ? String(v - 1) : "" } } } } });
+
+// 3c. Sector by stage
+const SS = DATA.sector_stage, cols = ["--s1", "--s2", "--s3", "--s4", "--s5"].map(css);
+document.getElementById("sslegend").innerHTML = SS.buckets.map((b, i) => `<span><i style="background:${cols[i]}"></i>${esc(b)} ${SS.counts[i].reduce((a, v) => a + v, 0)}</span>`).join("");
+new Chart(document.getElementById("ss"), { type: "bar",
+  data: { labels: SS.categories, datasets: SS.buckets.map((b, i) => ({ label: b, data: SS.counts[i], backgroundColor: cols[i], borderColor: css("--panel"), borderWidth: { right: 2 }, borderSkipped: false, barThickness: 22 })) },
+  options: { indexAxis: "y", responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } },
+    scales: { x: { stacked: true, title: { display: true, text: "Companies", color: muted }, ticks: { color: muted, precision: 0 }, grid: { color: grid } },
+      y: { stacked: true, ticks: { color: muted, autoSkip: false }, grid: { display: false } } } } });
+
+// 4. Pipeline table
+const COLS = [["company", "Company"], ["category", "Vertical"], ["amount", "Last round (sourced)"], ["pipeline_stage", "Stage"],
+  ["momentum", "Momentum"], ["risk_notes", "Risk flags"], ["recommendation", "Recommendation"], ["next_action", "Next action"], ["owner", "Owner"]];
+let sk = null, sd = 1;
+function renderPipe() {
+  const t = document.getElementById("pipe");
+  t.tHead.innerHTML = "<tr>" + COLS.map(([k, l]) => `<th data-k="${k}">${l}${sk === k ? (sd > 0 ? " ▲" : " ▼") : ""}</th>`).join("") + "</tr>";
+  t.tHead.querySelectorAll("th").forEach(th => th.onclick = () => { sd = sk === th.dataset.k ? -sd : 1; sk = th.dataset.k; renderPipe(); });
+  const rows = sk ? [...DATA.pipeline].sort((a, b) => (a[sk] > b[sk] ? 1 : a[sk] < b[sk] ? -1 : 0) * sd) : DATA.pipeline;
+  t.tBodies[0].innerHTML = rows.map(p => `<tr><td><b>${esc(p.company)}</b>${p.suggested ? ' <span class="pill sug">suggested</span>' : ""}</td>
+    <td class="dim">${esc(p.category)}</td><td>${fmtRound(p)}</td><td><span class="pill">${esc(p.pipeline_stage)}</span></td>
+    <td>${p.momentum ? +p.momentum.toFixed(2) : '<span class="dim">0</span>'}</td><td>${esc(p.risk_notes) || '<span class="dim">–</span>'}</td>
+    <td>${esc(p.recommendation)}</td><td>${esc(p.next_action)}</td><td>${esc(p.owner) || '<span class="dim">–</span>'}</td></tr>`).join("");
+}
+renderPipe();
+
+// 5. Memos
+const memoRows = DATA.pipeline.filter(p => p.memo_market || p.memo_edge || p.memo_risks || p.memo_terms);
+document.getElementById("memos").innerHTML = memoRows.map(p => `<div class="panel memo" style="margin-bottom:12px">
+  <h3>${esc(p.company)} <span class="dim" style="font-weight:400">· ${esc(p.sub_sector)}</span></h3>
+  <div class="dim" style="font-size:13px">Last round ${fmtRound(p)} · Investors: ${esc(p.investors)}</div>
+  <dl><dt>Market</dt><dd>${esc(p.memo_market) || "–"}</dd><dt>Moat / technical edge</dt><dd>${esc(p.memo_edge) || "–"}</dd>
+  <dt>Key risks and mitigations</dt><dd>${esc(p.memo_risks) || "–"}</dd><dt>Valuation and terms</dt><dd>${esc(p.memo_terms) || "–"}</dd>
+  <dt>Greek link</dt><dd>${esc(p.greek_link)}</dd><dt>Verification</dt><dd>${esc(p.verification)}</dd></dl>
+  <div class="dim" style="font-size:12.5px;margin-top:8px">Notes updated ${esc(p.updated)}</div></div>`).join("") ||
+  `<div class="panel dim">No memo notes yet. Add them in data/pipeline.csv.</div>`;
+
+document.getElementById("foot").innerHTML = `Generated ${esc(DATA.generated_at)} by the weekly run; this month's copy is replaced until the month ends. ` +
+  `Round amounts, dates and investors come from the market map dataset; check its source_link column before quoting a figure. Method and limits are in the README.`;
+</script>
+</body>
+</html>

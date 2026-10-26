@@ -9,7 +9,7 @@ Outputs:
 import json
 from datetime import datetime, timedelta
 
-from . import score
+from . import briefing, score
 from .collect import snapshot_paths
 from .common import DIGESTS, DOCS, read_watchlist
 from .watchlist import TARGET_FUNDS
@@ -238,5 +238,6 @@ def build():
     write_markdown(changes, statuses, cur, prev, path, movers, weeks)
     history = sorted((p.stem for p in DIGESTS.glob("*.md")), reverse=True)
     write_dashboard(changes, statuses, cur, prev, history, movers, weeks)
-    print(f"digest: {path} ({len(changes)} changes); dashboard: {DOCS / 'index.html'}")
+    page = briefing.write(briefing.build(rows, statuses, movers, cur["generated_at"]))
+    print(f"digest: {path} ({len(changes)} changes); dashboard: {DOCS / 'index.html'}; briefing: {page}")
     return path

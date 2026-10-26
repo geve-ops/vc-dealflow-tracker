@@ -32,6 +32,9 @@ WATCHLIST_FIELDS = [
     "careers_url", "jobs_source", "jobs_source_ref",
     "news_terms",
     "greek_funds", "greek_fund_status", "greek_funds_source",
+    # Copied from the market map dataset for the monthly briefing.
+    "sub_sector", "what_they_do", "hq_greek_link", "stage", "last_round_amount", "last_round_date",
+    "investors", "verification_status",
 ]
 
 

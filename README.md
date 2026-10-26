@@ -11,6 +11,8 @@ Author: Gerald Velas. First digest: 26 October 2026.
 | Dashboard (live) | [geve-ops.github.io/vc-dealflow-tracker](https://geve-ops.github.io/vc-dealflow-tracker/) ([source](docs/index.html)) |
 | Raw weekly snapshots | [data/snapshots/](data/snapshots/) |
 | Momentum score history | [data/scores.csv](data/scores.csv) |
+| Monthly briefing (live) | [geve-ops.github.io/vc-dealflow-tracker/briefing.html](https://geve-ops.github.io/vc-dealflow-tracker/briefing.html), archive in [docs/briefings/](docs/briefings/) |
+| Analyst pipeline (kept by hand) | [data/pipeline.csv](data/pipeline.csv) |
 
 ## How it works
 
@@ -43,6 +45,38 @@ Open `docs/index.html` in a browser to see the dashboard locally. The live versi
 GitHub API calls use `GITHUB_TOKEN` if it is set, or the token of a logged-in `gh` CLI. Without a token the API allows 60 requests an hour, which is not enough for a full run.
 
 **Schedule.** [.github/workflows/weekly.yml](.github/workflows/weekly.yml) runs `python run.py weekly` every Monday at 06:00 UTC and commits the new snapshot, digest and dashboard. You can also start it by hand from the Actions tab.
+
+## Monthly briefing
+
+`docs/briefing.html` is an executive view of the watchlist. Every weekly run regenerates it. Each run also saves a copy in `docs/briefings/YYYY-MM.html`, which later runs in the same month replace, so the archive keeps one page per month.
+
+It has five sections:
+1. **Key numbers:** companies tracked; early-stage capital disclosed in the last 6 months; how many companies are backed by a target fund; the top sector by recent capital.
+2. **Analyst commentary:** the top 3 companies to engage, red flags in the data, and pipeline gaps.
+3. **Charts:** the stage funnel, the raising-window vs hiring matrix, and sector by stage.
+4. **Pipeline table:** the companies from `data/pipeline.csv`, plus companies the data suggests that are not yet in that file.
+5. **Memos:** for pipeline rows whose memo columns are filled in.
+
+**Computed from the data:**
+- Round amounts, dates, stages and investors, copied from the market map dataset into the watchlist.
+- Open roles, momentum and Greek fund tags, from the weekly tracker.
+- **Red flags:** taken from the dataset's `verification_status`, for example `UNVERIFIED`, conflicting sources, or a Greek link known only from profile pages.
+- **Companies with no visible activity:** companies with no GitHub organisation, no job source and no recent funding news.
+
+**Written by hand:** `data/pipeline.csv` holds the analyst layer: pipeline stage (Watch, Track, Engage, Diligence, Term sheet, Memo), recommendation, next action, owner, risk notes and memo notes. Edit it, and the next run picks it up.
+
+**Raising-window matrix:**
+- **Horizontal axis:** months since the last disclosed round. Most seed and Series A companies raise again 15 to 24 months later.
+- **Vertical axis:** open roles.
+- **Shown:** venture-stage companies with a dated USD round in the last 72 months. Companies whose amount is only in EUR or GBP, or is undisclosed, are listed under the chart instead of plotted.
+- **Prime targets:** at least 15 months since the round and at least 3 open roles.
+- **Engage candidates:** prime targets whose last round was $20M or less, the range where Greek funds lead or join.
+
+**What the briefing does not show:**
+- **Valuations:** no company has a public one.
+- **TAM and burn rate:** not in the data.
+- **Conversion rates:** nothing has reached diligence yet.
+- **Recent capital:** only rounds with a USD figure in the dataset are summed. Rounds given only in EUR or GBP are listed by name, not converted.
 
 ## Greek fund tags
 
@@ -123,6 +157,7 @@ The weights are a judgement call, not a model fitted to past rounds. Points by s
 | `github_org`, `github_source` | Either linked from the company website, or a GitHub organisation whose profile lists the company's website domain. Name matches alone are not accepted. |
 | `careers_url`, `jobs_source`, `jobs_source_ref` | The job board and its account slug, `careers_page` with its URL, or `none` with a reason (for example, a careers page that belongs to an acquiring parent company). |
 | `news_terms` | Exact phrases a headline must contain, separated by ` \| `. |
+| `sub_sector`, `what_they_do`, `hq_greek_link`, `stage`, `last_round_amount`, `last_round_date`, `investors`, `verification_status` | Copied from the market map dataset by `build-watchlist`, for the briefing. Rebuild the watchlist after the dataset changes. |
 | `greek_funds`, `greek_fund_status`, `greek_funds_source` | Greek funds in the cap table, separated by ` \| `, and whether the fund is still invested. Rebuilt from the market map each time `build-watchlist` runs. |
 
 Values set by hand are not overwritten by `enrich` unless you pass `--force`.
@@ -139,5 +174,7 @@ tracker/signals_jobs.py     job postings signal
 tracker/collect.py          run all signals, save a snapshot
 tracker/score.py            weekly score and momentum ranking
 tracker/digest.py           compare snapshots, write the digest and dashboard
+tracker/briefing.py         monthly briefing from the watchlist, signals and pipeline file
+tracker/briefing_template.html
 tracker/dashboard_template.html
 ```
