@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-26T14:17:48Z",
- "window_start": "2026-10-19T14:17:48Z",
+ "generated_at": "2026-10-26T14:35:11Z",
+ "window_start": "2026-10-19T14:35:11Z",
  "previous_snapshot": null,
  "signals": [
   "github",
@@ -74,7 +74,7 @@
    "github": {
     "org": "acumino-ai",
     "url": "https://github.com/acumino-ai",
-    "since": "2026-10-19T14:17:48Z",
+    "since": "2026-10-19T14:35:11Z",
     "repos": [
      {
       "name": "mujoco_ros2_control",
@@ -591,7 +591,7 @@
    "github": {
     "org": "moveo-ai",
     "url": "https://github.com/moveo-ai",
-    "since": "2026-10-19T14:17:48Z",
+    "since": "2026-10-19T14:35:11Z",
     "repos": [
      {
       "name": "agent-skills",
@@ -669,7 +669,7 @@
    "github": {
     "org": "bitloops",
     "url": "https://github.com/bitloops",
-    "since": "2026-10-19T14:17:48Z",
+    "since": "2026-10-19T14:35:11Z",
     "repos": [
      {
       "name": "bitloops-language",
@@ -1009,7 +1009,7 @@
    "github": {
     "org": "Satori-Analytics",
     "url": "https://github.com/Satori-Analytics",
-    "since": "2026-10-19T14:17:48Z",
+    "since": "2026-10-19T14:35:11Z",
     "repos": [
      {
       "name": "pyenv-win",
@@ -1477,7 +1477,7 @@
    "github": {
     "org": "KeragonHQ",
     "url": "https://github.com/KeragonHQ",
-    "since": "2026-10-19T14:17:48Z",
+    "since": "2026-10-19T14:35:11Z",
     "repos": [
      {
       "name": "tap-stripe",
@@ -1523,7 +1523,7 @@
    "github": {
     "org": "TileDB-Inc",
     "url": "https://github.com/TileDB-Inc",
-    "since": "2026-10-19T14:17:48Z",
+    "since": "2026-10-19T14:35:11Z",
     "repos": [
      {
       "name": "tiledb-py-feedstock",
@@ -2691,7 +2691,7 @@
    "github": {
     "org": "Intryc",
     "url": "https://github.com/Intryc",
-    "since": "2026-10-19T14:17:48Z",
+    "since": "2026-10-19T14:35:11Z",
     "repos": [
      {
       "name": "intryc-delivery-cli",
@@ -2770,7 +2770,7 @@
    "github": {
     "org": "axelera-ai-hub",
     "url": "https://github.com/axelera-ai-hub",
-    "since": "2026-10-19T14:17:48Z",
+    "since": "2026-10-19T14:35:11Z",
     "repos": [
      {
       "name": "wingman",
@@ -2982,16 +2982,6 @@
       "kind": "press"
      },
      {
-      "id": "CBMitgFBVV95cUxPOXB0TlBDcWpMYXhlWTAxemJZTmxoQWZybU4yb3VLVjdheS11c1Q1MEdUdHQyeVppWlZNRVlKUEE2Yi03ZmZBRi1iUjBUdEM2S1FNaFBzQ0xmM0NQNld0cDJYaURkT0hpQ3NmQmgzUUZZQ1pyWlBvTUtCTFF4UklHMFl3RkNfNFA4cml0OWtTRXJiczBTRlhtcGplYW14dXVGbGYzdUNMMGtHQnR4OXktZ3ppWi1ZUQ",
-      "title": "Axelera AI announces “new product naming framework” for its Edge AI chips",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPOXB0TlBDcWpMYXhlWTAxemJZTmxoQWZybU4yb3VLVjdheS11c1Q1MEdUdHQyeVppWlZNRVlKUEE2Yi03ZmZBRi1iUjBUdEM2S1FNaFBzQ0xmM0NQNld0cDJYaURkT0hpQ3NmQmgzUUZZQ1pyWlBvTUtCTFF4UklHMFl3RkNfNFA4cml0OWtTRXJiczBTRlhtcGplYW14dXVGbGYzdUNMMGtHQnR4OXktZ3ppWi1ZUQ?oc=5",
-      "source": "Data Center Dynamics",
-      "source_url": "https://www.datacenterdynamics.com",
-      "published": "2026-10-14T07:00:00Z",
-      "lang": "en",
-      "kind": "press"
-     },
-     {
       "id": "CBMilwFBVV95cUxPM080RTVVV1FCbloyYW10VEdTNFZSOGFtUGFvTHV0eG56RXhRMHNJZFJIRGMxZmw0am5HRDJ1M2F1VjNPdGNPYWxDdmJYOUdQZVdDN1BkQmh4Q1BGRkJYczlLdkhySXBISzZHaXE5VUtLNDJHQy1tUDZTbzBuV2gtVnFmNDRpbzBZSTJSYVpJeDJONzBhbGdz",
       "title": "Ελληνικές startups: $435 εκατ., τα μισά από την Axelera AI",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPM080RTVVV1FCbloyYW10VEdTNFZSOGFtUGFvTHV0eG56RXhRMHNJZFJIRGMxZmw0am5HRDJ1M2F1VjNPdGNPYWxDdmJYOUdQZVdDN1BkQmh4Q1BGRkJYczlLdkhySXBISzZHaXE5VUtLNDJHQy1tUDZTbzBuV2gtVnFmNDRpbzBZSTJSYVpJeDJONzBhbGdz?oc=5",
@@ -3022,21 +3012,21 @@
       "kind": "funding"
      },
      {
-      "id": "CBMidkFVX3lxTE9pRlU5dVgxT3E1aS02Yjlsbm9qNnBpZkxJODUtM2dIdkd6Y2FzUUlwQktqS1Y0QVdBd0g4RFBsOXdVZERsUmkzV0w2ZmJIcnU4N0ZXbmpsY3BQMkctOURuRS1DUmxvbzdxYTM1dkZaQlZOXzZ6RGc",
-      "title": "Dutch Axelera AI Begins Shipping 'Europa' AI Inference Chip, Validated on Dell and Supermicro Systems",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9pRlU5dVgxT3E1aS02Yjlsbm9qNnBpZkxJODUtM2dIdkd6Y2FzUUlwQktqS1Y0QVdBd0g4RFBsOXdVZERsUmkzV0w2ZmJIcnU4N0ZXbmpsY3BQMkctOURuRS1DUmxvbzdxYTM1dkZaQlZOXzZ6RGc?oc=5",
-      "source": "BigGo Finance",
-      "source_url": "https://finance.biggo.com",
-      "published": "2026-09-16T07:00:00Z",
-      "lang": "en",
-      "kind": "press"
-     },
-     {
       "id": "CBMiywFBVV95cUxPd29lSW9SMW5zN2dCS2xFeFZUdkNJX0lDWUQ1Wlo0Rm50T21JTTFXcGxfV2NlX19YU0FCYU56RkJiZnhFOTN4NUxPOFRZeWpXcC12OFBqbG1ZaTFxeHZaazlWM1c4TVlRVzFodGZiWHV1QVZsNDFNZ2g5cHdtSXN3ekZJQndSNkE5VUtMZVRoUFhyWVZDNmhRcUV5UjJRZVRTd1lNMXpHZVpSQTNXZGU2eTEwdnNJWTlteDI2NjNINURHZ28tVTRSdEh5TQ",
       "title": "Axelera AI launches Europa chip, makes hardware available in Dell and Supermicro servers",
       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPd29lSW9SMW5zN2dCS2xFeFZUdkNJX0lDWUQ1Wlo0Rm50T21JTTFXcGxfV2NlX19YU0FCYU56RkJiZnhFOTN4NUxPOFRZeWpXcC12OFBqbG1ZaTFxeHZaazlWM1c4TVlRVzFodGZiWHV1QVZsNDFNZ2g5cHdtSXN3ekZJQndSNkE5VUtMZVRoUFhyWVZDNmhRcUV5UjJRZVRTd1lNMXpHZVpSQTNXZGU2eTEwdnNJWTlteDI2NjNINURHZ28tVTRSdEh5TQ?oc=5",
       "source": "Data Center Dynamics",
       "source_url": "https://www.datacenterdynamics.com",
+      "published": "2026-09-16T07:00:00Z",
+      "lang": "en",
+      "kind": "press"
+     },
+     {
+      "id": "CBMidkFVX3lxTE9pRlU5dVgxT3E1aS02Yjlsbm9qNnBpZkxJODUtM2dIdkd6Y2FzUUlwQktqS1Y0QVdBd0g4RFBsOXdVZERsUmkzV0w2ZmJIcnU4N0ZXbmpsY3BQMkctOURuRS1DUmxvbzdxYTM1dkZaQlZOXzZ6RGc",
+      "title": "Dutch Axelera AI Begins Shipping 'Europa' AI Inference Chip, Validated on Dell and Supermicro Systems",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9pRlU5dVgxT3E1aS02Yjlsbm9qNnBpZkxJODUtM2dIdkd6Y2FzUUlwQktqS1Y0QVdBd0g4RFBsOXdVZERsUmkzV0w2ZmJIcnU4N0ZXbmpsY3BQMkctOURuRS1DUmxvbzdxYTM1dkZaQlZOXzZ6RGc?oc=5",
+      "source": "BigGo Finance",
+      "source_url": "https://finance.biggo.com",
       "published": "2026-09-16T07:00:00Z",
       "lang": "en",
       "kind": "press"
@@ -3080,16 +3070,6 @@
       "published": "2026-09-03T07:00:00Z",
       "lang": "en",
       "kind": "press"
-     },
-     {
-      "id": "CBMi3AFBVV95cUxQUWtzV2xIZDBZaTdFQ1Y3bjlrT1hFYnN1cUdvMjlYMjRxbjJycktFZHBXb1lNNGdQVTJJY01IR3l0dm93cjNpWnp3aDI4cThLNlZvNzVscWtfSUM2NERya3V4TmhhU1dYS3lyQ0g2d3J1WHZGb0FVb255aF9pRDRHSzhSOGlFWkdtTElkTXRSaFpoaDNNdWw0UDhUQkMxV2dqbmU5WmNJVTVENXlGSGhYdnp5Sm1qd0ZBN1pFc21RaVBxdTdmZUtvMVZPRzNrNUtvLUhWQnJ2a2pqVXdB",
-      "title": "From GITEX Global to CES: How EIC Accelerator company Multiverse Computing secured a strategic alliance with Axelera AI",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQUWtzV2xIZDBZaTdFQ1Y3bjlrT1hFYnN1cUdvMjlYMjRxbjJycktFZHBXb1lNNGdQVTJJY01IR3l0dm93cjNpWnp3aDI4cThLNlZvNzVscWtfSUM2NERya3V4TmhhU1dYS3lyQ0g2d3J1WHZGb0FVb255aF9pRDRHSzhSOGlFWkdtTElkTXRSaFpoaDNNdWw0UDhUQkMxV2dqbmU5WmNJVTVENXlGSGhYdnp5Sm1qd0ZBN1pFc21RaVBxdTdmZUtvMVZPRzNrNUtvLUhWQnJ2a2pqVXdB?oc=5",
-      "source": "European Innovation Council",
-      "source_url": "https://eic.ec.europa.eu",
-      "published": "2026-08-26T07:00:00Z",
-      "lang": "en",
-      "kind": "funding"
      }
     ]
    },
@@ -3244,7 +3224,7 @@
    "github": {
     "org": "Think-Silicon",
     "url": "https://github.com/Think-Silicon",
-    "since": "2026-10-19T14:17:48Z",
+    "since": "2026-10-19T14:35:11Z",
     "repos": [
      {
       "name": "lvgl",
@@ -3391,7 +3371,7 @@
    "github": {
     "org": "WeatherXM",
     "url": "https://github.com/WeatherXM",
-    "since": "2026-10-19T14:17:48Z",
+    "since": "2026-10-19T14:35:11Z",
     "repos": [
      {
       "name": "wg1200-firmware",
@@ -3744,7 +3724,7 @@
    "github": {
     "org": "ovidVR",
     "url": "https://github.com/ovidVR",
-    "since": "2026-10-19T14:17:48Z",
+    "since": "2026-10-19T14:35:11Z",
     "repos": [
      {
       "name": "NetgenMSHExporter",
@@ -4101,7 +4081,7 @@
    "github": {
     "org": "hackthebox",
     "url": "https://github.com/hackthebox",
-    "since": "2026-10-19T14:17:48Z",
+    "since": "2026-10-19T14:35:11Z",
     "repos": [
      {
       "name": "terraform-provider-mailgun",
@@ -4971,7 +4951,7 @@
    "github": {
     "org": "opencosmos",
     "url": "https://github.com/opencosmos",
-    "since": "2026-10-19T14:17:48Z",
+    "since": "2026-10-19T14:35:11Z",
     "repos": [
      {
       "name": "datacosmos-sdk",
@@ -5181,6 +5161,16 @@
       "kind": "press"
      },
      {
+      "id": "CBMi4wFBVV95cUxObGtzRXp3YThhSExmQWNhUS16VUcyWnM3dUJBdE5WU1pXQURQNV8xOG9HWXMzbThKOGlNWVBmVlY0QVZuYkJWUWZYa3Q1MmVKUndWOWZkankyOEw1d3BaanNLeTJLN1F0VmNQdjU5bUt2VC1iN1RkekxmNlRCZDdIM2JPVVNzMWtxUF82UlowZEVaUUliak1nOUhlXzlkTk9kbUp2akJJVzdva1RDMTNrVFJvVmwwcVRnSVV6WmJrMUZDdm8tUGNQem5CYlpoSUdjNUxEdHdJaXdSRFhPakJSelpEUQ",
+      "title": "Open Cosmos: Νέο εργοστάσιο δορυφόρων στην Ελλάδα με στόχο παραγωγή μίας μονάδας κάθε ημέρα μελλοντικά",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxObGtzRXp3YThhSExmQWNhUS16VUcyWnM3dUJBdE5WU1pXQURQNV8xOG9HWXMzbThKOGlNWVBmVlY0QVZuYkJWUWZYa3Q1MmVKUndWOWZkankyOEw1d3BaanNLeTJLN1F0VmNQdjU5bUt2VC1iN1RkekxmNlRCZDdIM2JPVVNzMWtxUF82UlowZEVaUUliak1nOUhlXzlkTk9kbUp2akJJVzdva1RDMTNrVFJvVmwwcVRnSVV6WmJrMUZDdm8tUGNQem5CYlpoSUdjNUxEdHdJaXdSRFhPakJSelpEUQ?oc=5",
+      "source": "topontiki.gr",
+      "source_url": "https://www.topontiki.gr",
+      "published": "2026-10-11T07:00:00Z",
+      "lang": "el",
+      "kind": "press"
+     },
+     {
       "id": "CBMi5wFBVV95cUxPM3B0TnRoVnpGOHpsaU1zakxnamd4Vkt6eEd1ZnkzOGtfbTduZkg2RDRQbzRiNTFZYzZzTlhnTWxTeG4tUFhWSWJHUzlZVl80cjYzSkRxNkhWczJwWWRvNXkyZGthOGxhdENBa0YxandBQjQ2dmdwSVFLdlpBMlRDbUQ5TUcxWTZrVFBuempPeWF6VnNiOHRVN1lYY3pnQXpRV3VDMTY5UXBWdW5Rd0ladlV0UnJtd3FaQUE3aHg5LW1QZWRHZVBMOTh0Sk5lQ0ZRWDBOejNQZFE2QzZrZDhwQzRIbWEtM0HSAewBQVVfeXFMUEl5QnBFMEw3RUFNZEZtTUF0eHNNRV9GVF9ycW9vY2hwM2pya0lDeUh4WUlXS09JaVpVWXBMYTdPZDZ2SGtBcVJIVEpaS1d5bHJEVXM4TzR4MHJ1cUFsb1JGV2d2MFdtQ0t2UXBITlZUTW02RVk2cmFzaTlOV295OGdUX0tydWF3R3pQY3VRMndFTXR6WkkxUThCUU4wNjRxbUI3X0pRTUYtcHJEV2NnN1ZTTDB0QWxkMmY3LU41UG9oXzN5RUIwdGFsSjh4bmdNcFZuU2psVERDUExLWV8yNnZqb2Y0UC1hNTRzMDU",
       "title": "Open Cosmos: Νέες επενδύσεις και σχέδιο για παραγωγή ενός δορυφόρου την ημέρα στην Ελλάδα (pics)",
       "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPM3B0TnRoVnpGOHpsaU1zakxnamd4Vkt6eEd1ZnkzOGtfbTduZkg2RDRQbzRiNTFZYzZzTlhnTWxTeG4tUFhWSWJHUzlZVl80cjYzSkRxNkhWczJwWWRvNXkyZGthOGxhdENBa0YxandBQjQ2dmdwSVFLdlpBMlRDbUQ5TUcxWTZrVFBuempPeWF6VnNiOHRVN1lYY3pnQXpRV3VDMTY5UXBWdW5Rd0ladlV0UnJtd3FaQUE3aHg5LW1QZWRHZVBMOTh0Sk5lQ0ZRWDBOejNQZFE2QzZrZDhwQzRIbWEtM0HSAewBQVVfeXFMUEl5QnBFMEw3RUFNZEZtTUF0eHNNRV9GVF9ycW9vY2hwM2pya0lDeUh4WUlXS09JaVpVWXBMYTdPZDZ2SGtBcVJIVEpaS1d5bHJEVXM4TzR4MHJ1cUFsb1JGV2d2MFdtQ0t2UXBITlZUTW02RVk2cmFzaTlOV295OGdUX0tydWF3R3pQY3VRMndFTXR6WkkxUThCUU4wNjRxbUI3X0pRTUYtcHJEV2NnN1ZTTDB0QWxkMmY3LU41UG9oXzN5RUIwdGFsSjh4bmdNcFZuU2psVERDUExLWV8yNnZqb2Y0UC1hNTRzMDU?oc=5",
@@ -5216,16 +5206,6 @@
       "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQTV9SanZvZGFSd2RjcEx1dmN6TEZVUkFQeUF0Q25qU3YtM3pZLTRzY3Y3WVlGVU9NR2RxTm5BSGp1Uk1CalNjSko3MnZoRkxpZDE1dko2RGF4SEFIWW9TSmdsUnJpeXJWbnNkTkNmalBxMXR3NERtblc0M3puRVhMQ09PU0ljRVRISkgtMmdlMjRZZjZEblpRSS1ueHRkcjZzdmM2N1pLQ2E3aFlaRGlybWpiM3RSNlhBUmhGWWE3NTlxSFZ3VWwxZjhPVHBXQjFBU0xDaUp2bE1qMWowNm5zbkJn?oc=5",
       "source": "BusinessNews",
       "source_url": "https://www.businessnews.gr",
-      "published": "2026-10-09T07:00:00Z",
-      "lang": "el",
-      "kind": "press"
-     },
-     {
-      "id": "CBMixAFBVV95cUxOWFBsU21iSnZVQS1CZ3drT2ROTzFTR1hMQVJub3MzMXZOU0hSS3hod2FSSXV4N1o1Wm9Kd0VxV2FOa3NXTGl5ZFZrN2pVdjJjY184OTJJWjVJQUk0QTBmd0JRUmxjdmk4N05JMTE5RENjSURsOERySl82RE1PNDU1UzI3bVhObGZnOGUyOENQRU83a2VROTJyQnZabHV3a3ZuUElRcFpQOW1pN2wyWldyMkxzRVR2bGFGQTBYUDJ5ODBqR1lE",
-      "title": "Open Cosmos: Μαζική παραγωγή δορυφόρων στην Ελλάδα και επενδύσεις",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOWFBsU21iSnZVQS1CZ3drT2ROTzFTR1hMQVJub3MzMXZOU0hSS3hod2FSSXV4N1o1Wm9Kd0VxV2FOa3NXTGl5ZFZrN2pVdjJjY184OTJJWjVJQUk0QTBmd0JRUmxjdmk4N05JMTE5RENjSURsOERySl82RE1PNDU1UzI3bVhObGZnOGUyOENQRU83a2VROTJyQnZabHV3a3ZuUElRcFpQOW1pN2wyWldyMkxzRVR2bGFGQTBYUDJ5ODBqR1lE?oc=5",
-      "source": "STARTUPPER",
-      "source_url": "https://startupper.gr",
       "published": "2026-10-09T07:00:00Z",
       "lang": "el",
       "kind": "press"
@@ -5391,21 +5371,21 @@
       "kind": "funding"
      },
      {
-      "id": "CBMitgFBVV95cUxNQ3BVWnZ1ZmJ0d18tVDZlSFFSdkFtNnpXMU1lQjZhTXc5NlZZRV9DMHk0Skw5aDJ2U2JiRXJ6cmEtbkd2RzY2Sy1PVGYxRUtKd2d0WkRQRjdkSGQwSHhwS3lEWmFBS1pwRERST2NNMkpqV2hpZzNTNFBwdzdHSERJQ0RlOU5XZDlqbDRoeC1iUWJldk1aa3IteUNoaWl4RVFfSzEtQzFTTlM2TkFwck5oSFh3ZGZCZw",
-      "title": "Open Cosmos raises €300m for real-time space connectivity, intelligence",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNQ3BVWnZ1ZmJ0d18tVDZlSFFSdkFtNnpXMU1lQjZhTXc5NlZZRV9DMHk0Skw5aDJ2U2JiRXJ6cmEtbkd2RzY2Sy1PVGYxRUtKd2d0WkRQRjdkSGQwSHhwS3lEWmFBS1pwRERST2NNMkpqV2hpZzNTNFBwdzdHSERJQ0RlOU5XZDlqbDRoeC1iUWJldk1aa3IteUNoaWl4RVFfSzEtQzFTTlM2TkFwck5oSFh3ZGZCZw?oc=5",
-      "source": "Computer Weekly",
-      "source_url": "https://www.computerweekly.com",
-      "published": "2026-09-15T07:00:00Z",
-      "lang": "en",
-      "kind": "funding"
-     },
-     {
       "id": "CBMiowFBVV95cUxPcTBuckZYUzJiT01ybG1oTUJacXpPR2VYako3ai00Vm5JZ3ozRmprYzNOcjgxQ29LOFBWUE1zZWt5eEhmNWZMUDR4QTRCbmdMRmRjU2R4dG9LNzlpdWE5el9Md2drV0J2RFlHclZ5QmlPZlROb2hudjYxSDhUb2F5LVFyT1ltcjdfU2ZjSkJFN1R0cDFJZ0pRajZuVko0aUFVdF9r",
       "title": "Open Cosmos Raises €300 Million as Investors Back Europe’s Space Push",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPcTBuckZYUzJiT01ybG1oTUJacXpPR2VYako3ai00Vm5JZ3ozRmprYzNOcjgxQ29LOFBWUE1zZWt5eEhmNWZMUDR4QTRCbmdMRmRjU2R4dG9LNzlpdWE5el9Md2drV0J2RFlHclZ5QmlPZlROb2hudjYxSDhUb2F5LVFyT1ltcjdfU2ZjSkJFN1R0cDFJZ0pRajZuVko0aUFVdF9r?oc=5",
       "source": "European Spaceflight",
       "source_url": "https://europeanspaceflight.com",
+      "published": "2026-09-15T07:00:00Z",
+      "lang": "en",
+      "kind": "funding"
+     },
+     {
+      "id": "CBMitgFBVV95cUxNQ3BVWnZ1ZmJ0d18tVDZlSFFSdkFtNnpXMU1lQjZhTXc5NlZZRV9DMHk0Skw5aDJ2U2JiRXJ6cmEtbkd2RzY2Sy1PVGYxRUtKd2d0WkRQRjdkSGQwSHhwS3lEWmFBS1pwRERST2NNMkpqV2hpZzNTNFBwdzdHSERJQ0RlOU5XZDlqbDRoeC1iUWJldk1aa3IteUNoaWl4RVFfSzEtQzFTTlM2TkFwck5oSFh3ZGZCZw",
+      "title": "Open Cosmos raises €300m for real-time space connectivity, intelligence",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNQ3BVWnZ1ZmJ0d18tVDZlSFFSdkFtNnpXMU1lQjZhTXc5NlZZRV9DMHk0Skw5aDJ2U2JiRXJ6cmEtbkd2RzY2Sy1PVGYxRUtKd2d0WkRQRjdkSGQwSHhwS3lEWmFBS1pwRERST2NNMkpqV2hpZzNTNFBwdzdHSERJQ0RlOU5XZDlqbDRoeC1iUWJldk1aa3IteUNoaWl4RVFfSzEtQzFTTlM2TkFwck5oSFh3ZGZCZw?oc=5",
+      "source": "Computer Weekly",
+      "source_url": "https://www.computerweekly.com",
       "published": "2026-09-15T07:00:00Z",
       "lang": "en",
       "kind": "funding"
@@ -5754,7 +5734,7 @@
    "github": {
     "org": "corsmed",
     "url": "https://github.com/corsmed",
-    "since": "2026-10-19T14:17:48Z",
+    "since": "2026-10-19T14:35:11Z",
     "repos": [
      {
       "name": "go-txdb",
@@ -6017,7 +5997,7 @@
    "github": {
     "org": "causaly",
     "url": "https://github.com/causaly",
-    "since": "2026-10-19T14:17:48Z",
+    "since": "2026-10-19T14:35:11Z",
     "repos": [
      {
       "name": "html-to-pdf",
@@ -6265,16 +6245,6 @@
       "published": "2026-03-05T08:00:00Z",
       "lang": "en",
       "kind": "press"
-     },
-     {
-      "id": "CBMi0AFBVV95cUxNY3R3NWplbk1WQnEzNXRJMjBJbzVYWmlXOENzdTIycU9oMzA4SDNZNUtEOGhSYUhFMzlhSzlaQ2FUbU4wRWt3RlpaWV9BbEpnRmI2Q2V4bnNuR3ViM2xDT3pCN1U3TE1FWE1wT0k4OEQ3NFN6T2c0VENYX2U1U2lKUWt0cE5rMnpiYm9qemozV0ViSlgwMVUwdlNQbFNfTHhEWlJJbEVzZFFKZkRqaWNUU095U0FNRXBpTjR4WHlrTTFGdXV6a3ptel96YnlwWHUt",
-      "title": "Circuits Integrated Hellas Launches New Platform that Could Benefit EO Operations",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNY3R3NWplbk1WQnEzNXRJMjBJbzVYWmlXOENzdTIycU9oMzA4SDNZNUtEOGhSYUhFMzlhSzlaQ2FUbU4wRWt3RlpaWV9BbEpnRmI2Q2V4bnNuR3ViM2xDT3pCN1U3TE1FWE1wT0k4OEQ3NFN6T2c0VENYX2U1U2lKUWt0cE5rMnpiYm9qemozV0ViSlgwMVUwdlNQbFNfTHhEWlJJbEVzZFFKZkRqaWNUU095U0FNRXBpTjR4WHlrTTFGdXV6a3ptel96YnlwWHUt?oc=5",
-      "source": "Via Satellite",
-      "source_url": "https://www.satellitetoday.com",
-      "published": "2025-05-19T07:00:00Z",
-      "lang": "en",
-      "kind": "press"
      }
     ]
    },
@@ -6306,7 +6276,7 @@
    "github": {
     "org": "BOTAsys",
     "url": "https://github.com/BOTAsys",
-    "since": "2026-10-19T14:17:48Z",
+    "since": "2026-10-19T14:35:11Z",
     "repos": [
      {
       "name": "ardupilot",
@@ -6437,7 +6407,7 @@
    "github": {
     "org": "codebgp",
     "url": "https://github.com/codebgp",
-    "since": "2026-10-19T14:17:48Z",
+    "since": "2026-10-19T14:35:11Z",
     "repos": [
      {
       "name": "graphql-tools",
@@ -6539,7 +6509,7 @@
    "github": {
     "org": "icomatuk",
     "url": "https://github.com/icomatuk",
-    "since": "2026-10-19T14:17:48Z",
+    "since": "2026-10-19T14:35:11Z",
     "repos": []
    },
    "news": {
@@ -6609,7 +6579,7 @@
    "github": {
     "org": "marinetraffic",
     "url": "https://github.com/marinetraffic",
-    "since": "2026-10-19T14:17:48Z",
+    "since": "2026-10-19T14:35:11Z",
     "repos": [
      {
       "name": "mt-ais-toolbox",
@@ -6665,7 +6635,38 @@
      "Core Innovation and Technology",
      "Core Innovation"
     ],
-    "items": []
+    "items": [
+     {
+      "id": "CBMi8AFBVV95cUxOTDBycVVraVpaa0Y2ZVZ5OW5oSU05U3dRQmNlaktmYTVlTFZ1RG5aYTJkOUJfb0N6ajJVVXFLUlctWVpQSS1iVmtVVTZINEh0Z1RUOHpESE9DWEYtNmgyLXVIUlNnMFNJTzdvdjBSa1VmVUJXX1FHN0c1X0N4XzYyMS1jcGtTb0VaeVFxYnQxX3JzYnZwZFMtVC1GQ1pSalZObTVTNG5ud1lYUVRuRTR6bEZ3d29nV3c1UjVGM0VCTFFDX2huSm9qSTBHNk9HVEhBLXBLSThwQ2V0YXBlaGdRSVc1TXZBWmVwUW5FU2lBRUY",
+      "title": "MSU Federal Credit Union Wins Finopotamus Tekkie Core Innovation Award for Launch of Pillur with Nymbus",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOTDBycVVraVpaa0Y2ZVZ5OW5oSU05U3dRQmNlaktmYTVlTFZ1RG5aYTJkOUJfb0N6ajJVVXFLUlctWVpQSS1iVmtVVTZINEh0Z1RUOHpESE9DWEYtNmgyLXVIUlNnMFNJTzdvdjBSa1VmVUJXX1FHN0c1X0N4XzYyMS1jcGtTb0VaeVFxYnQxX3JzYnZwZFMtVC1GQ1pSalZObTVTNG5ud1lYUVRuRTR6bEZ3d29nV3c1UjVGM0VCTFFDX2huSm9qSTBHNk9HVEhBLXBLSThwQ2V0YXBlaGdRSVc1TXZBWmVwUW5FU2lBRUY?oc=5",
+      "source": "PR Newswire",
+      "source_url": "https://www.prnewswire.com",
+      "published": "2026-09-28T07:00:00Z",
+      "lang": "en",
+      "kind": "press"
+     },
+     {
+      "id": "CBMivwFBVV95cUxOSjhyaTAycjNiaDdlcVptZ25sbF9VcDFjOG13VTI1aFJaWTR6NXJpNFVWbHFPamRpUGQ2M1dsOHh2RWVYMnpad1k5QlY0LVVHQXpMbUJLaDNZYWFCeV9XMjhjZUpGYXhCajUwZ2VSRWUwSkdQMlN3bk9iZi11aEZ1bmREdVVhS0o1Ykt3WEhVN2M4N0lLRUI1RWlfQThLN0F0d05sMXd4c1lqaEctb2VxMmJCcnFmNlU1Q3pzWEtOOA",
+      "title": "Editor's Choice: Apple at 50 faces core innovation challenge",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOSjhyaTAycjNiaDdlcVptZ25sbF9VcDFjOG13VTI1aFJaWTR6NXJpNFVWbHFPamRpUGQ2M1dsOHh2RWVYMnpad1k5QlY0LVVHQXpMbUJLaDNZYWFCeV9XMjhjZUpGYXhCajUwZ2VSRWUwSkdQMlN3bk9iZi11aEZ1bmREdVVhS0o1Ykt3WEhVN2M4N0lLRUI1RWlfQThLN0F0d05sMXd4c1lqaEctb2VxMmJCcnFmNlU1Q3pzWEtOOA?oc=5",
+      "source": "Nikkei Asia",
+      "source_url": "https://asia.nikkei.com",
+      "published": "2026-04-10T07:00:00Z",
+      "lang": "en",
+      "kind": "press"
+     },
+     {
+      "id": "CBMivwFBVV95cUxPWGo0U05rbFo3WmhWakFYZzF1UzlVZ3VsWTAwNG9jRV9KaHBRb2EwWGhVdjBoQWtXdHJXZ3RfeFZCOFVqMWNIcnM1VzFUTzlETFNrTEJhQkh1QVJjeUp5X2VWU1VVbjM1TkhubmpKa2VyQXREa05ZbDdfODdHVTlyUm81dDN2dlc4cV8wcWpuZThyVldOYVdoRHFsZDlXLXlMQ2ZQZFY1WHZJYm1zUVpNUFFZeC1iZmN0eEtjRkd3VQ",
+      "title": "The Angel You Need To Know: Young Phenom Ramtin Naimi of Core Innovation",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPWGo0U05rbFo3WmhWakFYZzF1UzlVZ3VsWTAwNG9jRV9KaHBRb2EwWGhVdjBoQWtXdHJXZ3RfeFZCOFVqMWNIcnM1VzFUTzlETFNrTEJhQkh1QVJjeUp5X2VWU1VVbjM1TkhubmpKa2VyQXREa05ZbDdfODdHVTlyUm81dDN2dlc4cV8wcWpuZThyVldOYVdoRHFsZDlXLXlMQ2ZQZFY1WHZJYm1zUVpNUFFZeC1iZmN0eEtjRkd3VQ?oc=5",
+      "source": "Forbes",
+      "source_url": "https://www.forbes.com",
+      "published": "2016-06-29T07:00:00Z",
+      "lang": "en",
+      "kind": "press"
+     }
+    ]
    },
    "jobs": {
     "source": "careers_page",
@@ -7091,7 +7092,7 @@
    "github": {
     "org": "neurohive-eu",
     "url": "https://github.com/neurohive-eu",
-    "since": "2026-10-19T14:17:48Z",
+    "since": "2026-10-19T14:35:11Z",
     "repos": []
    },
    "news": {
@@ -7515,7 +7516,7 @@
    "github": {
     "org": "squaredev-io",
     "url": "https://github.com/squaredev-io",
-    "since": "2026-10-19T14:17:48Z",
+    "since": "2026-10-19T14:35:11Z",
     "repos": [
      {
       "name": "gh-workflows",
@@ -7867,7 +7868,7 @@
    "github": {
     "org": "solidkosmos",
     "url": "https://github.com/solidkosmos",
-    "since": "2026-10-19T14:17:48Z",
+    "since": "2026-10-19T14:35:11Z",
     "repos": []
    },
    "news": {
