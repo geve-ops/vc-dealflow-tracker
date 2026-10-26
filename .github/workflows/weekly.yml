@@ -24,6 +24,6 @@ jobs:
         run: |
           git config user.name "Gerald Velas"
           git config user.email "333406741+geve-ops@users.noreply.github.com"
-          git add data/snapshots digests docs
+          git add data/snapshots data/scores.csv digests docs
           git diff --cached --quiet || git commit -m "Weekly digest $(date -u +%F)"
           git push

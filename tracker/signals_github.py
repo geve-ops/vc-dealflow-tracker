@@ -14,6 +14,13 @@ def _headers(token):
     return h
 
 
+def _is_bot(commit):
+    """Dependency bots and CI accounts, which say little about team activity."""
+    login = ((commit.get("author") or {}).get("login") or "").lower()
+    name = ((commit.get("commit") or {}).get("author") or {}).get("name", "").lower()
+    return login.endswith("[bot]") or name.endswith("[bot]") or "dependabot" in name or "renovate" in name
+
+
 def collect(row, token, since_iso):
     org = row.get("github_org", "").strip()
     if not org or org == "none":
@@ -41,6 +48,7 @@ def collect(row, token, since_iso):
             if st == 200 and commits:
                 item["window_commits"] = len(commits)
                 item["window_commits_capped"] = len(commits) == 100
+                item["window_commits_bot"] = sum(1 for c in commits if _is_bot(c))
                 item["latest_commit"] = {
                     "url": commits[0]["html_url"],
                     "message": (commits[0]["commit"]["message"] or "").splitlines()[0][:140],

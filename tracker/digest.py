@@ -9,8 +9,10 @@ Outputs:
 import json
 from datetime import datetime, timedelta
 
+from . import score
 from .collect import snapshot_paths
 from .common import DIGESTS, DOCS, read_watchlist
+from .watchlist import TARGET_FUNDS
 
 SIGNAL_LABELS = {"funding": "Funding news", "jobs": "Hiring", "github": "GitHub activity", "press": "Other press"}
 
@@ -34,16 +36,17 @@ def company_changes(row, cur, prev, window_start):
     p = (prev or {}).get("companies", {}).get(cid, {})
     out = []
 
-    def add(signal, title, url, date="", detail=""):
+    def add(signal, kind, title, url, date="", detail="", count=1):
         out.append({"company_id": cid, "company": row["company"], "category": row["category"],
-                    "signal": signal, "title": title, "url": url, "date": _date(date), "detail": detail})
+                    "signal": signal, "kind": kind, "count": count,
+                    "title": title, "url": url, "date": _date(date), "detail": detail})
 
     # News: published inside the window and not already seen last time.
     news = c.get("news") or {}
     prev_ids = {i["id"] for i in (p.get("news") or {}).get("items", [])}
     for it in news.get("items", []):
         if it["published"] >= window_start and it["id"] not in prev_ids:
-            add(it["kind"], it["title"], it["url"], it["published"], it["source"])
+            add(it["kind"], it["kind"], it["title"], it["url"], it["published"], it["source"])
 
     # GitHub.
     gh = c.get("github") or {}
@@ -53,17 +56,20 @@ def company_changes(row, cur, prev, window_start):
         for r in gh["repos"]:
             is_new = (r["name"] not in prev_repos) if prev_repos is not None else r["created_at"] >= window_start
             if is_new:
-                add("github", f"New public repo {r['name']}", r["url"], r["created_at"], r["description"])
+                add("github", "new_repo", f"New public repo {r['name']}", r["url"], r["created_at"], r["description"])
             if r.get("window_commits"):
                 n = f"{r['window_commits']}{'+' if r.get('window_commits_capped') else ''}"
+                bots = r.get("window_commits_bot", 0)
                 lc = r["latest_commit"]
-                add("github", f"{n} commit{'s' if n != '1' else ''} to {r['name']}", lc["url"], lc["date"],
-                    f"latest: {lc['message']}")
+                add("github", "commits", f"{n} commit{'s' if n != '1' else ''} to {r['name']}"
+                    + (f" ({bots} by bots)" if bots else ""), lc["url"], lc["date"],
+                    f"latest: {lc['message']}", count=r["window_commits"] - bots)
         if prev_repos is not None:
             delta = sum(r["stars"] - prev_repos[r["name"]]["stars"] for r in gh["repos"] if r["name"] in prev_repos)
             if delta:
                 total = sum(r["stars"] for r in gh["repos"])
-                add("github", f"{delta:+d} stars across repos (now {total})", gh["url"], cur["generated_at"])
+                add("github", "stars", f"{delta:+d} stars across repos (now {total})", gh["url"],
+                    cur["generated_at"], count=delta)
 
     # Jobs.
     jobs = c.get("jobs") or {}
@@ -75,15 +81,17 @@ def company_changes(row, cur, prev, window_start):
             now_ids = {j["id"] for j in jobs["postings"]}
             for j in jobs["postings"]:
                 if j["id"] not in before:
-                    add("jobs", f"New role: {j['title']}{heuristic}", j["url"], j["published"] or cur["generated_at"], j["location"])
+                    add("jobs", "new_role", f"New role: {j['title']}{heuristic}", j["url"],
+                        j["published"] or cur["generated_at"], j["location"])
             closed = [j for j in pjobs["postings"] if j["id"] not in now_ids]
             for j in closed:
-                add("jobs", f"Role closed: {j['title']}{heuristic}", j["url"], cur["generated_at"], "no longer listed")
+                add("jobs", "closed_role", f"Role closed: {j['title']}{heuristic}", j["url"], cur["generated_at"],
+                    "no longer listed")
         else:
             # First run for this source: only postings dated inside the window count as new.
             for j in jobs["postings"]:
                 if j["published"] and j["published"] >= window_start[:10]:
-                    add("jobs", f"New role: {j['title']}", j["url"], j["published"], j["location"])
+                    add("jobs", "new_role", f"New role: {j['title']}", j["url"], j["published"], j["location"])
     return out
 
 
@@ -97,6 +105,8 @@ def company_status(row, cur):
     return {
         "company_id": row["company_id"], "company": row["company"], "category": row["category"],
         "map_status": row["map_status"], "website": row["website"], "linkedin_url": row["linkedin_url"],
+        "greek_funds": [f for f in row.get("greek_funds", "").split(" | ") if f],
+        "greek_fund_status": row.get("greek_fund_status", ""),
         "github_org": row["github_org"], "careers_url": row["careers_url"],
         "jobs_source": jobs.get("source", ""), "jobs_error": jobs.get("error", ""),
         # Zero from the careers-page heuristic usually means the page renders roles with JavaScript.
@@ -115,7 +125,45 @@ def _md_escape(s):
     return (s or "").replace("[", "\\[").replace("]", "\\]").replace("|", "\\|")
 
 
-def write_markdown(changes, statuses, cur, prev, path):
+PART_LABELS = {"funding": "funding", "press": "press", "hiring": "hiring", "github": "GitHub"}
+
+
+def _drivers(m):
+    return ", ".join(f"{PART_LABELS[k]} {v}" for k, v in m["parts"].items() if v)
+
+
+def _funds(m):
+    if not m["greek_funds"]:
+        return "–"
+    out = ", ".join(m["greek_funds"])
+    return out + (f" ({m['greek_fund_status']})" if m["greek_fund_status"] not in ("", "current") else "")
+
+
+def movers_markdown(movers, weeks, changes, top=10):
+    L = ["", "## Top movers", ""]
+    moving = [m for m in movers if m["momentum"] > 0]
+    if not moving:
+        return L + ["No company scored this week."]
+    L.append(f"Momentum = this week's score plus earlier weeks at half weight each step back "
+             f"(based on {weeks} weekly run{'s' if weeks != 1 else ''}). Scoring rules are in the README.")
+    L += ["", "| # | Company | Momentum | This week | Drivers | Greek funds |", "|---|---|---|---|---|---|"]
+    for m in moving[:top]:
+        L.append(f"| {m['rank']} | {_md_escape(m['company'])} | {m['momentum']:g} | {m['week_score']} | "
+                 f"{_drivers(m)} | {_md_escape(_funds(m))} |")
+    L += ["", "## By target fund", "",
+          "Portfolio companies of the funds this portfolio is aimed at, with any change this week.", ""]
+    for fund in TARGET_FUNDS:
+        port = [m for m in movers if fund in m["greek_funds"]]
+        if not port:
+            L.append(f"- **{fund}**: no portfolio company on the watchlist.")
+            continue
+        active = [m for m in port if m["week_score"] > 0]
+        names = ", ".join(f"{m['company']} ({m['week_score']})" for m in active) or "no changes"
+        L.append(f"- **{fund}** ({len(port)} on the watchlist): {names}")
+    return L
+
+
+def write_markdown(changes, statuses, cur, prev, path, movers=None, weeks=1):
     start, end = _date(cur["window_start"]), _date(cur["generated_at"])
     by_signal = {k: [c for c in changes if c["signal"] == k] for k in SIGNAL_LABELS}
     n_companies = len({c["company_id"] for c in changes})
@@ -130,6 +178,8 @@ def write_markdown(changes, statuses, cur, prev, path):
         cos = len({c["company_id"] for c in by_signal[k]})
         L.append(f"- {label}: {len(by_signal[k])} item{'s' if len(by_signal[k]) != 1 else ''} across {cos} compan{'ies' if cos != 1 else 'y'}")
     L.append(f"- Companies with any change: {n_companies} of {len(statuses)}")
+    if movers is not None:
+        L += movers_markdown(movers, weeks, changes)
     for k, label in SIGNAL_LABELS.items():
         L += ["", f"## {label}", ""]
         items = by_signal[k]
@@ -161,10 +211,11 @@ def write_markdown(changes, statuses, cur, prev, path):
     path.write_text("\n".join(L), encoding="utf-8")
 
 
-def write_dashboard(changes, statuses, cur, prev, history):
+def write_dashboard(changes, statuses, cur, prev, history, movers, weeks):
     DOCS.mkdir(exist_ok=True)
     payload = {"generated_at": cur["generated_at"], "window_start": cur["window_start"],
-               "first_run": prev is None, "changes": changes, "companies": statuses, "history": history}
+               "first_run": prev is None, "changes": changes, "companies": statuses, "history": history,
+               "movers": movers, "score_weeks": weeks, "target_funds": TARGET_FUNDS}
     (DOCS / "changes.json").write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
     template = (DOCS.parent / "tracker" / "dashboard_template.html").read_text(encoding="utf-8")
     data = json.dumps(payload, ensure_ascii=False).replace("</", "<\\/")
@@ -178,10 +229,14 @@ def build():
     changes = [ch for r in rows for ch in company_changes(r, cur, prev, window_start)]
     changes.sort(key=lambda c: (c["date"], c["company"]), reverse=True)
     statuses = [company_status(r, cur) for r in rows]
+    movers, weeks = score.update(_date(cur["generated_at"]), changes, rows)
+    rank = {m["company_id"]: m for m in movers}
+    for s in statuses:
+        s["momentum"], s["rank"] = rank[s["company_id"]]["momentum"], rank[s["company_id"]]["rank"]
     DIGESTS.mkdir(exist_ok=True)
     path = DIGESTS / f"{_date(cur['generated_at'])}.md"
-    write_markdown(changes, statuses, cur, prev, path)
+    write_markdown(changes, statuses, cur, prev, path, movers, weeks)
     history = sorted((p.stem for p in DIGESTS.glob("*.md")), reverse=True)
-    write_dashboard(changes, statuses, cur, prev, history)
+    write_dashboard(changes, statuses, cur, prev, history, movers, weeks)
     print(f"digest: {path} ({len(changes)} changes); dashboard: {DOCS / 'index.html'}")
     return path

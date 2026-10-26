@@ -31,6 +31,7 @@ WATCHLIST_FIELDS = [
     "github_org", "github_source",
     "careers_url", "jobs_source", "jobs_source_ref",
     "news_terms",
+    "greek_funds", "greek_fund_status", "greek_funds_source",
 ]
 
 

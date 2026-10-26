@@ -62,9 +62,28 @@ td.nowrap { white-space: nowrap; }
 td.num { text-align: right; font-variant-numeric: tabular-nums; }
 .links a { margin-right: 8px; white-space: nowrap; }
 .dim { color: var(--muted); }
+.fundbar { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin: 0 0 18px; }
+.fundbar label { color: var(--muted); font-size: 14px; }
+select { padding: 7px 10px; border-radius: 6px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); font: inherit; }
+.movers { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 6px 16px; }
+.mv { display: grid; grid-template-columns: 28px minmax(0, 1.4fr) minmax(0, 2fr) 56px; gap: 12px; align-items: center; padding: 9px 0; border-top: 1px solid var(--line); font-size: 14px; }
+.mv:first-child { border-top: 0; }
+.mv .rk { color: var(--muted); font-variant-numeric: tabular-nums; }
+.mv .nm { font-weight: 600; }
+.mv .fd { color: var(--muted); font-size: 12.5px; font-weight: 400; display: block; }
+.bar { display: flex; height: 10px; border-radius: 3px; overflow: hidden; background: var(--chip); }
+.bar span { display: block; height: 100%; }
+.bar span + span { border-left: 2px solid var(--panel); }
+.drv { color: var(--muted); font-size: 12.5px; margin-top: 4px; }
+.mv .sc { text-align: right; font-weight: 650; font-variant-numeric: tabular-nums; }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12.5px; color: var(--muted); margin: 8px 0 0; }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+.chipf { display: inline-block; font-size: 12px; padding: 1px 7px; border-radius: 10px; background: var(--chip); margin: 1px 3px 1px 0; white-space: nowrap; }
 footer { margin-top: 40px; color: var(--muted); font-size: 13px; }
 @media (max-width: 640px) {
   .co li { grid-template-columns: 1fr; gap: 0; padding: 6px 0; }
+  .mv { grid-template-columns: 24px minmax(0, 1fr) 44px; }
+  .mv .bw { grid-column: 2 / 4; }
 }
 </style>
 </head>
@@ -73,7 +92,11 @@ footer { margin-top: 40px; color: var(--muted); font-size: 13px; }
   <h1>Greek Deep Tech Deal Flow</h1>
   <p class="sub" id="sub"></p>
   <div class="note" id="note" hidden></div>
+  <div class="fundbar"><label for="fund">Greek fund</label><select id="fund"></select><span class="dim" id="fundinfo"></span></div>
   <div class="tiles" id="tiles"></div>
+  <h2>Top movers</h2>
+  <div class="movers" id="movers"></div>
+  <div class="legend" id="mlegend"></div>
   <h2>What changed</h2>
   <div class="controls">
     <input type="search" id="q" placeholder="Filter by company, category or text" aria-label="Filter changes">
@@ -88,7 +111,12 @@ const DATA = /*__DATA__*/null;
 const LABELS = { funding: "Funding", jobs: "Hiring", github: "GitHub", press: "Press" };
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const safeUrl = u => /^https?:\/\//i.test(u || "") ? u : "#";
-let active = null;
+let active = null, fund = "";
+const FUNDS = Object.fromEntries(DATA.companies.map(c => [c.company_id, c.greek_funds || []]));
+const inFund = id => !fund || FUNDS[id].includes(fund);
+const PARTS = [["funding", "Funding", "var(--funding)"], ["press", "Press", "var(--press)"], ["hiring", "Hiring", "var(--jobs)"], ["github", "GitHub", "var(--github)"]];
+const fundChips = r => (r.greek_funds || []).map(f => `<span class="chipf">${esc(f)}</span>`).join("") +
+  (r.greek_fund_status && r.greek_fund_status !== "current" ? ` <span class="dim">${esc(r.greek_fund_status)}</span>` : "");
 
 document.getElementById("sub").textContent =
   `Changes from ${DATA.window_start.slice(0, 10)} to ${DATA.generated_at.slice(0, 10)} (UTC) across ${DATA.companies.length} companies from the Greek Deep Tech Market Map.`;
@@ -101,15 +129,15 @@ if (DATA.first_run) {
 function renderTiles() {
   const t = document.getElementById("tiles");
   t.innerHTML = Object.entries(LABELS).map(([k, l]) => {
-    const n = DATA.changes.filter(c => c.signal === k).length;
+    const n = DATA.changes.filter(c => c.signal === k && inFund(c.company_id)).length;
     return `<button class="tile" data-k="${k}" aria-pressed="${active === k}"><div class="n">${n}</div><div class="l">${l}</div></button>`;
-  }).join("") + `<div class="tile" style="cursor:default"><div class="n">${new Set(DATA.changes.map(c => c.company_id)).size}</div><div class="l">Companies with changes</div></div>`;
+  }).join("") + `<div class="tile" style="cursor:default"><div class="n">${new Set(DATA.changes.filter(c => inFund(c.company_id)).map(c => c.company_id)).size}</div><div class="l">Companies with changes</div></div>`;
   t.querySelectorAll("button").forEach(b => b.onclick = () => { active = active === b.dataset.k ? null : b.dataset.k; renderTiles(); renderFeed(); });
 }
 
 function renderFeed() {
   const q = document.getElementById("q").value.trim().toLowerCase();
-  const items = DATA.changes.filter(c => (!active || c.signal === active) &&
+  const items = DATA.changes.filter(c => (!active || c.signal === active) && inFund(c.company_id) &&
     (!q || [c.company, c.category, c.title, c.detail].join(" ").toLowerCase().includes(q)));
   const groups = {};
   items.forEach(c => (groups[c.company] ??= []).push(c));
@@ -123,8 +151,26 @@ function renderFeed() {
   document.getElementById("feed").innerHTML = html || `<div class="empty">No changes match.</div>`;
 }
 
+function renderMovers() {
+  const list = DATA.movers.filter(m => m.momentum > 0 && inFund(m.company_id)).slice(0, 10);
+  const max = Math.max(1, ...list.map(m => m.momentum));
+  document.getElementById("movers").innerHTML = list.map(m => {
+    const segs = PARTS.filter(([k]) => m.parts[k]).map(([k, l, col]) =>
+      `<span style="width:${m.parts[k] / max * 100}%;background:${col}" title="${l} ${m.parts[k]}"></span>`).join("");
+    const earlier = m.momentum - m.week_score;
+    const prior = earlier > 0 ? `<span style="width:${earlier / max * 100}%;background:var(--line)" title="Earlier weeks ${earlier}"></span>` : "";
+    const drv = PARTS.filter(([k]) => m.parts[k]).map(([k, l]) => `${l} ${m.parts[k]}`).join(" · ") + (earlier > 0 ? ` · earlier weeks ${earlier}` : "");
+    return `<div class="mv"><span class="rk">${m.rank}</span>
+      <span class="nm">${esc(m.company)}<span class="fd">${m.greek_funds.length ? m.greek_funds.map(esc).join(", ") : esc(m.category)}</span></span>
+      <span class="bw"><div class="bar">${segs}${prior}</div><div class="drv">${drv}</div></span>
+      <span class="sc">${+m.momentum.toFixed(2)}</span></div>`;
+  }).join("") || `<div class="empty">No scored movers${fund ? " in this fund's portfolio" : ""} this week.</div>`;
+  document.getElementById("mlegend").innerHTML = PARTS.map(([, l, col]) => `<span><i style="background:${col}"></i>${l}</span>`).join("") +
+    `<span><i style="background:var(--line)"></i>Earlier weeks (decayed)</span><span>Score = momentum; rules in the README. Based on ${DATA.score_weeks} weekly run${DATA.score_weeks === 1 ? "" : "s"}.</span>`;
+}
+
 const COLS = [
-  ["company", "Company"], ["category", "Category"], ["links", "Links"],
+  ["company", "Company"], ["greek_funds", "Greek funds"], ["momentum", "Momentum"], ["category", "Category"], ["links", "Links"],
   ["open_roles", "Open roles"], ["stars", "GitHub stars"], ["last_push", "Last push"], ["latest_funding", "Latest funding headline (90 days)"]
 ];
 let sortKey = "company", sortDir = 1;
@@ -133,10 +179,10 @@ function renderTable() {
   thead.innerHTML = "<tr>" + COLS.map(([k, l]) => `<th data-k="${k}">${l}${sortKey === k ? (sortDir > 0 ? " ▲" : " ▼") : ""}</th>`).join("") + "</tr>";
   thead.querySelectorAll("th").forEach(th => th.onclick = () => {
     const k = th.dataset.k; if (k === "links") return;
-    sortDir = sortKey === k ? -sortDir : (["open_roles", "stars", "last_push"].includes(k) ? -1 : 1); sortKey = k; renderTable();
+    sortDir = sortKey === k ? -sortDir : (["open_roles", "stars", "last_push", "momentum"].includes(k) ? -1 : 1); sortKey = k; renderTable();
   });
-  const val = (r, k) => k === "latest_funding" ? (r.latest_funding?.date || "") : (r[k] ?? -1);
-  const rows = [...DATA.companies].sort((a, b) => { const x = val(a, sortKey), y = val(b, sortKey); return (x > y ? 1 : x < y ? -1 : 0) * sortDir; });
+  const val = (r, k) => k === "latest_funding" ? (r.latest_funding?.date || "") : k === "greek_funds" ? (r.greek_funds || []).join(",") : (r[k] ?? -1);
+  const rows = DATA.companies.filter(r => inFund(r.company_id)).sort((a, b) => { const x = val(a, sortKey), y = val(b, sortKey); return (x > y ? 1 : x < y ? -1 : 0) * sortDir; });
   tbody.innerHTML = rows.map(r => {
     const links = [
       r.website && `<a href="${esc(safeUrl(r.website))}" target="_blank" rel="noopener">Site</a>`,
@@ -147,6 +193,8 @@ function renderTable() {
     const roles = r.open_roles == null ? `<span class="dim">–</span>` : `${r.open_roles}${r.jobs_source === "careers_page" ? "*" : ""}`;
     const f = r.latest_funding;
     return `<tr><td>${esc(r.company)}${r.map_status === "Borderline" ? ' <span class="dim">(borderline)</span>' : ""}</td>
+      <td>${fundChips(r) || '<span class="dim">–</span>'}</td>
+      <td class="num">${r.momentum ? +r.momentum.toFixed(2) : '<span class="dim">0</span>'}</td>
       <td class="dim">${esc(r.category)}</td><td class="links">${links}</td>
       <td class="num">${roles}</td><td class="num">${r.github_org ? r.stars : '<span class="dim">–</span>'}</td>
       <td class="dim nowrap">${esc(r.last_push)}</td>
@@ -159,7 +207,19 @@ document.getElementById("foot").innerHTML =
   `Generated ${esc(DATA.generated_at)}. * = counted from the careers page (heuristic), not a job-board API. Digests: ` +
   DATA.history.map(d => `<a href="https://github.com/geve-ops/vc-dealflow-tracker/blob/main/digests/${esc(d)}.md">${esc(d)}</a>`).join(", ") +
   `. Signals and their limits are described in the README.`;
-renderTiles(); renderFeed(); renderTable();
+const fsel = document.getElementById("fund");
+const counts = {};
+DATA.companies.forEach(c => (c.greek_funds || []).forEach(f => counts[f] = (counts[f] || 0) + 1));
+const others = Object.keys(counts).filter(f => !DATA.target_funds.includes(f)).sort();
+fsel.innerHTML = `<option value="">All companies (${DATA.companies.length})</option>` +
+  `<optgroup label="Target funds">` + DATA.target_funds.map(f => `<option value="${esc(f)}"${counts[f] ? "" : " disabled"}>${esc(f)} (${counts[f] || 0})</option>`).join("") + `</optgroup>` +
+  `<optgroup label="Other Greek funds">` + others.map(f => `<option value="${esc(f)}">${esc(f)} (${counts[f]})</option>`).join("") + `</optgroup>`;
+fsel.onchange = () => {
+  fund = fsel.value;
+  document.getElementById("fundinfo").textContent = fund ? `Showing ${counts[fund]} portfolio companies, from the market map's investors column.` : "";
+  renderTiles(); renderMovers(); renderFeed(); renderTable();
+};
+renderTiles(); renderMovers(); renderFeed(); renderTable();
 </script>
 </body>
 </html>

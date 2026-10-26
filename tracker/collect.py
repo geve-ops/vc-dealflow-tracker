@@ -36,14 +36,22 @@ def collect(signals=("github", "news", "jobs"), lookback_days=7):
     rows = read_watchlist()
     token = github_token()
 
+    def safe(fn, row, *args):
+        # A network failure for one company and signal is recorded, not fatal to the run.
+        try:
+            return fn(row, *args)
+        except Exception as e:
+            return {"error": f"{type(e).__name__}: {e}"[:200], "repos": [], "items": [], "postings": [],
+                    "source": row.get("jobs_source", "")}
+
     def run(row):
         out = {}
         if "github" in signals:
-            out["github"] = signals_github.collect(row, token, window_start)
+            out["github"] = safe(signals_github.collect, row, token, window_start)
         if "news" in signals:
-            out["news"] = signals_news.collect(row)
+            out["news"] = safe(signals_news.collect, row)
         if "jobs" in signals:
-            out["jobs"] = signals_jobs.collect(row)
+            out["jobs"] = safe(signals_jobs.collect, row)
         return row["company_id"], out
 
     with ThreadPoolExecutor(max_workers=6) as pool:

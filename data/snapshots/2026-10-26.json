@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-26T13:12:04Z",
- "window_start": "2026-10-19T13:12:04Z",
+ "generated_at": "2026-10-26T13:48:04Z",
+ "window_start": "2026-10-19T13:48:04Z",
  "previous_snapshot": null,
  "signals": [
   "github",
@@ -67,7 +67,7 @@
    "github": {
     "org": "acumino-ai",
     "url": "https://github.com/acumino-ai",
-    "since": "2026-10-19T13:12:04Z",
+    "since": "2026-10-19T13:48:04Z",
     "repos": [
      {
       "name": "mujoco_ros2_control",
@@ -333,7 +333,7 @@
    "github": {
     "org": "moveo-ai",
     "url": "https://github.com/moveo-ai",
-    "since": "2026-10-19T13:12:04Z",
+    "since": "2026-10-19T13:48:04Z",
     "repos": [
      {
       "name": "agent-skills",
@@ -404,7 +404,7 @@
    "github": {
     "org": "bitloops",
     "url": "https://github.com/bitloops",
-    "since": "2026-10-19T13:12:04Z",
+    "since": "2026-10-19T13:48:04Z",
     "repos": [
      {
       "name": "bitloops-language",
@@ -427,6 +427,7 @@
       "archived": false,
       "window_commits": 7,
       "window_commits_capped": false,
+      "window_commits_bot": 2,
       "latest_commit": {
        "url": "https://github.com/bitloops/ddd-hexagonal-cqrs-es-eda/commit/11100016452b0e164e3ebb9b9026f99b901b0b47",
        "message": "Merge pull request #122 from bitloops/dependabot/go_modules/telemetry-consumer/go_modules-c076f603c1",
@@ -737,7 +738,7 @@
    "github": {
     "org": "Satori-Analytics",
     "url": "https://github.com/Satori-Analytics",
-    "since": "2026-10-19T13:12:04Z",
+    "since": "2026-10-19T13:48:04Z",
     "repos": [
      {
       "name": "pyenv-win",
@@ -1199,7 +1200,7 @@
    "github": {
     "org": "KeragonHQ",
     "url": "https://github.com/KeragonHQ",
-    "since": "2026-10-19T13:12:04Z",
+    "since": "2026-10-19T13:48:04Z",
     "repos": [
      {
       "name": "tap-stripe",
@@ -1239,7 +1240,7 @@
    "github": {
     "org": "TileDB-Inc",
     "url": "https://github.com/TileDB-Inc",
-    "since": "2026-10-19T13:12:04Z",
+    "since": "2026-10-19T13:48:04Z",
     "repos": [
      {
       "name": "tiledb-py-feedstock",
@@ -1282,6 +1283,7 @@
       "archived": false,
       "window_commits": 5,
       "window_commits_capped": false,
+      "window_commits_bot": 0,
       "latest_commit": {
        "url": "https://github.com/TileDB-Inc/tiledbsoma-feedstock/commit/effd3861d1b26f9f6fdf6402a9573d9820c85b4c",
        "message": "Free disk space to fix failing nightly feedstock builds (#402)",
@@ -1309,6 +1311,7 @@
       "archived": false,
       "window_commits": 1,
       "window_commits_capped": false,
+      "window_commits_bot": 0,
       "latest_commit": {
        "url": "https://github.com/TileDB-Inc/TileDB-VCF/commit/c80234338e64f07dc57c89dd9b65e945b5b92fcc",
        "message": "Use py314 in nightly build (#899)",
@@ -2392,7 +2395,7 @@
    "github": {
     "org": "Intryc",
     "url": "https://github.com/Intryc",
-    "since": "2026-10-19T13:12:04Z",
+    "since": "2026-10-19T13:48:04Z",
     "repos": [
      {
       "name": "intryc-delivery-cli",
@@ -2465,7 +2468,7 @@
    "github": {
     "org": "axelera-ai-hub",
     "url": "https://github.com/axelera-ai-hub",
-    "since": "2026-10-19T13:12:04Z",
+    "since": "2026-10-19T13:48:04Z",
     "repos": [
      {
       "name": "wingman",
@@ -2478,6 +2481,7 @@
       "archived": false,
       "window_commits": 5,
       "window_commits_capped": false,
+      "window_commits_bot": 0,
       "latest_commit": {
        "url": "https://github.com/axelera-ai-hub/wingman/commit/41e4acfea2ca494bb754fa18c9a39a88fc8a0e83",
        "message": "release(release): publish v1.7.74 release only repository",
@@ -2495,6 +2499,7 @@
       "archived": false,
       "window_commits": 1,
       "window_commits_capped": false,
+      "window_commits_bot": 0,
       "latest_commit": {
        "url": "https://github.com/axelera-ai-hub/aisbc.axelera-doc/commit/316b36970d3b9cd93e5097067065d43ed02301e5",
        "message": "security: Reword the work done into \"example\"",
@@ -2512,6 +2517,7 @@
       "archived": false,
       "window_commits": 1,
       "window_commits_capped": false,
+      "window_commits_bot": 0,
       "latest_commit": {
        "url": "https://github.com/axelera-ai-hub/voyager-sdk/commit/6c5a29a3d56d1c3fbe0ae748d626cf67da16fdca",
        "message": "Update links for ViT, VLM & LLM",
@@ -2529,6 +2535,7 @@
       "archived": false,
       "window_commits": 1,
       "window_commits_capped": false,
+      "window_commits_bot": 0,
       "latest_commit": {
        "url": "https://github.com/axelera-ai-hub/axelera-driver/commit/d74c78fcf00300507418a08b0940425377013079",
        "message": "Release version v1.9.0",
@@ -2771,6 +2778,16 @@
       "published": "2026-09-03T07:00:00Z",
       "lang": "en",
       "kind": "press"
+     },
+     {
+      "id": "CBMi3AFBVV95cUxQUWtzV2xIZDBZaTdFQ1Y3bjlrT1hFYnN1cUdvMjlYMjRxbjJycktFZHBXb1lNNGdQVTJJY01IR3l0dm93cjNpWnp3aDI4cThLNlZvNzVscWtfSUM2NERya3V4TmhhU1dYS3lyQ0g2d3J1WHZGb0FVb255aF9pRDRHSzhSOGlFWkdtTElkTXRSaFpoaDNNdWw0UDhUQkMxV2dqbmU5WmNJVTVENXlGSGhYdnp5Sm1qd0ZBN1pFc21RaVBxdTdmZUtvMVZPRzNrNUtvLUhWQnJ2a2pqVXdB",
+      "title": "From GITEX Global to CES: How EIC Accelerator company Multiverse Computing secured a strategic alliance with Axelera AI",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQUWtzV2xIZDBZaTdFQ1Y3bjlrT1hFYnN1cUdvMjlYMjRxbjJycktFZHBXb1lNNGdQVTJJY01IR3l0dm93cjNpWnp3aDI4cThLNlZvNzVscWtfSUM2NERya3V4TmhhU1dYS3lyQ0g2d3J1WHZGb0FVb255aF9pRDRHSzhSOGlFWkdtTElkTXRSaFpoaDNNdWw0UDhUQkMxV2dqbmU5WmNJVTVENXlGSGhYdnp5Sm1qd0ZBN1pFc21RaVBxdTdmZUtvMVZPRzNrNUtvLUhWQnJ2a2pqVXdB?oc=5",
+      "source": "European Innovation Council",
+      "source_url": "https://eic.ec.europa.eu",
+      "published": "2026-08-26T07:00:00Z",
+      "lang": "en",
+      "kind": "funding"
      }
     ]
    },
@@ -2841,7 +2858,7 @@
    "github": {
     "org": "Think-Silicon",
     "url": "https://github.com/Think-Silicon",
-    "since": "2026-10-19T13:12:04Z",
+    "since": "2026-10-19T13:48:04Z",
     "repos": [
      {
       "name": "lvgl",
@@ -2908,7 +2925,7 @@
    "github": {
     "org": "WeatherXM",
     "url": "https://github.com/WeatherXM",
-    "since": "2026-10-19T13:12:04Z",
+    "since": "2026-10-19T13:48:04Z",
     "repos": [
      {
       "name": "wg1200-firmware",
@@ -2921,6 +2938,7 @@
       "archived": false,
       "window_commits": 2,
       "window_commits_capped": false,
+      "window_commits_bot": 0,
       "latest_commit": {
        "url": "https://github.com/WeatherXM/wg1200-firmware/commit/a30374b045c138dac3f6dd4267ef8eb7390a7670",
        "message": "Release v0.8.39: Station targeting & pairing persistence, multi-gateway diagnostics, and precipitation chart accuracy",
@@ -2938,6 +2956,7 @@
       "archived": false,
       "window_commits": 3,
       "window_commits_capped": false,
+      "window_commits_bot": 0,
       "latest_commit": {
        "url": "https://github.com/WeatherXM/docs/commit/8fbab8d8ce4fd7905fcf0e268b493c2ac9ecaa6a",
        "message": "Merge pull request #272 from WeatherXM/docs/d1-wg1200-firmware-highlights",
@@ -2955,6 +2974,7 @@
       "archived": false,
       "window_commits": 18,
       "window_commits_capped": false,
+      "window_commits_bot": 0,
       "latest_commit": {
        "url": "https://github.com/WeatherXM/web-flasher/commit/35b2ecc4ccb31799ecd720609786362a99b3e33a",
        "message": "fix(ws2001): never pre-fill the AppKey; keep the saved one; propose the station's interval",
@@ -3245,7 +3265,7 @@
    "github": {
     "org": "ovidVR",
     "url": "https://github.com/ovidVR",
-    "since": "2026-10-19T13:12:04Z",
+    "since": "2026-10-19T13:48:04Z",
     "repos": [
      {
       "name": "NetgenMSHExporter",
@@ -3480,7 +3500,7 @@
    "github": {
     "org": "hackthebox",
     "url": "https://github.com/hackthebox",
-    "since": "2026-10-19T13:12:04Z",
+    "since": "2026-10-19T13:48:04Z",
     "repos": [
      {
       "name": "terraform-provider-mailgun",
@@ -3493,6 +3513,7 @@
       "archived": false,
       "window_commits": 1,
       "window_commits_capped": false,
+      "window_commits_bot": 0,
       "latest_commit": {
        "url": "https://github.com/hackthebox/terraform-provider-mailgun/commit/9b9ddda41abf287209cef612fc902dbacfdf34c9",
        "message": "fix(deps): patch 12 reachable vulnerabilities (Go 1.26.10, x/net v0.60.0, grpc v1.83.2) (#116)",
@@ -4220,7 +4241,7 @@
    "github": {
     "org": "opencosmos",
     "url": "https://github.com/opencosmos",
-    "since": "2026-10-19T13:12:04Z",
+    "since": "2026-10-19T13:48:04Z",
     "repos": [
      {
       "name": "datacosmos-sdk",
@@ -4440,16 +4461,6 @@
       "kind": "press"
      },
      {
-      "id": "CBMiuAFBVV95cUxPWnZKekpUSzdnOW5oTVIzOW50X1VpU2JFMGhXOHE1aWNydzFZNjlBM1N1MTlKUjlZVmtVcmdQQUp4Tmk4WU5pWEhpRDZ3VDNBVmNwZVFJMGFuek1fSVRMMnc3WEdGaUxhZWMxUEhDOVZpNm41YnltSHd3LUpEOG5GdGc3dnhmcko2WTBUUlg0UUVjaE56cjVoVGxqWHRuMHJDajFmeUVhdFVPMWNBbGpaWkpuRHpWSFlz",
-      "title": "Open Cosmos: Νέες εγκαταστάσεις 4.000 τ.μ. και πάνω από 300 εργαζόμενοι στην Ελλάδα έως το 2030",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWnZKekpUSzdnOW5oTVIzOW50X1VpU2JFMGhXOHE1aWNydzFZNjlBM1N1MTlKUjlZVmtVcmdQQUp4Tmk4WU5pWEhpRDZ3VDNBVmNwZVFJMGFuek1fSVRMMnc3WEdGaUxhZWMxUEhDOVZpNm41YnltSHd3LUpEOG5GdGc3dnhmcko2WTBUUlg0UUVjaE56cjVoVGxqWHRuMHJDajFmeUVhdFVPMWNBbGpaWkpuRHpWSFlz?oc=5",
-      "source": "ICTPLUS",
-      "source_url": "https://www.ictplus.gr",
-      "published": "2026-10-09T07:00:00Z",
-      "lang": "el",
-      "kind": "press"
-     },
-     {
       "id": "CBMi0gJBVV95cUxNdkJVRnhyYWF1TU9pUWNCaXh0X0NmaHlKb00zY0lNOWF0Xy1sMjd5YUNUWVdqdGw4WkEtNFFrZXhMbWRxN1NQMEpxSXVXV0w2UlBBZnY4R1ZFbVJtb3p1VVo5enhWaWFPUnRtaTIyUkV2dHR3Vmh0elR5OVJ6TkxkZmFjWnl4LXF2cVZWZ0xySW9FcVEwdzNRaEFodndlaU9YVDRYNEJlR3lDSkFCSEhYdnl6dXZXZ1Z0MW1RYkUxQkpmcG5DclA2T3didW12cENHLTNGVmZsbGVnaVZ6Z3hZLXpueDZNb1lOYTkzQ2tyUjVsNGgzZDc1N0RWT0VOZ1dFVGhlaFBJeDFtbUtxemVNRl9OaVMxa3h1ZDg2SV9TMDFhVmxHb1R6am80eEhuNExFN18ybVFPWFpRaHpoOWhnWlpzck5SNHMtclZyUXV3VEJudw",
       "title": "Open Cosmos: Οκταπλασιάζει την ομάδα στην Ελλάδα έως το 2030 - Νέες εγκαταστάσεις για παραγωγή δορυφόρων",
       "url": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxNdkJVRnhyYWF1TU9pUWNCaXh0X0NmaHlKb00zY0lNOWF0Xy1sMjd5YUNUWVdqdGw4WkEtNFFrZXhMbWRxN1NQMEpxSXVXV0w2UlBBZnY4R1ZFbVJtb3p1VVo5enhWaWFPUnRtaTIyUkV2dHR3Vmh0elR5OVJ6TkxkZmFjWnl4LXF2cVZWZ0xySW9FcVEwdzNRaEFodndlaU9YVDRYNEJlR3lDSkFCSEhYdnl6dXZXZ1Z0MW1RYkUxQkpmcG5DclA2T3didW12cENHLTNGVmZsbGVnaVZ6Z3hZLXpueDZNb1lOYTkzQ2tyUjVsNGgzZDc1N0RWT0VOZ1dFVGhlaFBJeDFtbUtxemVNRl9OaVMxa3h1ZDg2SV9TMDFhVmxHb1R6am80eEhuNExFN18ybVFPWFpRaHpoOWhnWlpzck5SNHMtclZyUXV3VEJudw?oc=5",
@@ -4460,11 +4471,11 @@
       "kind": "press"
      },
      {
-      "id": "CBMi3gFBVV95cUxOc2NyZzhIb1ZYRDltYjhLMVV5bVZkNDlQVmhNV3phVlM2RDYwMzR4dVlHMFFTdFp3czZobHVJcklXZENOM0NzVFNMVXhiTFFJSkZaaGxfWFZ5S2MwUUtheTI1Qm85WXV2WjdfQXI2aUIwZFZ1aFZxNlRmSld4Y3JFbGcxMk1GZXJmVXVRaUpZYjhQX2hKRHJwODBrUTljaTFVYUhTZU02UWNpeDVCZlowWHk1aHZVSExrMmpRX2VTYlhaVEM5VXBCNk55cS1NRzkyUXZLRzR3cTdKVDdnMlE",
-      "title": "Η Open Cosmos διευρύνει την παρουσία της στην Ελλάδα με νέες εγκαταστάσεις και προσλήψεις",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOc2NyZzhIb1ZYRDltYjhLMVV5bVZkNDlQVmhNV3phVlM2RDYwMzR4dVlHMFFTdFp3czZobHVJcklXZENOM0NzVFNMVXhiTFFJSkZaaGxfWFZ5S2MwUUtheTI1Qm85WXV2WjdfQXI2aUIwZFZ1aFZxNlRmSld4Y3JFbGcxMk1GZXJmVXVRaUpZYjhQX2hKRHJwODBrUTljaTFVYUhTZU02UWNpeDVCZlowWHk1aHZVSExrMmpRX2VTYlhaVEM5VXBCNk55cS1NRzkyUXZLRzR3cTdKVDdnMlE?oc=5",
-      "source": "CNN.gr",
-      "source_url": "https://www.cnn.gr",
+      "id": "CBMiuAFBVV95cUxPWnZKekpUSzdnOW5oTVIzOW50X1VpU2JFMGhXOHE1aWNydzFZNjlBM1N1MTlKUjlZVmtVcmdQQUp4Tmk4WU5pWEhpRDZ3VDNBVmNwZVFJMGFuek1fSVRMMnc3WEdGaUxhZWMxUEhDOVZpNm41YnltSHd3LUpEOG5GdGc3dnhmcko2WTBUUlg0UUVjaE56cjVoVGxqWHRuMHJDajFmeUVhdFVPMWNBbGpaWkpuRHpWSFlz",
+      "title": "Open Cosmos: Νέες εγκαταστάσεις 4.000 τ.μ. και πάνω από 300 εργαζόμενοι στην Ελλάδα έως το 2030",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWnZKekpUSzdnOW5oTVIzOW50X1VpU2JFMGhXOHE1aWNydzFZNjlBM1N1MTlKUjlZVmtVcmdQQUp4Tmk4WU5pWEhpRDZ3VDNBVmNwZVFJMGFuek1fSVRMMnc3WEdGaUxhZWMxUEhDOVZpNm41YnltSHd3LUpEOG5GdGc3dnhmcko2WTBUUlg0UUVjaE56cjVoVGxqWHRuMHJDajFmeUVhdFVPMWNBbGpaWkpuRHpWSFlz?oc=5",
+      "source": "ICTPLUS",
+      "source_url": "https://www.ictplus.gr",
       "published": "2026-10-09T07:00:00Z",
       "lang": "el",
       "kind": "press"
@@ -4485,6 +4496,16 @@
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOWFBsU21iSnZVQS1CZ3drT2ROTzFTR1hMQVJub3MzMXZOU0hSS3hod2FSSXV4N1o1Wm9Kd0VxV2FOa3NXTGl5ZFZrN2pVdjJjY184OTJJWjVJQUk0QTBmd0JRUmxjdmk4N05JMTE5RENjSURsOERySl82RE1PNDU1UzI3bVhObGZnOGUyOENQRU83a2VROTJyQnZabHV3a3ZuUElRcFpQOW1pN2wyWldyMkxzRVR2bGFGQTBYUDJ5ODBqR1lE?oc=5",
       "source": "STARTUPPER",
       "source_url": "https://startupper.gr",
+      "published": "2026-10-09T07:00:00Z",
+      "lang": "el",
+      "kind": "press"
+     },
+     {
+      "id": "CBMi3gFBVV95cUxOc2NyZzhIb1ZYRDltYjhLMVV5bVZkNDlQVmhNV3phVlM2RDYwMzR4dVlHMFFTdFp3czZobHVJcklXZENOM0NzVFNMVXhiTFFJSkZaaGxfWFZ5S2MwUUtheTI1Qm85WXV2WjdfQXI2aUIwZFZ1aFZxNlRmSld4Y3JFbGcxMk1GZXJmVXVRaUpZYjhQX2hKRHJwODBrUTljaTFVYUhTZU02UWNpeDVCZlowWHk1aHZVSExrMmpRX2VTYlhaVEM5VXBCNk55cS1NRzkyUXZLRzR3cTdKVDdnMlE",
+      "title": "Η Open Cosmos διευρύνει την παρουσία της στην Ελλάδα με νέες εγκαταστάσεις και προσλήψεις",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOc2NyZzhIb1ZYRDltYjhLMVV5bVZkNDlQVmhNV3phVlM2RDYwMzR4dVlHMFFTdFp3czZobHVJcklXZENOM0NzVFNMVXhiTFFJSkZaaGxfWFZ5S2MwUUtheTI1Qm85WXV2WjdfQXI2aUIwZFZ1aFZxNlRmSld4Y3JFbGcxMk1GZXJmVXVRaUpZYjhQX2hKRHJwODBrUTljaTFVYUhTZU02UWNpeDVCZlowWHk1aHZVSExrMmpRX2VTYlhaVEM5VXBCNk55cS1NRzkyUXZLRzR3cTdKVDdnMlE?oc=5",
+      "source": "CNN.gr",
+      "source_url": "https://www.cnn.gr",
       "published": "2026-10-09T07:00:00Z",
       "lang": "el",
       "kind": "press"
@@ -4991,7 +5012,7 @@
    "github": {
     "org": "corsmed",
     "url": "https://github.com/corsmed",
-    "since": "2026-10-19T13:12:04Z",
+    "since": "2026-10-19T13:48:04Z",
     "repos": [
      {
       "name": "go-txdb",
@@ -5194,7 +5215,7 @@
    "github": {
     "org": "causaly",
     "url": "https://github.com/causaly",
-    "since": "2026-10-19T13:12:04Z",
+    "since": "2026-10-19T13:48:04Z",
     "repos": [
      {
       "name": "html-to-pdf",
@@ -5212,11 +5233,12 @@
       "description": "Wrap zod validation errors in user-friendly readable messages",
       "created_at": "2022-08-30T09:06:34Z",
       "pushed_at": "2026-10-23T06:36:37Z",
-      "stars": 1021,
+      "stars": 1022,
       "fork": false,
       "archived": false,
       "window_commits": 2,
       "window_commits_capped": false,
+      "window_commits_bot": 2,
       "latest_commit": {
        "url": "https://github.com/causaly/zod-validation-error/commit/c0de31c59aee17da70fb270f34d07e8ee0bed03f",
        "message": "chore: bump typescript-eslint from 8.71.2 to 8.72.0 (#691)",
@@ -5229,11 +5251,12 @@
       "description": "Number pairing functions with support for BigInt numbers.",
       "created_at": "2022-03-11T13:25:00Z",
       "pushed_at": "2026-10-23T06:36:17Z",
-      "stars": 2,
+      "stars": 3,
       "fork": false,
       "archived": false,
       "window_commits": 2,
       "window_commits_capped": false,
+      "window_commits_bot": 2,
       "latest_commit": {
        "url": "https://github.com/causaly/pairing/commit/d1bf910597c01a3bab8b8cd8b595ff083f4188e5",
        "message": "chore: bump @typescript-eslint/parser from 8.71.2 to 8.72.0 (#184)",
@@ -5457,7 +5480,7 @@
    "github": {
     "org": "BOTAsys",
     "url": "https://github.com/BOTAsys",
-    "since": "2026-10-19T13:12:04Z",
+    "since": "2026-10-19T13:48:04Z",
     "repos": [
      {
       "name": "ardupilot",
@@ -5576,7 +5599,7 @@
    "github": {
     "org": "codebgp",
     "url": "https://github.com/codebgp",
-    "since": "2026-10-19T13:12:04Z",
+    "since": "2026-10-19T13:48:04Z",
     "repos": [
      {
       "name": "graphql-tools",
@@ -5672,7 +5695,7 @@
    "github": {
     "org": "icomatuk",
     "url": "https://github.com/icomatuk",
-    "since": "2026-10-19T13:12:04Z",
+    "since": "2026-10-19T13:48:04Z",
     "repos": []
    },
    "news": {
@@ -5691,7 +5714,7 @@
    "github": {
     "org": "marinetraffic",
     "url": "https://github.com/marinetraffic",
-    "since": "2026-10-19T13:12:04Z",
+    "since": "2026-10-19T13:48:04Z",
     "repos": [
      {
       "name": "mt-ais-toolbox",
@@ -5872,7 +5895,7 @@
    "github": {
     "org": "neurohive-eu",
     "url": "https://github.com/neurohive-eu",
-    "since": "2026-10-19T13:12:04Z",
+    "since": "2026-10-19T13:48:04Z",
     "repos": []
    },
    "news": {
@@ -6001,7 +6024,7 @@
    "github": {
     "org": "squaredev-io",
     "url": "https://github.com/squaredev-io",
-    "since": "2026-10-19T13:12:04Z",
+    "since": "2026-10-19T13:48:04Z",
     "repos": [
      {
       "name": "gh-workflows",
@@ -6197,7 +6220,7 @@
    "github": {
     "org": "solidkosmos",
     "url": "https://github.com/solidkosmos",
-    "since": "2026-10-19T13:12:04Z",
+    "since": "2026-10-19T13:48:04Z",
     "repos": []
    },
    "news": {

@@ -10,6 +10,7 @@ Author: Gerald Velas. First digest: 26 October 2026.
 | Weekly digests | [digests/](digests/) |
 | Dashboard (live) | [geve-ops.github.io/vc-dealflow-tracker](https://geve-ops.github.io/vc-dealflow-tracker/) ([source](docs/index.html)) |
 | Raw weekly snapshots | [data/snapshots/](data/snapshots/) |
+| Momentum score history | [data/scores.csv](data/scores.csv) |
 
 ## How it works
 
@@ -17,6 +18,7 @@ Author: Gerald Velas. First digest: 26 October 2026.
 2. **Enrichment.** `linkedin_url`, `github_org`, `careers_url` and the job source are filled from public pages. Each value has a `*_source` column that says where it came from.
 3. **Collection.** Each run calls every signal for every company and saves a dated snapshot in `data/snapshots/YYYY-MM-DD.json`.
 4. **Digest.** The newest snapshot is compared with the one before it. Changes go to `digests/YYYY-MM-DD.md` and `docs/index.html`.
+5. **Score.** Each company gets a weekly score from its changes, and a momentum score that adds earlier weeks at a lower weight. The digest opens with the top movers and a summary for each target fund; the dashboard can be filtered by Greek fund.
 
 ## Running it
 
@@ -41,6 +43,37 @@ Open `docs/index.html` in a browser to see the dashboard locally. The live versi
 GitHub API calls use `GITHUB_TOKEN` if it is set, or the token of a logged-in `gh` CLI. Without a token the API allows 60 requests an hour, which is not enough for a full run.
 
 **Schedule.** [.github/workflows/weekly.yml](.github/workflows/weekly.yml) runs `python run.py weekly` every Monday at 06:00 UTC and commits the new snapshot, digest and dashboard. You can also start it by hand from the Actions tab.
+
+## Greek fund tags
+
+Each company is tagged with the Greek venture funds in its cap table, read from the `investors` column of the market map dataset. The sources for those investors are in the dataset's `source_link` column.
+
+- **Target funds:** Big Pi Ventures (7 companies), Marathon VC (10), Metavallon VC (9), Velocity Partners (2), egg / Eurobank (none on the watchlist).
+- **Other Greek funds, kept for context:** Genesis Ventures (9), Evercurious VC (5), Uni.Fund (3), Phaistos Investment Fund (1), Starttech Ventures (1).
+- 39 of the 69 companies have at least one Greek fund.
+- `greek_fund_status` is `exited (company acquired)` when the company was bought, as with Augmenta, Code BGP and Seervision. It is `exited (fund sold its stake)` when the fund sold its stake, as Metavallon did with Purposeful.
+- **Limits:** the tags are only as complete as the market map's `investors` column. Small or undisclosed tickets, and funds listed only on portfolio pages, may be missing. The fund name patterns are in `tracker/watchlist.py`.
+
+## Momentum score
+
+The score turns the weekly changes into a ranking. Each signal is capped, so no single signal can dominate.
+
+| Signal this week | Points |
+|---|---|
+| Funding headline | 5 each, max 10 |
+| Other press headline | 1 each, max 3 |
+| New role posted | 1 each, max 5 |
+| Commits, excluding bots (all repos together) | 1 for 1-4, 2 for 5-19, 3 for 20 or more |
+| New public repo | 1 each, max 2 |
+| Stars gained | 1 per 25, max 2 |
+
+**Momentum** = this week's score + 0.5 × last week + 0.25 × two weeks ago + 0.125 × three weeks ago. Older activity counts less, so the top of the list shows what is moving now.
+
+The weights are a judgement call, not a model fitted to past rounds. Points by signal are saved every week in `data/scores.csv` so the weights can be checked against rounds that are later announced.
+
+- **Bots:** commits by Dependabot, Renovate and other `[bot]` accounts are shown in the digest but score nothing.
+- **Coverage bias:** companies with no GitHub organisation or job source can only score through news. A low score therefore means "nothing visible", not "nothing happening".
+- **First weeks:** a score from one weekly run only reflects that week. Momentum becomes meaningful after about four runs.
 
 ## Signals and their limits
 
@@ -90,6 +123,7 @@ GitHub API calls use `GITHUB_TOKEN` if it is set, or the token of a logged-in `g
 | `github_org`, `github_source` | Either linked from the company website, or a GitHub organisation whose profile lists the company's website domain. Name matches alone are not accepted. |
 | `careers_url`, `jobs_source`, `jobs_source_ref` | The job board and its account slug, `careers_page` with its URL, or `none` with a reason (for example, a careers page that belongs to an acquiring parent company). |
 | `news_terms` | Exact phrases a headline must contain, separated by ` \| `. |
+| `greek_funds`, `greek_fund_status`, `greek_funds_source` | Greek funds in the cap table, separated by ` \| `, and whether the fund is still invested. Rebuilt from the market map each time `build-watchlist` runs. |
 
 Values set by hand are not overwritten by `enrich` unless you pass `--force`.
 
@@ -103,6 +137,7 @@ tracker/signals_github.py   GitHub signal
 tracker/signals_news.py     funding news signal
 tracker/signals_jobs.py     job postings signal
 tracker/collect.py          run all signals, save a snapshot
+tracker/score.py            weekly score and momentum ranking
 tracker/digest.py           compare snapshots, write the digest and dashboard
 tracker/dashboard_template.html
 ```

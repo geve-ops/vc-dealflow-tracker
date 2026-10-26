@@ -35,6 +35,37 @@ NEWS_TERMS = {
 }
 
 
+# Greek venture funds, matched in the market map's `investors` text. The first five are the
+# funds this portfolio targets; the rest are other Greek funds kept for context.
+TARGET_FUNDS = ["Big Pi Ventures", "Marathon VC", "Metavallon VC", "Velocity Partners", "egg / Eurobank"]
+GREEK_FUNDS = {
+    "Big Pi Ventures": r"big ?pi ventures",
+    "Marathon VC": r"marathon (venture capital|vc)",
+    "Metavallon VC": r"metavallon",
+    "Velocity Partners": r"velocity partners",
+    "egg / Eurobank": r"\begg\b|eurobank",
+    "Uni.Fund": r"uni\.fund",
+    "Genesis Ventures": r"genesis ventures",
+    "Evercurious VC": r"evercurious",
+    "Phaistos Investment Fund": r"phaistos",
+    "Starttech Ventures": r"starttech",
+}
+
+
+def greek_funds(investors):
+    """(funds, status) from the market map's investors text."""
+    funds = [name for name, rx in GREEK_FUNDS.items() if re.search(rx, investors or "", re.I)]
+    status = ""
+    if funds:
+        if re.search(r"acquirer:", investors, re.I):
+            status = "exited (company acquired)"
+        elif re.search(r"sold shares", investors, re.I):
+            status = "exited (fund sold its stake)"
+        else:
+            status = "current"
+    return funds, status
+
+
 def default_terms(name):
     return re.sub(r"\s*\(.*?\)", "", name).strip()
 
@@ -65,6 +96,11 @@ def build(source_csv):
             if r.get(col) and not row[col]:
                 row[col] = r[col]
                 row[col.replace("_org", "_source").replace("_url", "_source")] = "market map dataset"
+        funds, status = greek_funds(r.get("investors", ""))
+        row["greek_funds"] = " | ".join(funds)
+        row["greek_fund_status"] = status
+        row["greek_funds_source"] = ("market map dataset, investors column; sources in its source_link"
+                                     if funds else "")
         if not row["news_terms"]:
             row["news_terms"] = NEWS_TERMS.get(cid, default_terms(r["company"]))
         rows.append(row)
