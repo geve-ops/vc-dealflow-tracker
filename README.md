@@ -12,7 +12,7 @@ Author: Gerald Velas. First digest: 26 October 2026.
 | Raw weekly snapshots | [data/snapshots/](data/snapshots/) |
 | Momentum score history | [data/scores.csv](data/scores.csv) |
 | Monthly briefing (live) | [geve-ops.github.io/vc-dealflow-tracker/briefing.html](https://geve-ops.github.io/vc-dealflow-tracker/briefing.html), archive in [docs/briefings/](docs/briefings/) |
-| Analyst pipeline (kept by hand) | [data/pipeline.csv](data/pipeline.csv) |
+| Analyst pipeline (For the moment kept by hand) | [data/pipeline.csv](data/pipeline.csv) |
 
 ## How it works
 
