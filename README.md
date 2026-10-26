@@ -8,7 +8,7 @@ Author: Gerald Velas. First digest: 26 October 2026.
 |---|---|
 | Watchlist (69 companies, with LinkedIn, GitHub and job sources) | [data/watchlist.csv](data/watchlist.csv) |
 | Weekly digests | [digests/](digests/) |
-| Dashboard (static HTML) | [docs/index.html](docs/index.html) |
+| Dashboard (live) | [geve-ops.github.io/vc-dealflow-tracker](https://geve-ops.github.io/vc-dealflow-tracker/) ([source](docs/index.html)) |
 | Raw weekly snapshots | [data/snapshots/](data/snapshots/) |
 
 ## How it works
@@ -36,7 +36,7 @@ python run.py collect --signals github news
 python run.py digest                 # rebuild the digest from saved snapshots
 ```
 
-Open `docs/index.html` in a browser to see the dashboard. On GitHub Pages, serve it from the `docs/` folder.
+Open `docs/index.html` in a browser to see the dashboard locally. The live version is served by GitHub Pages from the `docs/` folder on `main` and updates with each weekly run.
 
 GitHub API calls use `GITHUB_TOKEN` if it is set, or the token of a logged-in `gh` CLI. Without a token the API allows 60 requests an hour, which is not enough for a full run.
 
