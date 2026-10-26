@@ -157,7 +157,7 @@ function renderTable() {
 document.getElementById("q").addEventListener("input", renderFeed);
 document.getElementById("foot").innerHTML =
   `Generated ${esc(DATA.generated_at)}. * = counted from the careers page (heuristic), not a job-board API. Digests: ` +
-  DATA.history.map(d => `<a href="../digests/${esc(d)}.md">${esc(d)}</a>`).join(", ") +
+  DATA.history.map(d => `<a href="https://github.com/geve-ops/vc-dealflow-tracker/blob/main/digests/${esc(d)}.md">${esc(d)}</a>`).join(", ") +
   `. Signals and their limits are described in the README.`;
 renderTiles(); renderFeed(); renderTable();
 </script>
