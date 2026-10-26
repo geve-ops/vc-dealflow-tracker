@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-26T13:48:04Z",
- "window_start": "2026-10-19T13:48:04Z",
+ "generated_at": "2026-10-26T14:10:01Z",
+ "window_start": "2026-10-19T14:10:01Z",
  "previous_snapshot": null,
  "signals": [
   "github",
@@ -67,7 +67,7 @@
    "github": {
     "org": "acumino-ai",
     "url": "https://github.com/acumino-ai",
-    "since": "2026-10-19T13:48:04Z",
+    "since": "2026-10-19T14:10:01Z",
     "repos": [
      {
       "name": "mujoco_ros2_control",
@@ -333,7 +333,7 @@
    "github": {
     "org": "moveo-ai",
     "url": "https://github.com/moveo-ai",
-    "since": "2026-10-19T13:48:04Z",
+    "since": "2026-10-19T14:10:01Z",
     "repos": [
      {
       "name": "agent-skills",
@@ -404,7 +404,7 @@
    "github": {
     "org": "bitloops",
     "url": "https://github.com/bitloops",
-    "since": "2026-10-19T13:48:04Z",
+    "since": "2026-10-19T14:10:01Z",
     "repos": [
      {
       "name": "bitloops-language",
@@ -738,7 +738,7 @@
    "github": {
     "org": "Satori-Analytics",
     "url": "https://github.com/Satori-Analytics",
-    "since": "2026-10-19T13:48:04Z",
+    "since": "2026-10-19T14:10:01Z",
     "repos": [
      {
       "name": "pyenv-win",
@@ -1078,16 +1078,6 @@
       "kind": "funding"
      },
      {
-      "id": "CBMi1wJBVV95cUxQZ3JfbXI5TTlpeFJhYm14RGFsMTUwczk0M1EySndXOE14dkVyV3B2clB5bFVnaVB2TUpTaVE0ZENPR0E5cWRkYVkxTk5YNUVaZEdxZVAtTDQ1XzZCeGt2b0ItZXhWRGpPWGMyeHFXQUl6ZmRsSUxrbmVBdWZXWXdPbHhIbmhyMXYwWGlZbG9CLXU0Zm91anNzcnNyNmpTZlBnZHRZd3piX3p4WWJTLV9BZTFSU0d1WWtEaE14WF9DQmV2UEtiSUxObHBKeDhoRTNUREFPRzdVNW92Mzg2NUdKS016c0VzODFvR2JJa01XdXRrRUdRRUhzQkpGNEdsQ2RLb1I5SjhIV05lMUtpTzZHV2JMU3BuMlNnRHdKaFBwanpLeW5GTnFnd252RjZYZXJjM2toUHMwdnl1SVF2dElseDRPRGtWQ19YenI5X05HVFIxTElCYVdj",
-      "title": "Στρατηγική Επένδυση της Motor Oil στην Satori Analytics με Μειοψηφική Συμμετοχή",
-      "url": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxQZ3JfbXI5TTlpeFJhYm14RGFsMTUwczk0M1EySndXOE14dkVyV3B2clB5bFVnaVB2TUpTaVE0ZENPR0E5cWRkYVkxTk5YNUVaZEdxZVAtTDQ1XzZCeGt2b0ItZXhWRGpPWGMyeHFXQUl6ZmRsSUxrbmVBdWZXWXdPbHhIbmhyMXYwWGlZbG9CLXU0Zm91anNzcnNyNmpTZlBnZHRZd3piX3p4WWJTLV9BZTFSU0d1WWtEaE14WF9DQmV2UEtiSUxObHBKeDhoRTNUREFPRzdVNW92Mzg2NUdKS016c0VzODFvR2JJa01XdXRrRUdRRUhzQkpGNEdsQ2RLb1I5SjhIV05lMUtpTzZHV2JMU3BuMlNnRHdKaFBwanpLeW5GTnFnd252RjZYZXJjM2toUHMwdnl1SVF2dElseDRPRGtWQ19YenI5X05HVFIxTElCYVdj?oc=5",
-      "source": "sofokleous10.gr",
-      "source_url": "https://sofokleous10.gr",
-      "published": "2026-09-01T07:00:00Z",
-      "lang": "el",
-      "kind": "funding"
-     },
-     {
       "id": "CBMijwFBVV95cUxOVklDV1gtdnBMdEFQSzlnVDMzeUt0Y29YOHZtbGNMZ0Znb2NoeVlzNzYzNUIzOVdPWS10VEk0UklnaHVqUmh2aXd5amx5MXJoY2lJRU9TTVNBVlZlU081VlFwTlcwMktNeHZHbi1hNl84eWNZUUZVVlZuQU9Cd2xWME5tcWlYc0ZUSXlIMjJ6OA",
       "title": "Η Motor Oil επενδύει στη Satori Analytics",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVklDV1gtdnBMdEFQSzlnVDMzeUt0Y29YOHZtbGNMZ0Znb2NoeVlzNzYzNUIzOVdPWS10VEk0UklnaHVqUmh2aXd5amx5MXJoY2lJRU9TTVNBVlZlU081VlFwTlcwMktNeHZHbi1hNl84eWNZUUZVVlZuQU9Cd2xWME5tcWlYc0ZUSXlIMjJ6OA?oc=5",
@@ -1200,7 +1190,7 @@
    "github": {
     "org": "KeragonHQ",
     "url": "https://github.com/KeragonHQ",
-    "since": "2026-10-19T13:48:04Z",
+    "since": "2026-10-19T14:10:01Z",
     "repos": [
      {
       "name": "tap-stripe",
@@ -1240,7 +1230,7 @@
    "github": {
     "org": "TileDB-Inc",
     "url": "https://github.com/TileDB-Inc",
-    "since": "2026-10-19T13:48:04Z",
+    "since": "2026-10-19T14:10:01Z",
     "repos": [
      {
       "name": "tiledb-py-feedstock",
@@ -2395,7 +2385,7 @@
    "github": {
     "org": "Intryc",
     "url": "https://github.com/Intryc",
-    "since": "2026-10-19T13:48:04Z",
+    "since": "2026-10-19T14:10:01Z",
     "repos": [
      {
       "name": "intryc-delivery-cli",
@@ -2468,7 +2458,7 @@
    "github": {
     "org": "axelera-ai-hub",
     "url": "https://github.com/axelera-ai-hub",
-    "since": "2026-10-19T13:48:04Z",
+    "since": "2026-10-19T14:10:01Z",
     "repos": [
      {
       "name": "wingman",
@@ -2720,16 +2710,6 @@
       "kind": "funding"
      },
      {
-      "id": "CBMidkFVX3lxTE9pRlU5dVgxT3E1aS02Yjlsbm9qNnBpZkxJODUtM2dIdkd6Y2FzUUlwQktqS1Y0QVdBd0g4RFBsOXdVZERsUmkzV0w2ZmJIcnU4N0ZXbmpsY3BQMkctOURuRS1DUmxvbzdxYTM1dkZaQlZOXzZ6RGc",
-      "title": "Dutch Axelera AI Begins Shipping 'Europa' AI Inference Chip, Validated on Dell and Supermicro Systems",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9pRlU5dVgxT3E1aS02Yjlsbm9qNnBpZkxJODUtM2dIdkd6Y2FzUUlwQktqS1Y0QVdBd0g4RFBsOXdVZERsUmkzV0w2ZmJIcnU4N0ZXbmpsY3BQMkctOURuRS1DUmxvbzdxYTM1dkZaQlZOXzZ6RGc?oc=5",
-      "source": "BigGo Finance",
-      "source_url": "https://finance.biggo.com",
-      "published": "2026-09-16T07:00:00Z",
-      "lang": "en",
-      "kind": "press"
-     },
-     {
       "id": "CBMiywFBVV95cUxPd29lSW9SMW5zN2dCS2xFeFZUdkNJX0lDWUQ1Wlo0Rm50T21JTTFXcGxfV2NlX19YU0FCYU56RkJiZnhFOTN4NUxPOFRZeWpXcC12OFBqbG1ZaTFxeHZaazlWM1c4TVlRVzFodGZiWHV1QVZsNDFNZ2g5cHdtSXN3ekZJQndSNkE5VUtMZVRoUFhyWVZDNmhRcUV5UjJRZVRTd1lNMXpHZVpSQTNXZGU2eTEwdnNJWTlteDI2NjNINURHZ28tVTRSdEh5TQ",
       "title": "Axelera AI launches Europa chip, makes hardware available in Dell and Supermicro servers",
       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPd29lSW9SMW5zN2dCS2xFeFZUdkNJX0lDWUQ1Wlo0Rm50T21JTTFXcGxfV2NlX19YU0FCYU56RkJiZnhFOTN4NUxPOFRZeWpXcC12OFBqbG1ZaTFxeHZaazlWM1c4TVlRVzFodGZiWHV1QVZsNDFNZ2g5cHdtSXN3ekZJQndSNkE5VUtMZVRoUFhyWVZDNmhRcUV5UjJRZVRTd1lNMXpHZVpSQTNXZGU2eTEwdnNJWTlteDI2NjNINURHZ28tVTRSdEh5TQ?oc=5",
@@ -2858,7 +2838,7 @@
    "github": {
     "org": "Think-Silicon",
     "url": "https://github.com/Think-Silicon",
-    "since": "2026-10-19T13:48:04Z",
+    "since": "2026-10-19T14:10:01Z",
     "repos": [
      {
       "name": "lvgl",
@@ -2925,7 +2905,7 @@
    "github": {
     "org": "WeatherXM",
     "url": "https://github.com/WeatherXM",
-    "since": "2026-10-19T13:48:04Z",
+    "since": "2026-10-19T14:10:01Z",
     "repos": [
      {
       "name": "wg1200-firmware",
@@ -3265,7 +3245,7 @@
    "github": {
     "org": "ovidVR",
     "url": "https://github.com/ovidVR",
-    "since": "2026-10-19T13:48:04Z",
+    "since": "2026-10-19T14:10:01Z",
     "repos": [
      {
       "name": "NetgenMSHExporter",
@@ -3500,7 +3480,7 @@
    "github": {
     "org": "hackthebox",
     "url": "https://github.com/hackthebox",
-    "since": "2026-10-19T13:48:04Z",
+    "since": "2026-10-19T14:10:01Z",
     "repos": [
      {
       "name": "terraform-provider-mailgun",
@@ -4241,7 +4221,7 @@
    "github": {
     "org": "opencosmos",
     "url": "https://github.com/opencosmos",
-    "since": "2026-10-19T13:48:04Z",
+    "since": "2026-10-19T14:10:01Z",
     "repos": [
      {
       "name": "datacosmos-sdk",
@@ -4661,21 +4641,21 @@
       "kind": "funding"
      },
      {
-      "id": "CBMiowFBVV95cUxPcTBuckZYUzJiT01ybG1oTUJacXpPR2VYako3ai00Vm5JZ3ozRmprYzNOcjgxQ29LOFBWUE1zZWt5eEhmNWZMUDR4QTRCbmdMRmRjU2R4dG9LNzlpdWE5el9Md2drV0J2RFlHclZ5QmlPZlROb2hudjYxSDhUb2F5LVFyT1ltcjdfU2ZjSkJFN1R0cDFJZ0pRajZuVko0aUFVdF9r",
-      "title": "Open Cosmos Raises €300 Million as Investors Back Europe’s Space Push",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPcTBuckZYUzJiT01ybG1oTUJacXpPR2VYako3ai00Vm5JZ3ozRmprYzNOcjgxQ29LOFBWUE1zZWt5eEhmNWZMUDR4QTRCbmdMRmRjU2R4dG9LNzlpdWE5el9Md2drV0J2RFlHclZ5QmlPZlROb2hudjYxSDhUb2F5LVFyT1ltcjdfU2ZjSkJFN1R0cDFJZ0pRajZuVko0aUFVdF9r?oc=5",
-      "source": "European Spaceflight",
-      "source_url": "https://europeanspaceflight.com",
-      "published": "2026-09-15T07:00:00Z",
-      "lang": "en",
-      "kind": "funding"
-     },
-     {
       "id": "CBMitgFBVV95cUxNQ3BVWnZ1ZmJ0d18tVDZlSFFSdkFtNnpXMU1lQjZhTXc5NlZZRV9DMHk0Skw5aDJ2U2JiRXJ6cmEtbkd2RzY2Sy1PVGYxRUtKd2d0WkRQRjdkSGQwSHhwS3lEWmFBS1pwRERST2NNMkpqV2hpZzNTNFBwdzdHSERJQ0RlOU5XZDlqbDRoeC1iUWJldk1aa3IteUNoaWl4RVFfSzEtQzFTTlM2TkFwck5oSFh3ZGZCZw",
       "title": "Open Cosmos raises €300m for real-time space connectivity, intelligence",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNQ3BVWnZ1ZmJ0d18tVDZlSFFSdkFtNnpXMU1lQjZhTXc5NlZZRV9DMHk0Skw5aDJ2U2JiRXJ6cmEtbkd2RzY2Sy1PVGYxRUtKd2d0WkRQRjdkSGQwSHhwS3lEWmFBS1pwRERST2NNMkpqV2hpZzNTNFBwdzdHSERJQ0RlOU5XZDlqbDRoeC1iUWJldk1aa3IteUNoaWl4RVFfSzEtQzFTTlM2TkFwck5oSFh3ZGZCZw?oc=5",
       "source": "Computer Weekly",
       "source_url": "https://www.computerweekly.com",
+      "published": "2026-09-15T07:00:00Z",
+      "lang": "en",
+      "kind": "funding"
+     },
+     {
+      "id": "CBMiowFBVV95cUxPcTBuckZYUzJiT01ybG1oTUJacXpPR2VYako3ai00Vm5JZ3ozRmprYzNOcjgxQ29LOFBWUE1zZWt5eEhmNWZMUDR4QTRCbmdMRmRjU2R4dG9LNzlpdWE5el9Md2drV0J2RFlHclZ5QmlPZlROb2hudjYxSDhUb2F5LVFyT1ltcjdfU2ZjSkJFN1R0cDFJZ0pRajZuVko0aUFVdF9r",
+      "title": "Open Cosmos Raises €300 Million as Investors Back Europe’s Space Push",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPcTBuckZYUzJiT01ybG1oTUJacXpPR2VYako3ai00Vm5JZ3ozRmprYzNOcjgxQ29LOFBWUE1zZWt5eEhmNWZMUDR4QTRCbmdMRmRjU2R4dG9LNzlpdWE5el9Md2drV0J2RFlHclZ5QmlPZlROb2hudjYxSDhUb2F5LVFyT1ltcjdfU2ZjSkJFN1R0cDFJZ0pRajZuVko0aUFVdF9r?oc=5",
+      "source": "European Spaceflight",
+      "source_url": "https://europeanspaceflight.com",
       "published": "2026-09-15T07:00:00Z",
       "lang": "en",
       "kind": "funding"
@@ -5012,7 +4992,7 @@
    "github": {
     "org": "corsmed",
     "url": "https://github.com/corsmed",
-    "since": "2026-10-19T13:48:04Z",
+    "since": "2026-10-19T14:10:01Z",
     "repos": [
      {
       "name": "go-txdb",
@@ -5215,7 +5195,7 @@
    "github": {
     "org": "causaly",
     "url": "https://github.com/causaly",
-    "since": "2026-10-19T13:48:04Z",
+    "since": "2026-10-19T14:10:01Z",
     "repos": [
      {
       "name": "html-to-pdf",
@@ -5480,7 +5460,7 @@
    "github": {
     "org": "BOTAsys",
     "url": "https://github.com/BOTAsys",
-    "since": "2026-10-19T13:48:04Z",
+    "since": "2026-10-19T14:10:01Z",
     "repos": [
      {
       "name": "ardupilot",
@@ -5599,7 +5579,7 @@
    "github": {
     "org": "codebgp",
     "url": "https://github.com/codebgp",
-    "since": "2026-10-19T13:48:04Z",
+    "since": "2026-10-19T14:10:01Z",
     "repos": [
      {
       "name": "graphql-tools",
@@ -5695,7 +5675,7 @@
    "github": {
     "org": "icomatuk",
     "url": "https://github.com/icomatuk",
-    "since": "2026-10-19T13:48:04Z",
+    "since": "2026-10-19T14:10:01Z",
     "repos": []
    },
    "news": {
@@ -5714,7 +5694,7 @@
    "github": {
     "org": "marinetraffic",
     "url": "https://github.com/marinetraffic",
-    "since": "2026-10-19T13:48:04Z",
+    "since": "2026-10-19T14:10:01Z",
     "repos": [
      {
       "name": "mt-ais-toolbox",
@@ -5895,7 +5875,7 @@
    "github": {
     "org": "neurohive-eu",
     "url": "https://github.com/neurohive-eu",
-    "since": "2026-10-19T13:48:04Z",
+    "since": "2026-10-19T14:10:01Z",
     "repos": []
    },
    "news": {
@@ -6024,7 +6004,7 @@
    "github": {
     "org": "squaredev-io",
     "url": "https://github.com/squaredev-io",
-    "since": "2026-10-19T13:48:04Z",
+    "since": "2026-10-19T14:10:01Z",
     "repos": [
      {
       "name": "gh-workflows",
@@ -6220,7 +6200,7 @@
    "github": {
     "org": "solidkosmos",
     "url": "https://github.com/solidkosmos",
-    "since": "2026-10-19T13:48:04Z",
+    "since": "2026-10-19T14:10:01Z",
     "repos": []
    },
    "news": {
