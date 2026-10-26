@@ -1,11 +1,12 @@
 {
- "generated_at": "2026-10-26T14:10:01Z",
- "window_start": "2026-10-19T14:10:01Z",
+ "generated_at": "2026-10-26T14:17:48Z",
+ "window_start": "2026-10-19T14:17:48Z",
  "previous_snapshot": null,
  "signals": [
   "github",
   "news",
-  "jobs"
+  "jobs",
+  "grants"
  ],
  "companies": {
   "GRDT-001": {
@@ -61,13 +62,19 @@
     "source": "workable",
     "ref": "perceptual-robotics",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "Perceptual Robotics"
+    ],
+    "items": []
    }
   },
   "GRDT-002": {
    "github": {
     "org": "acumino-ai",
     "url": "https://github.com/acumino-ai",
-    "since": "2026-10-19T14:10:01Z",
+    "since": "2026-10-19T14:17:48Z",
     "repos": [
      {
       "name": "mujoco_ros2_control",
@@ -182,6 +189,12 @@
     "source": "careers_page",
     "ref": "https://acumino.ai/jobs",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "Acumino"
+    ],
+    "items": []
    }
   },
   "GRDT-003": {
@@ -192,7 +205,13 @@
     ],
     "items": []
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Progressive Robotics"
+    ],
+    "items": []
+   }
   },
   "GRDT-004": {
    "github": null,
@@ -206,6 +225,12 @@
     "source": "careers_page",
     "ref": "https://velos-rotors.com/careers/",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "Velos Rotors"
+    ],
+    "items": []
    }
   },
   "GRDT-005": {
@@ -227,7 +252,25 @@
      }
     ]
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Robenso"
+    ],
+    "items": [
+     {
+      "id": "101070524",
+      "title": "AI-powered Robotic Material Recovery in a Box",
+      "acronym": "RECLAIM",
+      "signed": "2022-06-21",
+      "start": "2022-09-01",
+      "end": "2025-08-31",
+      "eu_contribution": 2934800.0,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/101070524"
+     }
+    ]
+   }
   },
   "GRDT-006": {
    "github": null,
@@ -237,7 +280,58 @@
     ],
     "items": []
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Augmenta"
+    ],
+    "items": [
+     {
+      "id": "101092912",
+      "title": "Machine Learning for Autonomic System Operation in the Heterogeneous Edge-Cloud Continuum",
+      "acronym": "MLSysOps",
+      "signed": "2022-11-21",
+      "start": "2023-01-01",
+      "end": "2026-01-31",
+      "eu_contribution": 5711250.0,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101092912"
+     },
+     {
+      "id": "101081858",
+      "title": "Innovative concepts and technologies for ECOlogically sustainable NUTRIent management in agriculture aiming to prevent, mitigate and eliminate pollution in soils, water and air",
+      "acronym": "ECONUTRI",
+      "signed": "2022-09-29",
+      "start": "2022-11-01",
+      "end": "2026-04-30",
+      "eu_contribution": 5560916.25,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101081858"
+     },
+     {
+      "id": "101070516",
+      "title": "A META OPERATING SYSTEM FOR BROKERING HYPER-DISTRIBUTED APPLICATIONS ON CLOUD COMPUTING CONTINUUMS",
+      "acronym": "NebulOus",
+      "signed": "2022-06-13",
+      "start": "2022-09-01",
+      "end": "2025-12-31",
+      "eu_contribution": 8478106.0,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/101070516"
+     },
+     {
+      "id": "101059700",
+      "title": "Assessing the impact of digital technology solutions in agriculture in real-life conditions",
+      "acronym": "QuantiFarm",
+      "signed": "2022-06-01",
+      "start": "2022-07-01",
+      "end": "2026-03-31",
+      "eu_contribution": 7397382.5,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101059700"
+     }
+    ]
+   }
   },
   "GRDT-007": {
    "github": null,
@@ -251,6 +345,46 @@
     "source": "careers_page",
     "ref": "https://grobotics.eu/career/",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "Gizelis Robotics"
+    ],
+    "items": [
+     {
+      "id": "101120640",
+      "title": "Cooperative robotics powered by AI and data for flexible production cells",
+      "acronym": "COROB",
+      "signed": "2023-06-27",
+      "start": "2023-10-01",
+      "end": "2026-09-30",
+      "eu_contribution": 4999712.5,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101120640"
+     },
+     {
+      "id": "101006798",
+      "title": "User-centric solutions for a flexible and modular manufacturing in small and medium-sized shipyards",
+      "acronym": "Mari4_YARD",
+      "signed": "2020-11-06",
+      "start": "2020-12-01",
+      "end": "2024-11-30",
+      "eu_contribution": 4998824.76,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/101006798"
+     },
+     {
+      "id": "869986",
+      "title": "Advanced manufacturing solutions tightly aligned with business needs",
+      "acronym": "AVANGARD",
+      "signed": "2019-10-11",
+      "start": "2019-10-15",
+      "end": "2022-10-14",
+      "eu_contribution": 14027312.5,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/869986"
+     }
+    ]
    }
   },
   "GRDT-008": {
@@ -272,7 +406,113 @@
      }
     ]
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Altus LSA"
+    ],
+    "items": [
+     {
+      "id": "101189796",
+      "title": "Demonstration of long-endurance intelligent multi-purpose autonomous vehicles for marine applications",
+      "acronym": "MERLIN",
+      "signed": "2024-10-29",
+      "start": "2024-11-01",
+      "end": "2028-10-31",
+      "eu_contribution": 7946786.25,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101189796"
+     },
+     {
+      "id": "101168521",
+      "title": "Improving last-kilometer navigation & transportation of emergency personnel, equipment and relief items in hazardous and challenging environments",
+      "acronym": "ForeSight",
+      "signed": "2024-07-19",
+      "start": "2024-10-01",
+      "end": "2027-09-30",
+      "eu_contribution": 3499923.75,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101168521"
+     },
+     {
+      "id": "101093008",
+      "title": "Integrated, Modular, Multisensing, Mid- and Near- IR sensing platform",
+      "acronym": "M3NIR",
+      "signed": "2022-12-02",
+      "start": "2023-01-01",
+      "end": "2026-10-31",
+      "eu_contribution": 4999301.0,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101093008"
+     },
+     {
+      "id": "101092365",
+      "title": "Intelligent digital toolbox towards more sustainable and safer extraction of mineral resources",
+      "acronym": "NETHELIX",
+      "signed": "2022-11-29",
+      "start": "2023-01-01",
+      "end": "2026-06-30",
+      "eu_contribution": 11145398.63,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101092365"
+     },
+     {
+      "id": "101086386",
+      "title": "A CLOUD-BASED REMOTE SENSING DATA SYSTEM FOR PROMOTING RESEARCH AND SOCIOECONOMIC STUDIES IN ARCTIC ENVIRONMENTS",
+      "acronym": "EO-PERSIST",
+      "signed": "2022-10-17",
+      "start": "2023-01-01",
+      "end": "2026-12-31",
+      "eu_contribution": 1568600.0,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101086386"
+     },
+     {
+      "id": "101073990",
+      "title": "Advanced technologies for scanning and detection of illicit material  for postal services and express courier flows (iFlows Toolkit)",
+      "acronym": "iFLOWS",
+      "signed": "2022-10-04",
+      "start": "2022-11-01",
+      "end": "2026-01-31",
+      "eu_contribution": 3998125.0,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101073990"
+     },
+     {
+      "id": "101071247",
+      "title": "European Higher Education Institutions Network for Climate and Atmospheric Sciences",
+      "acronym": "Edu4ClimAte",
+      "signed": "2022-05-31",
+      "start": "2022-10-01",
+      "end": "2026-09-30",
+      "eu_contribution": 1999585.0,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101071247"
+     },
+     {
+      "id": "876019",
+      "title": "Airborne data collection on resilient system architectures",
+      "acronym": "ADACORSA",
+      "signed": "2020-05-19",
+      "start": "2020-05-01",
+      "end": "2023-10-31",
+      "eu_contribution": 11869482.47,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/876019"
+     },
+     {
+      "id": "824348",
+      "title": "Development and demonstration of a long-endurance sea surveying autonomous unmanned vehicle with gliding capability powered by hydrogen fuel cell",
+      "acronym": "ENDURUNS",
+      "signed": "2018-10-04",
+      "start": "2018-11-01",
+      "end": "2023-07-31",
+      "eu_contribution": 7908265.0,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/824348"
+     }
+    ]
+   }
   },
   "GRDT-009": {
    "github": null,
@@ -307,6 +547,12 @@
     "source": "careers_page",
     "ref": "https://sas-tech.gr/careers/",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "SAS Technology"
+    ],
+    "items": []
    }
   },
   "GRDT-010": {
@@ -317,7 +563,13 @@
     ],
     "items": []
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Aether Aeronautics"
+    ],
+    "items": []
+   }
   },
   "GRDT-011": {
    "github": null,
@@ -327,13 +579,19 @@
     ],
     "items": []
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Ucandrone"
+    ],
+    "items": []
+   }
   },
   "GRDT-012": {
    "github": {
     "org": "moveo-ai",
     "url": "https://github.com/moveo-ai",
-    "since": "2026-10-19T14:10:01Z",
+    "since": "2026-10-19T14:17:48Z",
     "repos": [
      {
       "name": "agent-skills",
@@ -398,13 +656,20 @@
     "source": "careers_page",
     "ref": "https://www.notion.so/moveo-ai/Careers-at-Moveo-AI-6f7204b1e4fd49098c623f623df0592d",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "Moveo.AI",
+     "Moveo AI"
+    ],
+    "items": []
    }
   },
   "GRDT-013": {
    "github": {
     "org": "bitloops",
     "url": "https://github.com/bitloops",
-    "since": "2026-10-19T14:10:01Z",
+    "since": "2026-10-19T14:17:48Z",
     "repos": [
      {
       "name": "bitloops-language",
@@ -732,13 +997,19 @@
     ],
     "items": []
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Bitloops"
+    ],
+    "items": []
+   }
   },
   "GRDT-014": {
    "github": {
     "org": "Satori-Analytics",
     "url": "https://github.com/Satori-Analytics",
-    "since": "2026-10-19T14:10:01Z",
+    "since": "2026-10-19T14:17:48Z",
     "repos": [
      {
       "name": "pyenv-win",
@@ -1078,6 +1349,16 @@
       "kind": "funding"
      },
      {
+      "id": "CBMi1wJBVV95cUxQZ3JfbXI5TTlpeFJhYm14RGFsMTUwczk0M1EySndXOE14dkVyV3B2clB5bFVnaVB2TUpTaVE0ZENPR0E5cWRkYVkxTk5YNUVaZEdxZVAtTDQ1XzZCeGt2b0ItZXhWRGpPWGMyeHFXQUl6ZmRsSUxrbmVBdWZXWXdPbHhIbmhyMXYwWGlZbG9CLXU0Zm91anNzcnNyNmpTZlBnZHRZd3piX3p4WWJTLV9BZTFSU0d1WWtEaE14WF9DQmV2UEtiSUxObHBKeDhoRTNUREFPRzdVNW92Mzg2NUdKS016c0VzODFvR2JJa01XdXRrRUdRRUhzQkpGNEdsQ2RLb1I5SjhIV05lMUtpTzZHV2JMU3BuMlNnRHdKaFBwanpLeW5GTnFnd252RjZYZXJjM2toUHMwdnl1SVF2dElseDRPRGtWQ19YenI5X05HVFIxTElCYVdj",
+      "title": "Στρατηγική Επένδυση της Motor Oil στην Satori Analytics με Μειοψηφική Συμμετοχή",
+      "url": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxQZ3JfbXI5TTlpeFJhYm14RGFsMTUwczk0M1EySndXOE14dkVyV3B2clB5bFVnaVB2TUpTaVE0ZENPR0E5cWRkYVkxTk5YNUVaZEdxZVAtTDQ1XzZCeGt2b0ItZXhWRGpPWGMyeHFXQUl6ZmRsSUxrbmVBdWZXWXdPbHhIbmhyMXYwWGlZbG9CLXU0Zm91anNzcnNyNmpTZlBnZHRZd3piX3p4WWJTLV9BZTFSU0d1WWtEaE14WF9DQmV2UEtiSUxObHBKeDhoRTNUREFPRzdVNW92Mzg2NUdKS016c0VzODFvR2JJa01XdXRrRUdRRUhzQkpGNEdsQ2RLb1I5SjhIV05lMUtpTzZHV2JMU3BuMlNnRHdKaFBwanpLeW5GTnFnd252RjZYZXJjM2toUHMwdnl1SVF2dElseDRPRGtWQ19YenI5X05HVFIxTElCYVdj?oc=5",
+      "source": "sofokleous10.gr",
+      "source_url": "https://sofokleous10.gr",
+      "published": "2026-09-01T07:00:00Z",
+      "lang": "el",
+      "kind": "funding"
+     },
+     {
       "id": "CBMijwFBVV95cUxOVklDV1gtdnBMdEFQSzlnVDMzeUt0Y29YOHZtbGNMZ0Znb2NoeVlzNzYzNUIzOVdPWS10VEk0UklnaHVqUmh2aXd5amx5MXJoY2lJRU9TTVNBVlZlU081VlFwTlcwMktNeHZHbi1hNl84eWNZUUZVVlZuQU9Cd2xWME5tcWlYc0ZUSXlIMjJ6OA",
       "title": "Η Motor Oil επενδύει στη Satori Analytics",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVklDV1gtdnBMdEFQSzlnVDMzeUt0Y29YOHZtbGNMZ0Znb2NoeVlzNzYzNUIzOVdPWS10VEk0UklnaHVqUmh2aXd5amx5MXJoY2lJRU9TTVNBVlZlU081VlFwTlcwMktNeHZHbi1hNl84eWNZUUZVVlZuQU9Cd2xWME5tcWlYc0ZUSXlIMjJ6OA?oc=5",
@@ -1184,13 +1465,19 @@
       "location": "Athens, Greece"
      }
     ]
+   },
+   "grants": {
+    "terms": [
+     "Satori Analytics"
+    ],
+    "items": []
    }
   },
   "GRDT-015": {
    "github": {
     "org": "KeragonHQ",
     "url": "https://github.com/KeragonHQ",
-    "since": "2026-10-19T14:10:01Z",
+    "since": "2026-10-19T14:17:48Z",
     "repos": [
      {
       "name": "tap-stripe",
@@ -1224,13 +1511,19 @@
     "source": "ashby",
     "ref": "Keragon",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "Keragon"
+    ],
+    "items": []
    }
   },
   "GRDT-016": {
    "github": {
     "org": "TileDB-Inc",
     "url": "https://github.com/TileDB-Inc",
-    "since": "2026-10-19T14:10:01Z",
+    "since": "2026-10-19T14:17:48Z",
     "repos": [
      {
       "name": "tiledb-py-feedstock",
@@ -2278,7 +2571,14 @@
      }
     ]
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "TileDB",
+     "Tile.ai"
+    ],
+    "items": []
+   }
   },
   "GRDT-017": {
    "github": null,
@@ -2379,13 +2679,19 @@
      }
     ]
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Proxy Foods"
+    ],
+    "items": []
+   }
   },
   "GRDT-018": {
    "github": {
     "org": "Intryc",
     "url": "https://github.com/Intryc",
-    "since": "2026-10-19T14:10:01Z",
+    "since": "2026-10-19T14:17:48Z",
     "repos": [
      {
       "name": "intryc-delivery-cli",
@@ -2452,20 +2758,26 @@
       "location": ""
      }
     ]
+   },
+   "grants": {
+    "terms": [
+     "Intryc"
+    ],
+    "items": []
    }
   },
   "GRDT-020": {
    "github": {
     "org": "axelera-ai-hub",
     "url": "https://github.com/axelera-ai-hub",
-    "since": "2026-10-19T14:10:01Z",
+    "since": "2026-10-19T14:17:48Z",
     "repos": [
      {
       "name": "wingman",
       "url": "https://github.com/axelera-ai-hub/wingman",
       "description": "Official Axelera Wingman releases. Agentic AI workflows for the Voyager SDK and Axelera hardware. Feedback is monitored inside Wingman desktop and Chat.",
       "created_at": "2026-05-25T09:52:33Z",
-      "pushed_at": "2026-10-26T12:35:06Z",
+      "pushed_at": "2026-10-26T14:13:41Z",
       "stars": 2,
       "fork": false,
       "archived": false,
@@ -2710,6 +3022,16 @@
       "kind": "funding"
      },
      {
+      "id": "CBMidkFVX3lxTE9pRlU5dVgxT3E1aS02Yjlsbm9qNnBpZkxJODUtM2dIdkd6Y2FzUUlwQktqS1Y0QVdBd0g4RFBsOXdVZERsUmkzV0w2ZmJIcnU4N0ZXbmpsY3BQMkctOURuRS1DUmxvbzdxYTM1dkZaQlZOXzZ6RGc",
+      "title": "Dutch Axelera AI Begins Shipping 'Europa' AI Inference Chip, Validated on Dell and Supermicro Systems",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9pRlU5dVgxT3E1aS02Yjlsbm9qNnBpZkxJODUtM2dIdkd6Y2FzUUlwQktqS1Y0QVdBd0g4RFBsOXdVZERsUmkzV0w2ZmJIcnU4N0ZXbmpsY3BQMkctOURuRS1DUmxvbzdxYTM1dkZaQlZOXzZ6RGc?oc=5",
+      "source": "BigGo Finance",
+      "source_url": "https://finance.biggo.com",
+      "published": "2026-09-16T07:00:00Z",
+      "lang": "en",
+      "kind": "press"
+     },
+     {
       "id": "CBMiywFBVV95cUxPd29lSW9SMW5zN2dCS2xFeFZUdkNJX0lDWUQ1Wlo0Rm50T21JTTFXcGxfV2NlX19YU0FCYU56RkJiZnhFOTN4NUxPOFRZeWpXcC12OFBqbG1ZaTFxeHZaazlWM1c4TVlRVzFodGZiWHV1QVZsNDFNZ2g5cHdtSXN3ekZJQndSNkE5VUtMZVRoUFhyWVZDNmhRcUV5UjJRZVRTd1lNMXpHZVpSQTNXZGU2eTEwdnNJWTlteDI2NjNINURHZ28tVTRSdEh5TQ",
       "title": "Axelera AI launches Europa chip, makes hardware available in Dell and Supermicro servers",
       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPd29lSW9SMW5zN2dCS2xFeFZUdkNJX0lDWUQ1Wlo0Rm50T21JTTFXcGxfV2NlX19YU0FCYU56RkJiZnhFOTN4NUxPOFRZeWpXcC12OFBqbG1ZaTFxeHZaazlWM1c4TVlRVzFodGZiWHV1QVZsNDFNZ2g5cHdtSXN3ekZJQndSNkE5VUtMZVRoUFhyWVZDNmhRcUV5UjJRZVRTd1lNMXpHZVpSQTNXZGU2eTEwdnNJWTlteDI2NjNINURHZ28tVTRSdEh5TQ?oc=5",
@@ -2832,13 +3154,97 @@
       "location": "Milan (on-site)"
      }
     ]
+   },
+   "grants": {
+    "terms": [
+     "Axelera AI"
+    ],
+    "items": [
+     {
+      "id": "101297687",
+      "title": "Voicing Opportunities and Influence for the Chip Ecosystem of (fabless) SMEs",
+      "acronym": "VOICES",
+      "signed": "2026-04-17",
+      "start": "2026-05-01",
+      "end": "2029-04-30",
+      "eu_contribution": 1000000.0,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101297687"
+     },
+     {
+      "id": "101252788",
+      "title": "Chiplet-based Hardware Architectures for Software-defined Vehicles",
+      "acronym": "CHASSIS",
+      "signed": "2026-01-28",
+      "start": "2025-11-01",
+      "end": "2028-10-31",
+      "eu_contribution": 20000000.0,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101252788"
+     },
+     {
+      "id": "101194371",
+      "title": "RISC-V GENERATION OF  HIGH PERFORMANCE AUTOMOTIVE PROCESSORS AND COMPUTING PLATFORMS",
+      "acronym": "Rigoletto",
+      "signed": "2025-05-19",
+      "start": "2025-07-01",
+      "end": "2028-06-30",
+      "eu_contribution": 18738887.95,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101194371"
+     },
+     {
+      "id": "101202459",
+      "title": "Digital Autonomy for RISC-V in Europe (Specific Grant Agreement 1)",
+      "acronym": "DARE SGA 1",
+      "signed": "2025-02-18",
+      "start": "2025-03-01",
+      "end": "2028-02-29",
+      "eu_contribution": 102262283.43,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101202459"
+     },
+     {
+      "id": "101145440",
+      "title": "A novel hardware & software platform to revolutionise artificial intelligence at the edge",
+      "acronym": "Axelera Europa",
+      "signed": "2024-02-08",
+      "start": "2024-03-01",
+      "end": "2026-02-28",
+      "eu_contribution": 2499999.0,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101145440"
+     },
+     {
+      "id": "101112274",
+      "title": "High Performance, Safe, Secure, Open-Source Leveraged RISC-V Domain-Specific Ecosystems",
+      "acronym": "ISOLDE",
+      "signed": "2023-05-12",
+      "start": "2023-05-01",
+      "end": "2026-10-31",
+      "eu_contribution": 11380593.69,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101112274"
+     },
+     {
+      "id": "101070374",
+      "title": "Seamless design of smart edge processors",
+      "acronym": "CONVOLVE",
+      "signed": "2022-06-23",
+      "start": "2022-11-01",
+      "end": "2026-04-30",
+      "eu_contribution": 8416876.5,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101070374"
+     }
+    ]
    }
   },
   "GRDT-021": {
    "github": {
     "org": "Think-Silicon",
     "url": "https://github.com/Think-Silicon",
-    "since": "2026-10-19T14:10:01Z",
+    "since": "2026-10-19T14:17:48Z",
     "repos": [
      {
       "name": "lvgl",
@@ -2889,7 +3295,69 @@
      }
     ]
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Think Silicon"
+    ],
+    "items": [
+     {
+      "id": "101112338",
+      "title": "Reliable Powerdown for Industrial Drives",
+      "acronym": "R-PODID",
+      "signed": "2023-05-12",
+      "start": "2023-09-01",
+      "end": "2027-04-30",
+      "eu_contribution": 7165011.55,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101112338"
+     },
+     {
+      "id": "957317",
+      "title": "High-tech and affordable 5G network roll-out to every corner",
+      "acronym": "Affordable5G",
+      "signed": "2020-07-28",
+      "start": "2020-09-01",
+      "end": "2022-11-30",
+      "eu_contribution": 5248412.5,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/957317"
+     },
+     {
+      "id": "761349",
+      "title": "TEchnology TRAnsfer via Multinational Application eXperiments",
+      "acronym": "TETRAMAX",
+      "signed": "2017-06-13",
+      "start": "2017-09-01",
+      "end": "2021-12-31",
+      "eu_contribution": 6997273.75,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/761349"
+     },
+     {
+      "id": "717850",
+      "title": "GPU-WEAR, Ultra-low power heterogeneous Graphics Processing Units for Wearable/IoT devices",
+      "acronym": "GPU-WEAR",
+      "signed": "2016-04-25",
+      "start": "2016-06-01",
+      "end": "2018-11-30",
+      "eu_contribution": 1366340.5,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/717850"
+     },
+     {
+      "id": "688759",
+      "title": "Low-Power Parallel Computing on GPUs 2",
+      "acronym": "LPGPU2",
+      "signed": "2015-11-10",
+      "start": "2016-01-01",
+      "end": "2018-09-30",
+      "eu_contribution": 2975786.88,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/688759"
+     }
+    ]
+   }
   },
   "GRDT-022": {
    "github": null,
@@ -2899,13 +3367,31 @@
     ],
     "items": []
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "SolidWatts"
+    ],
+    "items": [
+     {
+      "id": "101326077",
+      "title": "DIRECT -RADIO FREQUENCY-ENHANCED- AIR CAPTURE WITH MASS-PRODUCEABLE MICRO-STRUCTURED CONTACTORS AND TRANSFORMATIVE ENVIRONMENTALLY BENIGN, ADVANCED MATERIALS FOR LOW-COST DEPLOYMENT: DREAM/TEAM",
+      "acronym": "DREAMTEAM",
+      "signed": "2026-10-05",
+      "start": "2027-01-01",
+      "end": "2030-12-31",
+      "eu_contribution": 5961932.96,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101326077"
+     }
+    ]
+   }
   },
   "GRDT-023": {
    "github": {
     "org": "WeatherXM",
     "url": "https://github.com/WeatherXM",
-    "since": "2026-10-19T14:10:01Z",
+    "since": "2026-10-19T14:17:48Z",
     "repos": [
      {
       "name": "wg1200-firmware",
@@ -3193,6 +3679,12 @@
     "source": "careers_page",
     "ref": "https://weatherxm.com/careers/",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "WeatherXM"
+    ],
+    "items": []
    }
   },
   "GRDT-024": {
@@ -3239,13 +3731,20 @@
     "source": "careers_page",
     "ref": "https://www.intelligencia.ai/careers/",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "Intelligencia AI",
+     "Intelligencia.ai"
+    ],
+    "items": []
    }
   },
   "GRDT-025": {
    "github": {
     "org": "ovidVR",
     "url": "https://github.com/ovidVR",
-    "since": "2026-10-19T14:10:01Z",
+    "since": "2026-10-19T14:17:48Z",
     "repos": [
      {
       "name": "NetgenMSHExporter",
@@ -3289,6 +3788,90 @@
     "source": "careers_page",
     "ref": "https://oramavr.com/careers",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "ORamaVR"
+    ],
+    "items": [
+     {
+      "id": "101135556",
+      "title": "Transforming European Industrial Ecosystems through eXtended Reality enhanced with human-centric AI and secure, 5G-enabled IoT",
+      "acronym": "INDUX-R",
+      "signed": "2023-11-14",
+      "start": "2024-01-01",
+      "end": "2026-12-31",
+      "eu_contribution": 6387631.25,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101135556"
+     },
+     {
+      "id": "101096146",
+      "title": "Field Trials beyond 5G",
+      "acronym": "FIDAL",
+      "signed": "2022-12-05",
+      "start": "2023-01-01",
+      "end": "2026-06-30",
+      "eu_contribution": 14974567.0,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101096146"
+     },
+     {
+      "id": "101072843",
+      "title": "Tools4Teams: Research Training to Design and Implement Tools Supporting Safe Teamwork in Healthcare",
+      "acronym": "Tools4Teams",
+      "signed": "2022-07-07",
+      "start": "2023-03-01",
+      "end": "2027-02-28",
+      "eu_contribution": 2569212.0,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101072843"
+     },
+     {
+      "id": "101016509",
+      "title": "Cloud for Holography and Cross Reality",
+      "acronym": "CHARITY",
+      "signed": "2020-12-08",
+      "start": "2021-01-01",
+      "end": "2024-06-30",
+      "eu_contribution": 4996175.0,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/101016509"
+     },
+     {
+      "id": "101016521",
+      "title": "5G ExPerimentation Infrastructure hosting Cloud-nativE Network applications for public proTection and disaster RElief",
+      "acronym": "5G-EPICENTRE",
+      "signed": "2020-12-08",
+      "start": "2021-01-01",
+      "end": "2024-06-30",
+      "eu_contribution": 5999168.25,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/101016521"
+     },
+     {
+      "id": "893454",
+      "title": "Utility and Usership in Virtual Museums of Contemporary Art",
+      "acronym": "UViMCA",
+      "signed": "2020-03-04",
+      "start": "2021-01-18",
+      "end": "2023-03-12",
+      "eu_contribution": 164558.4,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/893454"
+     },
+     {
+      "id": "871793",
+      "title": "Adaptive edge/cloud compute and network continuum over a heterogeneous sparse edge infrastructure to support nextgen applications",
+      "acronym": "ACCORDION",
+      "signed": "2019-11-24",
+      "start": "2020-01-01",
+      "end": "2023-04-30",
+      "eu_contribution": 4754738.75,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/871793"
+     }
+    ]
    }
   },
   "GRDT-026": {
@@ -3341,7 +3924,14 @@
      }
     ]
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Anodyne Nanotech",
+     "Hero Patch"
+    ],
+    "items": []
+   }
   },
   "GRDT-027": {
    "github": null,
@@ -3376,6 +3966,24 @@
     "source": "careers_page",
     "ref": "https://anacalypsistherapeutics.com/?page_id=1421",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "Anacalypsis Therapeutics"
+    ],
+    "items": [
+     {
+      "id": "101167843",
+      "title": "Beyond neuroInflammation: new Concepts to Elucidate the immune system’s vital role in Parkinson’s disease",
+      "acronym": "BICEPS",
+      "signed": "2024-06-25",
+      "start": "2024-11-01",
+      "end": "2028-10-31",
+      "eu_contribution": 3946888.8,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101167843"
+     }
+    ]
    }
   },
   "GRDT-029": {
@@ -3386,7 +3994,13 @@
     ],
     "items": []
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Koios Care"
+    ],
+    "items": []
+   }
   },
   "GRDT-030": {
    "github": null,
@@ -3474,13 +4088,20 @@
       "location": "Athens"
      }
     ]
+   },
+   "grants": {
+    "terms": [
+     "Delian Alliance",
+     "Delian Industries"
+    ],
+    "items": []
    }
   },
   "GRDT-031": {
    "github": {
     "org": "hackthebox",
     "url": "https://github.com/hackthebox",
-    "since": "2026-10-19T14:10:01Z",
+    "since": "2026-10-19T14:17:48Z",
     "repos": [
      {
       "name": "terraform-provider-mailgun",
@@ -4180,6 +4801,12 @@
       "location": "Philippines"
      }
     ]
+   },
+   "grants": {
+    "terms": [
+     "Hack The Box"
+    ],
+    "items": []
    }
   },
   "GRDT-032": {
@@ -4190,7 +4817,13 @@
     ],
     "items": []
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Sotiria Technology"
+    ],
+    "items": []
+   }
   },
   "GRDT-033": {
    "github": null,
@@ -4215,13 +4848,130 @@
     "source": "careers_page",
     "ref": "https://prismael.com/index.php/en/profil-en/careers",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "Prisma Electronics"
+    ],
+    "items": [
+     {
+      "id": "101236384",
+      "title": "New Technologies for Next-Generation Gravitational-Wave Detectors",
+      "acronym": "GRAVITY",
+      "signed": "2025-07-10",
+      "start": "2026-01-01",
+      "end": "2029-12-31",
+      "eu_contribution": 400800.0,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101236384"
+     },
+     {
+      "id": "101182768",
+      "title": "Adaptive Digital Systems for Sustainable Construction and Material Management in the Circular Economy",
+      "acronym": "ADAPT4CE",
+      "signed": "2024-09-02",
+      "start": "2025-01-01",
+      "end": "2028-12-31",
+      "eu_contribution": 1656000.0,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101182768"
+     },
+     {
+      "id": "101081478",
+      "title": "Search for new physics and technological advancements from neutrino experiments at the high intensity frontier. A cooperative Europe - United States - Brazil effort.",
+      "acronym": "SENSE",
+      "signed": "2022-10-06",
+      "start": "2023-01-01",
+      "end": "2026-12-31",
+      "eu_contribution": 754400.0,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101081478"
+     },
+     {
+      "id": "883302",
+      "title": "Innovative & Integrated Security System on Board Covering the Life Cycle of a Passenger Ships Voyage",
+      "acronym": "ISOLA",
+      "signed": "2020-06-22",
+      "start": "2020-09-01",
+      "end": "2024-04-30",
+      "eu_contribution": 7006081.25,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/883302"
+     },
+     {
+      "id": "826429",
+      "title": "Smart glasses for multifacEted visual loss mitigation and chronic disEase prevention indicator for healthier, saFer, and more productive workplAce foR ageing population",
+      "acronym": "See Far",
+      "signed": "2018-11-21",
+      "start": "2018-12-01",
+      "end": "2022-05-31",
+      "eu_contribution": 3988712.5,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/826429"
+     },
+     {
+      "id": "822185",
+      "title": "INTENSE: particle physics experiments at the high intensity frontier, from new physics to spin-offs. A cooperative Europe - United States - Japan effort.",
+      "acronym": "INTENSE",
+      "signed": "2018-10-29",
+      "start": "2019-01-01",
+      "end": "2024-12-31",
+      "eu_contribution": 2116000.0,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/822185"
+     },
+     {
+      "id": "785472",
+      "title": "Development and Manufacturing of Intelligent Lightweight Composite Aircraft Container",
+      "acronym": "INTELLICONT",
+      "signed": "2018-02-12",
+      "start": "2018-03-01",
+      "end": "2021-11-30",
+      "eu_contribution": 1999944.86,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/785472"
+     },
+     {
+      "id": "734303",
+      "title": "NEw WindowS on the universe and technological advancements from trilateral EU-US-Japan collaboration",
+      "acronym": "NEWS",
+      "signed": "2017-06-08",
+      "start": "2017-07-01",
+      "end": "2023-06-30",
+      "eu_contribution": 1566000.0,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/734303"
+     },
+     {
+      "id": "690835",
+      "title": "Muon campus in US and Europe contribution",
+      "acronym": "MUSE",
+      "signed": "2015-10-12",
+      "start": "2016-01-01",
+      "end": "2019-12-31",
+      "eu_contribution": 1732500.0,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/690835"
+     },
+     {
+      "id": "680718",
+      "title": "Assembly of miniaturized PCBs by using low cost hyper-fine solder powders",
+      "acronym": "FineSol",
+      "signed": "2015-08-03",
+      "start": "2015-11-01",
+      "end": "2019-04-30",
+      "eu_contribution": 4959450.0,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/680718"
+     }
+    ]
    }
   },
   "GRDT-034": {
    "github": {
     "org": "opencosmos",
     "url": "https://github.com/opencosmos",
-    "since": "2026-10-19T14:10:01Z",
+    "since": "2026-10-19T14:17:48Z",
     "repos": [
      {
       "name": "datacosmos-sdk",
@@ -4936,6 +5686,12 @@
     "source": "careers_page",
     "ref": "https://open-cosmos.com/careers",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "Open Cosmos"
+    ],
+    "items": []
    }
   },
   "GRDT-037": {
@@ -4986,13 +5742,19 @@
       "location": "Athens, Attikí, Greece"
      }
     ]
+   },
+   "grants": {
+    "terms": [
+     "DeepSea Technologies"
+    ],
+    "items": []
    }
   },
   "GRDT-038": {
    "github": {
     "org": "corsmed",
     "url": "https://github.com/corsmed",
-    "since": "2026-10-19T14:10:01Z",
+    "since": "2026-10-19T14:17:48Z",
     "repos": [
      {
       "name": "go-txdb",
@@ -5048,6 +5810,12 @@
       "location": ""
      }
     ]
+   },
+   "grants": {
+    "terms": [
+     "Corsmed"
+    ],
+    "items": []
    }
   },
   "GRDT-039": {
@@ -5062,6 +5830,12 @@
     "source": "workable",
     "ref": "better-origin",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "Better Origin"
+    ],
+    "items": []
    }
   },
   "GRDT-040": {
@@ -5076,6 +5850,24 @@
     "source": "careers_page",
     "ref": "https://bioemtech.com/career/",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "Bioemtech"
+    ],
+    "items": [
+     {
+      "id": "101008159",
+      "title": "Ultra-small Nanohybrides for Advanced Theranostics",
+      "acronym": "UNAT",
+      "signed": "2020-10-23",
+      "start": "2021-04-01",
+      "end": "2026-03-31",
+      "eu_contribution": 832600.0,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101008159"
+     }
+    ]
    }
   },
   "GRDT-041": {
@@ -5090,6 +5882,12 @@
     "source": "careers_page",
     "ref": "https://feeltherapeutics.com/careers",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "Feel Therapeutics"
+    ],
+    "items": []
    }
   },
   "GRDT-042": {
@@ -5125,6 +5923,24 @@
     "source": "workable",
     "ref": "brainomix-2",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "Brainomix"
+    ],
+    "items": [
+     {
+      "id": "651185",
+      "title": "Tissue In Stroke Stratification Using e-ASPECTSTW",
+      "acronym": "TISSUE",
+      "signed": "2014-09-09",
+      "start": "2014-10-01",
+      "end": "2015-03-31",
+      "eu_contribution": 50000.0,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/651185"
+     }
+    ]
    }
   },
   "GRDT-043": {
@@ -5189,13 +6005,19 @@
       "location": "San Francisco Office"
      }
     ]
+   },
+   "grants": {
+    "terms": [
+     "Achira"
+    ],
+    "items": []
    }
   },
   "GRDT-044": {
    "github": {
     "org": "causaly",
     "url": "https://github.com/causaly",
-    "since": "2026-10-19T14:10:01Z",
+    "since": "2026-10-19T14:17:48Z",
     "repos": [
      {
       "name": "html-to-pdf",
@@ -5419,6 +6241,12 @@
       "location": "London"
      }
     ]
+   },
+   "grants": {
+    "terms": [
+     "Causaly"
+    ],
+    "items": []
    }
   },
   "GRDT-045": {
@@ -5454,13 +6282,31 @@
     "source": "careers_page",
     "ref": "https://www.circuitsintegrated.com/careers/",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "Circuits Integrated Hellas"
+    ],
+    "items": [
+     {
+      "id": "101091433",
+      "title": "HETEROGENEOUS MATERIAL AND TECHNOLOGICAL PLATFORM FOR A NEW DOMAIN OF POWER NANOELECTRONICS",
+      "acronym": "NANOMAT",
+      "signed": "2022-11-14",
+      "start": "2022-12-01",
+      "end": "2026-06-30",
+      "eu_contribution": 4125051.0,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101091433"
+     }
+    ]
    }
   },
   "GRDT-046": {
    "github": {
     "org": "BOTAsys",
     "url": "https://github.com/BOTAsys",
-    "since": "2026-10-19T14:10:01Z",
+    "since": "2026-10-19T14:17:48Z",
     "repos": [
      {
       "name": "ardupilot",
@@ -5559,6 +6405,12 @@
       "location": "Zurich, CH"
      }
     ]
+   },
+   "grants": {
+    "terms": [
+     "Bota Systems"
+    ],
+    "items": []
    }
   },
   "GRDT-047": {
@@ -5573,13 +6425,19 @@
     "source": "careers_page",
     "ref": "https://centaur.ag/careers/",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "Centaur Analytics"
+    ],
+    "items": []
    }
   },
   "GRDT-048": {
    "github": {
     "org": "codebgp",
     "url": "https://github.com/codebgp",
-    "since": "2026-10-19T14:10:01Z",
+    "since": "2026-10-19T14:17:48Z",
     "repos": [
      {
       "name": "graphql-tools",
@@ -5669,13 +6527,19 @@
     ],
     "items": []
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Code BGP"
+    ],
+    "items": []
+   }
   },
   "GRDT-049": {
    "github": {
     "org": "icomatuk",
     "url": "https://github.com/icomatuk",
-    "since": "2026-10-19T14:10:01Z",
+    "since": "2026-10-19T14:17:48Z",
     "repos": []
    },
    "news": {
@@ -5688,13 +6552,64 @@
     "source": "careers_page",
     "ref": "https://www.icomat.co.uk/careers",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "iCOMAT"
+    ],
+    "items": [
+     {
+      "id": "101202495",
+      "title": "Safe, sustainable, lIghtwEight and high-perfoRmance Ni-Rich NMC battery pack with Advanced cell-to-pack monitoring for decarbonising heavy-duty vehicles",
+      "acronym": "SIERRA",
+      "signed": "2025-04-21",
+      "start": "2025-06-01",
+      "end": "2029-05-31",
+      "eu_contribution": 7998914.88,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101202495"
+     },
+     {
+      "id": "101187800",
+      "title": "Toroidal Propellers for Efficient and Sustainable Aviation",
+      "acronym": "TorPropel",
+      "signed": "2024-11-07",
+      "start": "2025-02-01",
+      "end": "2028-01-31",
+      "eu_contribution": 2797407.5,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101187800"
+     },
+     {
+      "id": "101147454",
+      "title": "DEsigning, Manufacturing and Operating Quantification of Uncertainties to increase Aviation Safety",
+      "acronym": "DEMOQUAS",
+      "signed": "2024-04-18",
+      "start": "2024-05-01",
+      "end": "2027-04-30",
+      "eu_contribution": 2655807.5,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101147454"
+     },
+     {
+      "id": "101091409",
+      "title": "DURABILITY MODELLING OF COMPOSITE STRUCTURES WITH ARBITRARY LAY-UP USING STANDARDIZED TESTING AND ARTIFICIAL INTELLIGENCE",
+      "acronym": "D-STANDART",
+      "signed": "2022-11-18",
+      "start": "2023-01-01",
+      "end": "2025-12-31",
+      "eu_contribution": 3330616.5,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101091409"
+     }
+    ]
    }
   },
   "GRDT-050": {
    "github": {
     "org": "marinetraffic",
     "url": "https://github.com/marinetraffic",
-    "since": "2026-10-19T14:10:01Z",
+    "since": "2026-10-19T14:17:48Z",
     "repos": [
      {
       "name": "mt-ais-toolbox",
@@ -5735,7 +6650,13 @@
      }
     ]
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "MarineTraffic"
+    ],
+    "items": []
+   }
   },
   "GRDT-051": {
    "github": null,
@@ -5744,43 +6665,306 @@
      "Core Innovation and Technology",
      "Core Innovation"
     ],
-    "items": [
-     {
-      "id": "CBMi8AFBVV95cUxOTDBycVVraVpaa0Y2ZVZ5OW5oSU05U3dRQmNlaktmYTVlTFZ1RG5aYTJkOUJfb0N6ajJVVXFLUlctWVpQSS1iVmtVVTZINEh0Z1RUOHpESE9DWEYtNmgyLXVIUlNnMFNJTzdvdjBSa1VmVUJXX1FHN0c1X0N4XzYyMS1jcGtTb0VaeVFxYnQxX3JzYnZwZFMtVC1GQ1pSalZObTVTNG5ud1lYUVRuRTR6bEZ3d29nV3c1UjVGM0VCTFFDX2huSm9qSTBHNk9HVEhBLXBLSThwQ2V0YXBlaGdRSVc1TXZBWmVwUW5FU2lBRUY",
-      "title": "MSU Federal Credit Union Wins Finopotamus Tekkie Core Innovation Award for Launch of Pillur with Nymbus",
-      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOTDBycVVraVpaa0Y2ZVZ5OW5oSU05U3dRQmNlaktmYTVlTFZ1RG5aYTJkOUJfb0N6ajJVVXFLUlctWVpQSS1iVmtVVTZINEh0Z1RUOHpESE9DWEYtNmgyLXVIUlNnMFNJTzdvdjBSa1VmVUJXX1FHN0c1X0N4XzYyMS1jcGtTb0VaeVFxYnQxX3JzYnZwZFMtVC1GQ1pSalZObTVTNG5ud1lYUVRuRTR6bEZ3d29nV3c1UjVGM0VCTFFDX2huSm9qSTBHNk9HVEhBLXBLSThwQ2V0YXBlaGdRSVc1TXZBWmVwUW5FU2lBRUY?oc=5",
-      "source": "PR Newswire",
-      "source_url": "https://www.prnewswire.com",
-      "published": "2026-09-28T07:00:00Z",
-      "lang": "en",
-      "kind": "press"
-     },
-     {
-      "id": "CBMivwFBVV95cUxOSjhyaTAycjNiaDdlcVptZ25sbF9VcDFjOG13VTI1aFJaWTR6NXJpNFVWbHFPamRpUGQ2M1dsOHh2RWVYMnpad1k5QlY0LVVHQXpMbUJLaDNZYWFCeV9XMjhjZUpGYXhCajUwZ2VSRWUwSkdQMlN3bk9iZi11aEZ1bmREdVVhS0o1Ykt3WEhVN2M4N0lLRUI1RWlfQThLN0F0d05sMXd4c1lqaEctb2VxMmJCcnFmNlU1Q3pzWEtOOA",
-      "title": "Editor's Choice: Apple at 50 faces core innovation challenge",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOSjhyaTAycjNiaDdlcVptZ25sbF9VcDFjOG13VTI1aFJaWTR6NXJpNFVWbHFPamRpUGQ2M1dsOHh2RWVYMnpad1k5QlY0LVVHQXpMbUJLaDNZYWFCeV9XMjhjZUpGYXhCajUwZ2VSRWUwSkdQMlN3bk9iZi11aEZ1bmREdVVhS0o1Ykt3WEhVN2M4N0lLRUI1RWlfQThLN0F0d05sMXd4c1lqaEctb2VxMmJCcnFmNlU1Q3pzWEtOOA?oc=5",
-      "source": "Nikkei Asia",
-      "source_url": "https://asia.nikkei.com",
-      "published": "2026-04-10T07:00:00Z",
-      "lang": "en",
-      "kind": "press"
-     },
-     {
-      "id": "CBMivwFBVV95cUxPWGo0U05rbFo3WmhWakFYZzF1UzlVZ3VsWTAwNG9jRV9KaHBRb2EwWGhVdjBoQWtXdHJXZ3RfeFZCOFVqMWNIcnM1VzFUTzlETFNrTEJhQkh1QVJjeUp5X2VWU1VVbjM1TkhubmpKa2VyQXREa05ZbDdfODdHVTlyUm81dDN2dlc4cV8wcWpuZThyVldOYVdoRHFsZDlXLXlMQ2ZQZFY1WHZJYm1zUVpNUFFZeC1iZmN0eEtjRkd3VQ",
-      "title": "The Angel You Need To Know: Young Phenom Ramtin Naimi of Core Innovation",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPWGo0U05rbFo3WmhWakFYZzF1UzlVZ3VsWTAwNG9jRV9KaHBRb2EwWGhVdjBoQWtXdHJXZ3RfeFZCOFVqMWNIcnM1VzFUTzlETFNrTEJhQkh1QVJjeUp5X2VWU1VVbjM1TkhubmpKa2VyQXREa05ZbDdfODdHVTlyUm81dDN2dlc4cV8wcWpuZThyVldOYVdoRHFsZDlXLXlMQ2ZQZFY1WHZJYm1zUVpNUFFZeC1iZmN0eEtjRkd3VQ?oc=5",
-      "source": "Forbes",
-      "source_url": "https://www.forbes.com",
-      "published": "2016-06-29T07:00:00Z",
-      "lang": "en",
-      "kind": "press"
-     }
-    ]
+    "items": []
    },
    "jobs": {
     "source": "careers_page",
     "ref": "https://www.core-innovation.com/careers",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "Core Innovation and Technology",
+     "Core Innovation"
+    ],
+    "items": [
+     {
+      "id": "101326320",
+      "title": "Climate-responsive, low-carbon pathways for a resilient European building stock",
+      "acronym": "CLIMABUILD",
+      "signed": "2026-10-12",
+      "start": "2027-02-01",
+      "end": "2031-01-31",
+      "eu_contribution": 4999289.89,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101326320"
+     },
+     {
+      "id": "101340879",
+      "title": "Twinning to build an industrial ecosystem for Physical AI, Agentic AI and AR/XR as the enabling principles of Industry5.0",
+      "acronym": "Twin4Ai",
+      "signed": "2026-10-09",
+      "start": "2027-02-01",
+      "end": "2029-07-31",
+      "eu_contribution": 1499145.0,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101340879"
+     },
+     {
+      "id": "101269157",
+      "title": "Safe and stable low-power high-performance European CZ technology ready for accelerated scaling of a sustainable Western PV value chain",
+      "acronym": "Euro CZ factory",
+      "signed": "2026-04-29",
+      "start": "2026-05-01",
+      "end": "2029-10-31",
+      "eu_contribution": 8999396.63,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101269157"
+     },
+     {
+      "id": "101251223",
+      "title": "Supply Chain & Automated production Line Expansion for AEM electrolysers",
+      "acronym": "SCALE-AEM",
+      "signed": "2025-12-17",
+      "start": "2026-01-01",
+      "end": "2028-12-31",
+      "eu_contribution": 3999439.1,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101251223"
+     },
+     {
+      "id": "101178022",
+      "title": "BIO-INTELLIGENT PRODUCTS MANUFACTURING 4 SUSTAINABLE CITIES",
+      "acronym": "BIOGEMSE",
+      "signed": "2025-05-21",
+      "start": "2025-06-01",
+      "end": "2028-11-30",
+      "eu_contribution": 4991157.01,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101178022"
+     },
+     {
+      "id": "101178127",
+      "title": "ORGANIC BIOLOGICAL TRANSFORMATION OF ADDITIVE MANUFACTURING PROCESSES FOR THE SUSTAINABLE MANUFACTURING OF BIO-INSPIRED PRODUCTS",
+      "acronym": "ORGANIC",
+      "signed": "2025-04-30",
+      "start": "2025-06-01",
+      "end": "2028-11-30",
+      "eu_contribution": 4994822.5,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101178127"
+     },
+     {
+      "id": "101192555",
+      "title": "Electrification of industrial processes using induction and microwaves technologies",
+      "acronym": "JOULIA",
+      "signed": "2024-11-28",
+      "start": "2024-12-01",
+      "end": "2028-11-30",
+      "eu_contribution": 5298114.39,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101192555"
+     },
+     {
+      "id": "101178403",
+      "title": "PRocess Innovations for the Mineral industry focusing on ROasting and Calcination Kiln technologies and supported by novel pre- and post-processing",
+      "acronym": "PRIM-ROCK",
+      "signed": "2024-09-25",
+      "start": "2024-10-01",
+      "end": "2028-09-30",
+      "eu_contribution": 9991828.57,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101178403"
+     },
+     {
+      "id": "101146689",
+      "title": "Federated Digital Twins for Wind-Offshore",
+      "acronym": "DTWO",
+      "signed": "2024-04-23",
+      "start": "2024-06-01",
+      "end": "2027-05-31",
+      "eu_contribution": 6155052.95,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101146689"
+     },
+     {
+      "id": "101138476",
+      "title": "High-temperature heating processes with breakthrough microwave and digital technologies for increased energy efficiency",
+      "acronym": "METAWAVE",
+      "signed": "2023-12-07",
+      "start": "2024-01-01",
+      "end": "2027-12-31",
+      "eu_contribution": 9487573.87,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101138476"
+     },
+     {
+      "id": "101138643",
+      "title": "TERRAVISION: Integrated Earth Observation based platform for novel services to enhance raw materials mining life cycle",
+      "acronym": "TERRAVISION",
+      "signed": "2023-12-07",
+      "start": "2024-01-01",
+      "end": "2027-12-31",
+      "eu_contribution": 6688246.24,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101138643"
+     },
+     {
+      "id": "101079180",
+      "title": "Twinning to build an industrial ecosystem around the core principles of Industry4.0 and the Digital Twin",
+      "acronym": "Twin4Twin",
+      "signed": "2022-07-19",
+      "start": "2023-01-01",
+      "end": "2025-12-31",
+      "eu_contribution": 1499500.0,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101079180"
+     },
+     {
+      "id": "869529",
+      "title": "A Human-centred Internet of Things Platform for the Sustainable Digital Mine of the Future",
+      "acronym": "Dig_IT",
+      "signed": "2020-04-20",
+      "start": "2020-05-01",
+      "end": "2024-10-31",
+      "eu_contribution": 6997416.25,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/869529"
+     },
+     {
+      "id": "861678",
+      "title": "AutoMated Vessels and Supply Chain Optimisation for Sustainable Short SEa Shipping",
+      "acronym": "MOSES",
+      "signed": "2020-04-03",
+      "start": "2020-07-01",
+      "end": "2023-12-31",
+      "eu_contribution": 8122150.0,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/861678"
+     },
+     {
+      "id": "870062",
+      "title": "Cognitive Automation Platform for European PRocess Industry digital transformation",
+      "acronym": "CAPRI",
+      "signed": "2020-03-12",
+      "start": "2020-04-01",
+      "end": "2023-09-30",
+      "eu_contribution": 6104451.75,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/870062"
+     },
+     {
+      "id": "889058",
+      "title": "Machine state forecasting technology coupled with product quality control to unleash productivity for the manufacturing sector (EnCORE)",
+      "acronym": "EnCORE",
+      "signed": "2019-12-03",
+      "start": "2020-01-01",
+      "end": "2020-04-30",
+      "eu_contribution": 50000.0,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/889058"
+     },
+     {
+      "id": "870378",
+      "title": "DIONE: an integrated EO-based toolbox for modernising CAP area-based compliance checks and assessing respective environmental impact",
+      "acronym": "DIONE",
+      "signed": "2019-10-31",
+      "start": "2020-01-01",
+      "end": "2022-10-31",
+      "eu_contribution": 1999837.5,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/870378"
+     },
+     {
+      "id": "878204",
+      "title": "Surgify Safety Burr",
+      "acronym": "SSB",
+      "signed": "2019-07-26",
+      "start": "2019-08-01",
+      "end": "2020-01-31",
+      "eu_contribution": 50000.0,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/878204"
+     },
+     {
+      "id": "818087",
+      "title": "RObot enhanced SenSing, INtelligence and actuation to Improve job quality in manufacturing",
+      "acronym": "ROSSINI",
+      "signed": "2018-09-27",
+      "start": "2018-10-01",
+      "end": "2022-03-31",
+      "eu_contribution": 7978176.25,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/818087"
+     },
+     {
+      "id": "818342",
+      "title": "Prefabrication, Recyclability and Modularity for cost reductions in Smart BIPV systems",
+      "acronym": "PVadapt",
+      "signed": "2018-09-24",
+      "start": "2018-10-01",
+      "end": "2022-03-31",
+      "eu_contribution": 8978433.75,
+      "status": "TERMINATED",
+      "url": "https://cordis.europa.eu/project/id/818342"
+     },
+     {
+      "id": "820677",
+      "title": "Innovative strategies, sensing and process Chains for increased Quality, re-configurability, and recyclability of Manufacturing Optolectronics",
+      "acronym": "IQONIC",
+      "signed": "2018-08-17",
+      "start": "2018-10-01",
+      "end": "2022-09-30",
+      "eu_contribution": 7997968.75,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/820677"
+     },
+     {
+      "id": "769267",
+      "title": "Towards a green and sustainable ecosystem for the EU Port of the Future",
+      "acronym": "PortForward",
+      "signed": "2018-06-08",
+      "start": "2018-07-01",
+      "end": "2022-06-30",
+      "eu_contribution": 4994311.25,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/769267"
+     },
+     {
+      "id": "804219",
+      "title": "Accelerating the transition to low carbon electrified mobility with a disruptive increase in e-machine efficiency at reduced cost",
+      "acronym": "Capcooltech",
+      "signed": "2018-04-23",
+      "start": "2018-04-01",
+      "end": "2020-11-30",
+      "eu_contribution": 2053541.0,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/804219"
+     },
+     {
+      "id": "774578",
+      "title": "Enhance New Approaches in BioBased Local Innovation Networks for Growth",
+      "acronym": "ENABLING",
+      "signed": "2017-10-05",
+      "start": "2017-12-01",
+      "end": "2020-11-30",
+      "eu_contribution": 1997640.0,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/774578"
+     },
+     {
+      "id": "768869",
+      "title": "Strategies and Predictive Maintenance models wrapped around physical systems for Zero-unexpected-Breakdowns and increased operating life of Factories",
+      "acronym": "Z-BRE4K",
+      "signed": "2017-07-18",
+      "start": "2017-10-01",
+      "end": "2021-03-31",
+      "eu_contribution": 5992495.25,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/768869"
+     },
+     {
+      "id": "665712",
+      "title": "Optical Ultrasound Imaging for Real-time Guidance of Intracardiac Procedures",
+      "acronym": "MOPHIMPOC",
+      "signed": "2015-07-30",
+      "start": "2015-08-01",
+      "end": "2017-01-31",
+      "eu_contribution": 149624.0,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/665712"
+     }
+    ]
    }
   },
   "GRDT-056": {
@@ -5813,7 +6997,14 @@
      }
     ]
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Pallma AI",
+     "Verno Labs"
+    ],
+    "items": []
+   }
   },
   "GRDT-057": {
    "github": null,
@@ -5823,7 +7014,13 @@
     ],
     "items": []
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "ClearDrop"
+    ],
+    "items": []
+   }
   },
   "GRDT-059": {
    "github": null,
@@ -5834,7 +7031,14 @@
     ],
     "items": []
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Purposeful health",
+     "Purposeful.eu"
+    ],
+    "items": []
+   }
   },
   "GRDT-063": {
    "github": null,
@@ -5848,6 +7052,12 @@
     "source": "careers_page",
     "ref": "https://navenio.com/join-us/",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "Navenio"
+    ],
+    "items": []
    }
   },
   "GRDT-064": {
@@ -5869,13 +7079,19 @@
      }
     ]
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Terra Robotics"
+    ],
+    "items": []
+   }
   },
   "GRDT-065": {
    "github": {
     "org": "neurohive-eu",
     "url": "https://github.com/neurohive-eu",
-    "since": "2026-10-19T14:10:01Z",
+    "since": "2026-10-19T14:17:48Z",
     "repos": []
    },
    "news": {
@@ -5884,7 +7100,13 @@
     ],
     "items": []
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Neurohive"
+    ],
+    "items": []
+   }
   },
   "GRDT-066": {
    "github": null,
@@ -5898,6 +7120,12 @@
     "source": "careers_page",
     "ref": "https://plugsecure.com/careers",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "PlugSecure"
+    ],
+    "items": []
    }
   },
   "GRDT-067": {
@@ -5908,7 +7136,25 @@
     ],
     "items": []
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Pinepeak"
+    ],
+    "items": [
+     {
+      "id": "101309523",
+      "title": "Citizen Awareness and Resilience for Emergency Systems",
+      "acronym": "CARES",
+      "signed": "2026-07-10",
+      "start": "2026-10-01",
+      "end": "2029-09-30",
+      "eu_contribution": 3999975.4,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101309523"
+     }
+    ]
+   }
   },
   "GRDT-068": {
    "github": null,
@@ -5933,6 +7179,12 @@
     "source": "careers_page",
     "ref": "https://mindthehack.ai/company/careers",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "Mind The Hack"
+    ],
+    "items": []
    }
   },
   "GRDT-069": {
@@ -5944,7 +7196,14 @@
     ],
     "items": []
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Hoplon AI",
+     "Hoplon"
+    ],
+    "items": []
+   }
   },
   "GRDT-070": {
    "github": null,
@@ -5958,6 +7217,200 @@
     "source": "careers_page",
     "ref": "https://www.satways.net/career/",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "Satways"
+    ],
+    "items": [
+     {
+      "id": "101309592",
+      "title": "[INTEGRA-CBRN] INTEGRATED ALERT AND PROACTIVE DETECTION SYSTEM FOR CROSS-BORDER CBRN EMERGENCIES IN THE EU",
+      "acronym": "INTEGRA CBRN",
+      "signed": "2026-07-10",
+      "start": "2026-09-01",
+      "end": "2029-08-31",
+      "eu_contribution": 4494765.63,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101309592"
+     },
+     {
+      "id": "101225852",
+      "title": "AleRT and impact-forecast standards for Emergency Management",
+      "acronym": "ARTEMis",
+      "signed": "2025-07-16",
+      "start": "2025-10-01",
+      "end": "2028-09-30",
+      "eu_contribution": 3143852.5,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101225852"
+     },
+     {
+      "id": "101168521",
+      "title": "Improving last-kilometer navigation & transportation of emergency personnel, equipment and relief items in hazardous and challenging environments",
+      "acronym": "ForeSight",
+      "signed": "2024-07-19",
+      "start": "2024-10-01",
+      "end": "2027-09-30",
+      "eu_contribution": 3499923.75,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101168521"
+     },
+     {
+      "id": "101167589",
+      "title": "Border Control Agencies for Interlinked and Interoperable Future",
+      "acronym": "BORDERLINK",
+      "signed": "2024-07-16",
+      "start": "2025-03-01",
+      "end": "2028-02-29",
+      "eu_contribution": 5720117.75,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101167589"
+     },
+     {
+      "id": "101121167",
+      "title": "HOLISTIC CAPABILITY AND TECHNOLOGY EVALUATION AND CO-CREATION FRAMEWORK FOR UPSKILLED FIRST RESPONDERS AND ENHANCED CBRN-E RESPONSE",
+      "acronym": "TeamUP",
+      "signed": "2023-12-17",
+      "start": "2024-01-01",
+      "end": "2026-12-31",
+      "eu_contribution": 5722012.5,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101121167"
+     },
+     {
+      "id": "101121271",
+      "title": "CustOms exteNded iNteroperablE Common informaTiOn shaRing environment",
+      "acronym": "CONNECTOR",
+      "signed": "2023-07-20",
+      "start": "2023-10-01",
+      "end": "2025-09-30",
+      "eu_contribution": 3499906.25,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/101121271"
+     },
+     {
+      "id": "101092365",
+      "title": "Intelligent digital toolbox towards more sustainable and safer extraction of mineral resources",
+      "acronym": "NETHELIX",
+      "signed": "2022-11-29",
+      "start": "2023-01-01",
+      "end": "2026-06-30",
+      "eu_contribution": 11145398.63,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101092365"
+     },
+     {
+      "id": "101073929",
+      "title": "Holistic framework for the MatUrity evaLuaTIon of ReAdiness level for security TEchnologies",
+      "acronym": "MultiRATE",
+      "signed": "2022-07-18",
+      "start": "2022-12-01",
+      "end": "2025-05-31",
+      "eu_contribution": 1389252.5,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101073929"
+     },
+     {
+      "id": "101069941",
+      "title": "Deployment and Assessment of Predictive modelling, environmentally sustainable and emerging digital technologies and tools for improving the resilience of IWW against Climate change and other extremes",
+      "acronym": "PLOTO",
+      "signed": "2022-06-08",
+      "start": "2022-09-01",
+      "end": "2026-02-28",
+      "eu_contribution": 7497694.38,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101069941"
+     },
+     {
+      "id": "101021851",
+      "title": "aN Enhanced pre-frontier intelligence picture to Safeguard The EurOpean boRders",
+      "acronym": "NESTOR",
+      "signed": "2021-10-21",
+      "start": "2021-11-01",
+      "end": "2023-04-30",
+      "eu_contribution": 4999578.13,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/101021851"
+     },
+     {
+      "id": "101021981",
+      "title": "fAcilitating Public & Private secuRity operAtors to mitigate terrorIsm Scenarios against soft targEts",
+      "acronym": "APPRAISE",
+      "signed": "2021-04-26",
+      "start": "2021-09-01",
+      "end": "2024-02-29",
+      "eu_contribution": 7999101.25,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/101021981"
+     },
+     {
+      "id": "101021673",
+      "title": "imPROved Maritime awarENess by means of AI and BD mEthods",
+      "acronym": "PROMENADE",
+      "signed": "2021-04-26",
+      "start": "2021-10-01",
+      "end": "2023-03-31",
+      "eu_contribution": 4997555.63,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/101021673"
+     },
+     {
+      "id": "883374",
+      "title": "An End to end Interoperability Framework For MaritimE Situational Awareness at StrategiC and TacTical OpeRations",
+      "acronym": "EFFECTOR",
+      "signed": "2020-04-30",
+      "start": "2020-10-01",
+      "end": "2022-09-30",
+      "eu_contribution": 4999529.5,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/883374"
+     },
+     {
+      "id": "883520",
+      "title": "Facilitating EU pre-Standardization process Through stReamlining and vAlidating inTeroperability in systems and procEdures involved in the crisis manaGement cYcle",
+      "acronym": "STRATEGY",
+      "signed": "2020-04-29",
+      "start": "2020-09-01",
+      "end": "2023-08-31",
+      "eu_contribution": 5997293.25,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/883520"
+     },
+     {
+      "id": "833881",
+      "title": "An EnhaNceD Common InfoRmatiOn Sharing EnvironMent for BordEr CommanD, Control and CoordinAtion Systems",
+      "acronym": "ANDROMEDA",
+      "signed": "2019-06-26",
+      "start": "2019-09-01",
+      "end": "2021-08-31",
+      "eu_contribution": 4999462.5,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/833881"
+     },
+     {
+      "id": "740627",
+      "title": "An INtegrated next generation PREParedness programme for improving effective inter-organisational response capacity in complex environments of disasters and causes of crises",
+      "acronym": "IN-PREP",
+      "signed": "2017-04-26",
+      "start": "2017-09-01",
+      "end": "2021-02-28",
+      "eu_contribution": 7999556.25,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/740627"
+     },
+     {
+      "id": "653749",
+      "title": "Inspiring CitizeNS Participation for Enhanced Community PoliCing AcTions",
+      "acronym": "INSPEC2T",
+      "signed": "2015-04-28",
+      "start": "2015-05-01",
+      "end": "2018-04-30",
+      "eu_contribution": 4911548.75,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/653749"
+     }
+    ]
    }
   },
   "GRDT-071": {
@@ -5968,7 +7421,13 @@
     ],
     "items": []
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Attisat"
+    ],
+    "items": []
+   }
   },
   "GRDT-072": {
    "github": null,
@@ -5978,7 +7437,47 @@
     ],
     "items": []
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Seervision"
+    ],
+    "items": [
+     {
+      "id": "957112",
+      "title": "Analysis of skeletal kinematics for vision-based motion capturing",
+      "acronym": "SeerPredict",
+      "signed": "2020-09-15",
+      "start": "2020-10-01",
+      "end": "2022-03-31",
+      "eu_contribution": 171187.5,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/957112"
+     },
+     {
+      "id": "960589",
+      "title": "Multi-camera autonomous robotic set for the ultimate and cost-effective live video",
+      "acronym": "Multi RoboDOP",
+      "signed": "2020-08-20",
+      "start": "2020-09-01",
+      "end": "2022-06-30",
+      "eu_contribution": 1533350.0,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/960589"
+     },
+     {
+      "id": "835417",
+      "title": "Multi-camera autonomous robotic cameramen at the fingertips of all live video productions",
+      "acronym": "Multi RoboDOP",
+      "signed": "2018-12-04",
+      "start": "2018-12-01",
+      "end": "2019-03-31",
+      "eu_contribution": 50000.0,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/835417"
+     }
+    ]
+   }
   },
   "GRDT-073": {
    "github": null,
@@ -5988,7 +7487,13 @@
     ],
     "items": []
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Intelistyle"
+    ],
+    "items": []
+   }
   },
   "GRDT-074": {
    "github": null,
@@ -5998,13 +7503,19 @@
     ],
     "items": []
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Pleioflow"
+    ],
+    "items": []
+   }
   },
   "GRDT-082": {
    "github": {
     "org": "squaredev-io",
     "url": "https://github.com/squaredev-io",
-    "since": "2026-10-19T14:10:01Z",
+    "since": "2026-10-19T14:17:48Z",
     "repos": [
      {
       "name": "gh-workflows",
@@ -6184,6 +7695,156 @@
       "location": "Luxembourg, Luxembourg"
      }
     ]
+   },
+   "grants": {
+    "terms": [
+     "SquareDev"
+    ],
+    "items": [
+     {
+      "id": "101298599",
+      "title": "Agentic Reasoning for the Generative AI-Enabled Cognitive Continuum",
+      "acronym": "ARGENTIC",
+      "signed": "2026-05-27",
+      "start": "2026-06-01",
+      "end": "2029-05-31",
+      "eu_contribution": 7499498.75,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101298599"
+     },
+     {
+      "id": "101156500",
+      "title": "Community-driven Healthcare Access and Mental Health Promotion for Inclusive, Equitable, and Resilient European Societies",
+      "acronym": "EQUICARES",
+      "signed": "2024-11-29",
+      "start": "2025-01-01",
+      "end": "2028-12-31",
+      "eu_contribution": 5935974.33,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101156500"
+     },
+     {
+      "id": "101080581",
+      "title": "Artificial intelligence-based Parkinson’s disease risk assessment and prognosis",
+      "acronym": "AI-PROGNOSIS",
+      "signed": "2023-04-11",
+      "start": "2023-07-01",
+      "end": "2027-06-30",
+      "eu_contribution": 5259875.0,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101080581"
+     },
+     {
+      "id": "101073910",
+      "title": "Unobtrusive Technologies for Secure and Seamless Border Crossing for Travel Facilitation",
+      "acronym": "ODYSSEUS",
+      "signed": "2022-12-16",
+      "start": "2023-01-01",
+      "end": "2025-12-31",
+      "eu_contribution": 3457062.5,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/101073910"
+     },
+     {
+      "id": "101073920",
+      "title": "Reliable biomeTric tEchNologies to asSist Police authorities in cOmbating terrorism and oRganized crime",
+      "acronym": "TENSOR",
+      "signed": "2022-12-16",
+      "start": "2023-01-01",
+      "end": "2025-12-31",
+      "eu_contribution": 4562975.0,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/101073920"
+     },
+     {
+      "id": "101086464",
+      "title": "Virtual Innovative Learning Laboratories for Global Engineering Education (VILLAGE)",
+      "acronym": "VILLAGE",
+      "signed": "2022-10-26",
+      "start": "2023-03-01",
+      "end": "2027-02-28",
+      "eu_contribution": 837200.0,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101086464"
+     },
+     {
+      "id": "101073821",
+      "title": "Strategies and Technologies for United and Resilient Critical Infrastructures and Vital Services in Pandemic-Stricken Europe",
+      "acronym": "SUNRISE",
+      "signed": "2022-09-06",
+      "start": "2022-10-01",
+      "end": "2025-09-30",
+      "eu_contribution": 9542736.0,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/101073821"
+     },
+     {
+      "id": "101070052",
+      "title": "Digital Technologies ActiNg as a Gatekeeper to information and data flOws",
+      "acronym": "TANGO",
+      "signed": "2022-06-20",
+      "start": "2022-09-01",
+      "end": "2025-08-31",
+      "eu_contribution": 10444121.0,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/101070052"
+     },
+     {
+      "id": "101060529",
+      "title": "A Holistic Approach to Sustainable, Digital EU Agriculture, Forestry, Livestock and Rural Development based on Reconfigurable Aerial Enablers and Edge Artificial Intelligence-on-Demand Systems.",
+      "acronym": "CHAMELEON",
+      "signed": "2022-06-07",
+      "start": "2022-07-01",
+      "end": "2025-06-30",
+      "eu_contribution": 5949746.25,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101060529"
+     },
+     {
+      "id": "101036926",
+      "title": "A Holistic Fire Management Ecosystem for Prevention, Detection and Restoration of Environmental Disasters",
+      "acronym": "TREEADS",
+      "signed": "2021-09-27",
+      "start": "2021-12-01",
+      "end": "2025-05-31",
+      "eu_contribution": 19258995.18,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101036926"
+     },
+     {
+      "id": "101021714",
+      "title": "An Interactive, Collaborative Digital Gamification Approach to Effective Experiential Training and Prediction of Criminal Actions",
+      "acronym": "LAW-GAME",
+      "signed": "2021-04-21",
+      "start": "2021-09-01",
+      "end": "2024-08-31",
+      "eu_contribution": 6999490.0,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/101021714"
+     },
+     {
+      "id": "952179",
+      "title": "A multimodal AI-based toolbox and an interoperable health imaging repository for the empowerment of imaging analysis related to the diagnosis, prediction and follow-up of cancer",
+      "acronym": "INCISIVE",
+      "signed": "2020-05-28",
+      "start": "2020-10-01",
+      "end": "2024-03-31",
+      "eu_contribution": 9995727.5,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/952179"
+     },
+     {
+      "id": "883441",
+      "title": "Demonstration of intelligent decision support for pandemic crisis prediction and management within and across European borders",
+      "acronym": "STAMINA",
+      "signed": "2020-04-22",
+      "start": "2020-09-01",
+      "end": "2023-02-28",
+      "eu_contribution": 9494326.25,
+      "status": "CLOSED",
+      "url": "https://cordis.europa.eu/project/id/883441"
+     }
+    ]
    }
   },
   "GRDT-083": {
@@ -6194,13 +7855,19 @@
     ],
     "items": []
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "QRBIT"
+    ],
+    "items": []
+   }
   },
   "GRDT-084": {
    "github": {
     "org": "solidkosmos",
     "url": "https://github.com/solidkosmos",
-    "since": "2026-10-19T14:10:01Z",
+    "since": "2026-10-19T14:17:48Z",
     "repos": []
    },
    "news": {
@@ -6209,7 +7876,13 @@
     ],
     "items": []
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "SolidKosmos"
+    ],
+    "items": []
+   }
   },
   "GRDT-085": {
    "github": null,
@@ -6219,7 +7892,13 @@
     ],
     "items": []
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Trimsignal"
+    ],
+    "items": []
+   }
   },
   "GRDT-086": {
    "github": null,
@@ -6233,6 +7912,12 @@
     "source": "careers_page",
     "ref": "https://emtech.space/careers/",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "EMTech Space"
+    ],
+    "items": []
    }
   },
   "GRDT-087": {
@@ -6258,6 +7943,35 @@
     "source": "careers_page",
     "ref": "https://www.oqtechnology.com/careers",
     "postings": []
+   },
+   "grants": {
+    "terms": [
+     "OQ Technology"
+    ],
+    "items": [
+     {
+      "id": "101218718",
+      "title": "5G NTN SATELLITE DIRECT TO MOBILE IN-ORBIT DEMONSTRATION",
+      "acronym": "5NETSAT",
+      "signed": "2025-06-05",
+      "start": "2025-07-01",
+      "end": "2027-02-28",
+      "eu_contribution": 2499999.0,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101218718"
+     },
+     {
+      "id": "101192035",
+      "title": "Amazing Large-Scale Trials and Pilots for Verticals in 6G",
+      "acronym": "AMAZING-6G",
+      "signed": "2024-12-06",
+      "start": "2025-01-01",
+      "end": "2027-12-31",
+      "eu_contribution": 12142044.75,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101192035"
+     }
+    ]
    }
   },
   "GRDT-088": {
@@ -6268,7 +7982,25 @@
     ],
     "items": []
    },
-   "jobs": null
+   "jobs": null,
+   "grants": {
+    "terms": [
+     "Solmeyea"
+    ],
+    "items": [
+     {
+      "id": "101188544",
+      "title": "Inspiring CO2 circularity by introducing carbon transformation to our plates",
+      "acronym": "C - 2C - Protein",
+      "signed": "2024-12-13",
+      "start": "2024-09-01",
+      "end": "2026-08-31",
+      "eu_contribution": 2442727.56,
+      "status": "SIGNED",
+      "url": "https://cordis.europa.eu/project/id/101188544"
+     }
+    ]
+   }
   }
  }
 }

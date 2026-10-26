@@ -14,7 +14,8 @@ from .collect import snapshot_paths
 from .common import DIGESTS, DOCS, read_watchlist
 from .watchlist import TARGET_FUNDS
 
-SIGNAL_LABELS = {"funding": "Funding news", "jobs": "Hiring", "github": "GitHub activity", "press": "Other press"}
+SIGNAL_LABELS = {"funding": "Funding news", "grants": "EU grants", "jobs": "Hiring", "github": "GitHub activity",
+                 "press": "Other press"}
 
 
 def _date(s):
@@ -47,6 +48,17 @@ def company_changes(row, cur, prev, window_start):
     for it in news.get("items", []):
         if it["published"] >= window_start and it["id"] not in prev_ids:
             add(it["kind"], it["kind"], it["title"], it["url"], it["published"], it["source"])
+
+    # EU grants: projects not in last week's snapshot; on a first run, signed inside the window.
+    grants = c.get("grants") or {}
+    pgr = p.get("grants") or {}
+    if grants and not grants.get("error"):
+        prev_ids = {i["id"] for i in pgr.get("items", [])} if pgr and not pgr.get("error") else None
+        for it in grants.get("items", []):
+            new = (it["id"] not in prev_ids) if prev_ids is not None else it["signed"] >= window_start[:10]
+            if new:
+                add("grants", "grant", f"EU project {it['acronym']}: {it['title']}", it["url"], it["signed"],
+                    f"EU contribution to the project EUR {it['eu_contribution'] / 1e6:.2f}M")
 
     # GitHub.
     gh = c.get("github") or {}
@@ -98,6 +110,8 @@ def company_changes(row, cur, prev, window_start):
 def company_status(row, cur):
     c = cur["companies"].get(row["company_id"], {})
     gh, jobs, news = c.get("github") or {}, c.get("jobs") or {}, c.get("news") or {}
+    since = str(int(cur["generated_at"][:4]) - 2)
+    grants = [i for i in (c.get("grants") or {}).get("items", []) if i["signed"][:4] >= since]
     # Google News "when:90d" is loose, so the 90-day cut is applied here as well.
     cutoff = (datetime.fromisoformat(cur["generated_at"].replace("Z", "+00:00")) - timedelta(days=90)).strftime("%Y-%m-%d")
     funding = [i for i in news.get("items", []) if i["kind"] == "funding" and i["published"][:10] >= cutoff]
@@ -115,6 +129,10 @@ def company_status(row, cur):
         "repos": len(repos), "stars": sum(r["stars"] for r in repos),
         "last_push": max((r["pushed_at"] for r in repos), default="")[:10],
         "github_error": gh.get("error", ""), "news_error": news.get("error", ""),
+        "grants_error": (c.get("grants") or {}).get("error", ""),
+        "eu_projects": len(grants), "eu_contribution": round(sum(i["eu_contribution"] for i in grants) / 1e6, 2),
+        "latest_grant": ({"title": f"{grants[0]['acronym']}: {grants[0]['title']}", "url": grants[0]["url"],
+                          "date": grants[0]["signed"][:10]} if grants else None),
         "latest_funding": ({"title": funding[0]["title"], "url": funding[0]["url"],
                             "date": _date(funding[0]["published"]), "source": funding[0]["source"]}
                            if funding else None),
@@ -125,7 +143,7 @@ def _md_escape(s):
     return (s or "").replace("[", "\\[").replace("]", "\\]").replace("|", "\\|")
 
 
-PART_LABELS = {"funding": "funding", "press": "press", "hiring": "hiring", "github": "GitHub"}
+PART_LABELS = {"funding": "funding", "grants": "EU grants", "press": "press", "hiring": "hiring", "github": "GitHub"}
 
 
 def _drivers(m):
@@ -202,8 +220,11 @@ def write_markdown(changes, statuses, cur, prev, path, movers=None, weeks=1):
           f"- GitHub organisation known: {gh_cov} of {len(statuses)}",
           f"- Job postings from a job-board API: {jobs_api}; from a careers page (heuristic): {jobs_page}; "
           f"no jobs source: {len(statuses) - jobs_api - jobs_page}",
-          f"- News searched for all {len(statuses)} (Google News, English and Greek)"]
-    errs = [(s["company"], e) for s in statuses for e in (s["github_error"], s["jobs_error"], s["news_error"]) if e]
+          f"- News searched for all {len(statuses)} (Google News, English and Greek)",
+          f"- EU projects (CORDIS) signed since {int(cur['generated_at'][:4]) - 2}: "
+          f"{sum(1 for s in statuses if s['eu_projects'])} companies"]
+    errs = [(s["company"], e) for s in statuses
+            for e in (s["github_error"], s["jobs_error"], s["news_error"], s["grants_error"]) if e]
     if errs:
         L += ["", "Errors this run (signal skipped for that company):", ""]
         L += [f"- {n}: {e}" for n, e in errs]
@@ -238,6 +259,6 @@ def build():
     write_markdown(changes, statuses, cur, prev, path, movers, weeks)
     history = sorted((p.stem for p in DIGESTS.glob("*.md")), reverse=True)
     write_dashboard(changes, statuses, cur, prev, history, movers, weeks)
-    page = briefing.write(briefing.build(rows, statuses, movers, cur["generated_at"]))
+    page = briefing.write(briefing.build(rows, statuses, movers, cur["generated_at"], cur))
     print(f"digest: {path} ({len(changes)} changes); dashboard: {DOCS / 'index.html'}; briefing: {page}")
     return path

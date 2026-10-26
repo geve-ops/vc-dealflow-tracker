@@ -11,6 +11,7 @@ import json
 import re
 from datetime import date
 
+from . import backtest
 from .common import DATA, DOCS, ROOT
 from .watchlist import TARGET_FUNDS
 
@@ -67,7 +68,7 @@ def read_pipeline():
         return list(csv.DictReader(f))
 
 
-def build(rows, statuses, movers, generated_at):
+def build(rows, statuses, movers, generated_at, snapshot=None):
     today = date.fromisoformat(generated_at[:10])
     st = {s["company_id"]: s for s in statuses}
     mv = {m["company_id"]: m for m in movers}
@@ -88,7 +89,8 @@ def build(rows, statuses, movers, generated_at):
             "funds": [f for f in r["greek_funds"].split(" | ") if f], "fund_status": r["greek_fund_status"],
             "investors": r["investors"], "verification": r["verification_status"],
             "greek_link": r["hq_greek_link"],
-            "visible": bool(r["github_org"] or (r["jobs_source"] not in ("", "none")) or s["latest_funding"]),
+            "visible": bool(r["github_org"] or (r["jobs_source"] not in ("", "none")) or s["latest_funding"]
+                            or s.get("eu_projects")),
         })
 
     # KPIs.
@@ -116,6 +118,21 @@ def build(rows, statuses, movers, generated_at):
                        if top_cat else None),
     }
 
+    # EU grants signed in the last 6 months (CORDIS), from the snapshot.
+    cutoff = f"{(today.year * 12 + today.month - 1 - RECENT_MONTHS) // 12:04d}-" \
+             f"{(today.year * 12 + today.month - 1 - RECENT_MONTHS) % 12 + 1:02d}"
+    names = {r["company_id"]: r["company"] for r in rows}
+    eu_recent = []
+    for cid, c in ((snapshot or {}).get("companies") or {}).items():
+        for g in (c.get("grants") or {}).get("items", []):
+            if g["signed"][:7] >= cutoff:
+                eu_recent.append({"company": names.get(cid, cid), "acronym": g["acronym"], "title": g["title"],
+                                  "signed": g["signed"][:10], "eur_m": round(g["eu_contribution"] / 1e6, 2),
+                                  "url": g["url"]})
+    eu_recent.sort(key=lambda g: g["signed"], reverse=True)
+    kpis["eu_recent"] = len(eu_recent)
+    kpis["eu_recent_companies"] = len({g["company"] for g in eu_recent})
+
     # Raising-window matrix: venture-stage companies with a dated USD round.
     matrix = [c for c in companies if c["bucket"] in ("Pre-seed / seed", "Series A / B")
               and c["usd"] is not None and c["months"] is not None and c["months"] <= MATRIX_MAX_MONTHS]
@@ -141,6 +158,15 @@ def build(rows, statuses, movers, generated_at):
     sector_stage = {"categories": cats, "buckets": buckets,
                     "counts": [[sum(1 for c in companies if c["category"] == k and c["bucket"] == b) for k in cats]
                                for b in buckets]}
+
+    # Signal coverage by sector: where the weekly signals can and cannot see.
+    coverage = []
+    for k in cats:
+        rs = [r for r in rows if r["category"] == k]
+        coverage.append({"category": k, "n": len(rs),
+                         "github": sum(1 for r in rs if r["github_org"] and r["github_org"] != "none"),
+                         "grants": sum(1 for r in rs if st[r["company_id"]].get("eu_projects")),
+                         "jobs": sum(1 for r in rs if r["jobs_source"] not in ("", "none"))})
 
     # Pipeline table: hand-kept rows, plus data-suggested candidates not yet in the file.
     cmap = {c["id"]: c for c in companies}
@@ -178,7 +204,8 @@ def build(rows, statuses, movers, generated_at):
 
     return {
         "generated_at": generated_at, "month": generated_at[:7],
-        "kpis": kpis, "funnel": funnel, "sector_stage": sector_stage,
+        "kpis": kpis, "funnel": funnel, "sector_stage": sector_stage, "coverage": coverage,
+        "eu_recent": eu_recent, "backtest": backtest.read(), "draft_post": draft_post(kpis, movers, candidates, eu_recent),
         "matrix": [{"n": c["company"], "x": c["months"], "roles": c["roles"], "usd": c["usd"],
                     "prime": c in prime} for c in matrix],
         "matrix_rules": {"window": RAISE_WINDOW_MONTHS, "roles": HIRING_MIN_ROLES,
@@ -188,6 +215,27 @@ def build(rows, statuses, movers, generated_at):
         "candidates": [c["company"] for c in candidates],
         "pipeline": pipeline, "flags": flags, "gaps": gaps,
     }
+
+
+def draft_post(kpis, movers, candidates, eu_recent):
+    """A plain-text monthly post built only from figures on the page. Edit before posting."""
+    lines = [f"Greek deep tech this month: what moved across the {kpis['tracked']} companies I track.", ""]
+    if kpis["recent_rounds"]:
+        top = ", ".join(f"{r['company']} (${r['usd']}M)" for r in kpis["recent_rounds"][:3])
+        lines.append(f"- ${kpis['recent_usd']}M disclosed in early-stage rounds over the last 6 months. Largest: {top}.")
+    if kpis["top_sector"]:
+        lines.append(f"- {kpis['top_sector']['name']} led recent capital with ${kpis['top_sector']['usd']}M.")
+    if eu_recent:
+        lines.append(f"- {len(eu_recent)} EU-funded projects signed in the last 6 months by "
+                     f"{len({g['company'] for g in eu_recent})} companies, most recently "
+                     f"{', '.join(dict.fromkeys(g['company'] for g in eu_recent[:3]))}.")
+    moving = [m for m in movers if m["momentum"] > 0][:3]
+    if moving:
+        lines.append(f"- Most active on public signals: {', '.join(m['company'] for m in moving)}.")
+    if candidates:
+        lines.append(f"- In their usual raising window and hiring: {', '.join(c['company'] for c in candidates)}.")
+    lines += ["", "Sources, method and the live tracker: https://geve-ops.github.io/vc-dealflow-tracker/briefing.html"]
+    return "\n".join(lines)
 
 
 def _brief(c):

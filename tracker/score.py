@@ -3,6 +3,7 @@
 Week score: points for this week's changes, each signal capped so no single one dominates.
 
     funding headline     5 each, max 10
+    EU grant signed      3 each, max 6
     other press          1 each, max 3
     new role             1 each, max 5
     commits (non-bot)    1 for 1-4, 2 for 5-19, 3 for 20 or more (all repos together)
@@ -19,7 +20,7 @@ from collections import defaultdict
 from .common import DATA
 
 SCORES = DATA / "scores.csv"
-FIELDS = ["date", "company_id", "company", "week_score", "funding", "press", "hiring", "github"]
+FIELDS = ["date", "company_id", "company", "week_score", "funding", "grants", "press", "hiring", "github"]
 DECAY = [1.0, 0.5, 0.25, 0.125]
 
 
@@ -37,6 +38,7 @@ def week_scores(changes, rows):
         k = by[r["company_id"]]
         parts = {
             "funding": min(10, 5 * k["funding"]),
+            "grants": min(6, 3 * k["grant"]),
             "press": min(3, k["press"]),
             "hiring": min(5, k["new_role"]),
             "github": commit_points(k["commits"]) + min(2, k["new_repo"]) + min(2, max(0, k["stars"]) // 25),
@@ -82,7 +84,7 @@ def update(date, changes, rows):
             "greek_fund_status": r.get("greek_fund_status", ""),
             "week_score": s["week_score"], "momentum": round(momentum[r["company_id"]], 2),
             "last_week": prev_week.get(r["company_id"]),
-            "parts": {k: s[k] for k in ("funding", "press", "hiring", "github")},
+            "parts": {k: s[k] for k in ("funding", "grants", "press", "hiring", "github")},
         })
     movers.sort(key=lambda m: (-m["momentum"], -m["week_score"], m["company"]))
     for i, m in enumerate(movers, 1):

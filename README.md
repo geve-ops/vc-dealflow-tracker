@@ -1,6 +1,8 @@
 # Greek Deep Tech Deal-Flow Tracker
 
-A weekly "what changed" tracker for the 69 companies on the [Greek Deep Tech Market Map](https://github.com/geve-ops/greek-deeptech-market-map). It watches three public signals: new job postings, funding news, and GitHub activity. Each run produces a Markdown digest and a static dashboard. Every item links to its source.
+A weekly "what changed" tracker for the 69 companies on the [Greek Deep Tech Market Map](https://github.com/geve-ops/greek-deeptech-market-map). It watches four public signals: funding news, EU grants, new job postings and GitHub activity. Each run produces a Markdown digest, a dashboard and a monthly briefing. Every item links to its source.
+
+![How the tracker works](docs/how-it-works.svg)
 
 Author: Gerald Velas. First digest: 26 October 2026.
 
@@ -13,6 +15,7 @@ Author: Gerald Velas. First digest: 26 October 2026.
 | Momentum score history | [data/scores.csv](data/scores.csv) |
 | Monthly briefing (live) | [geve-ops.github.io/vc-dealflow-tracker/briefing.html](https://geve-ops.github.io/vc-dealflow-tracker/briefing.html), archive in [docs/briefings/](docs/briefings/) |
 | Analyst pipeline (For the moment kept by hand) | [data/pipeline.csv](data/pipeline.csv) |
+| Backtest of GitHub activity before known rounds | [data/backtest.csv](data/backtest.csv) |
 
 ## How it works
 
@@ -36,26 +39,28 @@ That collects all signals and writes the digest and the dashboard. Other command
 python run.py build-watchlist --source ../greek-deeptech-market-map/data/greek_deeptech_dataset.csv
 python run.py enrich                 # fill empty LinkedIn / GitHub / careers fields
 python run.py enrich --only GRDT-037 # one company
-python run.py collect --signals github news
+python run.py collect --signals github news grants
 python run.py digest                 # rebuild the digest from saved snapshots
+python run.py backtest               # GitHub activity before known rounds (occasional; a few minutes)
 ```
 
 Open `docs/index.html` in a browser to see the dashboard locally. The live version is served by GitHub Pages from the `docs/` folder on `main` and updates with each weekly run.
 
 GitHub API calls use `GITHUB_TOKEN` if it is set, or the token of a logged-in `gh` CLI. Without a token the API allows 60 requests an hour, which is not enough for a full run.
 
-**Schedule.** [.github/workflows/weekly.yml](.github/workflows/weekly.yml) runs `python run.py weekly` every Monday at 06:00 UTC and commits the new snapshot, digest and dashboard. You can also start it by hand from the Actions tab.
+**Schedule.** [.github/workflows/weekly.yml](.github/workflows/weekly.yml) runs `python run.py weekly` every Monday at 06:00 UTC and commits the new snapshot, scores, digest, dashboard and briefing. You can also start it by hand from the Actions tab. A manual run on 26 October 2026 confirmed that GitHub, Google News, the job boards and CORDIS all answer from GitHub's servers.
 
 ## Monthly briefing
 
 `docs/briefing.html` is an executive view of the watchlist. Every weekly run regenerates it. Each run also saves a copy in `docs/briefings/YYYY-MM.html`, which later runs in the same month replace, so the archive keeps one page per month.
 
-It has five sections:
-1. **Key numbers:** companies tracked; early-stage capital disclosed in the last 6 months; how many companies are backed by a target fund; the top sector by recent capital.
+It has six sections:
+1. **Key numbers:** companies tracked; early-stage capital disclosed in the last 6 months; how many companies are backed by a target fund; the top sector by recent capital; EU grants signed in the last 6 months.
 2. **Analyst commentary:** the top 3 companies to engage, red flags in the data, and pipeline gaps.
-3. **Charts:** the stage funnel, the raising-window vs hiring matrix, and sector by stage.
+3. **Charts and tables:** the stage funnel, the raising-window vs hiring matrix, sector by stage, signal coverage by sector, recent EU grants, and the GitHub backtest.
 4. **Pipeline table:** the companies from `data/pipeline.csv`, plus companies the data suggests that are not yet in that file.
 5. **Memos:** for pipeline rows whose memo columns are filled in.
+6. **Draft post:** a short monthly summary built only from figures on the page, with a copy button. Edit it before posting.
 
 **Computed from the data:**
 - Round amounts, dates, stages and investors, copied from the market map dataset into the watchlist.
@@ -95,6 +100,7 @@ The score turns the weekly changes into a ranking. Each signal is capped, so no 
 | Signal this week | Points |
 |---|---|
 | Funding headline | 5 each, max 10 |
+| EU grant signed | 3 each, max 6 |
 | Other press headline | 1 each, max 3 |
 | New role posted | 1 each, max 5 |
 | Commits, excluding bots (all repos together) | 1 for 1-4, 2 for 5-19, 3 for 20 or more |
@@ -103,10 +109,10 @@ The score turns the weekly changes into a ranking. Each signal is capped, so no 
 
 **Momentum** = this week's score + 0.5 × last week + 0.25 × two weeks ago + 0.125 × three weeks ago. Older activity counts less, so the top of the list shows what is moving now.
 
-The weights are a judgement call, not a model fitted to past rounds. Points by signal are saved every week in `data/scores.csv` so the weights can be checked against rounds that are later announced.
+The weights are a judgement call, not a model fitted to past rounds. The GitHub backtest (below) supports keeping GitHub's weight low. Points by signal are saved every week in `data/scores.csv` so the weights can be checked against rounds that are later announced.
 
 - **Bots:** commits by Dependabot, Renovate and other `[bot]` accounts are shown in the digest but score nothing.
-- **Coverage bias:** companies with no GitHub organisation or job source can only score through news. A low score therefore means "nothing visible", not "nothing happening".
+- **Coverage bias:** companies with no GitHub organisation, job source or EU projects can only score through news. A low score therefore means "nothing visible", not "nothing happening".
 - **First weeks:** a score from one weekly run only reflects that week. Momentum becomes meaningful after about four runs.
 
 ## Signals and their limits
@@ -119,8 +125,9 @@ The weights are a judgement call, not a model fitted to past rounds. Points by s
 - **Limits:**
   - Only public repos are visible.
   - Commits are counted up to 100 per repo per week (shown as "100+").
-  - Bots such as Dependabot count as commits.
+  - Bot commits (Dependabot, Renovate, `[bot]` accounts) are listed but do not score.
   - Star changes start from the second run.
+- **Backtest:** `python run.py backtest` compares non-bot commits in the 6 months before each company's last dated round with the 6 months before that. On 26 October 2026, 8 of 15 companies had measurable history: activity rose for 3, stayed flat for 2 and fell for 3. In this sample public commits do not reliably rise before a round. Results are in `data/backtest.csv` and the briefing.
 
 ### Funding news
 
@@ -135,6 +142,17 @@ The weights are a judgement call, not a model fitted to past rounds. Points by s
   - Paywalled sources (Sifted, PitchBook, Crunchbase News) often appear late or not at all.
   - Names shared with other firms can still give false matches. Fix these by narrowing `news_terms`.
   - Headlines are not verified figures. Confirm a round from a primary source before adding it to the market map dataset.
+
+### EU grants
+
+- **Source:** CORDIS, the EU's public database of Horizon Europe and earlier research and innovation projects. Its search answers in JSON without a key.
+- **Matching:** a project counts when one of the company's `news_terms` appears in the project title, summary or participant names. Participant legal names often differ from brand names (Solmeyea's is SOLMEGIA), so matching on the text is more reliable.
+- **Reported:** projects that were not in last week's snapshot. On a first run, only projects signed inside the window are reported.
+- **Coverage:** on 26 October 2026, 118 projects across 21 companies; 12 companies have a project signed since 2024. This is the signal that sees SMEs and hardware companies with no GitHub or job feed (for example Satways, Prisma Electronics, Altus LSA).
+- **Limits:**
+  - Amounts are the EU contribution to the whole project, not the company's share.
+  - Only EU programmes in CORDIS. National grants (for example Greek RRF calls), ESA contracts and NATO DIANA are not included.
+  - A company named in a project's text is not always a participant. Check the CORDIS page before quoting a project.
 
 ### Job postings
 
@@ -171,6 +189,8 @@ tracker/enrich.py           fill LinkedIn, GitHub and job sources
 tracker/signals_github.py   GitHub signal
 tracker/signals_news.py     funding news signal
 tracker/signals_jobs.py     job postings signal
+tracker/signals_grants.py   EU grants signal (CORDIS)
+tracker/backtest.py         GitHub activity before known rounds
 tracker/collect.py          run all signals, save a snapshot
 tracker/score.py            weekly score and momentum ranking
 tracker/digest.py           compare snapshots, write the digest and dashboard

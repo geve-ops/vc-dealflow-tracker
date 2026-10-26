@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-26T14:10:01Z",
- "window_start": "2026-10-19T14:10:01Z",
+ "generated_at": "2026-10-26T14:17:48Z",
+ "window_start": "2026-10-19T14:17:48Z",
  "first_run": true,
  "changes": [
   {
@@ -278,6 +278,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": {
     "title": "Perceptual Robotics Raises Over £4M in Funding",
     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOT2poTVZFbVlXOHh6bWpMeXBINWRBMk5XOW1KdFQwS0ROSi1JaXhwNnBya1JFN2E3M1BINkQtSHRucEhobWthN3pFOF80bDJKN1RoR3R0REI0OXhiZUNwUnRWdlRncEFlek1YMm9LblFJckZ3SzNCRm1WeVYzekJkVGlISnFYYVVEYmc?oc=5",
@@ -308,6 +312,10 @@
    "last_push": "2026-10-22",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 11
@@ -334,6 +342,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 52
@@ -359,6 +371,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 68
@@ -382,6 +398,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 56
@@ -407,6 +427,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 17
@@ -430,6 +454,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 31
@@ -453,6 +481,14 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 2,
+   "eu_contribution": 11.45,
+   "latest_grant": {
+    "title": "MERLIN: Demonstration of long-endurance intelligent multi-purpose autonomous vehicles for marine applications",
+    "url": "https://cordis.europa.eu/project/id/101189796",
+    "date": "2024-10-29"
+   },
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 13
@@ -476,6 +512,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 2.0,
    "rank": 5
@@ -499,6 +539,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 12
@@ -522,6 +566,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 67
@@ -547,6 +595,10 @@
    "last_push": "2026-10-13",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 40
@@ -570,6 +622,10 @@
    "last_push": "2026-10-23",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 2.0,
    "rank": 3
@@ -593,6 +649,10 @@
    "last_push": "2026-10-23",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": {
     "title": "Motor Oil: Στρατηγικό άνοιγμα στην Τεχνητή Νοημοσύνη με επένδυση στη Satori Analytics",
     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOYjRqX3F6UDhnZG9HeFNMSVF3ckZ4aXlJNmJPUmszajY0TXVERkw4ekJHeDI2TUZhcjFlcGk1VU1JNTVDVzRZSi1nUTVpU2FSOHlyVkpYV3FFSlpYd3dhQ3dnWS1UaUVLbnNNdFNXd1F1ejVEUm9yOGthZTJHc3RyWVJRNE04TW40OGNnZjBSVE1aUHZnOTNHcTM0Y3Fxb1I3Nm1jMXpHS053LUZOVm9iUTlRdGc3cUlnNWlfVEU5dmJBMDFjbV9DYXc1MWxlZw?oc=5",
@@ -621,6 +681,10 @@
    "last_push": "2024-10-16",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 36
@@ -646,6 +710,10 @@
    "last_push": "2026-10-26",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": {
     "title": "TileDB Rebrands as Tile.ai, Names George Llado CEO and Raises Strategic Funding",
     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQMGtrSnd0Nkdqa08yd3lKZ1RrcVFtSzhzR29aamFmTk1FQnVwNF9iTl9lV21jT3JTLVRHZ3cyRXh6czNsNE1XY2duUzROVzNCWVYwUllqT3lKVmg5VmV0QlE2cXRHS0pCRVBWd1Z6OTNKQncxSldDV1JQZGRVRF9YQXFMQkdvWmVZU09SOU9pLUZRd2pfU19WckhCaUdOeHByWnBzVExENUZLNGlYSG85Nm1Id2lwdEk0?oc=5",
@@ -674,6 +742,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": {
     "title": "Proxy Foods AI Secures $6 Million Seed Round to Enhance Food R&D Platform",
     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNRXhWaXY4RjZySDdibEJCZG5jQkhPZEZBRGllZFpLX2RmVzZCZF91M0E4eWVrM182T29XNVN6NTdjNjg0c2s3aW5mSWdYbVR0YlZDN1hySG92TkNiajEwd3huWmlKaFo5M0ZnQmxHVnMtVUR0b2pZQ2g3UTZ4WGpvUGZCMFZTdDJEX2o4em1vd2tUTXdqZjRSY2NKTHhMWl9abWIycGxPZw?oc=5",
@@ -702,6 +774,10 @@
    "last_push": "2026-10-19",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 35
@@ -725,6 +801,14 @@
    "last_push": "2026-10-26",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 5,
+   "eu_contribution": 144.5,
+   "latest_grant": {
+    "title": "VOICES: Voicing Opportunities and Influence for the Chip Ecosystem of (fabless) SMEs",
+    "url": "https://cordis.europa.eu/project/id/101297687",
+    "date": "2026-04-17"
+   },
    "latest_funding": {
     "title": "Axelera AI targets IPO within three to five years",
     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNX1JTVnZnSmIzZVBtaDJDMC0yV2dsRWtOR3BsbG1Bd2Z5T0cwZXJwUEFvczNBQnpkemQ2SlpPVzBEVWJibGN3TXRLN1g4aUV3WFFzZ0V3dlVJZjJHWWlMVjFHMFdmZ3ZkdjUzRXpidl82NVYzNGY5QlpnbDdkSk1DSHFn?oc=5",
@@ -755,6 +839,10 @@
    "last_push": "2025-04-24",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 65
@@ -781,6 +869,14 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 1,
+   "eu_contribution": 5.96,
+   "latest_grant": {
+    "title": "DREAMTEAM: DIRECT -RADIO FREQUENCY-ENHANCED- AIR CAPTURE WITH MASS-PRODUCEABLE MICRO-STRUCTURED CONTACTORS AND TRANSFORMATIVE ENVIRONMENTALLY BENIGN, ADVANCED MATERIALS FOR LOW-COST DEPLOYMENT: DREAM/TEAM",
+    "url": "https://cordis.europa.eu/project/id/101326077",
+    "date": "2026-10-05"
+   },
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 60
@@ -804,6 +900,10 @@
    "last_push": "2026-10-26",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 3.0,
    "rank": 2
@@ -829,6 +929,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 34
@@ -856,6 +960,10 @@
    "last_push": "2026-06-11",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 44
@@ -883,6 +991,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 15
@@ -908,6 +1020,14 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 1,
+   "eu_contribution": 3.95,
+   "latest_grant": {
+    "title": "BICEPS: Beyond neuroInflammation: new Concepts to Elucidate the immune system’s vital role in Parkinson’s disease",
+    "url": "https://cordis.europa.eu/project/id/101167843",
+    "date": "2024-06-25"
+   },
    "latest_funding": {
     "title": "Anacalypsis Therapeutics: Pre-seed χρηματοδότηση από την Metavallon VC",
     "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPbV9KaTBjNVUySTFuckZ0Z29sSmI5cTZ3QjVNZDVibG1vTGRRRFVvdkdMNEN3aXdaOWYtemoyNUU3ajFxRXN6aVpkd01teWpWM0pPa1BVejlFQk01UGhFZlFlU3RuTnZ0VklmZG51cVQ2a1gwWjQ1ZzdvT3AwUF9PbjJKbHotTHphSk8tWm1BeWhRdjdvMFZabVRLQXBDVERvWTJ0aU5MblJfYTdqX2xnbWR5cEpuaTBKZE91cFhMcFQwT002R0k1SmpaMWhpMXhEVmF0cmxCSXd4M2pYSzA0TDd0OGxRbldDYkVCdnBuQ0Njcm5tdEpzcw?oc=5",
@@ -938,6 +1058,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 37
@@ -963,6 +1087,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 28
@@ -988,6 +1116,10 @@
    "last_push": "2026-10-26",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 2.0,
    "rank": 4
@@ -1011,6 +1143,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 62
@@ -1034,6 +1170,14 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 2,
+   "eu_contribution": 2.06,
+   "latest_grant": {
+    "title": "GRAVITY: New Technologies for Next-Generation Gravitational-Wave Detectors",
+    "url": "https://cordis.europa.eu/project/id/101236384",
+    "date": "2025-07-10"
+   },
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 51
@@ -1057,6 +1201,10 @@
    "last_push": "2026-08-07",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": {
     "title": "Open Cosmos Secures €300M to Build Europe's 192-Satellite LEO Constellation",
     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1WVnU2RHVfcFFZSGtDOGVTTk83UXZzUjFOU3VONTVWcE9kbXo5dk56eGk3QnpjX3hCc1pSLUIyWnpsX09rLVN3RmpPSG5jdjc4QVlkck5KYUMxLTViRkdZandMY2oyZUYyZzdPWGpnV3dNX2MyYWhyMQ?oc=5",
@@ -1085,6 +1233,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 1.0,
    "rank": 8
@@ -1110,6 +1262,10 @@
    "last_push": "2023-08-08",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 27
@@ -1135,6 +1291,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 18
@@ -1160,6 +1320,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 19
@@ -1186,6 +1350,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 30
@@ -1209,6 +1377,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 1.0,
    "rank": 7
@@ -1232,6 +1404,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 10
@@ -1257,6 +1433,10 @@
    "last_push": "2026-10-25",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 21
@@ -1282,6 +1462,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 23
@@ -1307,6 +1491,10 @@
    "last_push": "2022-08-03",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 20
@@ -1332,6 +1520,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 22
@@ -1357,6 +1549,10 @@
    "last_push": "2023-07-27",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 25
@@ -1382,6 +1578,14 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 3,
+   "eu_contribution": 13.45,
+   "latest_grant": {
+    "title": "SIERRA: Safe, sustainable, lIghtwEight and high-perfoRmance Ni-Rich NMC battery pack with Advanced cell-to-pack monitoring for decarbonising heavy-duty vehicles",
+    "url": "https://cordis.europa.eu/project/id/101202495",
+    "date": "2025-04-21"
+   },
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 69
@@ -1405,6 +1609,10 @@
    "last_push": "2023-01-26",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 38
@@ -1428,6 +1636,14 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 9,
+   "eu_contribution": 50.93,
+   "latest_grant": {
+    "title": "CLIMABUILD: Climate-responsive, low-carbon pathways for a resilient European building stock",
+    "url": "https://cordis.europa.eu/project/id/101326320",
+    "date": "2026-10-12"
+   },
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 26
@@ -1453,6 +1669,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 46
@@ -1478,6 +1698,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 24
@@ -1503,6 +1727,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 54
@@ -1528,6 +1756,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 41
@@ -1554,6 +1786,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 64
@@ -1579,6 +1815,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 42
@@ -1604,6 +1844,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 50
@@ -1629,6 +1873,14 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 1,
+   "eu_contribution": 4.0,
+   "latest_grant": {
+    "title": "CARES: Citizen Awareness and Resilience for Emergency Systems",
+    "url": "https://cordis.europa.eu/project/id/101309523",
+    "date": "2026-07-10"
+   },
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 48
@@ -1652,6 +1904,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 39
@@ -1677,6 +1933,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 32
@@ -1700,6 +1960,14 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 4,
+   "eu_contribution": 16.86,
+   "latest_grant": {
+    "title": "INTEGRA CBRN: [INTEGRA-CBRN] INTEGRATED ALERT AND PROACTIVE DETECTION SYSTEM FOR CROSS-BORDER CBRN EMERGENCIES IN THE EU",
+    "url": "https://cordis.europa.eu/project/id/101309592",
+    "date": "2026-07-10"
+   },
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 57
@@ -1723,6 +1991,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 16
@@ -1748,6 +2020,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 58
@@ -1773,6 +2049,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 33
@@ -1798,6 +2078,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 49
@@ -1821,6 +2105,14 @@
    "last_push": "2026-06-27",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 2,
+   "eu_contribution": 13.44,
+   "latest_grant": {
+    "title": "ARGENTIC: Agentic Reasoning for the Generative AI-Enabled Cognitive Continuum",
+    "url": "https://cordis.europa.eu/project/id/101298599",
+    "date": "2026-05-27"
+   },
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 63
@@ -1844,6 +2136,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 55
@@ -1867,6 +2163,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 59
@@ -1890,6 +2190,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 66
@@ -1913,6 +2217,10 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 0,
+   "eu_contribution": 0.0,
+   "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 29
@@ -1938,6 +2246,14 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 2,
+   "eu_contribution": 14.64,
+   "latest_grant": {
+    "title": "5NETSAT: 5G NTN SATELLITE DIRECT TO MOBILE IN-ORBIT DEMONSTRATION",
+    "url": "https://cordis.europa.eu/project/id/101218718",
+    "date": "2025-06-05"
+   },
    "latest_funding": {
     "title": "OQ Technology Secures Australian Smart Forest Monitoring Project Using Satellite IoT",
     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMk5NSGRFd0xTSS1UTzViZkpLMWNUcTlDR3BIbDZfcUEwcDMtTDhfWlYtQ1dpYnhueS1xN24tRmxDQ2hhZVotNUFtQ2k2YjZ1bWdfLVlkb1pkQmpxbWthR0M1dlZWMjFqREpUUC1senhxcEdabEFwY3VMZEZZWlIyV200OWJfTmppUEZvS1IzTnI1WV9aQUN4OXpxM0FrWFBiZlpUdnRlY3pDLS0yWU8tUm1GX0JpZ2NYRk9uaWxiVQ?oc=5",
@@ -1966,6 +2282,14 @@
    "last_push": "",
    "github_error": "",
    "news_error": "",
+   "grants_error": "",
+   "eu_projects": 1,
+   "eu_contribution": 2.44,
+   "latest_grant": {
+    "title": "C - 2C - Protein: Inspiring CO2 circularity by introducing carbon transformation to our plates",
+    "url": "https://cordis.europa.eu/project/id/101188544",
+    "date": "2024-12-13"
+   },
    "latest_funding": null,
    "momentum": 0.0,
    "rank": 61
@@ -1986,6 +2310,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 2,
     "github": 2
@@ -2003,6 +2328,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 3
@@ -2020,6 +2346,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 2
@@ -2039,6 +2366,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 1,
     "github": 1
@@ -2056,6 +2384,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 2,
     "hiring": 0,
     "github": 0
@@ -2075,6 +2404,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 2
@@ -2092,6 +2422,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 1,
     "hiring": 0,
     "github": 0
@@ -2109,6 +2440,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 1,
     "hiring": 0,
     "github": 0
@@ -2126,6 +2458,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 1,
     "github": 0
@@ -2143,6 +2476,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2162,6 +2496,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2179,6 +2514,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2196,6 +2532,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2215,6 +2552,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2236,6 +2574,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2253,6 +2592,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2272,6 +2612,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2291,6 +2632,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2310,6 +2652,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2329,6 +2672,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2348,6 +2692,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2367,6 +2712,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2386,6 +2732,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2405,6 +2752,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2424,6 +2772,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2441,6 +2790,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2460,6 +2810,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2479,6 +2830,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2496,6 +2848,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2516,6 +2869,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2533,6 +2887,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2552,6 +2907,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2571,6 +2927,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2590,6 +2947,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2607,6 +2965,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2624,6 +2983,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2643,6 +3003,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2660,6 +3021,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2677,6 +3039,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2696,6 +3059,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2715,6 +3079,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2734,6 +3099,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2753,6 +3119,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2774,6 +3141,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2791,6 +3159,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2810,6 +3179,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2829,6 +3199,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2848,6 +3219,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2867,6 +3239,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2886,6 +3259,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2903,6 +3277,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2923,6 +3298,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2940,6 +3316,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2959,6 +3336,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2976,6 +3354,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -2993,6 +3372,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -3010,6 +3390,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -3029,6 +3410,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -3046,6 +3428,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -3066,6 +3449,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -3083,6 +3467,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -3100,6 +3485,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -3117,6 +3503,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -3137,6 +3524,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -3156,6 +3544,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -3173,6 +3562,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -3190,6 +3580,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -3209,6 +3600,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0
@@ -3228,6 +3620,7 @@
    "last_week": null,
    "parts": {
     "funding": 0,
+    "grants": 0,
     "press": 0,
     "hiring": 0,
     "github": 0

@@ -1,0 +1,16 @@
+company_id,company,github_org,round_month,round,repos_counted,commits_baseline,commits_before,change,capped
+GRDT-002,Acumino,acumino-ai,2026-06,USD 11.7M,0,0,0,no activity,False
+GRDT-012,Moveo.AI,moveo-ai,2024-08,USD 2.6M,2,2,12,rose,False
+GRDT-013,Bitloops,bitloops,2025-06,EUR 1M,6,129,38,fell,False
+GRDT-015,Keragon,KeragonHQ,2025-02,USD 7.5M,2,10,2,fell,False
+GRDT-016,TileDB (rebranded Tile.ai),TileDB-Inc,2023-10,USD 34M,19,117,123,flat,False
+GRDT-018,Intryc,Intryc,2025-01,USD 3.1M,0,0,0,no activity,False
+GRDT-020,Axelera AI,axelera-ai-hub,2026-02,More than USD 250M,7,150,148,flat,False
+GRDT-023,WeatherXM,WeatherXM,2024-05,USD 7.7M,10,91,297,rose,False
+GRDT-025,ORamaVR,ovidVR,2026-01,USD 4.5M,0,0,0,no activity,False
+GRDT-031,Hack The Box,hackthebox,2023-01,USD 55M,2,0,0,no activity,False
+GRDT-034,Open Cosmos (Open Cosmos Aegean),opencosmos,2026-09,EUR 300M,2,79,15,fell,False
+GRDT-038,Corsmed,corsmed,2024-12,~USD 3.5M,0,0,0,no activity,False
+GRDT-044,Causaly,causaly,2024-07,USD 60M,7,28,55,rose,False
+GRDT-046,Bota Systems,BOTAsys,2023-10,USD 2.5M,0,0,0,no activity,False
+GRDT-049,iCOMAT,icomatuk,2024-06,USD 22.5M,0,0,0,no activity,False

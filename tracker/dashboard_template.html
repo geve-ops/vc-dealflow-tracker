@@ -8,19 +8,19 @@
 :root {
   --bg: #f7f7f5; --panel: #ffffff; --ink: #1c1d1f; --muted: #62656b; --line: #e3e3df;
   --accent: #1f5f8b; --funding: #1a7f4b; --jobs: #8a5a00; --github: #4b4fa8; --press: #6b6f76;
-  --chip: #eef0f2;
+  --chip: #eef0f2; --grants: #c2416c;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #141517; --panel: #1c1d20; --ink: #ececec; --muted: #9a9ca1; --line: #2c2e32;
     --accent: #7db7e0; --funding: #5fcf94; --jobs: #e3b25a; --github: #a3a7f0; --press: #a0a3a8;
-    --chip: #26282c;
+    --chip: #26282c; --grants: #ed93b1;
   }
 }
 :root[data-theme="dark"] {
   --bg: #141517; --panel: #1c1d20; --ink: #ececec; --muted: #9a9ca1; --line: #2c2e32;
   --accent: #7db7e0; --funding: #5fcf94; --jobs: #e3b25a; --github: #a3a7f0; --press: #a0a3a8;
-  --chip: #26282c;
+  --chip: #26282c; --grants: #ed93b1;
 }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--ink);
@@ -51,7 +51,7 @@ input[type=search] { flex: 1 1 220px; padding: 8px 10px; border-radius: 6px; bor
 .date { color: var(--muted); font-variant-numeric: tabular-nums; }
 .tag { font-size: 12px; font-weight: 600; }
 .tag.funding { color: var(--funding); } .tag.jobs { color: var(--jobs); }
-.tag.github { color: var(--github); } .tag.press { color: var(--press); }
+.tag.github { color: var(--github); } .tag.press { color: var(--press); } .tag.grants { color: var(--grants); }
 .detail { color: var(--muted); }
 .empty { color: var(--muted); padding: 16px 0; }
 .tablewrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; }
@@ -109,13 +109,13 @@ footer { margin-top: 40px; color: var(--muted); font-size: 13px; }
 </div>
 <script>
 const DATA = /*__DATA__*/null;
-const LABELS = { funding: "Funding", jobs: "Hiring", github: "GitHub", press: "Press" };
+const LABELS = { funding: "Funding", grants: "EU grant", jobs: "Hiring", github: "GitHub", press: "Press" };
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const safeUrl = u => /^https?:\/\//i.test(u || "") ? u : "#";
 let active = null, fund = "";
 const FUNDS = Object.fromEntries(DATA.companies.map(c => [c.company_id, c.greek_funds || []]));
 const inFund = id => !fund || FUNDS[id].includes(fund);
-const PARTS = [["funding", "Funding", "var(--funding)"], ["press", "Press", "var(--press)"], ["hiring", "Hiring", "var(--jobs)"], ["github", "GitHub", "var(--github)"]];
+const PARTS = [["funding", "Funding", "var(--funding)"], ["grants", "EU grants", "var(--grants)"], ["press", "Press", "var(--press)"], ["hiring", "Hiring", "var(--jobs)"], ["github", "GitHub", "var(--github)"]];
 const fundChips = r => (r.greek_funds || []).map(f => `<span class="chipf">${esc(f)}</span>`).join("") +
   (r.greek_fund_status && r.greek_fund_status !== "current" ? ` <span class="dim">${esc(r.greek_fund_status)}</span>` : "");
 
@@ -172,7 +172,7 @@ function renderMovers() {
 
 const COLS = [
   ["company", "Company"], ["greek_funds", "Greek funds"], ["momentum", "Momentum"], ["category", "Category"], ["links", "Links"],
-  ["open_roles", "Open roles"], ["stars", "GitHub stars"], ["last_push", "Last push"], ["latest_funding", "Latest funding headline (90 days)"]
+  ["open_roles", "Open roles"], ["stars", "GitHub stars"], ["last_push", "Last push"], ["eu_projects", "EU projects (since 2024)"], ["latest_funding", "Latest funding headline (90 days)"]
 ];
 let sortKey = "company", sortDir = 1;
 function renderTable() {
@@ -180,7 +180,7 @@ function renderTable() {
   thead.innerHTML = "<tr>" + COLS.map(([k, l]) => `<th data-k="${k}">${l}${sortKey === k ? (sortDir > 0 ? " ▲" : " ▼") : ""}</th>`).join("") + "</tr>";
   thead.querySelectorAll("th").forEach(th => th.onclick = () => {
     const k = th.dataset.k; if (k === "links") return;
-    sortDir = sortKey === k ? -sortDir : (["open_roles", "stars", "last_push", "momentum"].includes(k) ? -1 : 1); sortKey = k; renderTable();
+    sortDir = sortKey === k ? -sortDir : (["open_roles", "stars", "last_push", "momentum", "eu_projects"].includes(k) ? -1 : 1); sortKey = k; renderTable();
   });
   const val = (r, k) => k === "latest_funding" ? (r.latest_funding?.date || "") : k === "greek_funds" ? (r.greek_funds || []).join(",") : (r[k] ?? -1);
   const rows = DATA.companies.filter(r => inFund(r.company_id)).sort((a, b) => { const x = val(a, sortKey), y = val(b, sortKey); return (x > y ? 1 : x < y ? -1 : 0) * sortDir; });
@@ -199,6 +199,7 @@ function renderTable() {
       <td class="dim">${esc(r.category)}</td><td class="links">${links}</td>
       <td class="num">${roles}</td><td class="num">${r.github_org ? r.stars : '<span class="dim">–</span>'}</td>
       <td class="dim nowrap">${esc(r.last_push)}</td>
+      <td class="num">${r.eu_projects ? `<a href="${esc(safeUrl(r.latest_grant.url))}" target="_blank" rel="noopener" title="Latest: ${esc(r.latest_grant.title)}">${r.eu_projects}</a>` : '<span class="dim">–</span>'}</td>
       <td>${f ? `<span class="dim">${esc(f.date)}</span> <a href="${esc(safeUrl(f.url))}" target="_blank" rel="noopener">${esc(f.title)}</a> <span class="dim">${esc(f.source)}</span>` : '<span class="dim">–</span>'}</td></tr>`;
   }).join("");
 }

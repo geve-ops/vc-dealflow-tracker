@@ -2,15 +2,19 @@
 
     python run.py build-watchlist --source ../greek-deeptech-market-map/data/greek_deeptech_dataset.csv
     python run.py enrich [--force] [--only GRDT-001 GRDT-002]
-    python run.py collect [--signals github news jobs]
+    python run.py collect [--signals github news jobs grants]
     python run.py digest
     python run.py weekly          # collect + digest
+    python run.py backtest        # GitHub activity before known rounds (occasional, slow)
 """
 
 import argparse
 import sys
 
-from tracker import collect, digest, enrich, watchlist
+from tracker import backtest, collect, digest, enrich, watchlist
+
+
+SIGNALS = ["github", "news", "jobs", "grants"]
 
 
 def main(argv=None):
@@ -22,10 +26,11 @@ def main(argv=None):
     e.add_argument("--force", action="store_true", help="overwrite values already filled")
     e.add_argument("--only", nargs="*", help="company_ids to process")
     c = sub.add_parser("collect", help="run the signals and save a snapshot")
-    c.add_argument("--signals", nargs="*", default=["github", "news", "jobs"], choices=["github", "news", "jobs"])
+    c.add_argument("--signals", nargs="*", default=SIGNALS, choices=SIGNALS)
     sub.add_parser("digest", help="write the digest and dashboard from the latest snapshots")
+    sub.add_parser("backtest", help="compare GitHub activity before known rounds with the months before")
     w = sub.add_parser("weekly", help="collect, then digest")
-    w.add_argument("--signals", nargs="*", default=["github", "news", "jobs"], choices=["github", "news", "jobs"])
+    w.add_argument("--signals", nargs="*", default=SIGNALS, choices=SIGNALS)
     a = ap.parse_args(argv)
 
     if a.cmd == "build-watchlist":
@@ -36,6 +41,8 @@ def main(argv=None):
         collect.collect(signals=tuple(a.signals))
     elif a.cmd == "digest":
         digest.build()
+    elif a.cmd == "backtest":
+        backtest.run()
     elif a.cmd == "weekly":
         collect.collect(signals=tuple(a.signals))
         digest.build()

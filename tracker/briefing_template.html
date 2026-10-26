@@ -100,12 +100,32 @@ footer { margin-top: 44px; color: var(--muted); font-size: 13px; }
     <div class="chart" style="height:400px"><canvas id="ss" role="img" aria-label="Stacked bar chart of companies per sector by stage"></canvas></div>
   </div>
 
+  <h3 style="margin-top:22px">Signal coverage by sector</h3>
+  <p class="lede">Share of companies in each sector that each weekly signal can see. Funding news is searched for every company.</p>
+  <div class="panel">
+    <div class="legend" id="cvlegend"></div>
+    <div class="chart" style="height:400px"><canvas id="cv" role="img" aria-label="Grouped bar chart of signal coverage by sector"></canvas></div>
+  </div>
+  <h3 style="margin-top:22px">EU grants signed in the last 6 months</h3>
+  <div class="tablewrap"><table id="eu"><thead><tr><th>Signed</th><th>Company</th><th>Project</th><th>EU contribution to the project</th></tr></thead><tbody></tbody></table></div>
+  <h3 style="margin-top:22px">Backtest: GitHub activity before known rounds</h3>
+  <p class="lede" id="btnote"></p>
+  <div class="tablewrap"><table id="bt"><thead><tr><th>Company</th><th>Round</th><th>Round month</th><th>Commits, months -12 to -6</th><th>Commits, months -6 to 0</th><th>Change</th></tr></thead><tbody></tbody></table></div>
+
   <h2>4. Pipeline</h2>
   <p class="lede">Rows come from <code>data/pipeline.csv</code>, kept by hand. Rows marked "suggested" come from the data and are not yet in that file. No company has a public valuation, so that column is left out.</p>
   <div class="tablewrap"><table id="pipe"><thead></thead><tbody></tbody></table></div>
 
   <h2>5. Memos</h2>
   <div id="memos"></div>
+
+  <h2>6. Draft post for this month</h2>
+  <p class="lede">Built only from the figures on this page. Edit before posting.</p>
+  <div class="panel"><pre id="post" style="white-space:pre-wrap;font:inherit;margin:0"></pre>
+  <button id="copy" style="margin-top:12px;padding:7px 12px;border-radius:6px;border:1px solid var(--line);background:var(--chip);color:var(--ink);font:inherit;cursor:pointer">Copy text</button></div>
+
+  <h2>How this page is built</h2>
+  <div class="panel" style="text-align:center"><img id="diagram" src="how-it-works.svg" alt="Flow from the market map dataset to the watchlist, four weekly signals, snapshot, scoring and the three outputs" style="max-width:100%;height:auto"></div>
 
   <footer id="foot"></footer>
 </div>
@@ -136,6 +156,7 @@ document.getElementById("kpis").innerHTML =
   kpi("Backed by a target fund", `${K.target_backed} of ${K.tracked}`, `${K.target_backed_current} still invested · ${fundLine}`) +
   kpi("Top sector, recent capital", K.top_sector ? esc(K.top_sector.name) : "–",
       K.top_sector ? `$${K.top_sector.usd}M: ${K.top_sector.companies.map(esc).join(", ")}` : "No dated USD rounds in the window") +
+  kpi("EU grants signed, last 6 months", K.eu_recent, `${K.eu_recent_companies} companies · CORDIS`) +
   kpi("Conversion rate", "n/a", "No company has reached diligence yet; see the funnel");
 
 // 2. Commentary
@@ -231,6 +252,36 @@ document.getElementById("memos").innerHTML = memoRows.map(p => `<div class="pane
   <dt>Greek link</dt><dd>${esc(p.greek_link)}</dd><dt>Verification</dt><dd>${esc(p.verification)}</dd></dl>
   <div class="dim" style="font-size:12.5px;margin-top:8px">Notes updated ${esc(p.updated)}</div></div>`).join("") ||
   `<div class="panel dim">No memo notes yet. Add them in data/pipeline.csv.</div>`;
+
+// Coverage
+const CV = DATA.coverage, cvs = [["github", "GitHub organisation", "--s1"], ["jobs", "Jobs source", "--s2"], ["grants", `EU projects since ${+DATA.generated_at.slice(0, 4) - 2}`, "--s3"]];
+document.getElementById("cvlegend").innerHTML = cvs.map(([k, l, c]) => `<span><i style="background:${css(c)}"></i>${l} (${CV.reduce((a, x) => a + x[k], 0)} of ${K.tracked})</span>`).join("");
+new Chart(document.getElementById("cv"), { type: "bar",
+  data: { labels: CV.map(x => `${x.category} (${x.n})`), datasets: cvs.map(([k, l, c]) => ({ label: l, data: CV.map(x => Math.round(x[k] / x.n * 100)), backgroundColor: css(c), borderRadius: 3, barThickness: 8 })) },
+  options: { indexAxis: "y", responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false },
+      tooltip: { callbacks: { label: c => `${c.dataset.label}: ${c.raw}% (${CV[c.dataIndex][cvs[c.datasetIndex][0]]} of ${CV[c.dataIndex].n})` } } },
+    scales: { x: { max: 100, ticks: { color: muted, callback: v => v + "%" }, grid: { color: grid } }, y: { ticks: { color: muted, autoSkip: false }, grid: { display: false } } } } });
+
+// EU grants
+document.querySelector("#eu tbody").innerHTML = DATA.eu_recent.map(g => `<tr><td class="dim" style="white-space:nowrap">${esc(g.signed)}</td><td><b>${esc(g.company)}</b></td>
+  <td><a href="${esc(g.url)}" target="_blank" rel="noopener">${esc(g.acronym)}</a> <span class="dim">${esc(g.title)}</span></td><td>EUR ${g.eur_m}M</td></tr>`).join("") ||
+  `<tr><td colspan="4" class="dim">No EU projects signed in the last 6 months.</td></tr>`;
+
+// Backtest
+const BT = DATA.backtest, btm = BT.filter(b => b.change !== "no activity"), cnt = k => btm.filter(b => b.change.startsWith(k)).length;
+document.getElementById("btnote").textContent = BT.length
+  ? `For companies with a GitHub organisation and a round dated to the month, non-bot commits in the 6 months before the round are compared with the 6 months before that. Measurable: ${btm.length} of ${BT.length}. Rose: ${cnt("rose")}, flat: ${cnt("flat")}, fell: ${cnt("fell")}. In this sample public commits do not reliably rise before a round, so GitHub carries less weight in the score than funding news and hiring. News and job boards keep no history, so they cannot be backtested. Run with: python run.py backtest.`
+  : "No backtest yet. Run: python run.py backtest";
+document.querySelector("#bt tbody").innerHTML = BT.map(b => `<tr><td><b>${esc(b.company)}</b></td><td>${esc(b.round)}</td><td class="dim">${esc(b.round_month)}</td>
+  <td>${b.commits_baseline}${b.capped === "True" ? "+" : ""}</td><td>${b.commits_before}${b.capped === "True" ? "+" : ""}</td><td>${esc(b.change)}</td></tr>`).join("");
+
+// Draft post
+document.getElementById("post").textContent = DATA.draft_post;
+document.getElementById("copy").onclick = async () => {
+  try { await navigator.clipboard.writeText(DATA.draft_post); document.getElementById("copy").textContent = "Copied"; }
+  catch (e) { document.getElementById("copy").textContent = "Select the text above to copy"; }
+};
+document.getElementById("diagram").src = BASE + "how-it-works.svg";
 
 document.getElementById("foot").innerHTML = `Generated ${esc(DATA.generated_at)} by the weekly run; this month's copy is replaced until the month ends. ` +
   `Round amounts, dates and investors come from the market map dataset; check its source_link column before quoting a figure. Method and limits are in the README.`;

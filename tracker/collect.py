@@ -4,7 +4,7 @@ import json
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 
-from . import signals_github, signals_jobs, signals_news
+from . import signals_github, signals_grants, signals_jobs, signals_news
 from .common import SNAPSHOTS, github_token, read_watchlist
 
 
@@ -28,7 +28,7 @@ def previous_snapshot(before_date):
     return json.loads(older[-1].read_text(encoding="utf-8"))
 
 
-def collect(signals=("github", "news", "jobs"), lookback_days=7):
+def collect(signals=("github", "news", "jobs", "grants"), lookback_days=7):
     now = utc_now()
     today = now.date().isoformat()
     prev = previous_snapshot(today)
@@ -52,6 +52,8 @@ def collect(signals=("github", "news", "jobs"), lookback_days=7):
             out["news"] = safe(signals_news.collect, row)
         if "jobs" in signals:
             out["jobs"] = safe(signals_jobs.collect, row)
+        if "grants" in signals:
+            out["grants"] = safe(signals_grants.collect, row)
         return row["company_id"], out
 
     with ThreadPoolExecutor(max_workers=6) as pool:

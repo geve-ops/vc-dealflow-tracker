@@ -1,70 +1,70 @@
-date,company_id,company,week_score,funding,press,hiring,github
-2026-10-26,GRDT-001,Perceptual Robotics,0,0,0,0,0
-2026-10-26,GRDT-002,Acumino,0,0,0,0,0
-2026-10-26,GRDT-003,Progressive Robotics,0,0,0,0,0
-2026-10-26,GRDT-004,Velos Rotors,0,0,0,0,0
-2026-10-26,GRDT-005,Robenso,0,0,0,0,0
-2026-10-26,GRDT-006,Augmenta,0,0,0,0,0
-2026-10-26,GRDT-007,Gizelis Robotics,0,0,0,0,0
-2026-10-26,GRDT-008,Altus LSA,0,0,0,0,0
-2026-10-26,GRDT-009,SAS Technology,2,0,2,0,0
-2026-10-26,GRDT-010,Aether Aeronautics,0,0,0,0,0
-2026-10-26,GRDT-011,Ucandrone,0,0,0,0,0
-2026-10-26,GRDT-012,Moveo.AI,0,0,0,0,0
-2026-10-26,GRDT-013,Bitloops,2,0,0,0,2
-2026-10-26,GRDT-014,Satori Analytics,1,0,0,1,0
-2026-10-26,GRDT-015,Keragon,0,0,0,0,0
-2026-10-26,GRDT-016,TileDB (rebranded Tile.ai),2,0,0,0,2
-2026-10-26,GRDT-017,Proxy Foods AI,0,0,0,0,0
-2026-10-26,GRDT-018,Intryc,0,0,0,0,0
-2026-10-26,GRDT-020,Axelera AI,4,0,0,2,2
-2026-10-26,GRDT-021,Think Silicon,0,0,0,0,0
-2026-10-26,GRDT-022,SolidWatts,0,0,0,0,0
-2026-10-26,GRDT-023,WeatherXM,3,0,0,0,3
-2026-10-26,GRDT-024,Intelligencia,0,0,0,0,0
-2026-10-26,GRDT-025,ORamaVR,0,0,0,0,0
-2026-10-26,GRDT-026,Anodyne Nanotech,0,0,0,0,0
-2026-10-26,GRDT-027,Anacalypsis Therapeutics,0,0,0,0,0
-2026-10-26,GRDT-029,Koios Care,0,0,0,0,0
-2026-10-26,GRDT-030,Delian Alliance Industries,0,0,0,0,0
-2026-10-26,GRDT-031,Hack The Box,2,0,0,1,1
-2026-10-26,GRDT-032,Sotiria Technology,0,0,0,0,0
-2026-10-26,GRDT-033,Prisma Electronics,0,0,0,0,0
-2026-10-26,GRDT-034,Open Cosmos (Open Cosmos Aegean),0,0,0,0,0
-2026-10-26,GRDT-037,DeepSea Technologies,1,0,1,0,0
-2026-10-26,GRDT-038,Corsmed,0,0,0,0,0
-2026-10-26,GRDT-039,Better Origin,0,0,0,0,0
-2026-10-26,GRDT-040,Bioemtech,0,0,0,0,0
-2026-10-26,GRDT-041,Feel Therapeutics,0,0,0,0,0
-2026-10-26,GRDT-042,Brainomix,1,0,1,0,0
-2026-10-26,GRDT-043,Achira AI,0,0,0,0,0
-2026-10-26,GRDT-044,Causaly,0,0,0,0,0
-2026-10-26,GRDT-045,Circuits Integrated Hellas,0,0,0,0,0
-2026-10-26,GRDT-046,Bota Systems,0,0,0,0,0
-2026-10-26,GRDT-047,Centaur Analytics,0,0,0,0,0
-2026-10-26,GRDT-048,Code BGP,0,0,0,0,0
-2026-10-26,GRDT-049,iCOMAT,0,0,0,0,0
-2026-10-26,GRDT-050,MarineTraffic,0,0,0,0,0
-2026-10-26,GRDT-051,Core Innovation and Technology,0,0,0,0,0
-2026-10-26,GRDT-056,Pallma AI,0,0,0,0,0
-2026-10-26,GRDT-057,ClearDrop,0,0,0,0,0
-2026-10-26,GRDT-059,Purposeful,0,0,0,0,0
-2026-10-26,GRDT-063,Navenio,0,0,0,0,0
-2026-10-26,GRDT-064,Terra Robotics,0,0,0,0,0
-2026-10-26,GRDT-065,Neurohive,0,0,0,0,0
-2026-10-26,GRDT-066,PlugSecure,0,0,0,0,0
-2026-10-26,GRDT-067,Pinepeak,0,0,0,0,0
-2026-10-26,GRDT-068,Mind The Hack,0,0,0,0,0
-2026-10-26,GRDT-069,Hoplon AI,0,0,0,0,0
-2026-10-26,GRDT-070,Satways,0,0,0,0,0
-2026-10-26,GRDT-071,Attisat,0,0,0,0,0
-2026-10-26,GRDT-072,Seervision,0,0,0,0,0
-2026-10-26,GRDT-073,Intelistyle,0,0,0,0,0
-2026-10-26,GRDT-074,Pleioflow,0,0,0,0,0
-2026-10-26,GRDT-082,SquareDev,0,0,0,0,0
-2026-10-26,GRDT-083,QRBIT,0,0,0,0,0
-2026-10-26,GRDT-084,SolidKosmos,0,0,0,0,0
-2026-10-26,GRDT-085,Trimsignal,0,0,0,0,0
-2026-10-26,GRDT-086,EMTech Space,0,0,0,0,0
-2026-10-26,GRDT-087,OQ Technology,0,0,0,0,0
-2026-10-26,GRDT-088,Solmeyea,0,0,0,0,0
+date,company_id,company,week_score,funding,grants,press,hiring,github
+2026-10-26,GRDT-001,Perceptual Robotics,0,0,0,0,0,0
+2026-10-26,GRDT-002,Acumino,0,0,0,0,0,0
+2026-10-26,GRDT-003,Progressive Robotics,0,0,0,0,0,0
+2026-10-26,GRDT-004,Velos Rotors,0,0,0,0,0,0
+2026-10-26,GRDT-005,Robenso,0,0,0,0,0,0
+2026-10-26,GRDT-006,Augmenta,0,0,0,0,0,0
+2026-10-26,GRDT-007,Gizelis Robotics,0,0,0,0,0,0
+2026-10-26,GRDT-008,Altus LSA,0,0,0,0,0,0
+2026-10-26,GRDT-009,SAS Technology,2,0,0,2,0,0
+2026-10-26,GRDT-010,Aether Aeronautics,0,0,0,0,0,0
+2026-10-26,GRDT-011,Ucandrone,0,0,0,0,0,0
+2026-10-26,GRDT-012,Moveo.AI,0,0,0,0,0,0
+2026-10-26,GRDT-013,Bitloops,2,0,0,0,0,2
+2026-10-26,GRDT-014,Satori Analytics,1,0,0,0,1,0
+2026-10-26,GRDT-015,Keragon,0,0,0,0,0,0
+2026-10-26,GRDT-016,TileDB (rebranded Tile.ai),2,0,0,0,0,2
+2026-10-26,GRDT-017,Proxy Foods AI,0,0,0,0,0,0
+2026-10-26,GRDT-018,Intryc,0,0,0,0,0,0
+2026-10-26,GRDT-020,Axelera AI,4,0,0,0,2,2
+2026-10-26,GRDT-021,Think Silicon,0,0,0,0,0,0
+2026-10-26,GRDT-022,SolidWatts,0,0,0,0,0,0
+2026-10-26,GRDT-023,WeatherXM,3,0,0,0,0,3
+2026-10-26,GRDT-024,Intelligencia,0,0,0,0,0,0
+2026-10-26,GRDT-025,ORamaVR,0,0,0,0,0,0
+2026-10-26,GRDT-026,Anodyne Nanotech,0,0,0,0,0,0
+2026-10-26,GRDT-027,Anacalypsis Therapeutics,0,0,0,0,0,0
+2026-10-26,GRDT-029,Koios Care,0,0,0,0,0,0
+2026-10-26,GRDT-030,Delian Alliance Industries,0,0,0,0,0,0
+2026-10-26,GRDT-031,Hack The Box,2,0,0,0,1,1
+2026-10-26,GRDT-032,Sotiria Technology,0,0,0,0,0,0
+2026-10-26,GRDT-033,Prisma Electronics,0,0,0,0,0,0
+2026-10-26,GRDT-034,Open Cosmos (Open Cosmos Aegean),0,0,0,0,0,0
+2026-10-26,GRDT-037,DeepSea Technologies,1,0,0,1,0,0
+2026-10-26,GRDT-038,Corsmed,0,0,0,0,0,0
+2026-10-26,GRDT-039,Better Origin,0,0,0,0,0,0
+2026-10-26,GRDT-040,Bioemtech,0,0,0,0,0,0
+2026-10-26,GRDT-041,Feel Therapeutics,0,0,0,0,0,0
+2026-10-26,GRDT-042,Brainomix,1,0,0,1,0,0
+2026-10-26,GRDT-043,Achira AI,0,0,0,0,0,0
+2026-10-26,GRDT-044,Causaly,0,0,0,0,0,0
+2026-10-26,GRDT-045,Circuits Integrated Hellas,0,0,0,0,0,0
+2026-10-26,GRDT-046,Bota Systems,0,0,0,0,0,0
+2026-10-26,GRDT-047,Centaur Analytics,0,0,0,0,0,0
+2026-10-26,GRDT-048,Code BGP,0,0,0,0,0,0
+2026-10-26,GRDT-049,iCOMAT,0,0,0,0,0,0
+2026-10-26,GRDT-050,MarineTraffic,0,0,0,0,0,0
+2026-10-26,GRDT-051,Core Innovation and Technology,0,0,0,0,0,0
+2026-10-26,GRDT-056,Pallma AI,0,0,0,0,0,0
+2026-10-26,GRDT-057,ClearDrop,0,0,0,0,0,0
+2026-10-26,GRDT-059,Purposeful,0,0,0,0,0,0
+2026-10-26,GRDT-063,Navenio,0,0,0,0,0,0
+2026-10-26,GRDT-064,Terra Robotics,0,0,0,0,0,0
+2026-10-26,GRDT-065,Neurohive,0,0,0,0,0,0
+2026-10-26,GRDT-066,PlugSecure,0,0,0,0,0,0
+2026-10-26,GRDT-067,Pinepeak,0,0,0,0,0,0
+2026-10-26,GRDT-068,Mind The Hack,0,0,0,0,0,0
+2026-10-26,GRDT-069,Hoplon AI,0,0,0,0,0,0
+2026-10-26,GRDT-070,Satways,0,0,0,0,0,0
+2026-10-26,GRDT-071,Attisat,0,0,0,0,0,0
+2026-10-26,GRDT-072,Seervision,0,0,0,0,0,0
+2026-10-26,GRDT-073,Intelistyle,0,0,0,0,0,0
+2026-10-26,GRDT-074,Pleioflow,0,0,0,0,0,0
+2026-10-26,GRDT-082,SquareDev,0,0,0,0,0,0
+2026-10-26,GRDT-083,QRBIT,0,0,0,0,0,0
+2026-10-26,GRDT-084,SolidKosmos,0,0,0,0,0,0
+2026-10-26,GRDT-085,Trimsignal,0,0,0,0,0,0
+2026-10-26,GRDT-086,EMTech Space,0,0,0,0,0,0
+2026-10-26,GRDT-087,OQ Technology,0,0,0,0,0,0
+2026-10-26,GRDT-088,Solmeyea,0,0,0,0,0,0
