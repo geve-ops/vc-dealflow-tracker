@@ -1,0 +1,29 @@
+name: Weekly digest
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"   # Mondays 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Collect signals and write digest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python run.py weekly
+      - name: Commit snapshot, digest and dashboard
+        run: |
+          git config user.name "Gerald Velas"
+          git config user.email "333406741+geve-ops@users.noreply.github.com"
+          git add data/snapshots digests docs
+          git diff --cached --quiet || git commit -m "Weekly digest $(date -u +%F)"
+          git push

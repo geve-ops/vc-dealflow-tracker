@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Greek Deep Tech Deal Flow</title>
+<style>
+:root {
+  --bg: #f7f7f5; --panel: #ffffff; --ink: #1c1d1f; --muted: #62656b; --line: #e3e3df;
+  --accent: #1f5f8b; --funding: #1a7f4b; --jobs: #8a5a00; --github: #4b4fa8; --press: #6b6f76;
+  --chip: #eef0f2;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141517; --panel: #1c1d20; --ink: #ececec; --muted: #9a9ca1; --line: #2c2e32;
+    --accent: #7db7e0; --funding: #5fcf94; --jobs: #e3b25a; --github: #a3a7f0; --press: #a0a3a8;
+    --chip: #26282c;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #141517; --panel: #1c1d20; --ink: #ececec; --muted: #9a9ca1; --line: #2c2e32;
+  --accent: #7db7e0; --funding: #5fcf94; --jobs: #e3b25a; --github: #a3a7f0; --press: #a0a3a8;
+  --chip: #26282c;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 28px 16px 60px; }
+h1 { font-size: 24px; margin: 0 0 4px; letter-spacing: -0.01em; }
+h2 { font-size: 17px; margin: 36px 0 12px; }
+.sub { color: var(--muted); margin: 0 0 20px; }
+.note { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px;
+  color: var(--muted); font-size: 14px; margin-bottom: 20px; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.tile { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px;
+  cursor: pointer; text-align: left; color: inherit; font: inherit; }
+.tile[aria-pressed="true"] { outline: 2px solid var(--accent); outline-offset: -2px; }
+.tile .n { font-size: 26px; font-weight: 650; font-variant-numeric: tabular-nums; }
+.tile .l { color: var(--muted); font-size: 13px; }
+.controls { display: flex; gap: 10px; flex-wrap: wrap; margin: 16px 0 8px; align-items: center; }
+input[type=search] { flex: 1 1 220px; padding: 8px 10px; border-radius: 6px; border: 1px solid var(--line);
+  background: var(--panel); color: var(--ink); font: inherit; }
+.co { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; margin-bottom: 10px; }
+.co h3 { margin: 0; font-size: 16px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.co .cat { color: var(--muted); font-weight: 400; font-size: 13px; }
+.co ul { list-style: none; margin: 8px 0 0; padding: 0; }
+.co li { display: grid; grid-template-columns: 92px 92px 1fr; gap: 8px; padding: 4px 0; border-top: 1px dashed var(--line); font-size: 14px; }
+.co li:first-child { border-top: 0; }
+.date { color: var(--muted); font-variant-numeric: tabular-nums; }
+.tag { font-size: 12px; font-weight: 600; }
+.tag.funding { color: var(--funding); } .tag.jobs { color: var(--jobs); }
+.tag.github { color: var(--github); } .tag.press { color: var(--press); }
+.detail { color: var(--muted); }
+.empty { color: var(--muted); padding: 16px 0; }
+.tablewrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; white-space: nowrap; cursor: pointer; user-select: none; }
+td.nowrap { white-space: nowrap; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.links a { margin-right: 8px; white-space: nowrap; }
+.dim { color: var(--muted); }
+footer { margin-top: 40px; color: var(--muted); font-size: 13px; }
+@media (max-width: 640px) {
+  .co li { grid-template-columns: 1fr; gap: 0; padding: 6px 0; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Greek Deep Tech Deal Flow</h1>
+  <p class="sub" id="sub"></p>
+  <div class="note" id="note" hidden></div>
+  <div class="tiles" id="tiles"></div>
+  <h2>What changed</h2>
+  <div class="controls">
+    <input type="search" id="q" placeholder="Filter by company, category or text" aria-label="Filter changes">
+  </div>
+  <div id="feed"></div>
+  <h2>Watchlist</h2>
+  <div class="tablewrap"><table id="tbl"><thead></thead><tbody></tbody></table></div>
+  <footer id="foot"></footer>
+</div>
+<script>
+const DATA = /*__DATA__*/null;
+const LABELS = { funding: "Funding", jobs: "Hiring", github: "GitHub", press: "Press" };
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const safeUrl = u => /^https?:\/\//i.test(u || "") ? u : "#";
+let active = null;
+
+document.getElementById("sub").textContent =
+  `Changes from ${DATA.window_start.slice(0, 10)} to ${DATA.generated_at.slice(0, 10)} (UTC) across ${DATA.companies.length} companies from the Greek Deep Tech Market Map.`;
+if (DATA.first_run) {
+  const n = document.getElementById("note");
+  n.hidden = false;
+  n.textContent = "First run: there is no earlier snapshot, so only items dated inside the window are shown. Star changes and closed roles start with the next weekly run.";
+}
+
+function renderTiles() {
+  const t = document.getElementById("tiles");
+  t.innerHTML = Object.entries(LABELS).map(([k, l]) => {
+    const n = DATA.changes.filter(c => c.signal === k).length;
+    return `<button class="tile" data-k="${k}" aria-pressed="${active === k}"><div class="n">${n}</div><div class="l">${l}</div></button>`;
+  }).join("") + `<div class="tile" style="cursor:default"><div class="n">${new Set(DATA.changes.map(c => c.company_id)).size}</div><div class="l">Companies with changes</div></div>`;
+  t.querySelectorAll("button").forEach(b => b.onclick = () => { active = active === b.dataset.k ? null : b.dataset.k; renderTiles(); renderFeed(); });
+}
+
+function renderFeed() {
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const items = DATA.changes.filter(c => (!active || c.signal === active) &&
+    (!q || [c.company, c.category, c.title, c.detail].join(" ").toLowerCase().includes(q)));
+  const groups = {};
+  items.forEach(c => (groups[c.company] ??= []).push(c));
+  const html = Object.keys(groups).sort().map(name => {
+    const rows = groups[name];
+    return `<div class="co"><h3>${esc(name)} <span class="cat">${esc(rows[0].category)}</span></h3><ul>` +
+      rows.map(c => `<li><span class="date">${esc(c.date)}</span><span class="tag ${c.signal}">${LABELS[c.signal]}</span>
+        <span><a href="${esc(safeUrl(c.url))}" target="_blank" rel="noopener">${esc(c.title)}</a>${c.detail ? ` <span class="detail">· ${esc(c.detail)}</span>` : ""}</span></li>`).join("") +
+      `</ul></div>`;
+  }).join("");
+  document.getElementById("feed").innerHTML = html || `<div class="empty">No changes match.</div>`;
+}
+
+const COLS = [
+  ["company", "Company"], ["category", "Category"], ["links", "Links"],
+  ["open_roles", "Open roles"], ["stars", "GitHub stars"], ["last_push", "Last push"], ["latest_funding", "Latest funding headline (90 days)"]
+];
+let sortKey = "company", sortDir = 1;
+function renderTable() {
+  const thead = document.querySelector("#tbl thead"), tbody = document.querySelector("#tbl tbody");
+  thead.innerHTML = "<tr>" + COLS.map(([k, l]) => `<th data-k="${k}">${l}${sortKey === k ? (sortDir > 0 ? " ▲" : " ▼") : ""}</th>`).join("") + "</tr>";
+  thead.querySelectorAll("th").forEach(th => th.onclick = () => {
+    const k = th.dataset.k; if (k === "links") return;
+    sortDir = sortKey === k ? -sortDir : (["open_roles", "stars", "last_push"].includes(k) ? -1 : 1); sortKey = k; renderTable();
+  });
+  const val = (r, k) => k === "latest_funding" ? (r.latest_funding?.date || "") : (r[k] ?? -1);
+  const rows = [...DATA.companies].sort((a, b) => { const x = val(a, sortKey), y = val(b, sortKey); return (x > y ? 1 : x < y ? -1 : 0) * sortDir; });
+  tbody.innerHTML = rows.map(r => {
+    const links = [
+      r.website && `<a href="${esc(safeUrl(r.website))}" target="_blank" rel="noopener">Site</a>`,
+      r.linkedin_url && `<a href="${esc(safeUrl(r.linkedin_url))}" target="_blank" rel="noopener">LinkedIn</a>`,
+      r.github_org && `<a href="https://github.com/${esc(r.github_org)}" target="_blank" rel="noopener">GitHub</a>`,
+      r.careers_url && `<a href="${esc(safeUrl(r.careers_url))}" target="_blank" rel="noopener">Careers</a>`
+    ].filter(Boolean).join("");
+    const roles = r.open_roles == null ? `<span class="dim">–</span>` : `${r.open_roles}${r.jobs_source === "careers_page" ? "*" : ""}`;
+    const f = r.latest_funding;
+    return `<tr><td>${esc(r.company)}${r.map_status === "Borderline" ? ' <span class="dim">(borderline)</span>' : ""}</td>
+      <td class="dim">${esc(r.category)}</td><td class="links">${links}</td>
+      <td class="num">${roles}</td><td class="num">${r.github_org ? r.stars : '<span class="dim">–</span>'}</td>
+      <td class="dim nowrap">${esc(r.last_push)}</td>
+      <td>${f ? `<span class="dim">${esc(f.date)}</span> <a href="${esc(safeUrl(f.url))}" target="_blank" rel="noopener">${esc(f.title)}</a> <span class="dim">${esc(f.source)}</span>` : '<span class="dim">–</span>'}</td></tr>`;
+  }).join("");
+}
+
+document.getElementById("q").addEventListener("input", renderFeed);
+document.getElementById("foot").innerHTML =
+  `Generated ${esc(DATA.generated_at)}. * = counted from the careers page (heuristic), not a job-board API. Digests: ` +
+  DATA.history.map(d => `<a href="../digests/${esc(d)}.md">${esc(d)}</a>`).join(", ") +
+  `. Signals and their limits are described in the README.`;
+renderTiles(); renderFeed(); renderTable();
+</script>
+</body>
+</html>
