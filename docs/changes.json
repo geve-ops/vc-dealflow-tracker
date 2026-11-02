@@ -1,19 +1,151 @@
 {
- "generated_at": "2026-10-26T14:35:11Z",
- "window_start": "2026-10-19T14:35:11Z",
- "first_run": true,
+ "generated_at": "2026-11-02T14:18:55Z",
+ "window_start": "2026-10-26T14:35:11Z",
+ "first_run": false,
  "changes": [
   {
    "company_id": "GRDT-023",
    "company": "WeatherXM",
    "category": "Energy & Climate Tech",
    "signal": "github",
-   "kind": "commits",
+   "kind": "stars",
+   "count": 4,
+   "title": "+4 stars across repos (now 78)",
+   "url": "https://github.com/WeatherXM",
+   "date": "2026-11-02",
+   "detail": ""
+  },
+  {
+   "company_id": "GRDT-014",
+   "company": "Satori Analytics",
+   "category": "AI & Machine Learning",
+   "signal": "press",
+   "kind": "press",
+   "count": 1,
+   "title": "Η εφαρμογή της ΤΝ στο εγχώριο επιχειρείν από τη Satori Analytics",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxONEVub3dFTWUyUkpWUHN4ZjYwN2NISk5ySmJxUkp1TUpuX3Z6NmU4ek1Za3FNRTNndHRwOWV2TEl0RlRXblhQcENvbE40UThZS0hMd3I5Q0NKVUxQWGp5WnlsRnZLb05lanYzNXp5ZHEwbGhMM3o3WGZTZHYxU2QyV0dBQWxVWXFhSEpPOXJlNXRUbElGMFB3?oc=5",
+   "date": "2026-11-02",
+   "detail": "marketingweek.gr"
+  },
+  {
+   "company_id": "GRDT-014",
+   "company": "Satori Analytics",
+   "category": "AI & Machine Learning",
+   "signal": "github",
+   "kind": "stars",
+   "count": 1,
+   "title": "+1 stars across repos (now 30)",
+   "url": "https://github.com/Satori-Analytics",
+   "date": "2026-11-02",
+   "detail": ""
+  },
+  {
+   "company_id": "GRDT-050",
+   "company": "MarineTraffic",
+   "category": "Industrial & Manufacturing Tech",
+   "signal": "github",
+   "kind": "stars",
    "count": 2,
-   "title": "2 commits to wg1200-firmware",
-   "url": "https://github.com/WeatherXM/wg1200-firmware/commit/a30374b045c138dac3f6dd4267ef8eb7390a7670",
-   "date": "2026-10-26",
-   "detail": "latest: Release v0.8.39: Station targeting & pairing persistence, multi-gateway diagnostics, and precipitation chart accuracy"
+   "title": "+2 stars across repos (now 132)",
+   "url": "https://github.com/marinetraffic",
+   "date": "2026-11-02",
+   "detail": ""
+  },
+  {
+   "company_id": "GRDT-031",
+   "company": "Hack The Box",
+   "category": "Space & Defense",
+   "signal": "github",
+   "kind": "stars",
+   "count": 5,
+   "title": "+5 stars across repos (now 1258)",
+   "url": "https://github.com/hackthebox",
+   "date": "2026-11-02",
+   "detail": ""
+  },
+  {
+   "company_id": "GRDT-031",
+   "company": "Hack The Box",
+   "category": "Space & Defense",
+   "signal": "jobs",
+   "kind": "closed_role",
+   "count": 1,
+   "title": "Role closed: Head of Customer Success, EMEA & APAC",
+   "url": "https://apply.workable.com/j/EE3E2337E5",
+   "date": "2026-11-02",
+   "detail": "no longer listed"
+  },
+  {
+   "company_id": "GRDT-031",
+   "company": "Hack The Box",
+   "category": "Space & Defense",
+   "signal": "jobs",
+   "kind": "closed_role",
+   "count": 1,
+   "title": "Role closed: Head of Customer Success, EMEA & APAC",
+   "url": "https://apply.workable.com/j/EE3E2337E5",
+   "date": "2026-11-02",
+   "detail": "no longer listed"
+  },
+  {
+   "company_id": "GRDT-037",
+   "company": "DeepSea Technologies",
+   "category": "Industrial & Manufacturing Tech",
+   "signal": "jobs",
+   "kind": "closed_role",
+   "count": 1,
+   "title": "Role closed: Embedded Software Engineer",
+   "url": "https://deepsea.recruitee.com/o/embedded-software-engineer-1",
+   "date": "2026-11-02",
+   "detail": "no longer listed"
+  },
+  {
+   "company_id": "GRDT-044",
+   "company": "Causaly",
+   "category": "Health & Biotech",
+   "signal": "github",
+   "kind": "stars",
+   "count": 4,
+   "title": "+4 stars across repos (now 1056)",
+   "url": "https://github.com/causaly",
+   "date": "2026-11-02",
+   "detail": ""
+  },
+  {
+   "company_id": "GRDT-013",
+   "company": "Bitloops",
+   "category": "AI & Machine Learning",
+   "signal": "github",
+   "kind": "stars",
+   "count": 5,
+   "title": "+5 stars across repos (now 2099)",
+   "url": "https://github.com/bitloops",
+   "date": "2026-11-02",
+   "detail": ""
+  },
+  {
+   "company_id": "GRDT-020",
+   "company": "Axelera AI",
+   "category": "Semiconductors & Hardware",
+   "signal": "jobs",
+   "kind": "closed_role",
+   "count": 1,
+   "title": "Role closed: Stage - Perito Elettronico",
+   "url": "https://jobs.ashbyhq.com/axelera/cac5f1c7-2eb7-4bfe-b67f-dfc23dc59c16",
+   "date": "2026-11-02",
+   "detail": "no longer listed"
+  },
+  {
+   "company_id": "GRDT-016",
+   "company": "TileDB (rebranded Tile.ai)",
+   "category": "AI & Machine Learning",
+   "signal": "github",
+   "kind": "commits",
+   "count": 1,
+   "title": "1 commit to conda-forge-nightly-controller",
+   "url": "https://github.com/TileDB-Inc/conda-forge-nightly-controller/commit/a0cabc5d71ebede3f16492924e48868c9a2ac630",
+   "date": "2026-11-01",
+   "detail": "latest: Activity to enable GitHub Actions worfklows"
   },
   {
    "company_id": "GRDT-020",
@@ -23,225 +155,21 @@
    "kind": "commits",
    "count": 5,
    "title": "5 commits to wingman",
-   "url": "https://github.com/axelera-ai-hub/wingman/commit/41e4acfea2ca494bb754fa18c9a39a88fc8a0e83",
-   "date": "2026-10-26",
-   "detail": "latest: release(release): publish v1.7.74 release only repository"
-  },
-  {
-   "company_id": "GRDT-031",
-   "company": "Hack The Box",
-   "category": "Space & Defense",
-   "signal": "github",
-   "kind": "commits",
-   "count": 1,
-   "title": "1 commit to terraform-provider-mailgun",
-   "url": "https://github.com/hackthebox/terraform-provider-mailgun/commit/9b9ddda41abf287209cef612fc902dbacfdf34c9",
-   "date": "2026-10-25",
-   "detail": "latest: fix(deps): patch 12 reachable vulnerabilities (Go 1.26.10, x/net v0.60.0, grpc v1.83.2) (#116)"
-  },
-  {
-   "company_id": "GRDT-037",
-   "company": "DeepSea Technologies",
-   "category": "Industrial & Manufacturing Tech",
-   "signal": "press",
-   "kind": "press",
-   "count": 1,
-   "title": "DeepSea Technologies: Νέος CEO ο Πάνος Τσώνης",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQaHBCcUFsVDRSbkZoUTdmYWlsN09VUlZwN25ob2pOUmZ5OXZJQmtnLVFMOEVveFltNHowWXJQa2hwelpFNFNOa1Y0cGxWeWEyMUQ0VFJhb0psaDA3Zjg4MWJra25NVHE4c2loUlZtU256TTU2NWJFUzMyelNyeGEtVHdTanpyQjk0dTdBTXNaOW9XMElk?oc=5",
-   "date": "2026-10-24",
-   "detail": "η ναυτεμπορικη"
-  },
-  {
-   "company_id": "GRDT-014",
-   "company": "Satori Analytics",
-   "category": "AI & Machine Learning",
-   "signal": "jobs",
-   "kind": "new_role",
-   "count": 1,
-   "title": "New role: AI Engineer (Low Code)",
-   "url": "https://apply.workable.com/j/44B0B42D09",
-   "date": "2026-10-23",
-   "detail": "Athens, Greece"
-  },
-  {
-   "company_id": "GRDT-009",
-   "company": "SAS Technology",
-   "category": "Robotics & Drones",
-   "signal": "press",
-   "kind": "press",
-   "count": 1,
-   "title": "SAS Technology: Εξετάζει λέιζερ της AERTEC για τα περιπλανώμενα πυρομαχικά της – Ανοιχτή και η κοινή παραγωγή στην Ελλάδα",
-   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQRzhVREpQVE10VlEzQjFkNXdyLUhteGp4bmVpVUtwZU9vQmkyQkVYWTBrdTBlWFBjUmpQbWRxWlVuUXJjNlkwUzBzcFg1NkMyRGR0cGtVSy11d3RoLXloeDliSDZZbFJMVG9HRm40cllNS3dnaEZMc1RjQmFlby1MQlZnd19YMngzMzNvWVRDSmEtQWFJc0Z4OHAzX1k3RFRSRVUxaGZRX1VIb19BLXh2Ykh6Q1NQVGF5ek0wRGlkTHgyQWJ1RG5OMTEtVVRyVjFLa2RjR2hQaXlWUk1NRm96QVM1ZEhlV0ctQzBYNUV6bw?oc=5",
-   "date": "2026-10-23",
-   "detail": "δεδομενο"
-  },
-  {
-   "company_id": "GRDT-031",
-   "company": "Hack The Box",
-   "category": "Space & Defense",
-   "signal": "jobs",
-   "kind": "new_role",
-   "count": 1,
-   "title": "New role: Customer Success Manager",
-   "url": "https://apply.workable.com/j/88C197ADA7",
-   "date": "2026-10-23",
-   "detail": "United States"
-  },
-  {
-   "company_id": "GRDT-044",
-   "company": "Causaly",
-   "category": "Health & Biotech",
-   "signal": "github",
-   "kind": "commits",
-   "count": 0,
-   "title": "2 commits to zod-validation-error (2 by bots)",
-   "url": "https://github.com/causaly/zod-validation-error/commit/c0de31c59aee17da70fb270f34d07e8ee0bed03f",
-   "date": "2026-10-23",
-   "detail": "latest: chore: bump typescript-eslint from 8.71.2 to 8.72.0 (#691)"
-  },
-  {
-   "company_id": "GRDT-044",
-   "company": "Causaly",
-   "category": "Health & Biotech",
-   "signal": "github",
-   "kind": "commits",
-   "count": 0,
-   "title": "2 commits to pairing (2 by bots)",
-   "url": "https://github.com/causaly/pairing/commit/d1bf910597c01a3bab8b8cd8b595ff083f4188e5",
-   "date": "2026-10-23",
-   "detail": "latest: chore: bump @typescript-eslint/parser from 8.71.2 to 8.72.0 (#184)"
+   "url": "https://github.com/axelera-ai-hub/wingman/commit/aa715617bab8b43339967800612ccecdb83dc610",
+   "date": "2026-11-01",
+   "detail": "latest: release(release): publish v1.7.79 release only repository"
   },
   {
    "company_id": "GRDT-023",
    "company": "WeatherXM",
    "category": "Energy & Climate Tech",
-   "signal": "github",
-   "kind": "commits",
-   "count": 3,
-   "title": "3 commits to docs",
-   "url": "https://github.com/WeatherXM/docs/commit/8fbab8d8ce4fd7905fcf0e268b493c2ac9ecaa6a",
-   "date": "2026-10-22",
-   "detail": "latest: Merge pull request #272 from WeatherXM/docs/d1-wg1200-firmware-highlights"
-  },
-  {
-   "company_id": "GRDT-023",
-   "company": "WeatherXM",
-   "category": "Energy & Climate Tech",
-   "signal": "github",
-   "kind": "commits",
-   "count": 18,
-   "title": "18 commits to web-flasher",
-   "url": "https://github.com/WeatherXM/web-flasher/commit/35b2ecc4ccb31799ecd720609786362a99b3e33a",
-   "date": "2026-10-22",
-   "detail": "latest: fix(ws2001): never pre-fill the AppKey; keep the saved one; propose the station's interval"
-  },
-  {
-   "company_id": "GRDT-016",
-   "company": "TileDB (rebranded Tile.ai)",
-   "category": "AI & Machine Learning",
-   "signal": "github",
-   "kind": "commits",
-   "count": 5,
-   "title": "5 commits to tiledbsoma-feedstock",
-   "url": "https://github.com/TileDB-Inc/tiledbsoma-feedstock/commit/effd3861d1b26f9f6fdf6402a9573d9820c85b4c",
-   "date": "2026-10-22",
-   "detail": "latest: Free disk space to fix failing nightly feedstock builds (#402)"
-  },
-  {
-   "company_id": "GRDT-013",
-   "company": "Bitloops",
-   "category": "AI & Machine Learning",
-   "signal": "github",
-   "kind": "commits",
-   "count": 5,
-   "title": "7 commits to ddd-hexagonal-cqrs-es-eda (2 by bots)",
-   "url": "https://github.com/bitloops/ddd-hexagonal-cqrs-es-eda/commit/11100016452b0e164e3ebb9b9026f99b901b0b47",
-   "date": "2026-10-22",
-   "detail": "latest: Merge pull request #122 from bitloops/dependabot/go_modules/telemetry-consumer/go_modules-c076f603c1"
-  },
-  {
-   "company_id": "GRDT-020",
-   "company": "Axelera AI",
-   "category": "Semiconductors & Hardware",
-   "signal": "github",
-   "kind": "commits",
-   "count": 1,
-   "title": "1 commit to aisbc.axelera-doc",
-   "url": "https://github.com/axelera-ai-hub/aisbc.axelera-doc/commit/316b36970d3b9cd93e5097067065d43ed02301e5",
-   "date": "2026-10-22",
-   "detail": "latest: security: Reword the work done into \"example\""
-  },
-  {
-   "company_id": "GRDT-020",
-   "company": "Axelera AI",
-   "category": "Semiconductors & Hardware",
-   "signal": "jobs",
-   "kind": "new_role",
-   "count": 1,
-   "title": "New role: Stage - Perito Elettronico",
-   "url": "https://jobs.ashbyhq.com/axelera/cac5f1c7-2eb7-4bfe-b67f-dfc23dc59c16",
-   "date": "2026-10-22",
-   "detail": "Florence (on-site)"
-  },
-  {
-   "company_id": "GRDT-020",
-   "company": "Axelera AI",
-   "category": "Semiconductors & Hardware",
-   "signal": "jobs",
-   "kind": "new_role",
-   "count": 1,
-   "title": "New role: Career Day Start Up - Politecnico Milano",
-   "url": "https://jobs.ashbyhq.com/axelera/1ccc621f-953a-42e4-abde-8e0b0dba1fd3",
-   "date": "2026-10-21",
-   "detail": "Milan (on-site)"
-  },
-  {
-   "company_id": "GRDT-009",
-   "company": "SAS Technology",
-   "category": "Robotics & Drones",
    "signal": "press",
    "kind": "press",
    "count": 1,
-   "title": "SAS Technology at AUSA 2026: Strong International Presence, High-Level Interest and New Prospects for Strategic Partnerships",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOSXJERHltSlI3Q01MOThfZTRwY0gyb2F0ZURaR0NJZmVzamp5OERmbG5lU1NicFNTb19NX2RmSFVpQThtMVpPcXU1VGMtXzgyQzFNcFc3M3NjUExHY09MUEdDa1NROHM2a2c0NEtYNjVuZjcwT2I5TF84ODBIdEdHUEtPWWV2bS1ieC1nOUIzVi1saHlWMXFxRXhKVU1oemFqcUxid3RDcUIwZ0YwMHlPd0dvYktNWlByLVhFaWE2RU9IU2g4SW1LbF9palhsMm40Z3RLLWhCSzFiTWE1N0FFY0FhNFJKdw?oc=5",
-   "date": "2026-10-20",
-   "detail": "Raksha Anirveda"
-  },
-  {
-   "company_id": "GRDT-042",
-   "company": "Brainomix",
-   "category": "Health & Biotech",
-   "signal": "press",
-   "kind": "press",
-   "count": 1,
-   "title": "Brainomix Multicenter Study Demonstrates Potential of Quantitative CT for Earlier Detection of Progressive Pulmonary Fibrosis (PPF)",
-   "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxONWNEVFlqQVd1QjlYa3ZtZHZJcDM5c1V3UEY5S1F4TkQtNVQtZHQ0aHpBcnZoWVo3Mi1BRUVVTjNncU1ERzI2NGhiOFJGOUJ6NGJ2QklKZ1VVbHk4cUNNMDMwdXdyemdadXhhNEZpdnhEd0FrV18zNFZjT1lTeFYtQ1hSUFJHY2tOXzhiYzA4UlEzWVRKYTc0eUc2NjNnZHliTHlFSW1hZnBnSVlLN1lIYzhHdEllbHhWaExaQ004c3BnUTR2ZnN5cDFWUV9oZmF2WG5HemhBQXQxUExQOUtXR2poczhCSTRMUGFiYkdxMDlfdUxFZzJNek9NVG5RVTNrRnBXTm5DMkRuRzRyd01EemdQZw?oc=5",
-   "date": "2026-10-20",
-   "detail": "PR Newswire"
-  },
-  {
-   "company_id": "GRDT-020",
-   "company": "Axelera AI",
-   "category": "Semiconductors & Hardware",
-   "signal": "github",
-   "kind": "commits",
-   "count": 1,
-   "title": "1 commit to voyager-sdk",
-   "url": "https://github.com/axelera-ai-hub/voyager-sdk/commit/6c5a29a3d56d1c3fbe0ae748d626cf67da16fdca",
-   "date": "2026-10-20",
-   "detail": "latest: Update links for ViT, VLM & LLM"
-  },
-  {
-   "company_id": "GRDT-020",
-   "company": "Axelera AI",
-   "category": "Semiconductors & Hardware",
-   "signal": "github",
-   "kind": "commits",
-   "count": 1,
-   "title": "1 commit to axelera-driver",
-   "url": "https://github.com/axelera-ai-hub/axelera-driver/commit/d74c78fcf00300507418a08b0940425377013079",
-   "date": "2026-10-20",
-   "detail": "latest: Release version v1.9.0"
+   "title": "WeatherXM Price (WXM/USD) Today | Live Price, Market Cap & Chart",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1hZ2RWNEJZX19GVUw0eFdkQnBHLXVwaWktdmVKaG4wTXA1X0ZfSzB2U2hGTWRxNkxmTzdNTmJsVmpWUmtRZHkyNFdxRWkycndjbnRocQ?oc=5",
+   "date": "2026-10-30",
+   "detail": "Binance"
   },
   {
    "company_id": "GRDT-016",
@@ -251,9 +179,309 @@
    "kind": "commits",
    "count": 1,
    "title": "1 commit to TileDB-VCF",
-   "url": "https://github.com/TileDB-Inc/TileDB-VCF/commit/c80234338e64f07dc57c89dd9b65e945b5b92fcc",
+   "url": "https://github.com/TileDB-Inc/TileDB-VCF/commit/33b305f449af707df24cf0451b8152b9a11feb6c",
+   "date": "2026-10-30",
+   "detail": "latest: Run nightly build with multiple python versions and reduce frequency (#900)"
+  },
+  {
+   "company_id": "GRDT-034",
+   "company": "Open Cosmos (Open Cosmos Aegean)",
+   "category": "Space & Defense",
+   "signal": "press",
+   "kind": "press",
+   "count": 1,
+   "title": "Open Cosmos Explores Strategic Space Partnerships in India",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5aeXRDa0pxWG5IQlBPY2pKQlFEbzlmMUtWclRjMXVyWS1tRndsTWJHOE9JRWt0Y1FfZWEzUjV1V01ORXBvOUFyTjIydFppNVAxTHdOTzlfNC1za0xkemw2dVRMRk45X1ZZQ1VWS0dtTGwzLXNVNzAxa01XR1F2Zw?oc=5",
+   "date": "2026-10-30",
+   "detail": "Passionate In Marketing"
+  },
+  {
+   "company_id": "GRDT-044",
+   "company": "Causaly",
+   "category": "Health & Biotech",
+   "signal": "github",
+   "kind": "commits",
+   "count": 8,
+   "title": "12 commits to html-to-pdf (4 by bots)",
+   "url": "https://github.com/causaly/html-to-pdf/commit/7cf8b547872de6128dc3510b347afdf75166fa98",
+   "date": "2026-10-30",
+   "detail": "latest: Merge pull request #80 from causaly/dependabot/npm_and_yarn/multi-4a5e3aa87b"
+  },
+  {
+   "company_id": "GRDT-020",
+   "company": "Axelera AI",
+   "category": "Semiconductors & Hardware",
+   "signal": "github",
+   "kind": "commits",
+   "count": 2,
+   "title": "2 commits to aisbc.axelera-doc",
+   "url": "https://github.com/axelera-ai-hub/aisbc.axelera-doc/commit/7da5580553a01ddf825cfad33d30efdcbcd02bd1",
+   "date": "2026-10-30",
+   "detail": "latest: updates: Update the mender install synthax"
+  },
+  {
+   "company_id": "GRDT-020",
+   "company": "Axelera AI",
+   "category": "Semiconductors & Hardware",
+   "signal": "jobs",
+   "kind": "new_role",
+   "count": 1,
+   "title": "New role: Director of Marketing, Asia-Pacific & Japan",
+   "url": "https://jobs.ashbyhq.com/axelera/460f2f71-652a-4360-b034-ea290b4120aa",
+   "date": "2026-10-30",
+   "detail": "India (remote)"
+  },
+  {
+   "company_id": "GRDT-034",
+   "company": "Open Cosmos (Open Cosmos Aegean)",
+   "category": "Space & Defense",
+   "signal": "funding",
+   "kind": "funding",
+   "count": 1,
+   "title": "European Space Giant Open Cosmos Eyes Major India Investment After PM Modi Meet",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOTVhLLXdNTlpUVzA1MDlRQ185MWVtc1c1UzBOQ21uSy03Vm9UUzc4SWx0TFFLYzZ4NDhrc1ZzX0VKMm55Q19lQU12Yl9INm5abVdnbDYyZG1vUzVCWXMxaE5sQ25MN2pISXBLNWFnQlduVHpfeEdyYXcwX2RTR1o2aGpndEI4T2NMQmRSUHBYQksyUU4zMm04RHpFaHhQS2JvZHJGbXNfWjVoSm85RmF6d1FHOFEtOFZOTURwVzhHeUFSVms20gHKAUFVX3lxTE93Uk5kejVfaVowb3JkYlBzQkZ6VTdrMENpQTBxMXY1WWU4bm5HcXlnajNCb2oxMWRmX05zdFJJdHhVWHkwYVFKc3VsY1hMQlhuSmVHMUNFcjNBSG52R0hkS09BdGFrVjFxcFpRZ1VPVzZheW4xU29rNUM4VWN5ZGU5QlF4ZWljeXduOGlPSllUeHhRdy12cnFMRzQ3eVVZMWQyVzAtQ2xBdWJYZlJXaXdFeGM5YWtDZXZRNi1MUUkwNUJDU3lEUk1EOEE?oc=5",
+   "date": "2026-10-29",
+   "detail": "Lokmat Times"
+  },
+  {
+   "company_id": "GRDT-034",
+   "company": "Open Cosmos (Open Cosmos Aegean)",
+   "category": "Space & Defense",
+   "signal": "funding",
+   "kind": "funding",
+   "count": 1,
+   "title": "European space company Open Cosmos signals India investment interest after CEO meets PM Modi",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPNWtGaW1KYmhiRlg4dlI5Y0IxUjRld3lESXNaV0lkTTdWVUI4RkdjU2Nxa3F4RnZZYXNHT2tQdDlZbXYzWldqZTB5elRNTEVJeFNyNWo2Z2lic3lRMjhMcTFFQ09kc25wVUdIbmxwbENYOEtoRlBIbmljaEFhTnR3dmlrNGdXN0dzYnZEMy1lOWltYjhkQWx3SGh4M2RrX1d6c2liLUdybHNFeE50MWlSeDJjN0lqekpxeUdQSjY2cHBySExLalVjTi1YMV9LbEU3QVHSAdYBQVVfeXFMTjRqMFlMZ21sNVZLTXdYN2xUNkpLajhYU3lqVUlzU0RCZUxfdTY5UjI5Z2hpSEc1TmZ6TDhqeHFGTFhZQTNyZlNhWXhrUkstbHNQMFBacDAtWm9BU1RybGtORXV1aXFLaUVWcldycnFFQXVBd3VNc2JraS05YUFjT3gwNkVoQllucTZMemRfdjJlSThUZzdoQWYtQ0w5X1V1c3N5b3A2STFYR2JPenpjSTNackw1YTNzcFVKbnJQTjRxRlRUREI4UFY4QXBxUmphdktkTTRUUQ?oc=5",
+   "date": "2026-10-29",
+   "detail": "The Tribune"
+  },
+  {
+   "company_id": "GRDT-044",
+   "company": "Causaly",
+   "category": "Health & Biotech",
+   "signal": "jobs",
+   "kind": "new_role",
+   "count": 1,
+   "title": "New role: Director of People",
+   "url": "https://jobs.ashbyhq.com/causaly/3d59ad95-ac8a-4ca5-bbee-432d2b3a3221",
+   "date": "2026-10-29",
+   "detail": "London"
+  },
+  {
+   "company_id": "GRDT-023",
+   "company": "WeatherXM",
+   "category": "Energy & Climate Tech",
+   "signal": "github",
+   "kind": "new_repo",
+   "count": 1,
+   "title": "New public repo muse-gadget-sdk",
+   "url": "https://github.com/WeatherXM/muse-gadget-sdk",
+   "date": "2026-10-28",
+   "detail": "WG1200 weather station gateway as Muse gadget"
+  },
+  {
+   "company_id": "GRDT-042",
+   "company": "Brainomix",
+   "category": "Health & Biotech",
+   "signal": "press",
+   "kind": "press",
+   "count": 1,
+   "title": "Brainomix's AI software flags potential responders to Remedy's stroke drug",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5BZ1lRU2drdW52cm5id3VOQXJZLVk1NFdHUVlnSkJ5VVU3TWYxY1JaYjQ2ampHS3JEVzV6OG5LdFM0OFctOFlmSGFQN1ZsUlZuYklN?oc=5",
+   "date": "2026-10-28",
+   "detail": "FirstWord Pharma"
+  },
+  {
+   "company_id": "GRDT-042",
+   "company": "Brainomix",
+   "category": "Health & Biotech",
+   "signal": "press",
+   "kind": "press",
+   "count": 1,
+   "title": "Brainomix highlights AI study on stroke drug responders",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOeFVjaVFyc05tV2RqVEU0T3ZUUEpzTDlTVS0wMU5ZQm1XYWM3X0xPUlpoSHQxQ3k3T0lfMTBwMFZmYmxYVkgyeng2Sk9naVlIM1NVbGttMUpVdmNoZmhfUXNnZ1NOZTN6LTlUbjh0Vi1ZRmZ0eTJYMm9GVDc5ZndKNzlDRm1uR2Iybi1DMHpxbUpfYWd1UTBOQjhhV0p1dWtDbjR0d045RTl1WlhmYWhoWHAzT1d6YWtnQkRJWW9IdlFfZU5CZVdXTjRZbUg3TzBnazJBYWhfNA?oc=5",
+   "date": "2026-10-28",
+   "detail": "AuntMinnie"
+  },
+  {
+   "company_id": "GRDT-020",
+   "company": "Axelera AI",
+   "category": "Semiconductors & Hardware",
+   "signal": "jobs",
+   "kind": "new_role",
+   "count": 1,
+   "title": "New role: Director - Sales Operations Americas",
+   "url": "https://jobs.ashbyhq.com/axelera/4b57428e-d5a5-4fea-99bf-89bbe872a6d2",
+   "date": "2026-10-28",
+   "detail": "United States (remote)"
+  },
+  {
+   "company_id": "GRDT-031",
+   "company": "Hack The Box",
+   "category": "Space & Defense",
+   "signal": "funding",
+   "kind": "funding",
+   "count": 1,
+   "title": "Study Finds Hack The Box Cybersecurity Platform Delivered 330% Return on Investment",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZldUR1ZzM0kyNjNlNk03MC0yczU2eTQ0Vjc3bU1mUXBFa2VMb3pSMnpvZ1BsX2g2NEYxUjJGYmd0c2FOSktkUHY2UG9rM013bkowZWNXSTdldHpDX2FvSG8zTGI4b2g0UWZPUHRWOXNsc1FXOWNiVDNfRE1KekxmWF9nTmNHOURTalU5eEhpci1VdERKTV85NE9DVjJmVjg?oc=5",
+   "date": "2026-10-27",
+   "detail": "Yahoo Finance"
+  },
+  {
+   "company_id": "GRDT-031",
+   "company": "Hack The Box",
+   "category": "Space & Defense",
+   "signal": "jobs",
+   "kind": "new_role",
+   "count": 1,
+   "title": "New role: Senior Content Engineer, Labs",
+   "url": "https://apply.workable.com/j/03B2235D64",
+   "date": "2026-10-27",
+   "detail": "Palaio Faliro, Greece"
+  },
+  {
+   "company_id": "GRDT-044",
+   "company": "Causaly",
+   "category": "Health & Biotech",
+   "signal": "github",
+   "kind": "commits",
+   "count": 1,
+   "title": "1 commit to pairing",
+   "url": "https://github.com/causaly/pairing/commit/94f9ed059c9d2bfd6494a1d4a6819aa22dc17197",
+   "date": "2026-10-27",
+   "detail": "latest: chore: always use the latest node v24 release"
+  },
+  {
+   "company_id": "GRDT-044",
+   "company": "Causaly",
+   "category": "Health & Biotech",
+   "signal": "github",
+   "kind": "commits",
+   "count": 1,
+   "title": "1 commit to zod-validation-error",
+   "url": "https://github.com/causaly/zod-validation-error/commit/6fdf7c0bd846f111b6d1d787fca611f556148ee5",
+   "date": "2026-10-27",
+   "detail": "latest: chore: always use the latest node v24 release (#692)"
+  },
+  {
+   "company_id": "GRDT-044",
+   "company": "Causaly",
+   "category": "Health & Biotech",
+   "signal": "github",
+   "kind": "commits",
+   "count": 1,
+   "title": "1 commit to aint",
+   "url": "https://github.com/causaly/aint/commit/cbb781a6fc55252b9c8f3bacc9811882114d87e1",
+   "date": "2026-10-27",
+   "detail": "latest: chore: always use the latest node 24 release (#54)"
+  },
+  {
+   "company_id": "GRDT-044",
+   "company": "Causaly",
+   "category": "Health & Biotech",
+   "signal": "github",
+   "kind": "commits",
+   "count": 1,
+   "title": "1 commit to jest-fp-ts-matchers",
+   "url": "https://github.com/causaly/jest-fp-ts-matchers/commit/db748e9ce8ab7ca73553ea8a31c7232dcc9002dc",
+   "date": "2026-10-27",
+   "detail": "latest: chore: always use the latest node v24 release"
+  },
+  {
+   "company_id": "GRDT-044",
+   "company": "Causaly",
+   "category": "Health & Biotech",
+   "signal": "github",
+   "kind": "commits",
+   "count": 1,
+   "title": "1 commit to fp-ts-timeout",
+   "url": "https://github.com/causaly/fp-ts-timeout/commit/12b7d8d766c7d0104fa1d9448e41457ca894c0ad",
+   "date": "2026-10-27",
+   "detail": "latest: chore: always use the latest node v24 release"
+  },
+  {
+   "company_id": "GRDT-044",
+   "company": "Causaly",
+   "category": "Health & Biotech",
+   "signal": "github",
+   "kind": "commits",
+   "count": 1,
+   "title": "1 commit to array-fp-utils",
+   "url": "https://github.com/causaly/array-fp-utils/commit/cc57cb80f64d522150e0dd4ef6cdd902835c041e",
+   "date": "2026-10-27",
+   "detail": "latest: chore: always use the latest node v24 release"
+  },
+  {
+   "company_id": "GRDT-044",
+   "company": "Causaly",
+   "category": "Health & Biotech",
+   "signal": "github",
+   "kind": "commits",
+   "count": 1,
+   "title": "1 commit to zod-non-empty-array",
+   "url": "https://github.com/causaly/zod-non-empty-array/commit/a6bb2b5f32cbf10af3e9fb5d3261c98fe4eeaf4d",
+   "date": "2026-10-27",
+   "detail": "latest: chore: move dev and ci toolchain to node v24 and ensure latest- #45"
+  },
+  {
+   "company_id": "GRDT-042",
+   "company": "Brainomix",
+   "category": "Health & Biotech",
+   "signal": "press",
+   "kind": "press",
+   "count": 1,
+   "title": "Brainomix’s AI-Powered Precision Medicine Stroke Offering Targets Non-Specialist Centers",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNUGhpNl9RT3R0V19YSVRNSlZQRkI4MVh5ckZwXzFJeks4azk0Y0dDZmFuenM4VWZKdURYQWY5dnJ2VHV1NVhDQ01RcnpOQnFLNlJuRTNHTHVIZm1mdTNIb3JLU2lzeXM5N2dZaGttVjAwZmtic2h5SEJaUVJPaElENzVPSk5pdzVfV2FYd3BLaTJiZlZmNnNOWmoxMDU0Q0JUSE1mbEduakZKMmhabWN4X1dqcDUwLTZaX08xSE1nVFNzNm9YdU9nYVFWX0puOXQtbTdzTVRaTlg2U3NtU0JFODBPQl8tWG5SMGNHaV82ek5WcFpERjVV?oc=5",
+   "date": "2026-10-27",
+   "detail": "In Vivo"
+  },
+  {
+   "company_id": "GRDT-016",
+   "company": "TileDB (rebranded Tile.ai)",
+   "category": "AI & Machine Learning",
+   "signal": "github",
+   "kind": "commits",
+   "count": 1,
+   "title": "1 commit to TileDB-R",
+   "url": "https://github.com/TileDB-Inc/TileDB-R/commit/9812fc4e33c2173a1c5c5585fda16e5a7e5ba205",
+   "date": "2026-10-26",
+   "detail": "latest: Fix dense `[<-` writes and support `[i, j, k]` and `selected_ranges()` (#896)"
+  },
+  {
+   "company_id": "GRDT-020",
+   "company": "Axelera AI",
+   "category": "Semiconductors & Hardware",
+   "signal": "jobs",
+   "kind": "new_role",
+   "count": 1,
+   "title": "New role: Senior/Staff AI Application Engineer - Heterogeneous Computing",
+   "url": "https://jobs.ashbyhq.com/axelera/1e26c9c9-1aad-40f9-8ec1-7f347a1b40f8",
+   "date": "2026-10-26",
+   "detail": "Hybrid/Remote - Europe (incl. UK)"
+  },
+  {
+   "company_id": "GRDT-020",
+   "company": "Axelera AI",
+   "category": "Semiconductors & Hardware",
+   "signal": "grants",
+   "kind": "grant",
+   "count": 1,
+   "title": "EU project TURANDOT: TUning Risc-V to Automotive Needs & Different Other Themes",
+   "url": "https://cordis.europa.eu/project/id/101252667",
    "date": "2026-10-19",
-   "detail": "latest: Use py314 in nightly build (#899)"
+   "detail": "EU contribution to the project EUR 79.04M"
+  },
+  {
+   "company_id": "GRDT-070",
+   "company": "Satways",
+   "category": "Space & Defense",
+   "signal": "grants",
+   "kind": "grant",
+   "count": 1,
+   "title": "EU project TESTUDO: Autonomous Swarm of Heterogeneous resources in infrastructure protection via threat prediction and prevention",
+   "url": "https://cordis.europa.eu/project/id/101121258",
+   "date": "2023-08-17",
+   "detail": "EU contribution to the project EUR 5.56M"
   }
  ],
  "companies": [
@@ -283,13 +511,13 @@
    "eu_contribution": 0.0,
    "latest_grant": null,
    "latest_funding": {
-    "title": "Perceptual Robotics Raises Over £4M in Funding",
-    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOT2poTVZFbVlXOHh6bWpMeXBINWRBMk5XOW1KdFQwS0ROSi1JaXhwNnBya1JFN2E3M1BINkQtSHRucEhobWthN3pFOF80bDJKN1RoR3R0REI0OXhiZUNwUnRWdlRncEFlek1YMm9LblFJckZ3SzNCRm1WeVYzekJkVGlISnFYYVVEYmc?oc=5",
-    "date": "2026-08-03",
-    "source": "FinSMEs"
+    "title": "Perceptual Robotics raises funds to grow wind inspection business",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcEtoVmQwZW0xRnRQVW4wVm54TTJ4NmNVN1pTYXREV1J3d2JUZ3RQRGdTbjJ3a0VDOHFyLWRUM1pBR2dVeHRwekZ6T1hPNVFqaF9QOVFyaV9fZnVXQWVJdlVDRkFpaHBBOVZDNW9OQkM2OXZkd3hDTURtWW4tOG1ReVF2OFBNclBIT19aZ2g4OWNsR1dtalFRamt4dnpPSDYtbXpZWC1ZSEU?oc=5",
+    "date": "2026-08-05",
+    "source": "Renewables Now"
    },
    "momentum": 0.0,
-   "rank": 47
+   "rank": 48
   },
   {
    "company_id": "GRDT-002",
@@ -309,7 +537,7 @@
    "open_roles": null,
    "repos": 9,
    "stars": 0,
-   "last_push": "2026-10-22",
+   "last_push": "2026-10-28",
    "github_error": "",
    "news_error": "",
    "grants_error": "",
@@ -318,7 +546,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 11
+   "rank": 14
   },
   {
    "company_id": "GRDT-003",
@@ -348,7 +576,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 52
+   "rank": 53
   },
   {
    "company_id": "GRDT-004",
@@ -404,7 +632,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 56
+   "rank": 57
   },
   {
    "company_id": "GRDT-006",
@@ -433,7 +661,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 17
+   "rank": 20
   },
   {
    "company_id": "GRDT-007",
@@ -460,7 +688,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 31
+   "rank": 33
   },
   {
    "company_id": "GRDT-008",
@@ -491,7 +719,7 @@
    },
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 13
+   "rank": 16
   },
   {
    "company_id": "GRDT-009",
@@ -517,8 +745,8 @@
    "eu_contribution": 0.0,
    "latest_grant": null,
    "latest_funding": null,
-   "momentum": 2.0,
-   "rank": 5
+   "momentum": 1.0,
+   "rank": 11
   },
   {
    "company_id": "GRDT-010",
@@ -545,7 +773,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 12
+   "rank": 15
   },
   {
    "company_id": "GRDT-011",
@@ -601,7 +829,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 40
+   "rank": 42
   },
   {
    "company_id": "GRDT-013",
@@ -618,7 +846,7 @@
    "jobs_error": "",
    "open_roles": null,
    "repos": 31,
-   "stars": 2094,
+   "stars": 2099,
    "last_push": "2026-10-23",
    "github_error": "",
    "news_error": "",
@@ -627,8 +855,8 @@
    "eu_contribution": 0.0,
    "latest_grant": null,
    "latest_funding": null,
-   "momentum": 2.0,
-   "rank": 3
+   "momentum": 1.0,
+   "rank": 10
   },
   {
    "company_id": "GRDT-014",
@@ -645,8 +873,8 @@
    "jobs_error": "",
    "open_roles": 10,
    "repos": 28,
-   "stars": 29,
-   "last_push": "2026-10-23",
+   "stars": 30,
+   "last_push": "2026-10-30",
    "github_error": "",
    "news_error": "",
    "grants_error": "",
@@ -659,7 +887,7 @@
     "date": "2026-09-01",
     "source": "Forbes Greece"
    },
-   "momentum": 1.0,
+   "momentum": 1.5,
    "rank": 9
   },
   {
@@ -687,7 +915,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 36
+   "rank": 38
   },
   {
    "company_id": "GRDT-016",
@@ -707,7 +935,7 @@
    "open_roles": null,
    "repos": 100,
    "stars": 3011,
-   "last_push": "2026-10-26",
+   "last_push": "2026-11-02",
    "github_error": "",
    "news_error": "",
    "grants_error": "",
@@ -721,7 +949,7 @@
     "source": "citybiz"
    },
    "momentum": 2.0,
-   "rank": 6
+   "rank": 8
   },
   {
    "company_id": "GRDT-017",
@@ -753,7 +981,7 @@
     "source": "SynBioBeta"
    },
    "momentum": 0.0,
-   "rank": 53
+   "rank": 54
   },
   {
    "company_id": "GRDT-018",
@@ -771,7 +999,7 @@
    "open_roles": 6,
    "repos": 1,
    "stars": 0,
-   "last_push": "2026-10-19",
+   "last_push": "2026-10-26",
    "github_error": "",
    "news_error": "",
    "grants_error": "",
@@ -780,7 +1008,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 35
+   "rank": 37
   },
   {
    "company_id": "GRDT-020",
@@ -795,19 +1023,19 @@
    "careers_url": "https://axelera.ai/careers?hsLang=en",
    "jobs_source": "ashby",
    "jobs_error": "",
-   "open_roles": 8,
+   "open_roles": 10,
    "repos": 16,
    "stars": 191,
-   "last_push": "2026-10-26",
+   "last_push": "2026-11-02",
    "github_error": "",
    "news_error": "",
    "grants_error": "",
-   "eu_projects": 5,
-   "eu_contribution": 144.5,
+   "eu_projects": 6,
+   "eu_contribution": 223.55,
    "latest_grant": {
-    "title": "VOICES: Voicing Opportunities and Influence for the Chip Ecosystem of (fabless) SMEs",
-    "url": "https://cordis.europa.eu/project/id/101297687",
-    "date": "2026-04-17"
+    "title": "TURANDOT: TUning Risc-V to Automotive Needs & Different Other Themes",
+    "url": "https://cordis.europa.eu/project/id/101252667",
+    "date": "2026-10-19"
    },
    "latest_funding": {
     "title": "Axelera AI targets IPO within three to five years",
@@ -815,8 +1043,8 @@
     "date": "2026-10-04",
     "source": "IO+"
    },
-   "momentum": 4.0,
-   "rank": 1
+   "momentum": 10.0,
+   "rank": 2
   },
   {
    "company_id": "GRDT-021",
@@ -895,9 +1123,9 @@
    "jobs_source": "careers_page",
    "jobs_error": "",
    "open_roles": null,
-   "repos": 25,
-   "stars": 74,
-   "last_push": "2026-10-26",
+   "repos": 26,
+   "stars": 78,
+   "last_push": "2026-11-02",
    "github_error": "",
    "news_error": "",
    "grants_error": "",
@@ -905,8 +1133,8 @@
    "eu_contribution": 0.0,
    "latest_grant": null,
    "latest_funding": null,
-   "momentum": 3.0,
-   "rank": 2
+   "momentum": 3.5,
+   "rank": 5
   },
   {
    "company_id": "GRDT-024",
@@ -935,7 +1163,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 34
+   "rank": 36
   },
   {
    "company_id": "GRDT-025",
@@ -966,7 +1194,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 44
+   "rank": 46
   },
   {
    "company_id": "GRDT-026",
@@ -997,7 +1225,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 15
+   "rank": 18
   },
   {
    "company_id": "GRDT-027",
@@ -1029,13 +1257,13 @@
     "date": "2024-06-25"
    },
    "latest_funding": {
-    "title": "Anacalypsis Therapeutics: Pre-seed χρηματοδότηση από την Metavallon VC",
-    "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPbV9KaTBjNVUySTFuckZ0Z29sSmI5cTZ3QjVNZDVibG1vTGRRRFVvdkdMNEN3aXdaOWYtemoyNUU3ajFxRXN6aVpkd01teWpWM0pPa1BVejlFQk01UGhFZlFlU3RuTnZ0VklmZG51cVQ2a1gwWjQ1ZzdvT3AwUF9PbjJKbHotTHphSk8tWm1BeWhRdjdvMFZabVRLQXBDVERvWTJ0aU5MblJfYTdqX2xnbWR5cEpuaTBKZE91cFhMcFQwT002R0k1SmpaMWhpMXhEVmF0cmxCSXd4M2pYSzA0TDd0OGxRbldDYkVCdnBuQ0Njcm5tdEpzcw?oc=5",
+    "title": "Anacalypsis Therapeutics: Pre-seed χρηματοδότηση από τη Metavallon VC για πειραματική θεραπεία του Πάρκινσον",
+    "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQaDRJdUJOUENXOXdHMkpJYjQ1Q1Nuc1RjTUhWdFEtMDAyOEJlWW82QUFLTmotU1ZhNXlhdmVua1AtdGloNmlISlc3ZlhXYjU3X2JWOERCeVNBbnNYMTM1NkdKNUhzMFRMNF84SVdBenZ0SmhPcVlCVkRiaXBXdUVNR25KSk9RMERya2lac1AxQWhMelFjckdZVG13aDVfczJSTVprU3lwS3YtZjM3QlgxaVltWkxMOGx6R0R5UkxzNUpsTHphdDladlR6SGtzTUxXZXpXakhHU0tvU0pfcVFJUEZBODEtQ3RYZzhDeXl5ZDdpOWpxZHlaNEt3?oc=5",
     "date": "2026-09-21",
-    "source": "STARTUPPER"
+    "source": "Epixeiro"
    },
    "momentum": 0.0,
-   "rank": 14
+   "rank": 17
   },
   {
    "company_id": "GRDT-029",
@@ -1064,7 +1292,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 37
+   "rank": 39
   },
   {
    "company_id": "GRDT-030",
@@ -1093,7 +1321,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 28
+   "rank": 30
   },
   {
    "company_id": "GRDT-031",
@@ -1110,19 +1338,24 @@
    "careers_url": "https://jobs.hackthebox.com",
    "jobs_source": "workable",
    "jobs_error": "",
-   "open_roles": 48,
+   "open_roles": 47,
    "repos": 28,
-   "stars": 1253,
-   "last_push": "2026-10-26",
+   "stars": 1258,
+   "last_push": "2026-11-01",
    "github_error": "",
    "news_error": "",
    "grants_error": "",
    "eu_projects": 0,
    "eu_contribution": 0.0,
    "latest_grant": null,
-   "latest_funding": null,
-   "momentum": 2.0,
-   "rank": 4
+   "latest_funding": {
+    "title": "Study Finds Hack The Box Cybersecurity Platform Delivered 330% Return on Investment",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZldUR1ZzM0kyNjNlNk03MC0yczU2eTQ0Vjc3bU1mUXBFa2VMb3pSMnpvZ1BsX2g2NEYxUjJGYmd0c2FOSktkUHY2UG9rM013bkowZWNXSTdldHpDX2FvSG8zTGI4b2g0UWZPUHRWOXNsc1FXOWNiVDNfRE1KekxmWF9nTmNHOURTalU5eEhpci1VdERKTV85NE9DVjJmVjg?oc=5",
+    "date": "2026-10-27",
+    "source": "Yahoo Finance"
+   },
+   "momentum": 7.0,
+   "rank": 3
   },
   {
    "company_id": "GRDT-032",
@@ -1180,7 +1413,7 @@
    },
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 51
+   "rank": 52
   },
   {
    "company_id": "GRDT-034",
@@ -1206,13 +1439,13 @@
    "eu_contribution": 0.0,
    "latest_grant": null,
    "latest_funding": {
-    "title": "Open Cosmos Secures €300M to Build Europe's 192-Satellite LEO Constellation",
-    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1WVnU2RHVfcFFZSGtDOGVTTk83UXZzUjFOU3VONTVWcE9kbXo5dk56eGk3QnpjX3hCc1pSLUIyWnpsX09rLVN3RmpPSG5jdjc4QVlkck5KYUMxLTViRkdZandMY2oyZUYyZzdPWGpnV3dNX2MyYWhyMQ?oc=5",
-    "date": "2026-10-07",
-    "source": "ADS Advance"
+    "title": "European Space Giant Open Cosmos Eyes Major India Investment After PM Modi Meet",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOTVhLLXdNTlpUVzA1MDlRQ185MWVtc1c1UzBOQ21uSy03Vm9UUzc4SWx0TFFLYzZ4NDhrc1ZzX0VKMm55Q19lQU12Yl9INm5abVdnbDYyZG1vUzVCWXMxaE5sQ25MN2pISXBLNWFnQlduVHpfeEdyYXcwX2RTR1o2aGpndEI4T2NMQmRSUHBYQksyUU4zMm04RHpFaHhQS2JvZHJGbXNfWjVoSm85RmF6d1FHOFEtOFZOTURwVzhHeUFSVms20gHKAUFVX3lxTE93Uk5kejVfaVowb3JkYlBzQkZ6VTdrMENpQTBxMXY1WWU4bm5HcXlnajNCb2oxMWRmX05zdFJJdHhVWHkwYVFKc3VsY1hMQlhuSmVHMUNFcjNBSG52R0hkS09BdGFrVjFxcFpRZ1VPVzZheW4xU29rNUM4VWN5ZGU5QlF4ZWljeXduOGlPSllUeHhRdy12cnFMRzQ3eVVZMWQyVzAtQ2xBdWJYZlJXaXdFeGM5YWtDZXZRNi1MUUkwNUJDU3lEUk1EOEE?oc=5",
+    "date": "2026-10-29",
+    "source": "Lokmat Times"
    },
-   "momentum": 0.0,
-   "rank": 45
+   "momentum": 11.0,
+   "rank": 1
   },
   {
    "company_id": "GRDT-037",
@@ -1227,7 +1460,7 @@
    "careers_url": "https://www.deepsea.ai/careers",
    "jobs_source": "recruitee",
    "jobs_error": "",
-   "open_roles": 2,
+   "open_roles": 1,
    "repos": 0,
    "stars": 0,
    "last_push": "",
@@ -1238,8 +1471,8 @@
    "eu_contribution": 0.0,
    "latest_grant": null,
    "latest_funding": null,
-   "momentum": 1.0,
-   "rank": 8
+   "momentum": 0.5,
+   "rank": 12
   },
   {
    "company_id": "GRDT-038",
@@ -1268,7 +1501,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 27
+   "rank": 29
   },
   {
    "company_id": "GRDT-039",
@@ -1297,7 +1530,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 18
+   "rank": 21
   },
   {
    "company_id": "GRDT-040",
@@ -1326,7 +1559,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 19
+   "rank": 22
   },
   {
    "company_id": "GRDT-041",
@@ -1356,7 +1589,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 30
+   "rank": 32
   },
   {
    "company_id": "GRDT-042",
@@ -1382,8 +1615,8 @@
    "eu_contribution": 0.0,
    "latest_grant": null,
    "latest_funding": null,
-   "momentum": 1.0,
-   "rank": 7
+   "momentum": 3.5,
+   "rank": 4
   },
   {
    "company_id": "GRDT-043",
@@ -1410,7 +1643,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 10
+   "rank": 13
   },
   {
    "company_id": "GRDT-044",
@@ -1427,10 +1660,10 @@
    "careers_url": "https://jobs.ashbyhq.com/causaly?utm_source=causaly_main",
    "jobs_source": "ashby",
    "jobs_error": "",
-   "open_roles": 6,
+   "open_roles": 7,
    "repos": 14,
-   "stars": 1052,
-   "last_push": "2026-10-25",
+   "stars": 1056,
+   "last_push": "2026-10-30",
    "github_error": "",
    "news_error": "",
    "grants_error": "",
@@ -1438,8 +1671,8 @@
    "eu_contribution": 0.0,
    "latest_grant": null,
    "latest_funding": null,
-   "momentum": 0.0,
-   "rank": 21
+   "momentum": 3.0,
+   "rank": 6
   },
   {
    "company_id": "GRDT-045",
@@ -1468,7 +1701,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 23
+   "rank": 25
   },
   {
    "company_id": "GRDT-046",
@@ -1497,7 +1730,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 20
+   "rank": 23
   },
   {
    "company_id": "GRDT-047",
@@ -1526,7 +1759,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 22
+   "rank": 24
   },
   {
    "company_id": "GRDT-048",
@@ -1555,7 +1788,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 25
+   "rank": 27
   },
   {
    "company_id": "GRDT-049",
@@ -1605,7 +1838,7 @@
    "jobs_error": "",
    "open_roles": null,
    "repos": 1,
-   "stars": 130,
+   "stars": 132,
    "last_push": "2023-01-26",
    "github_error": "",
    "news_error": "",
@@ -1615,7 +1848,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 38
+   "rank": 40
   },
   {
    "company_id": "GRDT-051",
@@ -1646,7 +1879,7 @@
    },
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 26
+   "rank": 28
   },
   {
    "company_id": "GRDT-056",
@@ -1675,7 +1908,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 46
+   "rank": 47
   },
   {
    "company_id": "GRDT-057",
@@ -1704,7 +1937,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 24
+   "rank": 26
   },
   {
    "company_id": "GRDT-059",
@@ -1733,7 +1966,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 54
+   "rank": 55
   },
   {
    "company_id": "GRDT-063",
@@ -1762,7 +1995,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 41
+   "rank": 43
   },
   {
    "company_id": "GRDT-064",
@@ -1821,7 +2054,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 42
+   "rank": 44
   },
   {
    "company_id": "GRDT-066",
@@ -1850,7 +2083,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 50
+   "rank": 51
   },
   {
    "company_id": "GRDT-067",
@@ -1883,7 +2116,7 @@
    },
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 48
+   "rank": 49
   },
   {
    "company_id": "GRDT-068",
@@ -1910,7 +2143,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 39
+   "rank": 41
   },
   {
    "company_id": "GRDT-069",
@@ -1939,7 +2172,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 32
+   "rank": 34
   },
   {
    "company_id": "GRDT-070",
@@ -1969,8 +2202,8 @@
     "date": "2026-07-10"
    },
    "latest_funding": null,
-   "momentum": 0.0,
-   "rank": 57
+   "momentum": 3.0,
+   "rank": 7
   },
   {
    "company_id": "GRDT-071",
@@ -1997,7 +2230,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 16
+   "rank": 19
   },
   {
    "company_id": "GRDT-072",
@@ -2055,7 +2288,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 33
+   "rank": 35
   },
   {
    "company_id": "GRDT-074",
@@ -2084,7 +2317,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 49
+   "rank": 50
   },
   {
    "company_id": "GRDT-082",
@@ -2142,7 +2375,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 55
+   "rank": 56
   },
   {
    "company_id": "GRDT-084",
@@ -2223,7 +2456,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 0.0,
-   "rank": 29
+   "rank": 31
   },
   {
    "company_id": "GRDT-087",
@@ -2261,7 +2494,7 @@
     "source": "GSMA"
    },
    "momentum": 0.0,
-   "rank": 43
+   "rank": 45
   },
   {
    "company_id": "GRDT-088",
@@ -2296,62 +2529,45 @@
   }
  ],
  "history": [
+  "2026-11-02",
   "2026-10-26"
  ],
  "movers": [
+  {
+   "company_id": "GRDT-034",
+   "company": "Open Cosmos (Open Cosmos Aegean)",
+   "category": "Space & Defense",
+   "greek_funds": [],
+   "greek_fund_status": "",
+   "week_score": 11,
+   "momentum": 11.0,
+   "last_week": 0.0,
+   "parts": {
+    "funding": 10,
+    "grants": 0,
+    "press": 1,
+    "hiring": 0,
+    "github": 0
+   },
+   "rank": 1
+  },
   {
    "company_id": "GRDT-020",
    "company": "Axelera AI",
    "category": "Semiconductors & Hardware",
    "greek_funds": [],
    "greek_fund_status": "",
-   "week_score": 4,
-   "momentum": 4.0,
-   "last_week": null,
+   "week_score": 8,
+   "momentum": 10.0,
+   "last_week": 4.0,
    "parts": {
     "funding": 0,
-    "grants": 0,
+    "grants": 3,
     "press": 0,
-    "hiring": 2,
+    "hiring": 3,
     "github": 2
-   },
-   "rank": 1
-  },
-  {
-   "company_id": "GRDT-023",
-   "company": "WeatherXM",
-   "category": "Energy & Climate Tech",
-   "greek_funds": [],
-   "greek_fund_status": "",
-   "week_score": 3,
-   "momentum": 3.0,
-   "last_week": null,
-   "parts": {
-    "funding": 0,
-    "grants": 0,
-    "press": 0,
-    "hiring": 0,
-    "github": 3
    },
    "rank": 2
-  },
-  {
-   "company_id": "GRDT-013",
-   "company": "Bitloops",
-   "category": "AI & Machine Learning",
-   "greek_funds": [],
-   "greek_fund_status": "",
-   "week_score": 2,
-   "momentum": 2.0,
-   "last_week": null,
-   "parts": {
-    "funding": 0,
-    "grants": 0,
-    "press": 0,
-    "hiring": 0,
-    "github": 2
-   },
-   "rank": 3
   },
   {
    "company_id": "GRDT-031",
@@ -2361,35 +2577,91 @@
     "Marathon VC"
    ],
    "greek_fund_status": "current",
+   "week_score": 6,
+   "momentum": 7.0,
+   "last_week": 2.0,
+   "parts": {
+    "funding": 5,
+    "grants": 0,
+    "press": 0,
+    "hiring": 1,
+    "github": 0
+   },
+   "rank": 3
+  },
+  {
+   "company_id": "GRDT-042",
+   "company": "Brainomix",
+   "category": "Health & Biotech",
+   "greek_funds": [],
+   "greek_fund_status": "",
+   "week_score": 3,
+   "momentum": 3.5,
+   "last_week": 1.0,
+   "parts": {
+    "funding": 0,
+    "grants": 0,
+    "press": 3,
+    "hiring": 0,
+    "github": 0
+   },
+   "rank": 4
+  },
+  {
+   "company_id": "GRDT-023",
+   "company": "WeatherXM",
+   "category": "Energy & Climate Tech",
+   "greek_funds": [],
+   "greek_fund_status": "",
    "week_score": 2,
-   "momentum": 2.0,
-   "last_week": null,
+   "momentum": 3.5,
+   "last_week": 3.0,
+   "parts": {
+    "funding": 0,
+    "grants": 0,
+    "press": 1,
+    "hiring": 0,
+    "github": 1
+   },
+   "rank": 5
+  },
+  {
+   "company_id": "GRDT-044",
+   "company": "Causaly",
+   "category": "Health & Biotech",
+   "greek_funds": [
+    "Marathon VC"
+   ],
+   "greek_fund_status": "current",
+   "week_score": 3,
+   "momentum": 3.0,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
     "press": 0,
     "hiring": 1,
-    "github": 1
+    "github": 2
    },
-   "rank": 4
+   "rank": 6
   },
   {
-   "company_id": "GRDT-009",
-   "company": "SAS Technology",
-   "category": "Robotics & Drones",
+   "company_id": "GRDT-070",
+   "company": "Satways",
+   "category": "Space & Defense",
    "greek_funds": [],
    "greek_fund_status": "",
-   "week_score": 2,
-   "momentum": 2.0,
-   "last_week": null,
+   "week_score": 3,
+   "momentum": 3.0,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
-    "grants": 0,
-    "press": 2,
+    "grants": 3,
+    "press": 0,
     "hiring": 0,
     "github": 0
    },
-   "rank": 5
+   "rank": 7
   },
   {
    "company_id": "GRDT-016",
@@ -2399,51 +2671,15 @@
     "Big Pi Ventures"
    ],
    "greek_fund_status": "current",
-   "week_score": 2,
+   "week_score": 1,
    "momentum": 2.0,
-   "last_week": null,
+   "last_week": 2.0,
    "parts": {
     "funding": 0,
     "grants": 0,
     "press": 0,
     "hiring": 0,
-    "github": 2
-   },
-   "rank": 6
-  },
-  {
-   "company_id": "GRDT-042",
-   "company": "Brainomix",
-   "category": "Health & Biotech",
-   "greek_funds": [],
-   "greek_fund_status": "",
-   "week_score": 1,
-   "momentum": 1.0,
-   "last_week": null,
-   "parts": {
-    "funding": 0,
-    "grants": 0,
-    "press": 1,
-    "hiring": 0,
-    "github": 0
-   },
-   "rank": 7
-  },
-  {
-   "company_id": "GRDT-037",
-   "company": "DeepSea Technologies",
-   "category": "Industrial & Manufacturing Tech",
-   "greek_funds": [],
-   "greek_fund_status": "",
-   "week_score": 1,
-   "momentum": 1.0,
-   "last_week": null,
-   "parts": {
-    "funding": 0,
-    "grants": 0,
-    "press": 1,
-    "hiring": 0,
-    "github": 0
+    "github": 1
    },
    "rank": 8
   },
@@ -2454,16 +2690,70 @@
    "greek_funds": [],
    "greek_fund_status": "",
    "week_score": 1,
+   "momentum": 1.5,
+   "last_week": 1.0,
+   "parts": {
+    "funding": 0,
+    "grants": 0,
+    "press": 1,
+    "hiring": 0,
+    "github": 0
+   },
+   "rank": 9
+  },
+  {
+   "company_id": "GRDT-013",
+   "company": "Bitloops",
+   "category": "AI & Machine Learning",
+   "greek_funds": [],
+   "greek_fund_status": "",
+   "week_score": 0,
    "momentum": 1.0,
-   "last_week": null,
+   "last_week": 2.0,
    "parts": {
     "funding": 0,
     "grants": 0,
     "press": 0,
-    "hiring": 1,
+    "hiring": 0,
     "github": 0
    },
-   "rank": 9
+   "rank": 10
+  },
+  {
+   "company_id": "GRDT-009",
+   "company": "SAS Technology",
+   "category": "Robotics & Drones",
+   "greek_funds": [],
+   "greek_fund_status": "",
+   "week_score": 0,
+   "momentum": 1.0,
+   "last_week": 2.0,
+   "parts": {
+    "funding": 0,
+    "grants": 0,
+    "press": 0,
+    "hiring": 0,
+    "github": 0
+   },
+   "rank": 11
+  },
+  {
+   "company_id": "GRDT-037",
+   "company": "DeepSea Technologies",
+   "category": "Industrial & Manufacturing Tech",
+   "greek_funds": [],
+   "greek_fund_status": "",
+   "week_score": 0,
+   "momentum": 0.5,
+   "last_week": 1.0,
+   "parts": {
+    "funding": 0,
+    "grants": 0,
+    "press": 0,
+    "hiring": 0,
+    "github": 0
+   },
+   "rank": 12
   },
   {
    "company_id": "GRDT-043",
@@ -2473,7 +2763,7 @@
    "greek_fund_status": "",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2481,7 +2771,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 10
+   "rank": 13
   },
   {
    "company_id": "GRDT-002",
@@ -2493,7 +2783,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2501,7 +2791,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 11
+   "rank": 14
   },
   {
    "company_id": "GRDT-010",
@@ -2511,7 +2801,7 @@
    "greek_fund_status": "",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2519,7 +2809,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 12
+   "rank": 15
   },
   {
    "company_id": "GRDT-008",
@@ -2529,7 +2819,7 @@
    "greek_fund_status": "",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2537,7 +2827,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 13
+   "rank": 16
   },
   {
    "company_id": "GRDT-027",
@@ -2549,7 +2839,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2557,7 +2847,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 14
+   "rank": 17
   },
   {
    "company_id": "GRDT-026",
@@ -2571,7 +2861,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2579,7 +2869,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 15
+   "rank": 18
   },
   {
    "company_id": "GRDT-071",
@@ -2589,7 +2879,7 @@
    "greek_fund_status": "",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2597,7 +2887,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 16
+   "rank": 19
   },
   {
    "company_id": "GRDT-006",
@@ -2609,7 +2899,7 @@
    "greek_fund_status": "exited (company acquired)",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2617,7 +2907,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 17
+   "rank": 20
   },
   {
    "company_id": "GRDT-039",
@@ -2629,7 +2919,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2637,7 +2927,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 18
+   "rank": 21
   },
   {
    "company_id": "GRDT-040",
@@ -2649,7 +2939,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2657,7 +2947,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 19
+   "rank": 22
   },
   {
    "company_id": "GRDT-046",
@@ -2669,7 +2959,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2677,27 +2967,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 20
-  },
-  {
-   "company_id": "GRDT-044",
-   "company": "Causaly",
-   "category": "Health & Biotech",
-   "greek_funds": [
-    "Marathon VC"
-   ],
-   "greek_fund_status": "current",
-   "week_score": 0,
-   "momentum": 0.0,
-   "last_week": null,
-   "parts": {
-    "funding": 0,
-    "grants": 0,
-    "press": 0,
-    "hiring": 0,
-    "github": 0
-   },
-   "rank": 21
+   "rank": 23
   },
   {
    "company_id": "GRDT-047",
@@ -2709,7 +2979,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2717,7 +2987,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 22
+   "rank": 24
   },
   {
    "company_id": "GRDT-045",
@@ -2729,7 +2999,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2737,7 +3007,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 23
+   "rank": 25
   },
   {
    "company_id": "GRDT-057",
@@ -2749,7 +3019,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2757,7 +3027,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 24
+   "rank": 26
   },
   {
    "company_id": "GRDT-048",
@@ -2769,7 +3039,7 @@
    "greek_fund_status": "exited (company acquired)",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2777,7 +3047,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 25
+   "rank": 27
   },
   {
    "company_id": "GRDT-051",
@@ -2787,7 +3057,7 @@
    "greek_fund_status": "",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2795,7 +3065,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 26
+   "rank": 28
   },
   {
    "company_id": "GRDT-038",
@@ -2807,7 +3077,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2815,7 +3085,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 27
+   "rank": 29
   },
   {
    "company_id": "GRDT-030",
@@ -2827,7 +3097,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2835,7 +3105,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 28
+   "rank": 30
   },
   {
    "company_id": "GRDT-086",
@@ -2845,7 +3115,7 @@
    "greek_fund_status": "",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2853,7 +3123,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 29
+   "rank": 31
   },
   {
    "company_id": "GRDT-041",
@@ -2866,7 +3136,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2874,7 +3144,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 30
+   "rank": 32
   },
   {
    "company_id": "GRDT-007",
@@ -2884,7 +3154,7 @@
    "greek_fund_status": "",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2892,7 +3162,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 31
+   "rank": 33
   },
   {
    "company_id": "GRDT-069",
@@ -2904,7 +3174,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2912,7 +3182,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 32
+   "rank": 34
   },
   {
    "company_id": "GRDT-073",
@@ -2924,7 +3194,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2932,7 +3202,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 33
+   "rank": 35
   },
   {
    "company_id": "GRDT-024",
@@ -2944,7 +3214,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2952,7 +3222,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 34
+   "rank": 36
   },
   {
    "company_id": "GRDT-018",
@@ -2962,7 +3232,7 @@
    "greek_fund_status": "",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2970,7 +3240,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 35
+   "rank": 37
   },
   {
    "company_id": "GRDT-015",
@@ -2980,7 +3250,7 @@
    "greek_fund_status": "",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -2988,7 +3258,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 36
+   "rank": 38
   },
   {
    "company_id": "GRDT-029",
@@ -3000,7 +3270,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3008,7 +3278,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 37
+   "rank": 39
   },
   {
    "company_id": "GRDT-050",
@@ -3018,7 +3288,7 @@
    "greek_fund_status": "",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3026,7 +3296,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 38
+   "rank": 40
   },
   {
    "company_id": "GRDT-068",
@@ -3036,7 +3306,7 @@
    "greek_fund_status": "",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3044,7 +3314,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 39
+   "rank": 41
   },
   {
    "company_id": "GRDT-012",
@@ -3056,7 +3326,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3064,7 +3334,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 40
+   "rank": 42
   },
   {
    "company_id": "GRDT-063",
@@ -3076,7 +3346,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3084,7 +3354,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 41
+   "rank": 43
   },
   {
    "company_id": "GRDT-065",
@@ -3096,7 +3366,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3104,7 +3374,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 42
+   "rank": 44
   },
   {
    "company_id": "GRDT-087",
@@ -3116,7 +3386,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3124,7 +3394,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 43
+   "rank": 45
   },
   {
    "company_id": "GRDT-025",
@@ -3138,7 +3408,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3146,25 +3416,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 44
-  },
-  {
-   "company_id": "GRDT-034",
-   "company": "Open Cosmos (Open Cosmos Aegean)",
-   "category": "Space & Defense",
-   "greek_funds": [],
-   "greek_fund_status": "",
-   "week_score": 0,
-   "momentum": 0.0,
-   "last_week": null,
-   "parts": {
-    "funding": 0,
-    "grants": 0,
-    "press": 0,
-    "hiring": 0,
-    "github": 0
-   },
-   "rank": 45
+   "rank": 46
   },
   {
    "company_id": "GRDT-056",
@@ -3176,7 +3428,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3184,7 +3436,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 46
+   "rank": 47
   },
   {
    "company_id": "GRDT-001",
@@ -3196,7 +3448,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3204,7 +3456,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 47
+   "rank": 48
   },
   {
    "company_id": "GRDT-067",
@@ -3216,7 +3468,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3224,7 +3476,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 48
+   "rank": 49
   },
   {
    "company_id": "GRDT-074",
@@ -3236,7 +3488,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3244,7 +3496,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 49
+   "rank": 50
   },
   {
    "company_id": "GRDT-066",
@@ -3256,7 +3508,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3264,7 +3516,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 50
+   "rank": 51
   },
   {
    "company_id": "GRDT-033",
@@ -3274,7 +3526,7 @@
    "greek_fund_status": "",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3282,7 +3534,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 51
+   "rank": 52
   },
   {
    "company_id": "GRDT-003",
@@ -3295,7 +3547,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3303,7 +3555,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 52
+   "rank": 53
   },
   {
    "company_id": "GRDT-017",
@@ -3313,7 +3565,7 @@
    "greek_fund_status": "",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3321,7 +3573,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 53
+   "rank": 54
   },
   {
    "company_id": "GRDT-059",
@@ -3333,25 +3585,7 @@
    "greek_fund_status": "exited (fund sold its stake)",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
-   "parts": {
-    "funding": 0,
-    "grants": 0,
-    "press": 0,
-    "hiring": 0,
-    "github": 0
-   },
-   "rank": 54
-  },
-  {
-   "company_id": "GRDT-083",
-   "company": "QRBIT",
-   "category": "Quantum & Advanced Computing",
-   "greek_funds": [],
-   "greek_fund_status": "",
-   "week_score": 0,
-   "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3362,14 +3596,14 @@
    "rank": 55
   },
   {
-   "company_id": "GRDT-005",
-   "company": "Robenso",
-   "category": "Robotics & Drones",
+   "company_id": "GRDT-083",
+   "company": "QRBIT",
+   "category": "Quantum & Advanced Computing",
    "greek_funds": [],
    "greek_fund_status": "",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3380,14 +3614,14 @@
    "rank": 56
   },
   {
-   "company_id": "GRDT-070",
-   "company": "Satways",
-   "category": "Space & Defense",
+   "company_id": "GRDT-005",
+   "company": "Robenso",
+   "category": "Robotics & Drones",
    "greek_funds": [],
    "greek_fund_status": "",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3407,7 +3641,7 @@
    "greek_fund_status": "exited (company acquired)",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3425,7 +3659,7 @@
    "greek_fund_status": "",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3446,7 +3680,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3464,7 +3698,7 @@
    "greek_fund_status": "",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3482,7 +3716,7 @@
    "greek_fund_status": "",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3500,7 +3734,7 @@
    "greek_fund_status": "",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3521,7 +3755,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3541,7 +3775,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3559,7 +3793,7 @@
    "greek_fund_status": "",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3577,7 +3811,7 @@
    "greek_fund_status": "",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3597,7 +3831,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3617,7 +3851,7 @@
    "greek_fund_status": "current",
    "week_score": 0,
    "momentum": 0.0,
-   "last_week": null,
+   "last_week": 0.0,
    "parts": {
     "funding": 0,
     "grants": 0,
@@ -3628,7 +3862,7 @@
    "rank": 69
   }
  ],
- "score_weeks": 1,
+ "score_weeks": 2,
  "target_funds": [
   "Big Pi Ventures",
   "Marathon VC",
