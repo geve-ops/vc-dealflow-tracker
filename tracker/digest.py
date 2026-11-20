@@ -12,6 +12,8 @@ from datetime import datetime, timedelta
 from . import briefing, score
 from .collect import snapshot_paths
 from .common import DIGESTS, DOCS, read_watchlist
+from .signals_jobs import merge_by_id
+from .signals_news import headline_kind
 from .watchlist import TARGET_FUNDS
 
 SIGNAL_LABELS = {"funding": "Funding news", "grants": "EU grants", "jobs": "Hiring", "github": "GitHub activity",
@@ -47,7 +49,8 @@ def company_changes(row, cur, prev, window_start):
     prev_ids = {i["id"] for i in (p.get("news") or {}).get("items", [])}
     for it in news.get("items", []):
         if it["published"] >= window_start and it["id"] not in prev_ids:
-            add(it["kind"], it["kind"], it["title"], it["url"], it["published"], it["source"])
+            kind = headline_kind(it["title"])
+            add(kind, kind, it["title"], it["url"], it["published"], it["source"])
 
     # EU grants: projects not in last week's snapshot; on a first run, signed inside the window.
     grants = c.get("grants") or {}
@@ -88,20 +91,22 @@ def company_changes(row, cur, prev, window_start):
     pjobs = p.get("jobs") or {}
     if jobs and not jobs.get("error"):
         heuristic = " (careers page, heuristic)" if jobs["source"] == "careers_page" else ""
+        # Each posting counts once, however many locations it is listed under.
+        postings = merge_by_id(jobs["postings"])
         if pjobs and not pjobs.get("error") and pjobs.get("source") == jobs["source"]:
             before = {j["id"] for j in pjobs["postings"]}
-            now_ids = {j["id"] for j in jobs["postings"]}
-            for j in jobs["postings"]:
+            now_ids = {j["id"] for j in postings}
+            for j in postings:
                 if j["id"] not in before:
                     add("jobs", "new_role", f"New role: {j['title']}{heuristic}", j["url"],
                         j["published"] or cur["generated_at"], j["location"])
-            closed = [j for j in pjobs["postings"] if j["id"] not in now_ids]
+            closed = [j for j in merge_by_id(pjobs["postings"]) if j["id"] not in now_ids]
             for j in closed:
                 add("jobs", "closed_role", f"Role closed: {j['title']}{heuristic}", j["url"], cur["generated_at"],
                     "no longer listed")
         else:
             # First run for this source: only postings dated inside the window count as new.
-            for j in jobs["postings"]:
+            for j in postings:
                 if j["published"] and j["published"] >= window_start[:10]:
                     add("jobs", "new_role", f"New role: {j['title']}", j["url"], j["published"], j["location"])
     return out
@@ -114,7 +119,7 @@ def company_status(row, cur):
     grants = [i for i in (c.get("grants") or {}).get("items", []) if i["signed"][:4] >= since]
     # Google News "when:90d" is loose, so the 90-day cut is applied here as well.
     cutoff = (datetime.fromisoformat(cur["generated_at"].replace("Z", "+00:00")) - timedelta(days=90)).strftime("%Y-%m-%d")
-    funding = [i for i in news.get("items", []) if i["kind"] == "funding" and i["published"][:10] >= cutoff]
+    funding = [i for i in news.get("items", []) if headline_kind(i["title"]) == "funding" and i["published"][:10] >= cutoff]
     repos = gh.get("repos", [])
     return {
         "company_id": row["company_id"], "company": row["company"], "category": row["category"],
@@ -124,7 +129,7 @@ def company_status(row, cur):
         "github_org": row["github_org"], "careers_url": row["careers_url"],
         "jobs_source": jobs.get("source", ""), "jobs_error": jobs.get("error", ""),
         # Zero from the careers-page heuristic usually means the page renders roles with JavaScript.
-        "open_roles": (len(jobs["postings"]) if jobs and not jobs.get("error")
+        "open_roles": (len({j["id"] for j in jobs["postings"]}) if jobs and not jobs.get("error")
                        and (jobs["postings"] or jobs["source"] != "careers_page") else None),
         "repos": len(repos), "stars": sum(r["stars"] for r in repos),
         "last_push": max((r["pushed_at"] for r in repos), default="")[:10],

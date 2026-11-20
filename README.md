@@ -42,6 +42,7 @@ python run.py enrich --only GRDT-037 # one company
 python run.py collect --signals github news grants
 python run.py digest                 # rebuild the digest from saved snapshots
 python run.py backtest               # GitHub activity before known rounds (occasional; a few minutes)
+python -m unittest discover tests    # scoring rule tests
 ```
 
 Open `docs/index.html` in a browser to see the dashboard locally. The live version is served by GitHub Pages from the `docs/` folder on `main` and updates with each weekly run.
@@ -99,10 +100,10 @@ The score turns the weekly changes into a ranking. Each signal is capped, so no 
 
 | Signal this week | Points |
 |---|---|
-| Funding headline | 5 each, max 10 |
+| Funding headline (names a round or an amount, see below) | 5 each, max 10 |
 | EU grant signed | 3 each, max 6 |
 | Other press headline | 1 each, max 3 |
-| New role posted | 1 each, max 5 |
+| New role posted (counted once per posting, not per location) | 1 each, max 5 |
 | Commits, excluding bots (all repos together) | 1 for 1-4, 2 for 5-19, 3 for 20 or more |
 | New public repo | 1 each, max 2 |
 | Stars gained | 1 per 25, max 2 |
@@ -111,6 +112,8 @@ The score turns the weekly changes into a ranking. Each signal is capped, so no 
 
 The weights are a judgement call, not a model fitted to past rounds. The GitHub backtest (below) supports keeping GitHub's weight low. Points by signal are saved every week in `data/scores.csv` so the weights can be checked against rounds that are later announced.
 
+- **Funding headlines:** a headline earns funding points only if it names a round (seed, pre-seed, Series A to E, raises, funding round; in Greek αντλεί, άντλησε, γύρος χρηματοδότησης) or an amount (a currency and a figure in thousands, millions or billions, or "εκατ.") next to a money word (funding, financing, investment, investors, backed, secures, closes; κεφάλαια, χρηματοδότηση). An amount next to "contract", "deal", "order", "framework" or "tender" does not count. Words like "investment" or "secures" alone are not enough: a ROI study, an "investment interest" story and a payload-hosting contract all scored as funding before this rule. Headlines that fail the rule score as press.
+- **New roles:** a job open in several locations is counted once. Workable lists such a job once per location with the same posting id; the digest shows one line with the locations joined.
 - **Bots:** commits by Dependabot, Renovate and other `[bot]` accounts are shown in the digest but score nothing.
 - **Coverage bias:** companies with no GitHub organisation, job source or EU projects can only score through news. A low score therefore means "nothing visible", not "nothing happening".
 - **First weeks:** a score from one weekly run only reflects that week. Momentum becomes meaningful after about four runs.
@@ -134,7 +137,7 @@ The weights are a judgement call, not a model fitted to past rounds. The GitHub 
 - **Source:** Google News RSS search, run twice: in English with funding terms (raises, funding, seed, Series A, acquisition, grant...) and in Greek (χρηματοδότηση, επένδυση, αντλεί, εξαγορά...).
 - **Matching:** a headline is kept only if it contains one of the company's `news_terms`. These are exact phrases, editable in the watchlist; overrides for renamed or ambiguous names are in `tracker/watchlist.py`.
 - **Tags:**
-  - **Funding:** the headline itself uses funding language.
+  - **Funding:** the headline names a round or an amount next to a money word (the rule is under Momentum score). The tag is worked out again from the headline when the digest is built, so saved snapshots follow the current rule.
   - **Press:** the name is in the headline and the funding terms appear only in the article body. Expect partnerships, product news and leadership changes here.
 - **Limits:**
   - Google News links are redirect links that open the original article.
@@ -165,6 +168,7 @@ The weights are a judgement call, not a model fitted to past rounds. The GitHub 
 - **Limits:**
   - On the first run only postings dated inside the week count as new.
   - From the second run on, new and closed roles are taken from the difference between snapshots.
+  - Postings are matched by their job-board id. Copies of one posting listed under several locations are merged into one role.
 
 ## Watchlist columns
 
@@ -197,4 +201,5 @@ tracker/digest.py           compare snapshots, write the digest and dashboard
 tracker/briefing.py         monthly briefing from the watchlist, signals and pipeline file
 tracker/briefing_template.html
 tracker/dashboard_template.html
+tests/test_scoring.py       funding-headline and multi-location job rules
 ```

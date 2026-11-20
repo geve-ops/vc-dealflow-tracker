@@ -1,8 +1,11 @@
 """Funding news via Google News RSS search (no key needed), in English and Greek.
 
 A headline is kept only if it contains one of the company's news_terms (exact phrase,
-case-insensitive). It is tagged "funding" when the headline itself uses funding language;
-other matches are kept as "press" because the search query asked for funding terms in the body.
+case-insensitive). It is tagged "funding" only when the headline itself names a round
+(seed, Series A, raises, funding round...) or an amount (a currency and a figure in thousands,
+millions or billions) next to a money word such as funding, secures or investors. Everything
+else is "press": "investment" or "secures" alone also appear in ROI studies, contracts and
+investment plans.
 """
 
 import re
@@ -22,10 +25,30 @@ FEEDS = [
 ]
 WINDOW = "when:90d"
 
-FUNDING_RE = re.compile(
-    r"\b(rais(e|es|ed|ing)|funding|funded|invest(s|ed|ment|or|ors)?|seed|pre-seed|series [a-e]|round|"
-    r"backs|backed|secures?|secured|closes?|grant|acquir(e|es|ed|ing)|acquisition|valuation|ipo|"
-    r"χρηματοδότηση|επένδυση|αντλεί|άντλησε|εξαγορ\w*|γύρο\w*)\b", re.I)
+_UNIT = r"(?:k|m|mn|bn|b|thousand|million|billion)\b"
+_NUM = r"\d[\d.,]*"
+AMOUNT_RE = re.compile(
+    rf"(?:[€$£]|\b(?:eur|usd|gbp)\s?){_NUM}\s?{_UNIT}"                     # €4M, $6 million, EUR 1.2m
+    rf"|\b{_NUM}\s?{_UNIT}\s?(?:eur|euros?|usd|dollars?|gbp|pounds?)\b"   # 300 million euros
+    rf"|{_NUM}\s?(?:εκατ|δισ)",                                           # 300 εκατ., €4 εκατ.
+    re.I)
+# An amount counts only next to money words, so "$56M tech deal" or "£8 billion framework" do not.
+MONEY_RE = re.compile(
+    r"\b(?:funding|financing|investments?|investors?|backs|backed|secures?|secured|banks|closes|closed"
+    r"|κεφάλαια|χρηματοδότηση\w*|επενδυτ\w*)", re.I)
+NOT_A_ROUND_RE = re.compile(r"\b(?:contracts?|deals?|orders?|framework|tenders?|σύμβαση\w*)\b", re.I)
+ROUND_RE = re.compile(
+    r"\b(?:pre-?\s?seed|seed|series [a-e]|rais(?:e|es|ed|ing)|(?:funding|financing|investment) round"
+    r"|αντλεί|άντλησε|αντλούν|γύρο\w* χρηματοδότησης)\b", re.I)
+
+
+def headline_kind(headline):
+    """'funding' if the headline names a round, or an amount together with a money word; else 'press'."""
+    if ROUND_RE.search(headline):
+        return "funding"
+    if AMOUNT_RE.search(headline) and MONEY_RE.search(headline) and not NOT_A_ROUND_RE.search(headline):
+        return "funding"
+    return "press"
 
 
 def _terms(row):
@@ -81,7 +104,7 @@ def collect(row):
                 "source_url": src_el.get("url", "") if src_el is not None else "",
                 "published": published,
                 "lang": lang,
-                "kind": "funding" if FUNDING_RE.search(headline) else "press",
+                "kind": headline_kind(headline),
             })
     items.sort(key=lambda x: x["published"], reverse=True)
     out = {"terms": terms, "items": items}

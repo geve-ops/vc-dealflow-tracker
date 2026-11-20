@@ -18,6 +18,19 @@ def _posting(pid, title, url, published="", location=""):
             "published": published or "", "location": location or ""}
 
 
+def merge_by_id(postings):
+    """One posting per id. Workable lists a job open in several places once per place, all with
+    the same id; the copies are merged and their locations joined."""
+    out = {}
+    for j in postings:
+        if j["id"] not in out:
+            out[j["id"]] = dict(j)
+        elif j["location"] and j["location"] not in out[j["id"]]["location"].split("; "):
+            m = out[j["id"]]
+            m["location"] = f"{m['location']}; {j['location']}" if m["location"] else j["location"]
+    return list(out.values())
+
+
 def fetch_ats(kind, slug):
     """Open postings for a job board, or None if the board does not answer."""
     if kind == "workable":
@@ -122,6 +135,6 @@ def collect(row):
             postings = fetch_ats(kind, ref)
             if postings is None:
                 return {"source": kind, "ref": ref, "error": "job board did not answer", "postings": []}
-        return {"source": kind, "ref": ref, "postings": postings}
+        return {"source": kind, "ref": ref, "postings": merge_by_id(postings)}
     except Exception as e:
         return {"source": kind, "ref": ref, "error": f"{type(e).__name__}: {e}"[:200], "postings": []}
