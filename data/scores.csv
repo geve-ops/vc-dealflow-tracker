@@ -96,10 +96,10 @@ date,company_id,company,week_score,funding,grants,press,hiring,github
 2026-11-02,GRDT-027,Anacalypsis Therapeutics,0,0,0,0,0,0
 2026-11-02,GRDT-029,Koios Care,0,0,0,0,0,0
 2026-11-02,GRDT-030,Delian Alliance Industries,0,0,0,0,0,0
-2026-11-02,GRDT-031,Hack The Box,6,5,0,0,1,0
+2026-11-02,GRDT-031,Hack The Box,2,0,0,1,1,0
 2026-11-02,GRDT-032,Sotiria Technology,0,0,0,0,0,0
 2026-11-02,GRDT-033,Prisma Electronics,0,0,0,0,0,0
-2026-11-02,GRDT-034,Open Cosmos (Open Cosmos Aegean),11,10,0,1,0,0
+2026-11-02,GRDT-034,Open Cosmos (Open Cosmos Aegean),3,0,0,3,0,0
 2026-11-02,GRDT-037,DeepSea Technologies,0,0,0,0,0,0
 2026-11-02,GRDT-038,Corsmed,0,0,0,0,0,0
 2026-11-02,GRDT-039,Better Origin,0,0,0,0,0,0
@@ -204,7 +204,7 @@ date,company_id,company,week_score,funding,grants,press,hiring,github
 2026-11-09,GRDT-084,SolidKosmos,0,0,0,0,0,0
 2026-11-09,GRDT-085,Trimsignal,0,0,0,0,0,0
 2026-11-09,GRDT-086,EMTech Space,0,0,0,0,0,0
-2026-11-09,GRDT-087,OQ Technology,11,10,0,1,0,0
+2026-11-09,GRDT-087,OQ Technology,3,0,0,3,0,0
 2026-11-09,GRDT-088,Solmeyea,0,0,0,0,0,0
 2026-11-16,GRDT-001,Perceptual Robotics,0,0,0,0,0,0
 2026-11-16,GRDT-002,Acumino,0,0,0,0,0,0
@@ -234,7 +234,7 @@ date,company_id,company,week_score,funding,grants,press,hiring,github
 2026-11-16,GRDT-027,Anacalypsis Therapeutics,0,0,0,0,0,0
 2026-11-16,GRDT-029,Koios Care,0,0,0,0,0,0
 2026-11-16,GRDT-030,Delian Alliance Industries,0,0,0,0,0,0
-2026-11-16,GRDT-031,Hack The Box,6,0,0,1,5,0
+2026-11-16,GRDT-031,Hack The Box,4,0,0,1,3,0
 2026-11-16,GRDT-032,Sotiria Technology,0,0,0,0,0,0
 2026-11-16,GRDT-033,Prisma Electronics,1,0,0,1,0,0
 2026-11-16,GRDT-034,Open Cosmos (Open Cosmos Aegean),1,0,0,1,0,0

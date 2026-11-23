@@ -42,6 +42,7 @@ python run.py enrich --only GRDT-037 # one company
 python run.py collect --signals github news grants
 python run.py digest                 # rebuild the digest from saved snapshots
 python run.py backtest               # GitHub activity before known rounds (occasional; a few minutes)
+python run.py rescore                # recompute every past week in data/scores.csv with the current rules
 python -m unittest discover tests    # scoring rule tests
 ```
 

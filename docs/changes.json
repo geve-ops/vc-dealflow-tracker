@@ -70,30 +70,6 @@
    "signal": "jobs",
    "kind": "closed_role",
    "count": 1,
-   "title": "Role closed: Network Administrator",
-   "url": "https://apply.workable.com/j/FF47C47F12",
-   "date": "2026-11-16",
-   "detail": "no longer listed"
-  },
-  {
-   "company_id": "GRDT-082",
-   "company": "SquareDev",
-   "category": "AI & Machine Learning",
-   "signal": "jobs",
-   "kind": "closed_role",
-   "count": 1,
-   "title": "Role closed: Storage & Backup/Cloud Consultant",
-   "url": "https://apply.workable.com/j/F8FAC60B00",
-   "date": "2026-11-16",
-   "detail": "no longer listed"
-  },
-  {
-   "company_id": "GRDT-082",
-   "company": "SquareDev",
-   "category": "AI & Machine Learning",
-   "signal": "jobs",
-   "kind": "closed_role",
-   "count": 1,
    "title": "Role closed: Storage & Backup/Cloud Consultant",
    "url": "https://apply.workable.com/j/F8FAC60B00",
    "date": "2026-11-16",
@@ -154,18 +130,6 @@
    "signal": "jobs",
    "kind": "closed_role",
    "count": 1,
-   "title": "Role closed: EMEA Field Marketing Manager",
-   "url": "https://apply.workable.com/j/B944171817",
-   "date": "2026-11-16",
-   "detail": "no longer listed"
-  },
-  {
-   "company_id": "GRDT-031",
-   "company": "Hack The Box",
-   "category": "Space & Defense",
-   "signal": "jobs",
-   "kind": "closed_role",
-   "count": 1,
    "title": "Role closed: Finance Manager",
    "url": "https://apply.workable.com/j/525607BB90",
    "date": "2026-11-16",
@@ -190,92 +154,8 @@
    "signal": "jobs",
    "kind": "closed_role",
    "count": 1,
-   "title": "Role closed: Senior Defensive Content Engineer",
-   "url": "https://apply.workable.com/j/BEABE53176",
-   "date": "2026-11-16",
-   "detail": "no longer listed"
-  },
-  {
-   "company_id": "GRDT-031",
-   "company": "Hack The Box",
-   "category": "Space & Defense",
-   "signal": "jobs",
-   "kind": "closed_role",
-   "count": 1,
    "title": "Role closed: Senior Elixir Engineer",
    "url": "https://apply.workable.com/j/7FF739CC60",
-   "date": "2026-11-16",
-   "detail": "no longer listed"
-  },
-  {
-   "company_id": "GRDT-031",
-   "company": "Hack The Box",
-   "category": "Space & Defense",
-   "signal": "jobs",
-   "kind": "closed_role",
-   "count": 1,
-   "title": "Role closed: Senior Elixir Engineer",
-   "url": "https://apply.workable.com/j/7FF739CC60",
-   "date": "2026-11-16",
-   "detail": "no longer listed"
-  },
-  {
-   "company_id": "GRDT-031",
-   "company": "Hack The Box",
-   "category": "Space & Defense",
-   "signal": "jobs",
-   "kind": "closed_role",
-   "count": 1,
-   "title": "Role closed: Senior Elixir Engineer",
-   "url": "https://apply.workable.com/j/7FF739CC60",
-   "date": "2026-11-16",
-   "detail": "no longer listed"
-  },
-  {
-   "company_id": "GRDT-031",
-   "company": "Hack The Box",
-   "category": "Space & Defense",
-   "signal": "jobs",
-   "kind": "closed_role",
-   "count": 1,
-   "title": "Role closed: Senior Elixir Engineer",
-   "url": "https://apply.workable.com/j/7FF739CC60",
-   "date": "2026-11-16",
-   "detail": "no longer listed"
-  },
-  {
-   "company_id": "GRDT-031",
-   "company": "Hack The Box",
-   "category": "Space & Defense",
-   "signal": "jobs",
-   "kind": "closed_role",
-   "count": 1,
-   "title": "Role closed: Senior Elixir Engineer",
-   "url": "https://apply.workable.com/j/7FF739CC60",
-   "date": "2026-11-16",
-   "detail": "no longer listed"
-  },
-  {
-   "company_id": "GRDT-031",
-   "company": "Hack The Box",
-   "category": "Space & Defense",
-   "signal": "jobs",
-   "kind": "closed_role",
-   "count": 1,
-   "title": "Role closed: Senior PHP Engineer",
-   "url": "https://apply.workable.com/j/3A150F6766",
-   "date": "2026-11-16",
-   "detail": "no longer listed"
-  },
-  {
-   "company_id": "GRDT-031",
-   "company": "Hack The Box",
-   "category": "Space & Defense",
-   "signal": "jobs",
-   "kind": "closed_role",
-   "count": 1,
-   "title": "Role closed: Senior PHP Engineer",
-   "url": "https://apply.workable.com/j/3A150F6766",
    "date": "2026-11-16",
    "detail": "no longer listed"
   },
@@ -384,66 +264,6 @@
    "count": 1,
    "title": "New role: Customer Success, Senior Manager",
    "url": "https://apply.workable.com/j/B3348D3D04",
-   "date": "2026-11-13",
-   "detail": "United States"
-  },
-  {
-   "company_id": "GRDT-031",
-   "company": "Hack The Box",
-   "category": "Space & Defense",
-   "signal": "jobs",
-   "kind": "new_role",
-   "count": 1,
-   "title": "New role: Federal Renewals, Senior Specialist",
-   "url": "https://apply.workable.com/j/FBD643CA7D",
-   "date": "2026-11-13",
-   "detail": "United States"
-  },
-  {
-   "company_id": "GRDT-031",
-   "company": "Hack The Box",
-   "category": "Space & Defense",
-   "signal": "jobs",
-   "kind": "new_role",
-   "count": 1,
-   "title": "New role: Federal Renewals, Senior Specialist",
-   "url": "https://apply.workable.com/j/FBD643CA7D",
-   "date": "2026-11-13",
-   "detail": "United States"
-  },
-  {
-   "company_id": "GRDT-031",
-   "company": "Hack The Box",
-   "category": "Space & Defense",
-   "signal": "jobs",
-   "kind": "new_role",
-   "count": 1,
-   "title": "New role: Federal Renewals, Senior Specialist",
-   "url": "https://apply.workable.com/j/FBD643CA7D",
-   "date": "2026-11-13",
-   "detail": "United States"
-  },
-  {
-   "company_id": "GRDT-031",
-   "company": "Hack The Box",
-   "category": "Space & Defense",
-   "signal": "jobs",
-   "kind": "new_role",
-   "count": 1,
-   "title": "New role: Federal Renewals, Senior Specialist",
-   "url": "https://apply.workable.com/j/FBD643CA7D",
-   "date": "2026-11-13",
-   "detail": "United States"
-  },
-  {
-   "company_id": "GRDT-031",
-   "company": "Hack The Box",
-   "category": "Space & Defense",
-   "signal": "jobs",
-   "kind": "new_role",
-   "count": 1,
-   "title": "New role: Federal Renewals, Senior Specialist",
-   "url": "https://apply.workable.com/j/FBD643CA7D",
    "date": "2026-11-13",
    "detail": "United States"
   },
@@ -1080,14 +900,9 @@
    "eu_projects": 0,
    "eu_contribution": 0.0,
    "latest_grant": null,
-   "latest_funding": {
-    "title": "Motor Oil: Στρατηγικό άνοιγμα στην Τεχνητή Νοημοσύνη με επένδυση στη Satori Analytics",
-    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOYjRqX3F6UDhnZG9HeFNMSVF3ckZ4aXlJNmJPUmszajY0TXVERkw4ekJHeDI2TUZhcjFlcGk1VU1JNTVDVzRZSi1nUTVpU2FSOHlyVkpYV3FFSlpYd3dhQ3dnWS1UaUVLbnNNdFNXd1F1ejVEUm9yOGthZTJHc3RyWVJRNE04TW40OGNnZjBSVE1aUHZnOTNHcTM0Y3Fxb1I3Nm1jMXpHS053LUZOVm9iUTlRdGc3cUlnNWlfVEU5dmJBMDFjbV9DYXc1MWxlZw?oc=5",
-    "date": "2026-09-01",
-    "source": "Forbes Greece"
-   },
+   "latest_funding": null,
    "momentum": 1.88,
-   "rank": 10
+   "rank": 8
   },
   {
    "company_id": "GRDT-015",
@@ -1148,7 +963,7 @@
     "source": "citybiz"
    },
    "momentum": 2.0,
-   "rank": 9
+   "rank": 7
   },
   {
    "company_id": "GRDT-017",
@@ -1231,12 +1046,7 @@
     "url": "https://cordis.europa.eu/project/id/101252667",
     "date": "2026-10-19"
    },
-   "latest_funding": {
-    "title": "Axelera AI targets IPO within three to five years",
-    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNX1JTVnZnSmIzZVBtaDJDMC0yV2dsRWtOR3BsbG1Bd2Z5T0cwZXJwUEFvczNBQnpkemQ2SlpPVzBEVWJibGN3TXRLN1g4aUV3WFFzZ0V3dlVJZjJHWWlMVjFHMFdmZ3ZkdjUzRXpidl82NVYzNGY5QlpnbDdkSk1DSHFn?oc=5",
-    "date": "2026-10-04",
-    "source": "IO+"
-   },
+   "latest_funding": null,
    "momentum": 10.0,
    "rank": 1
   },
@@ -1328,7 +1138,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 3.88,
-   "rank": 5
+   "rank": 4
   },
   {
    "company_id": "GRDT-024",
@@ -1532,7 +1342,7 @@
    "careers_url": "https://jobs.hackthebox.com",
    "jobs_source": "workable",
    "jobs_error": "",
-   "open_roles": 36,
+   "open_roles": 15,
    "repos": 28,
    "stars": 1261,
    "last_push": "2026-11-01",
@@ -1542,13 +1352,8 @@
    "eu_projects": 0,
    "eu_contribution": 0.0,
    "latest_grant": null,
-   "latest_funding": {
-    "title": "Study Finds Hack The Box Cybersecurity Platform Delivered 330% Return on Investment",
-    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZldUR1ZzM0kyNjNlNk03MC0yczU2eTQ0Vjc3bU1mUXBFa2VMb3pSMnpvZ1BsX2g2NEYxUjJGYmd0c2FOSktkUHY2UG9rM013bkowZWNXSTdldHpDX2FvSG8zTGI4b2g0UWZPUHRWOXNsc1FXOWNiVDNfRE1KekxmWF9nTmNHOURTalU5eEhpci1VdERKTV85NE9DVjJmVjg?oc=5",
-    "date": "2026-10-27",
-    "source": "Yahoo Finance"
-   },
-   "momentum": 8.75,
+   "latest_funding": null,
+   "momentum": 5.75,
    "rank": 2
   },
   {
@@ -1633,13 +1438,13 @@
    "eu_contribution": 0.0,
    "latest_grant": null,
    "latest_funding": {
-    "title": "European space company Open Cosmos signals India investment interest after CEO meets PM Modi",
-    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOM3h4eEU4WVVFb2R2TExON1B2TTA4T014UHY5eGRwLXZndTZnRlJtTm1lQ1htLTI2YXlQci1xTmdzZkRzVWNHU29qZjkycXVhRkhOcm1yc3dDb19rdDZpVjZXZjhRWjIxSlB5aklNZGJRbzNRMVRjWDRZV3luYlVQU0VNVlQxQjRONER3UE9PaHlSUFEzTjI3VUQzX1pOR2tiakFoWWo4SWNXTUhoRHFfTUFkUjhxZ290aGI5QTNBUE5PQnltZmJUaFBKd19ZblFTRU9HVA?oc=5",
-    "date": "2026-10-30",
-    "source": "Big News Network.com"
+    "title": "Open Cosmos to launch 192 LEO satellites for ConnectedCosmos constellation after €300m Series C",
+    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOZHU3OWFJc1VoeW5JeXFZdzZNcEFtSTMwSXhYTG5pUUVrOWgtdjExWnl1ZDk5MElpQ2dOWjNPNnpwNi00ZjZmMzB2dXZDaU95czBBTnNyc2xFWjBmZzFtcHJEdllJTUhBZHpSQkxiNkdZRUpIdk0zMW5SVUt5bWFwQ1NVTUx3Rl9vVVEya2djNEJLMnU3VVkxWUk1M3I1S29BMy1tdUx6eGRCUl9yT3Vmd3BINGw2bWxtcDVmeG03bTNzai1aOVNaZ0tVQk9pNmdFVi1qbQ?oc=5",
+    "date": "2026-10-06",
+    "source": "Data Center Dynamics"
    },
-   "momentum": 3.75,
-   "rank": 6
+   "momentum": 1.75,
+   "rank": 9
   },
   {
    "company_id": "GRDT-037",
@@ -1866,7 +1671,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 2.75,
-   "rank": 7
+   "rank": 5
   },
   {
    "company_id": "GRDT-045",
@@ -1929,7 +1734,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 2.5,
-   "rank": 8
+   "rank": 6
   },
   {
    "company_id": "GRDT-047",
@@ -2601,7 +2406,7 @@
    "latest_grant": null,
    "latest_funding": null,
    "momentum": 4.0,
-   "rank": 4
+   "rank": 3
   },
   {
    "company_id": "GRDT-085",
@@ -2686,14 +2491,9 @@
     "url": "https://cordis.europa.eu/project/id/101218718",
     "date": "2025-06-05"
    },
-   "latest_funding": {
-    "title": "Momentus Secures Contract to Host OQ Technology 5G Payload on Vigoride-9 Mission",
-    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNU16MEY3YVZlYzEwSEV1QXlQRDZPUE5tbjZKbkdVT1RyR0ZfYzViWVFaZXU3T0F3eUx2UUNmQ2ZLOXJPQW5tNmtKMTIxdktkTmV3eUdYSFBSamRUVXZ6YWFCSFF0RDBOWVFjV3Z5RnB0SGt0eVdGaUZ4S21QMlBHRlgwZHBERUxFbzhtTEJqT1hxQVVFWnIzalFn?oc=5",
-    "date": "2026-11-03",
-    "source": "Yahoo Finance"
-   },
-   "momentum": 5.5,
-   "rank": 3
+   "latest_funding": null,
+   "momentum": 1.5,
+   "rank": 10
   },
   {
    "company_id": "GRDT-088",
@@ -2760,37 +2560,17 @@
     "Marathon VC"
    ],
    "greek_fund_status": "current",
-   "week_score": 6,
-   "momentum": 8.75,
+   "week_score": 4,
+   "momentum": 5.75,
    "last_week": 2.0,
    "parts": {
     "funding": 0,
     "grants": 0,
     "press": 1,
-    "hiring": 5,
+    "hiring": 3,
     "github": 0
    },
    "rank": 2
-  },
-  {
-   "company_id": "GRDT-087",
-   "company": "OQ Technology",
-   "category": "Space & Defense",
-   "greek_funds": [
-    "Phaistos Investment Fund"
-   ],
-   "greek_fund_status": "current",
-   "week_score": 0,
-   "momentum": 5.5,
-   "last_week": 11.0,
-   "parts": {
-    "funding": 0,
-    "grants": 0,
-    "press": 0,
-    "hiring": 0,
-    "github": 0
-   },
-   "rank": 3
   },
   {
    "company_id": "GRDT-084",
@@ -2808,7 +2588,7 @@
     "hiring": 0,
     "github": 4
    },
-   "rank": 4
+   "rank": 3
   },
   {
    "company_id": "GRDT-023",
@@ -2826,25 +2606,7 @@
     "hiring": 0,
     "github": 2
    },
-   "rank": 5
-  },
-  {
-   "company_id": "GRDT-034",
-   "company": "Open Cosmos (Open Cosmos Aegean)",
-   "category": "Space & Defense",
-   "greek_funds": [],
-   "greek_fund_status": "",
-   "week_score": 1,
-   "momentum": 3.75,
-   "last_week": 0.0,
-   "parts": {
-    "funding": 0,
-    "grants": 0,
-    "press": 1,
-    "hiring": 0,
-    "github": 0
-   },
-   "rank": 6
+   "rank": 4
   },
   {
    "company_id": "GRDT-044",
@@ -2864,7 +2626,7 @@
     "hiring": 1,
     "github": 0
    },
-   "rank": 7
+   "rank": 5
   },
   {
    "company_id": "GRDT-046",
@@ -2884,7 +2646,7 @@
     "hiring": 0,
     "github": 0
    },
-   "rank": 8
+   "rank": 6
   },
   {
    "company_id": "GRDT-016",
@@ -2904,7 +2666,7 @@
     "hiring": 0,
     "github": 1
    },
-   "rank": 9
+   "rank": 7
   },
   {
    "company_id": "GRDT-014",
@@ -2920,6 +2682,44 @@
     "grants": 0,
     "press": 0,
     "hiring": 1,
+    "github": 0
+   },
+   "rank": 8
+  },
+  {
+   "company_id": "GRDT-034",
+   "company": "Open Cosmos (Open Cosmos Aegean)",
+   "category": "Space & Defense",
+   "greek_funds": [],
+   "greek_fund_status": "",
+   "week_score": 1,
+   "momentum": 1.75,
+   "last_week": 0.0,
+   "parts": {
+    "funding": 0,
+    "grants": 0,
+    "press": 1,
+    "hiring": 0,
+    "github": 0
+   },
+   "rank": 9
+  },
+  {
+   "company_id": "GRDT-087",
+   "company": "OQ Technology",
+   "category": "Space & Defense",
+   "greek_funds": [
+    "Phaistos Investment Fund"
+   ],
+   "greek_fund_status": "current",
+   "week_score": 0,
+   "momentum": 1.5,
+   "last_week": 3.0,
+   "parts": {
+    "funding": 0,
+    "grants": 0,
+    "press": 0,
+    "hiring": 0,
     "github": 0
    },
    "rank": 10

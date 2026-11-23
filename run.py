@@ -6,6 +6,7 @@
     python run.py digest
     python run.py weekly          # collect + digest
     python run.py backtest        # GitHub activity before known rounds (occasional, slow)
+    python run.py rescore         # recompute data/scores.csv for all past weeks with the current rules
 """
 
 import argparse
@@ -28,6 +29,7 @@ def main(argv=None):
     c = sub.add_parser("collect", help="run the signals and save a snapshot")
     c.add_argument("--signals", nargs="*", default=SIGNALS, choices=SIGNALS)
     sub.add_parser("digest", help="write the digest and dashboard from the latest snapshots")
+    sub.add_parser("rescore", help="recompute every week in data/scores.csv from the snapshots, then rebuild the outputs")
     sub.add_parser("backtest", help="compare GitHub activity before known rounds with the months before")
     w = sub.add_parser("weekly", help="collect, then digest")
     w.add_argument("--signals", nargs="*", default=SIGNALS, choices=SIGNALS)
@@ -40,6 +42,9 @@ def main(argv=None):
     elif a.cmd == "collect":
         collect.collect(signals=tuple(a.signals))
     elif a.cmd == "digest":
+        digest.build()
+    elif a.cmd == "rescore":
+        digest.rescore()
         digest.build()
     elif a.cmd == "backtest":
         backtest.run()

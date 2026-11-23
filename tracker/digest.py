@@ -248,6 +248,21 @@ def write_dashboard(changes, statuses, cur, prev, history, movers, weeks):
     (DOCS / "index.html").write_text(template.replace("/*__DATA__*/null", data), encoding="utf-8")
 
 
+def rescore():
+    """Recompute every week in data/scores.csv from the saved snapshots with the current rules.
+
+    Each snapshot is compared with the one before it, exactly as the weekly run did, so a
+    change to the scoring or classification rules can be applied to the whole history.
+    """
+    rows = read_watchlist()
+    snaps = [json.loads(p.read_text(encoding="utf-8")) for p in snapshot_paths()]
+    for i, cur in enumerate(snaps):
+        prev = snaps[i - 1] if i else None
+        changes = [ch for r in rows for ch in company_changes(r, cur, prev, cur["window_start"])]
+        score.update(_date(cur["generated_at"]), changes, rows)
+        print(f"rescored {_date(cur['generated_at'])}: {len(changes)} changes")
+
+
 def build():
     cur, prev = load_pair()
     rows = read_watchlist()
